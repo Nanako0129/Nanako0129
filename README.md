@@ -81,9 +81,9 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.5B tokens · 30,223 messages
+last 7 days · 3.5B tokens · 30,238 messages
 
-  claude      ████████████████░░░░░░  72.5%     2571M
+  claude      ████████████████░░░░░░  72.6%     2574M
   codex       ██████░░░░░░░░░░░░░░░░  27.2%      965M
   grok        ░░░░░░░░░░░░░░░░░░░░░░   0.2%        8M
 ```
