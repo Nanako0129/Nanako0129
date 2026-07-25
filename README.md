@@ -1,17 +1,195 @@
-### Hi there 👋
-I'm Nanako0129, or you can call me Nyanako.
-
 <!--
-**Nanako0129/Nanako0129** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+  ╭─ hey, you opened the raw file ─────────────────────────────╮
+  │  Most of this page rebuilds itself every night:            │
+  │  scripts/update_readme.py + .github/workflows/readme.yml   │
+  │  The numbers below are not decoration. They are the build. │
+  ╰────────────────────────────────────────────────────────────╯
 -->
+
+<!-- NEOFETCH:START -->
+```console
+╭─ nanako@taiwan ──────────────────────────────────────────────────────────────────╮
+│                                                                                  │
+│        ⣴⣿⣿⣦⣄            ⢀⣴⣾⣿⣷                                                    │
+│       ⢰⣿⣿⣿⣿⣿⣷⣤⣤⣤⣴⣶⣶⣶⣦⣤⣤⣴⣿⣿⣿⣿⣿⡇      nanako@taiwan                                │
+│       ⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇      ─────────────                                │
+│      ⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀     Name: Nanako 菜菜子 · Nyanako 喵菜子         │
+│     ⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆    Pronouns: she / her                          │
+│    ⢰⣿⡿⢿⣿⣿⡉⠉⡏⢉⣹⣿⣿⣿⣿⣿⣿⣿⣿⣉⠉⡏⠉⣹⣿⣿⠿⣿⣿⡆   OS: macOS 26.5.2 arm64                       │
+│    ⣿⣾⣿⣿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⣿⣿⣶⡧   Host: MacBook Air (M5, 2026) · 32GB / 1TB    │
+│    ⢻⣿⣷⣿⣟⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣷⣿⣻⡇   Kernel: SRE · platform & DevSecOps           │
+│     ⠻⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣮⣿⣿⡟    Uptime: 7 years, 8 months                    │
+│      ⢈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷    Packages: 22 sources (git) · ★ 1,317         │
+│      ⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿    Shell: zsh + powerlevel10k                   │
+│      ⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃    DE: coralline (Claude Code statusline)       │
+│       ⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋      Homelab: Proxmox · 182d up · 0 open ports    │
+│        ⠙⠿⢿⣿⣿⣿⣿⠿⠋⠉⠉⠉⠉⠻⢿⣿⣿⣿⣿⠿⠛⠁       CPU: Rust · Swift · Python · Ansible · K8s   │
+│                                     Locale: zh_TW.UTF-8 (English via translator) │
+│                                                                                  │
+│                                     Now: no roadmap. What I ship, I maintain.    │
+╰──────────────────────────────────────────────────────────────────────────────────╯
+```
+<!-- NEOFETCH:END -->
+
+```console
+~ ❯ cat about.md
+```
+
+I'm an SRE. Keeping systems reliable is the day job — the projects here are the same
+instinct pointed somewhere else.
+
+**UX has frontend engineers. DX has SRE.** That's the thread running from my work into
+everything on this page.
+
+Every one of these started because I needed it. TokenBar exists because I wanted to know
+what a session actually cost without opening a dashboard. coralline exists because I've
+used Powerlevel10k in zsh for years and wanted the same thing in my Claude Code
+statusline — I only packaged it up because people kept asking how I'd done it.
+
+That's the whole pattern: I build it for myself, I share it because sharing is the good
+part, and once it's public I maintain it properly. What comes next is genuinely unknown —
+whatever I hit while learning, whatever annoys me enough to open a new repo. That's the
+roadmap.
+
+> The full story of the TokenBar rewrite — Rust core, Swift shell, and the FFI seam
+> between them — is written up here (zh-TW):
+> **[Rust 的引擎，Swift 的外殼](https://hackmd.io/@Nyanako0129/tokenbar-rust-swift-ffi-zh)**
+
+```console
+~ ❯ ls -l ~/projects --sort=stars
+```
+
+<!-- PROJECTS:START -->
+| Project | What it is | Stars | Latest | Downloads | Updated |
+| :-- | :-- | --: | :-- | --: | :-- |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 540 | `v1.3.4` | — | today |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 510 | `v0.10.1` | — | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 184 | `v1.8.1` | 3.5k | today |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.15` | 82 | today |
+| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 26 | `—` | — | 13mo ago |
+| **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 15d ago |
+<!-- PROJECTS:END -->
+
+```console
+~ ❯ tokscale models --week
+```
+
+> Yes, this is my own AI usage, measured with my own tooling, pushed here by a cron
+> job. Eating the dog food in public.
+
+<!-- USAGE:START -->
+```console
+last 7 days · 3.5B tokens · 30,150 messages
+
+  claude      ████████████████░░░░░░  72.4%     2552M
+  codex       ██████░░░░░░░░░░░░░░░░  27.4%      965M
+  grok        ░░░░░░░░░░░░░░░░░░░░░░   0.2%        8M
+```
+<!-- USAGE:END -->
+
+```console
+~ ❯ git log --oneline --author=nanako -5
+```
+
+<!-- NOW:START -->
+```console
+2026-07-25  coralline           released v0.10.1
+2026-07-25  pilotfish           released v1.3.4
+```
+<!-- NOW:END -->
+
+```console
+~ ❯ tree ~/projects --lineage
+```
+
+```mermaid
+graph LR
+  T1["TokenBar-Tauri<br/><i>Tauri 2 · retired</i>"] --> T2["<b>TokenBar</b><br/>Swift + Rust"]
+  T2 --> T3["TokenBar-Windows"]
+  T2 --> T4["homebrew-tokenbar"]
+
+  P1["<b>pilotfish</b><br/>Claude Code"] --> P2["pilotfish-grok"]
+  P1 --> P3["pilotfish-codex"]
+  P1 --> P4["remora-cc"]
+
+  C1["<b>coralline</b><br/>statusline"]
+  W1["postmortem-prose"] --> W2["md-style"]
+
+  classDef flagship fill:#2f81f7,stroke:#1f6feb,color:#fff
+  class T2,P1,C1 flagship
+```
+
+```console
+~ ❯ ssh homelab -- uptime
+```
+
+The same discipline, off the clock — everything below runs at home:
+
+```console
+Proxmox VE      182d uptime · every service in Compose, every service healthchecked
+Zero trust      Cloudflare Tunnel + Access · 5 tunnels · 20 ZTNA apps · 0 inbound ports
+Home Assistant  141 integrations · 369 entities · 53 devices · one Lovelace panel
+Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
+Observability   Prometheus · Grafana · Loki · Tempo · OpenTelemetry · eBPF
+```
+
+```console
+~ ❯ ssh maomao.wo
+```
+
+### 卯咪卯的窩 · a Chinese-speaking dev community
+
+[![Discord](https://img.shields.io/discord/1523004250152501341?label=%E5%8D%AF%E5%92%AA%E5%8D%AF%E7%9A%84%E7%AA%A9&logo=discord&logoColor=white&color=5865F2&style=for-the-badge)](https://discord.gg/HD8GzXzBEu)
+
+我一直想要一個地方：能認真聊技術，也能放心做自己。找不到，那就自己開一個。
+
+- 💻 **技術控** — agentic coding、熱門 AI 應用、開源工具、軟體開發、DevOps／SRE。想深聊、想求救、想炫專案都可以。
+- 💬 **只想交朋友、放鬆閒聊** — 完全歡迎，不用很懂技術。
+- 🏳️‍⚧️ **秘密專區** — 我自己是跨女，所以特別開了一區給跨性別、偽娘／男娘：安心做自己、和姐妹聊女裝、交朋友、談談心事。
+
+不管你是哪一種（或同時是好幾種），這裡都有你的位置。沒有門檻，潛水歡迎。
+
+**[→ 進來坐](https://discord.gg/HD8GzXzBEu)**
+
+```console
+~ ❯ cat .offline
+```
+
+```console
+Coffee      Sunbeam Barista Max + Option-O Lagom Casa
+            nutty / chocolate base, with the occasional fruit bomb
+Hamsters    two seniors, still running the wheel at 2 years old
+Headphones  Sony IER-M9 · MDR-MV1 · MDR-M1 · iFi xDSD Gryphon
+```
+
+```console
+~ ❯ kofi --thanks
+```
+
+If any of this saved you time or money, a coffee keeps the cron jobs running.
+
+[![Ko-fi](https://img.shields.io/badge/Buy%20me%20a%20coffee-Ko--fi-FF5E5B?logo=ko-fi&logoColor=white&style=for-the-badge)](https://ko-fi.com/nanako0129)
+
+```console
+~ ❯ contact
+```
+
+**Something broken, or an idea for a feature** → open an issue on that repo. That's what
+issues are for, and the answer helps the next person too. If a tool just made your day
+easier and you want to say so there, that's welcome as well — I read every one.
+
+**Anything formal** → email me at **nanakotsai@nyanako.com**.
+
+**Anything casual** → the Discord above, DM me there, or find me on
+[Threads](https://www.threads.com/@nyanako0129). My X account is private, so
+that's not the way in.
+
+A note on language: I'm a native Traditional Chinese speaker and my English isn't fluent —
+some of my replies go through a translator. Chinese is very welcome, and please bear with
+me in English.
+
+```console
+~ ❯ exit
+```
+
+<sub>This page rebuilds itself nightly · last sync: 2026-07-25 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>

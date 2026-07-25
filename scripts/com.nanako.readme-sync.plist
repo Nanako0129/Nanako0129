@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Install:
+    cp scripts/com.nanako.readme-sync.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.nanako.readme-sync.plist
+  Run once now:
+    launchctl start com.nanako.readme-sync
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.nanako.readme-sync</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/sh</string>
+    <string>/Users/nanako/side-project/Nanako0129/scripts/sync-local.sh</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key><integer>9</integer>
+    <key>Minute</key><integer>30</integer>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>/tmp/readme-sync.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/readme-sync.log</string>
+</dict>
+</plist>
