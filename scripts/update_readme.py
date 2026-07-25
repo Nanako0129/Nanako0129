@@ -214,19 +214,17 @@ def render_neofetch():
         "Now: no roadmap. What I ship, I maintain.",
     ]
 
-    gutter = max(len(line) for line in CAT) + 3
-    body = []
-    for i in range(max(len(CAT), len(info)) + 2):
-        art = CAT[i - 1] if 0 < i <= len(CAT) else ""
-        text = info[i - 2] if 1 < i <= len(info) + 1 else ""
-        body.append(art.ljust(gutter) + text)
-
-    inner = max(cell_width(line) for line in body) + 2
+    # Stacked, not side by side. Nothing sits to the right of the art, so no
+    # padding depends on how wide a braille glyph renders — which is the whole
+    # problem: it is one cell in GitHub's font and about 1.1 cells in some
+    # editors, and 0.1 of a cell cannot be paid for with whole spaces. The
+    # framed box below holds only ASCII, so its border is exact everywhere.
+    inner = max(cell_width(line) for line in info) + 2
     head = f"╭─ {title} " + "─" * (inner - cell_width(title) - 3) + "╮"
-    out = [head]
-    out += [f"│ {line}" + " " * (inner - cell_width(line) - 1) + "│" for line in body]
-    out.append("╰" + "─" * inner + "╯")
-    return "```console\n" + "\n".join(out) + "\n```"
+    box = [head]
+    box += [f"│ {line}" + " " * (inner - cell_width(line) - 1) + "│" for line in info[2:]]
+    box.append("╰" + "─" * inner + "╯")
+    return "```console\n" + "\n".join(CAT) + "\n```\n\n```console\n" + "\n".join(box) + "\n```"
 
 
 def main():
