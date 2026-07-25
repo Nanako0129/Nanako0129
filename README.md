@@ -8,39 +8,27 @@
 
 <!-- NEOFETCH:START -->
 ```console
-       ⣴⣿⣿⣦⣄            ⢀⣴⣾⣿⣷
-      ⢰⣿⣿⣿⣿⣿⣷⣤⣤⣤⣴⣶⣶⣶⣦⣤⣤⣴⣿⣿⣿⣿⣿⡇
-      ⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇
-     ⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀
-    ⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆
-   ⢰⣿⡿⢿⣿⣿⡉⠉⡏⢉⣹⣿⣿⣿⣿⣿⣿⣿⣿⣉⠉⡏⠉⣹⣿⣿⠿⣿⣿⡆
-   ⣿⣾⣿⣿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⣿⣿⣶⡧
-   ⢻⣿⣷⣿⣟⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣷⣿⣻⡇
-    ⠻⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣮⣿⣿⡟
-     ⢈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷
-     ⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-     ⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃
-      ⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋
-       ⠙⠿⢿⣿⣿⣿⣿⠿⠋⠉⠉⠉⠉⠻⢿⣿⣿⣿⣿⠿⠛⠁
-```
-
-```console
-╭─ nanako@taiwan ──────────────────────────────╮
-│ Name: Nanako, or Nyanako                     │
-│ Pronouns: she / her                          │
-│ OS: macOS 26.5.2 arm64                       │
-│ Host: MacBook Air (M5, 2026), 32GB / 1TB     │
-│ Kernel: SRE, platform & DevSecOps            │
-│ Uptime: 7 years, 8 months                    │
-│ Packages: 22 sources (git), 1,317 stars      │
-│ Shell: zsh + powerlevel10k                   │
-│ DE: coralline (Claude Code statusline)       │
-│ Homelab: Proxmox, 182d up, 0 open ports      │
-│ CPU: Rust, Swift, Python, Ansible, K8s       │
-│ Locale: zh_TW.UTF-8 (English via translator) │
-│                                              │
-│ Now: no roadmap. What I ship, I maintain.    │
-╰──────────────────────────────────────────────╯
+╭─ nanako@taiwan ──────────────────────────────────────────────────────────────────╮
+│                                                                                  │
+│        J@8m]            .X*Bb                                                    │
+│       >$@$$$p(|uzUJUzx)Y%$$@$t      nanako@taiwan                                │
+│       u@W#o*WBBBBBBBBB%Woa*W@C      ─────────────                                │
+│      'dM*MW&8&WW&&&&&&888W*o#b      Name: Nanako, or Nyanako                     │
+│     n%8&&&W&&%%%%%%%%B88888&&&&t    Pronouns: she / her                          │
+│    /%oo#8vjO)m@BBBB%B%zfm(ZB#**%[   OS: macOS 26.5.2 arm64                       │
+│    dMah*8WW88%BBBB%BBB888W&8aaoWZ   Host: MacBook Air (M5, 2026), 32GB / 1TB     │
+│    vB*Wh#%8%%%%%%%%%%%%%8%%h*MaBf   Kernel: SRE, platform & DevSecOps            │
+│     nWoo%88%%%%%%%%%%8%%888&kMBu    Uptime: 27 years                             │
+│      ;#WW&&&88888888888&&8&&&M8d    Install Date: 2018-11-04 (github.com)        │
+│      f8&%%%%%%%%888%%%%%BBBBBW@W    Packages: 22 sources (git), 1,317 stars      │
+│      :&&8%%%88&%$@@B8%%%%%8W&Wh!    Shell: zsh + powerlevel10k                   │
+│       x$$$$@BB$@$$$$$$$@@@$$p!      DE: coralline (Claude Code statusline)       │
+│        ;YbMWWoL<;><!jd*MMaO(        Homelab: Proxmox, 182d up, 0 open ports      │
+│                                     CPU: Rust, Swift, Python, Ansible, K8s       │
+│                                     Locale: zh_TW.UTF-8 (English via translator) │
+│                                                                                  │
+│                                     Now: no roadmap. What I ship, I maintain.    │
+╰──────────────────────────────────────────────────────────────────────────────────╯
 ```
 <!-- NEOFETCH:END -->
 
@@ -93,10 +81,10 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.5B tokens · 30,189 messages
+last 7 days · 3.5B tokens · 30,223 messages
 
-  claude      ████████████████░░░░░░  72.5%     2562M
-  codex       ██████░░░░░░░░░░░░░░░░  27.3%      965M
+  claude      ████████████████░░░░░░  72.5%     2571M
+  codex       ██████░░░░░░░░░░░░░░░░  27.2%      965M
   grok        ░░░░░░░░░░░░░░░░░░░░░░   0.2%        8M
 ```
 <!-- USAGE:END -->
@@ -148,7 +136,7 @@ Observability   Prometheus · Grafana · Loki · Tempo · OpenTelemetry · eBPF
 ```
 
 ```console
-~ ❯ ssh maomao.wo
+~ ❯ ssh nyanko.home
 ```
 
 ### 卯咪卯的窩 · a Chinese-speaking dev community

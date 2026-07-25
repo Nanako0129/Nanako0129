@@ -10,6 +10,7 @@ the usage panel and a local run never needs network beyond `gh`.
 """
 
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -140,27 +141,36 @@ def render_usage():
 
 JOINED = "2018-11-04"
 
-# Traced from the reference plush photo with:
-#   chafa -f symbols --symbols braille -c none --invert --size 42x18 <photo>
-# Braille patterns are East Asian Width "Neutral", i.e. single-width, so the info
-# column beside them can't drift. U+2800 (blank braille) was swapped for a plain
-# space so trailing whitespace strips cleanly. Everything inside the frame stays
-# ASCII or braille; cell_width() enforces that.
-CAT = """
-       ⣴⣿⣿⣦⣄            ⢀⣴⣾⣿⣷
-      ⢰⣿⣿⣿⣿⣿⣷⣤⣤⣤⣴⣶⣶⣶⣦⣤⣤⣴⣿⣿⣿⣿⣿⡇
-      ⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇
-     ⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀
-    ⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆
-   ⢰⣿⡿⢿⣿⣿⡉⠉⡏⢉⣹⣿⣿⣿⣿⣿⣿⣿⣿⣉⠉⡏⠉⣹⣿⣿⠿⣿⣿⡆
-   ⣿⣾⣿⣿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⣿⣿⣶⡧
-   ⢻⣿⣷⣿⣟⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣷⣿⣻⡇
-    ⠻⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣮⣿⣿⡟
-     ⢈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷
-     ⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-     ⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃
-      ⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋
-       ⠙⠿⢿⣿⣿⣿⣿⠿⠋⠉⠉⠉⠉⠻⢿⣿⣿⣿⣿⠿⠛⠁
+# Never hardcoded: a full date of birth is an identity-verification field, and
+# this repository is public. CI reads it from the BIRTH_DATE secret, the Mac
+# from ~/.config/nanako-readme.env (outside the repo, see scripts/sync-local.sh).
+# Without it the Uptime row is simply left out — both environments have the
+# value, so the rendered page does not flip back and forth.
+BIRTH = os.environ.get("BIRTH_DATE")
+
+# Traced from the reference plush photo: luminance mapped onto a density ramp,
+# background speckle floored to spaces. Deliberately ASCII and nothing else.
+# An earlier braille version looked better but had to sit above the info block
+# rather than beside it: braille renders at one cell in GitHub's code font and
+# about 1.1 in some editors, and whole spaces cannot pay a fractional cell, so
+# the two columns could never agree. ASCII is exactly one cell everywhere,
+# which is what buys back the side-by-side neofetch layout. cell_width() fails
+# the build if anything wider sneaks in.
+CAT = r"""
+       J@8m]            .X*Bb
+      >$@$$$p(|uzUJUzx)Y%$$@$t
+      u@W#o*WBBBBBBBBB%Woa*W@C
+     'dM*MW&8&WW&&&&&&888W*o#b
+    n%8&&&W&&%%%%%%%%B88888&&&&t
+   /%oo#8vjO)m@BBBB%B%zfm(ZB#**%[
+   dMah*8WW88%BBBB%BBB888W&8aaoWZ
+   vB*Wh#%8%%%%%%%%%%%%%8%%h*MaBf
+    nWoo%88%%%%%%%%%%8%%888&kMBu
+     ;#WW&&&88888888888&&8&&&M8d
+     f8&%%%%%%%%888%%%%%BBBBBW@W
+     :&&8%%%88&%$@@B8%%%%%8W&Wh!
+      x$$$$@BB$@$$$$$$$@@@$$p!
+       ;YbMWWoL<;><!jd*MMaO(
 """.strip("\n").splitlines()
 
 
@@ -170,14 +180,15 @@ FRAME = "─│╭╮╰╯"
 def cell_width(s):
     """Frame padding assumes one rendered column per character.
 
-    That holds for ASCII and for braille (East Asian Width "Neutral"), but not
-    for CJK: the browser falls back to a proportional CJK face whose advance is
-    not exactly two monospace columns, which raggedded the right border on
-    github.com even though every line computed to the same width locally.
-    Bail loudly rather than ship a crooked box — Chinese belongs in the prose
-    below the frame, not inside it.
+    ASCII is the only thing that reliably holds to that across every font a
+    reader might have. CJK ragged the border on github.com by falling back to a
+    proportional face; braille was fine there but ran about 1.1 cells wide in an
+    editor, and a fractional cell cannot be paid for with whole spaces. Since
+    the art now shares a line with the info column, anything but ASCII breaks
+    the layout somewhere — so fail the build instead. Chinese belongs in the
+    prose below, which needs no alignment at all.
     """
-    bad = [c for c in s if not (c.isascii() or 0x2800 <= ord(c) <= 0x28FF or c in FRAME)]
+    bad = [c for c in s if not (c.isascii() or c in FRAME)]
     if bad:
         sys.exit(f"non-monospace glyph in the neofetch block: {bad!r} in {s!r}")
     return len(s)
@@ -190,10 +201,14 @@ def render_neofetch():
     if not stars:
         return None
 
-    since = datetime.fromisoformat(JOINED).replace(tzinfo=timezone.utc)
-    now = datetime.now(timezone.utc)
-    months = (now.year - since.year) * 12 + now.month - since.month - (now.day < since.day)
+    now = datetime.now(timezone.utc).date()
     title = "nanako@taiwan"
+
+    uptime = []
+    if BIRTH:
+        born = datetime.fromisoformat(BIRTH).date()
+        age = now.year - born.year - ((now.month, now.day) < (born.month, born.day))
+        uptime = [f"Uptime: {age} years"]
 
     info = [
         title,
@@ -203,7 +218,8 @@ def render_neofetch():
         "OS: macOS 26.5.2 arm64",
         "Host: MacBook Air (M5, 2026), 32GB / 1TB",
         "Kernel: SRE, platform & DevSecOps",
-        f"Uptime: {months // 12} years, {months % 12} months",
+        *uptime,
+        f"Install Date: {JOINED} (github.com)",
         f"Packages: {len(sources)} sources (git), {stars:,} stars",
         "Shell: zsh + powerlevel10k",
         "DE: coralline (Claude Code statusline)",
@@ -214,17 +230,19 @@ def render_neofetch():
         "Now: no roadmap. What I ship, I maintain.",
     ]
 
-    # Stacked, not side by side. Nothing sits to the right of the art, so no
-    # padding depends on how wide a braille glyph renders — which is the whole
-    # problem: it is one cell in GitHub's font and about 1.1 cells in some
-    # editors, and 0.1 of a cell cannot be paid for with whole spaces. The
-    # framed box below holds only ASCII, so its border is exact everywhere.
-    inner = max(cell_width(line) for line in info) + 2
+    gutter = max(len(line) for line in CAT) + 3
+    body = []
+    for i in range(max(len(CAT), len(info)) + 2):
+        art = CAT[i - 1] if 0 < i <= len(CAT) else ""
+        text = info[i - 2] if 1 < i <= len(info) + 1 else ""
+        body.append(art.ljust(gutter) + text)
+
+    inner = max(cell_width(line) for line in body) + 2
     head = f"╭─ {title} " + "─" * (inner - cell_width(title) - 3) + "╮"
-    box = [head]
-    box += [f"│ {line}" + " " * (inner - cell_width(line) - 1) + "│" for line in info[2:]]
-    box.append("╰" + "─" * inner + "╯")
-    return "```console\n" + "\n".join(CAT) + "\n```\n\n```console\n" + "\n".join(box) + "\n```"
+    out = [head]
+    out += [f"│ {line}" + " " * (inner - cell_width(line) - 1) + "│" for line in body]
+    out.append("╰" + "─" * inner + "╯")
+    return "```console\n" + "\n".join(out) + "\n```"
 
 
 def main():
