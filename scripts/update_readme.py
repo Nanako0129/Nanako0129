@@ -111,14 +111,20 @@ def render_now():
 
 
 def render_usage():
-    """Weekly token usage per client. Local-only: CI has no tokscale, so on a CI
-    run this returns None and the block keeps whatever the Mac last pushed.
-    Only the aggregate lands in the README — the raw export (which carries
-    per-model cost) never leaves the machine."""
+    """Weekly token usage per model.
+
+    Grouped by model, not by client, because the client says almost nothing
+    here: Claude Code is wired to GPT models, so a "claude" row would be mostly
+    OpenAI tokens. The model is the thing that is actually true.
+
+    Local-only: CI has no tokscale, so there this returns None and the block
+    keeps whatever the Mac last pushed. Only the aggregate lands in the README;
+    the raw export, which carries per-model spend, never leaves the machine.
+    """
     if not shutil.which("tokscale"):
         return None
     r = subprocess.run(
-        ["tokscale", "models", "--json", "--week", "--group-by", "client,model", "--no-spinner"],
+        ["tokscale", "models", "--json", "--week", "--group-by", "model", "--no-spinner"],
         capture_output=True,
         text=True,
     )
@@ -126,16 +132,16 @@ def render_usage():
         return None
     data = json.loads(r.stdout)
 
-    by_client = {}
+    by_model = {}
     for e in data["entries"]:
         tok = e["input"] + e["output"] + e["cacheRead"] + e["cacheWrite"]
-        by_client[e["client"]] = by_client.get(e["client"], 0) + tok
-    top = sorted(by_client.items(), key=lambda kv: -kv[1])[:6]
-    total = sum(by_client.values()) or 1
+        by_model[e["model"]] = by_model.get(e["model"], 0) + tok
+    total = sum(by_model.values()) or 1
+    top = sorted(by_model.items(), key=lambda kv: -kv[1])[:6]
 
     lines = [f"last 7 days · {total/1e9:.1f}B tokens · {data['totalMessages']:,} messages", ""]
-    for client, tok in top:
-        lines.append(f"  {client:<10}  {bar(tok/total)}  {tok/total*100:4.1f}%  {tok/1e6:>7.0f}M")
+    for model, tok in top:
+        lines.append(f"  {model:<18.18}  {bar(tok/total)}  {tok/total*100:4.1f}%  {tok/1e6:>7.0f}M")
     return "```console\n" + "\n".join(lines) + "\n```"
 
 
@@ -148,8 +154,14 @@ JOINED = "2018-11-04"
 # value, so the rendered page does not flip back and forth.
 BIRTH = os.environ.get("BIRTH_DATE")
 
-# Traced from the reference plush photo: luminance mapped onto a density ramp,
-# background speckle floored to spaces. Deliberately ASCII and nothing else.
+# Traced from the reference plush photo. The silhouette comes from a flood fill
+# of the white background, so light features *inside* the cat are kept rather
+# than mistaken for background; each cell then takes the 82nd percentile of its
+# pixels rather than the mean, which is what makes the eyes legible — they are
+# bright yellow (luminance ~225) against near-black fur, and averaging buried
+# them. The whiskers are simply below the resolution of the medium: a few pixels
+# of stitching in a 28-pixel cell, invisible at any width that fits the page.
+# Deliberately ASCII and nothing else.
 # An earlier braille version looked better but had to sit above the info block
 # rather than beside it: braille renders at one cell in GitHub's code font and
 # about 1.1 in some editors, and whole spaces cannot pay a fractional cell, so
@@ -157,20 +169,24 @@ BIRTH = os.environ.get("BIRTH_DATE")
 # which is what buys back the side-by-side neofetch layout. cell_width() fails
 # the build if anything wider sneaks in.
 CAT = r"""
-       J@8m]            .X*Bb
-      >$@$$$p(|uzUJUzx)Y%$$@$t
-      u@W#o*WBBBBBBBBB%Woa*W@C
-     'dM*MW&8&WW&&&&&&888W*o#b
-    n%8&&&W&&%%%%%%%%B88888&&&&t
-   /%oo#8vjO)m@BBBB%B%zfm(ZB#**%[
-   dMah*8WW88%BBBB%BBB888W&8aaoWZ
-   vB*Wh#%8%%%%%%%%%%%%%8%%h*MaBf
-    nWoo%88%%%%%%%%%%8%%888&kMBu
-     ;#WW&&&88888888888&&8&&&M8d
-     f8&%%%%%%%%888%%%%%BBBBBW@W
-     :&&8%%%88&%$@@B8%%%%%8W&Wh!
-      x$$$$@BB$@$$$$$$$@@@$$p!
-       ;YbMWWoL<;><!jd*MMaO(
+         w*aw                   kok
+        m8BB8Mk              Za8BB%*
+        *%B@@#akwwqpdbkkbqwmdh*@@@B&
+        8%*ooo#MWWWWWWWWWWMM#oahaaB%Z
+       Za*##MWWWWWW&&&&88&&&&WW#*oaaw
+      q*MWWWW&&88888888888%8888&WMMMop
+     oW&8WWM/M/)&%%%%%%%%%%*)&rC&888WMa
+    h****W&<>|<<(%B%%%%%%%8+<|+<(8W#***k
+    #&8W*M&&&88%%%%%%%%%%%%%%%8888M*&8&*
+    hM#&8bW&&&&888%%%%%%%%%888888*&8#oWh
+     oW&fW&8&888888888888888888&&&oM8&o
+      daM&&&888888888888888888888&&M#op
+       h**MMW&&&&8&8&888&8&&&&&&WM#M&8M
+      mhM8%%BB%%88&88&&&888%BBBBB%8%h8#
+       dW88%%%88&&&8$$$$W8%88%%88&M*h&
+       mM&8%BB%8&W&&$@$MW8BBB%B88&Mk
+        b*&8%%%8%%8  $$BM&8888%88Ma
+           M88%%%         &88%%8
 """.strip("\n").splitlines()
 
 

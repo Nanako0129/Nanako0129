@@ -8,27 +8,28 @@
 
 <!-- NEOFETCH:START -->
 ```console
-╭─ nanako@taiwan ──────────────────────────────────────────────────────────────────╮
-│                                                                                  │
-│        J@8m]            .X*Bb                                                    │
-│       >$@$$$p(|uzUJUzx)Y%$$@$t      nanako@taiwan                                │
-│       u@W#o*WBBBBBBBBB%Woa*W@C      ─────────────                                │
-│      'dM*MW&8&WW&&&&&&888W*o#b      Name: Nanako, or Nyanako                     │
-│     n%8&&&W&&%%%%%%%%B88888&&&&t    Pronouns: she / her                          │
-│    /%oo#8vjO)m@BBBB%B%zfm(ZB#**%[   OS: macOS 26.5.2 arm64                       │
-│    dMah*8WW88%BBBB%BBB888W&8aaoWZ   Host: MacBook Air (M5, 2026), 32GB / 1TB     │
-│    vB*Wh#%8%%%%%%%%%%%%%8%%h*MaBf   Kernel: SRE, platform & DevSecOps            │
-│     nWoo%88%%%%%%%%%%8%%888&kMBu    Uptime: 27 years                             │
-│      ;#WW&&&88888888888&&8&&&M8d    Install Date: 2018-11-04 (github.com)        │
-│      f8&%%%%%%%%888%%%%%BBBBBW@W    Packages: 22 sources (git), 1,317 stars      │
-│      :&&8%%%88&%$@@B8%%%%%8W&Wh!    Shell: zsh + powerlevel10k                   │
-│       x$$$$@BB$@$$$$$$$@@@$$p!      DE: coralline (Claude Code statusline)       │
-│        ;YbMWWoL<;><!jd*MMaO(        Homelab: Proxmox, 182d up, 0 open ports      │
-│                                     CPU: Rust, Swift, Python, Ansible, K8s       │
-│                                     Locale: zh_TW.UTF-8 (English via translator) │
-│                                                                                  │
-│                                     Now: no roadmap. What I ship, I maintain.    │
-╰──────────────────────────────────────────────────────────────────────────────────╯
+╭─ nanako@taiwan ─────────────────────────────────────────────────────────────────────────╮
+│                                                                                         │
+│          w*aw                   kok                                                     │
+│         m8BB8Mk              Za8BB%*       nanako@taiwan                                │
+│         *%B@@#akwwqpdbkkbqwmdh*@@@B&       ─────────────                                │
+│         8%*ooo#MWWWWWWWWWWMM#oahaaB%Z      Name: Nanako, or Nyanako                     │
+│        Za*##MWWWWWW&&&&88&&&&WW#*oaaw      Pronouns: she / her                          │
+│       q*MWWWW&&88888888888%8888&WMMMop     OS: macOS 26.5.2 arm64                       │
+│      oW&8WWM/M/)&%%%%%%%%%%*)&rC&888WMa    Host: MacBook Air (M5, 2026), 32GB / 1TB     │
+│     h****W&<>|<<(%B%%%%%%%8+<|+<(8W#***k   Kernel: SRE, platform & DevSecOps            │
+│     #&8W*M&&&88%%%%%%%%%%%%%%%8888M*&8&*   Uptime: 27 years                             │
+│     hM#&8bW&&&&888%%%%%%%%%888888*&8#oWh   Install Date: 2018-11-04 (github.com)        │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 22 sources (git), 1,317 stars      │
+│       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
+│        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
+│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 182d up, 0 open ports      │
+│        dW88%%%88&&&8$$$$W8%88%%88&M*h&     CPU: Rust, Swift, Python, Ansible, K8s       │
+│        mM&8%BB%8&W&&$@$MW8BBB%B88&Mk       Locale: zh_TW.UTF-8 (English via translator) │
+│         b*&8%%%8%%8  $$BM&8888%88Ma                                                     │
+│            M88%%%         &88%%8           Now: no roadmap. What I ship, I maintain.    │
+│                                                                                         │
+╰─────────────────────────────────────────────────────────────────────────────────────────╯
 ```
 <!-- NEOFETCH:END -->
 
@@ -73,19 +74,23 @@ roadmap.
 <!-- PROJECTS:END -->
 
 ```console
-~ ❯ tokscale models --week
+~ ❯ tokscale models --week --group-by model
 ```
 
 > Yes, this is my own AI usage, measured with my own tooling, pushed here by a cron
-> job. Eating the dog food in public.
+> job. Eating the dog food in public. Grouped by model rather than by client, because
+> the client would lie — I drive GPT models through Claude Code.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.5B tokens · 30,238 messages
+last 7 days · 3.6B tokens · 30,250 messages
 
-  claude      ████████████████░░░░░░  72.6%     2574M
-  codex       ██████░░░░░░░░░░░░░░░░  27.2%      965M
-  grok        ░░░░░░░░░░░░░░░░░░░░░░   0.2%        8M
+  gpt-5.6-sol         ███████████████████░░░  84.6%     3004M
+  gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   9.5%      337M
+  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   2.9%      103M
+  claude-opus-4-8     ░░░░░░░░░░░░░░░░░░░░░░   1.3%       46M
+  claude-fable-5      ░░░░░░░░░░░░░░░░░░░░░░   0.8%       28M
+  gpt-5.6-terra       ░░░░░░░░░░░░░░░░░░░░░░   0.6%       20M
 ```
 <!-- USAGE:END -->
 
