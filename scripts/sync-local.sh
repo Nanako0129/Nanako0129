@@ -3,6 +3,11 @@
 # CI cannot see, and pushes. Run by launchd (see com.nanako.readme-sync.plist).
 set -e
 cd "$(dirname "$0")/.."
+# launchd hands over PATH=/usr/bin:/bin:/usr/sbin:/sbin, which has neither gh nor
+# tokscale. Without this the run succeeds and silently changes nothing, because
+# every renderer treats a missing tool as "leave that block alone".
+PATH="/opt/homebrew/bin:$HOME/.bun/bin:$PATH"
+export PATH
 # BIRTH_DATE lives here, outside the repo, so it is never committed. CI gets the
 # same value from the BIRTH_DATE repository secret. Without it the Uptime row is
 # omitted, which would make the two environments disagree — keep both supplied.
