@@ -13,17 +13,17 @@
 │        ⣴⣿⣿⣦⣄            ⢀⣴⣾⣿⣷                                                    │
 │       ⢰⣿⣿⣿⣿⣿⣷⣤⣤⣤⣴⣶⣶⣶⣦⣤⣤⣴⣿⣿⣿⣿⣿⡇      nanako@taiwan                                │
 │       ⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇      ─────────────                                │
-│      ⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀     Name: Nanako 菜菜子 · Nyanako 喵菜子         │
+│      ⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀     Name: Nanako, or Nyanako                     │
 │     ⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆    Pronouns: she / her                          │
 │    ⢰⣿⡿⢿⣿⣿⡉⠉⡏⢉⣹⣿⣿⣿⣿⣿⣿⣿⣿⣉⠉⡏⠉⣹⣿⣿⠿⣿⣿⡆   OS: macOS 26.5.2 arm64                       │
-│    ⣿⣾⣿⣿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⣿⣿⣶⡧   Host: MacBook Air (M5, 2026) · 32GB / 1TB    │
-│    ⢻⣿⣷⣿⣟⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣷⣿⣻⡇   Kernel: SRE · platform & DevSecOps           │
+│    ⣿⣾⣿⣿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⣿⣿⣶⡧   Host: MacBook Air (M5, 2026), 32GB / 1TB     │
+│    ⢻⣿⣷⣿⣟⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣷⣿⣻⡇   Kernel: SRE, platform & DevSecOps            │
 │     ⠻⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣮⣿⣿⡟    Uptime: 7 years, 8 months                    │
-│      ⢈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷    Packages: 22 sources (git) · ★ 1,317         │
+│      ⢈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷    Packages: 22 sources (git), 1,317 stars      │
 │      ⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿    Shell: zsh + powerlevel10k                   │
 │      ⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃    DE: coralline (Claude Code statusline)       │
-│       ⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋      Homelab: Proxmox · 182d up · 0 open ports    │
-│        ⠙⠿⢿⣿⣿⣿⣿⠿⠋⠉⠉⠉⠉⠻⢿⣿⣿⣿⣿⠿⠛⠁       CPU: Rust · Swift · Python · Ansible · K8s   │
+│       ⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋      Homelab: Proxmox, 182d up, 0 open ports      │
+│        ⠙⠿⢿⣿⣿⣿⣿⠿⠋⠉⠉⠉⠉⠻⢿⣿⣿⣿⣿⠿⠛⠁       CPU: Rust, Swift, Python, Ansible, K8s       │
 │                                     Locale: zh_TW.UTF-8 (English via translator) │
 │                                                                                  │
 │                                     Now: no roadmap. What I ship, I maintain.    │
@@ -35,8 +35,9 @@
 ~ ❯ cat about.md
 ```
 
-I'm an SRE. Keeping systems reliable is the day job — the projects here are the same
-instinct pointed somewhere else.
+Nanako (菜菜子), or Nyanako (喵菜子) if you know me from Discord. I'm an SRE. Keeping
+systems reliable is the day job — the projects here are the same instinct pointed
+somewhere else.
 
 **UX has frontend engineers. DX has SRE.** That's the thread running from my work into
 everything on this page.
@@ -79,10 +80,10 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.5B tokens · 30,150 messages
+last 7 days · 3.5B tokens · 30,169 messages
 
-  claude      ████████████████░░░░░░  72.4%     2552M
-  codex       ██████░░░░░░░░░░░░░░░░  27.4%      965M
+  claude      ████████████████░░░░░░  72.4%     2557M
+  codex       ██████░░░░░░░░░░░░░░░░  27.3%      965M
   grok        ░░░░░░░░░░░░░░░░░░░░░░   0.2%        8M
 ```
 <!-- USAGE:END -->

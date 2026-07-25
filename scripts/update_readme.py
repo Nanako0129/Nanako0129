@@ -14,7 +14,6 @@ import re
 import shutil
 import subprocess
 import sys
-import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -145,8 +144,8 @@ JOINED = "2018-11-04"
 #   chafa -f symbols --symbols braille -c none --invert --size 42x18 <photo>
 # Braille patterns are East Asian Width "Neutral", i.e. single-width, so the info
 # column beside them can't drift. U+2800 (blank braille) was swapped for a plain
-# space so trailing whitespace strips cleanly. Info values may hold CJK — that is
-# what dwidth() is for; those sit at end of line and only affect frame padding.
+# space so trailing whitespace strips cleanly. Everything inside the frame stays
+# ASCII or braille; cell_width() enforces that.
 CAT = """
        ⣴⣿⣿⣦⣄            ⢀⣴⣾⣿⣷
       ⢰⣿⣿⣿⣿⣿⣷⣤⣤⣤⣴⣶⣶⣶⣦⣤⣤⣴⣿⣿⣿⣿⣿⡇
@@ -165,8 +164,23 @@ CAT = """
 """.strip("\n").splitlines()
 
 
-def dwidth(s):
-    return sum(2 if unicodedata.east_asian_width(c) in "WF" else 1 for c in s)
+FRAME = "─│╭╮╰╯"
+
+
+def cell_width(s):
+    """Frame padding assumes one rendered column per character.
+
+    That holds for ASCII and for braille (East Asian Width "Neutral"), but not
+    for CJK: the browser falls back to a proportional CJK face whose advance is
+    not exactly two monospace columns, which raggedded the right border on
+    github.com even though every line computed to the same width locally.
+    Bail loudly rather than ship a crooked box — Chinese belongs in the prose
+    below the frame, not inside it.
+    """
+    bad = [c for c in s if not (c.isascii() or 0x2800 <= ord(c) <= 0x28FF or c in FRAME)]
+    if bad:
+        sys.exit(f"non-monospace glyph in the neofetch block: {bad!r} in {s!r}")
+    return len(s)
 
 
 def render_neofetch():
@@ -184,17 +198,17 @@ def render_neofetch():
     info = [
         title,
         "─" * len(title),
-        "Name: Nanako 菜菜子 · Nyanako 喵菜子",
+        "Name: Nanako, or Nyanako",
         "Pronouns: she / her",
         "OS: macOS 26.5.2 arm64",
-        "Host: MacBook Air (M5, 2026) · 32GB / 1TB",
-        "Kernel: SRE · platform & DevSecOps",
+        "Host: MacBook Air (M5, 2026), 32GB / 1TB",
+        "Kernel: SRE, platform & DevSecOps",
         f"Uptime: {months // 12} years, {months % 12} months",
-        f"Packages: {len(sources)} sources (git) · ★ {stars:,}",
+        f"Packages: {len(sources)} sources (git), {stars:,} stars",
         "Shell: zsh + powerlevel10k",
         "DE: coralline (Claude Code statusline)",
-        "Homelab: Proxmox · 182d up · 0 open ports",
-        "CPU: Rust · Swift · Python · Ansible · K8s",
+        "Homelab: Proxmox, 182d up, 0 open ports",
+        "CPU: Rust, Swift, Python, Ansible, K8s",
         "Locale: zh_TW.UTF-8 (English via translator)",
         "",
         "Now: no roadmap. What I ship, I maintain.",
@@ -207,10 +221,10 @@ def render_neofetch():
         text = info[i - 2] if 1 < i <= len(info) + 1 else ""
         body.append(art.ljust(gutter) + text)
 
-    inner = max(dwidth(line) for line in body) + 2
-    head = f"╭─ {title} " + "─" * (inner - dwidth(title) - 3) + "╮"
+    inner = max(cell_width(line) for line in body) + 2
+    head = f"╭─ {title} " + "─" * (inner - cell_width(title) - 3) + "╮"
     out = [head]
-    out += [f"│ {line}" + " " * (inner - dwidth(line) - 1) + "│" for line in body]
+    out += [f"│ {line}" + " " * (inner - cell_width(line) - 1) + "│" for line in body]
     out.append("╰" + "─" * inner + "╯")
     return "```console\n" + "\n".join(out) + "\n```"
 
