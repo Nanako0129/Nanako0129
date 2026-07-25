@@ -10,20 +10,20 @@
 ```console
 ╭─ nanako@taiwan ──────────────────────────────────────────────────────────────────╮
 │                                                                                  │
-│        ⣴⣿⣿⣦⣄            ⢀⣴⣾⣿⣷                                                    │
-│       ⢰⣿⣿⣿⣿⣿⣷⣤⣤⣤⣴⣶⣶⣶⣦⣤⣤⣴⣿⣿⣿⣿⣿⡇      nanako@taiwan                                │
-│       ⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇      ─────────────                                │
-│      ⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀     Name: Nanako, or Nyanako                     │
-│     ⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆    Pronouns: she / her                          │
-│    ⢰⣿⡿⢿⣿⣿⡉⠉⡏⢉⣹⣿⣿⣿⣿⣿⣿⣿⣿⣉⠉⡏⠉⣹⣿⣿⠿⣿⣿⡆   OS: macOS 26.5.2 arm64                       │
-│    ⣿⣾⣿⣿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⣿⣿⣶⡧   Host: MacBook Air (M5, 2026), 32GB / 1TB     │
-│    ⢻⣿⣷⣿⣟⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣷⣿⣻⡇   Kernel: SRE, platform & DevSecOps            │
-│     ⠻⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣮⣿⣿⡟    Uptime: 7 years, 8 months                    │
-│      ⢈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷    Packages: 22 sources (git), 1,317 stars      │
-│      ⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿    Shell: zsh + powerlevel10k                   │
-│      ⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃    DE: coralline (Claude Code statusline)       │
-│       ⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋      Homelab: Proxmox, 182d up, 0 open ports      │
-│        ⠙⠿⢿⣿⣿⣿⣿⠿⠋⠉⠉⠉⠉⠻⢿⣿⣿⣿⣿⠿⠛⠁       CPU: Rust, Swift, Python, Ansible, K8s       │
+│        ⣴⣿⣿⣦⣄              ⢀⣴⣾⣿⣷                                                 │
+│       ⢰⣿⣿⣿⣿⣿⣷⣤⣤⣤⣴⣶⣶⣶⣦⣤⣤⣴⣿⣿⣿⣿⣿⡇      nanako@taiwan                             │
+│       ⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇      ─────────────                             │
+│      ⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀     Name: Nanako, or Nyanako                  │
+│     ⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆    Pronouns: she / her                       │
+│    ⢰⣿⡿⢿⣿⣿⡉⠉⡏⢉⣹⣿⣿⣿⣿⣿⣿⣿⣿⣉⠉⡏⠉⣹⣿⣿⠿⣿⣿⡆   OS: macOS 26.5.2 arm64                    │
+│    ⣿⣾⣿⣿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⣿⣿⣶⡧   Host: MacBook Air (M5, 2026), 32GB / 1TB  │
+│    ⢻⣿⣷⣿⣟⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣷⣿⣻⡇   Kernel: SRE, platform & DevSecOps         │
+│     ⠻⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣮⣿⣿⡟    Uptime: 7 years, 8 months                 │
+│      ⢈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷    Packages: 22 sources (git), 1,317 stars   │
+│      ⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿    Shell: zsh + powerlevel10k                │
+│      ⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃    DE: coralline (Claude Code statusline)    │
+│       ⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋      Homelab: Proxmox, 182d up, 0 open ports   │
+│        ⠙⠿⢿⣿⣿⣿⣿⠿⠋⠉⠉⠉⠉⠻⢿⣿⣿⣿⣿⠿⠛⠁       CPU: Rust, Swift, Python, Ansible, K8s    │
 │                                     Locale: zh_TW.UTF-8 (English via translator) │
 │                                                                                  │
 │                                     Now: no roadmap. What I ship, I maintain.    │
