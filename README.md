@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 22 sources (git), 1,318 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 22 sources (git), 1,321 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 182d up, 0 open ports      │
@@ -65,9 +65,9 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 540 | `v1.3.4` | — | today |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 541 | `v1.3.4` | — | today |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 511 | `v0.10.1` | — | today |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 184 | `v1.8.1` | 3.5k | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 186 | `v1.8.1` | 3.5k | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.15` | 82 | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 26 | `—` | — | 13mo ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 15d ago |
@@ -86,11 +86,11 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.6B tokens · 30,459 messages
+last 7 days · 3.6B tokens · 30,840 messages
 
-  gpt-5.6-sol         ███████████████████░░░  84.4%     3033M
-  gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   9.4%      337M
-  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   3.2%      115M
+  gpt-5.6-sol         ███████████████████░░░  84.6%     3082M
+  gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   9.2%      337M
+  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   3.2%      116M
   claude-opus-4-8     ░░░░░░░░░░░░░░░░░░░░░░   1.3%       46M
   claude-fable-5      ░░░░░░░░░░░░░░░░░░░░░░   0.8%       28M
   gpt-5.6-terra       ░░░░░░░░░░░░░░░░░░░░░░   0.6%       20M
@@ -170,7 +170,7 @@ Observability   Prometheus · Grafana · Loki · Tempo · OpenTelemetry · eBPF
 ```console
 Coffee      Sunbeam Barista Max + Option-O Lagom Casa
             nutty / chocolate base, with the occasional fruit bomb
-Hamsters    two seniors, still running the wheel at 2 years old
+Hamsters    one, past 900 days and nearly three. There were two.
 Headphones  Sony IER-M9 · MDR-MV1 · MDR-M1 · iFi xDSD Gryphon
 ```
 
