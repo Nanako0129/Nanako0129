@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 22 sources (git), 1,317 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 22 sources (git), 1,318 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 182d up, 0 open ports      │
@@ -66,7 +66,7 @@ roadmap.
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 540 | `v1.3.4` | — | today |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 510 | `v0.10.1` | — | today |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 511 | `v0.10.1` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 184 | `v1.8.1` | 3.5k | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.15` | 82 | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 26 | `—` | — | 13mo ago |
@@ -77,17 +77,19 @@ roadmap.
 ~ ❯ tokscale models --week --group-by model
 ```
 
-> Yes, this is my own AI usage, measured with my own tooling, pushed here by a cron
-> job. Eating the dog food in public. Grouped by model rather than by client, because
-> the client would lie — I drive GPT models through Claude Code.
+> Yes, this is my real usage, pushed here nightly by a cron job on my Mac. The numbers
+> come from [tokscale](https://github.com/junhoyeo/tokscale), which I did not write —
+> I just run it. [TokenBar](https://github.com/Nanako0129/TokenBar) is the one I build,
+> and it watches the same data from the menu bar. Grouped by model rather than by
+> client, because the client would lie: I drive GPT models through Claude Code.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.6B tokens · 30,264 messages
+last 7 days · 3.6B tokens · 30,379 messages
 
-  gpt-5.6-sol         ███████████████████░░░  84.5%     3005M
-  gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   9.5%      337M
-  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   3.0%      106M
+  gpt-5.6-sol         ███████████████████░░░  84.5%     3022M
+  gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   9.4%      337M
+  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   3.1%      111M
   claude-opus-4-8     ░░░░░░░░░░░░░░░░░░░░░░   1.3%       46M
   claude-fable-5      ░░░░░░░░░░░░░░░░░░░░░░   0.8%       28M
   gpt-5.6-terra       ░░░░░░░░░░░░░░░░░░░░░░   0.6%       20M
