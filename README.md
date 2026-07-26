@@ -77,19 +77,20 @@ roadmap.
 ~ ❯ tokscale models --week --group-by model
 ```
 
-> Yes, this is my real usage, pushed here nightly by a cron job on my Mac. The numbers
-> come from [tokscale](https://github.com/junhoyeo/tokscale), which I did not write —
-> I just run it. [TokenBar](https://github.com/Nanako0129/TokenBar) is the one I build,
-> and it watches the same data from the menu bar. Grouped by model rather than by
-> client, because the client would lie: I drive GPT models through Claude Code.
+> Real usage, pushed here nightly by a cron job on my Mac. The numbers come from
+> [tokscale](https://github.com/junhoyeo/tokscale) — junhoyeo's Rust engine for reading
+> agent session data, and the engine [TokenBar](https://github.com/Nanako0129/TokenBar)
+> runs on. I send fixes upstream when I trip over them; the Swift shell around it is my
+> part. Grouped by model rather than by client, because the client would lie: I drive
+> GPT models through Claude Code.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.6B tokens · 30,379 messages
+last 7 days · 3.6B tokens · 30,387 messages
 
-  gpt-5.6-sol         ███████████████████░░░  84.5%     3022M
+  gpt-5.6-sol         ███████████████████░░░  84.4%     3022M
   gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   9.4%      337M
-  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   3.1%      111M
+  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   3.2%      113M
   claude-opus-4-8     ░░░░░░░░░░░░░░░░░░░░░░   1.3%       46M
   claude-fable-5      ░░░░░░░░░░░░░░░░░░░░░░   0.8%       28M
   gpt-5.6-terra       ░░░░░░░░░░░░░░░░░░░░░░   0.6%       20M
@@ -113,7 +114,8 @@ last 7 days · 3.6B tokens · 30,379 messages
 
 ```mermaid
 graph LR
-  T1["TokenBar-Tauri<br/><i>Tauri 2 · retired</i>"] --> T2["<b>TokenBar</b><br/>Swift + Rust"]
+  TS["tokscale<br/><i>junhoyeo · Rust engine</i>"] --> T2
+  T1["TokenBar-Tauri<br/><i>Tauri 2 · retired</i>"] --> T2["<b>TokenBar</b><br/>Swift shell"]
   T2 --> T3["TokenBar-Windows"]
   T2 --> T4["homebrew-tokenbar"]
 
