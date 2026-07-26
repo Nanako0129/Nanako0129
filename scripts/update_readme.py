@@ -90,24 +90,37 @@ def render_projects():
 
 
 def render_now():
-    events = gh(f"users/{USER}/events/public?per_page=100") or []
-    lines = []
-    for e in events:
-        repo = e["repo"]["name"].split("/")[-1]
-        if e["type"] == "PushEvent":
-            commits = e["payload"].get("commits") or []
-            if not commits:
-                continue
-            msg = commits[-1]["message"].splitlines()[0]
-        elif e["type"] == "ReleaseEvent":
-            msg = f"released {e['payload']['release']['tag_name']}"
-        else:
-            continue
-        date = e["created_at"][:10]
-        lines.append(f"{date}  {repo:<18.18}  {msg[:58]}")
-        if len(lines) == 5:
-            break
-    return "```console\n" + "\n".join(lines) + "\n```" if lines else None
+    """Latest commits across the repos pushed to most recently.
+
+    Not from /users/{user}/events/public: that endpoint no longer carries
+    commit details at all — a PushEvent payload is down to before, head,
+    push_id, ref and repository_id, with `commits` null — so anything wanting a
+    commit message from it silently gets nothing. Asking each repository
+    directly costs a handful of calls and actually returns messages.
+
+    This repo is skipped. Its history is mostly the nightly sync rewriting this
+    very block, which would leave the section reporting on itself.
+    """
+    repos = gh(f"users/{USER}/repos?per_page=100&type=owner") or []
+    active = [
+        r["name"]
+        for r in sorted(repos, key=lambda r: r["pushed_at"], reverse=True)
+        if not r["fork"] and r["name"] != USER
+    ][:6]
+
+    commits = []
+    for name in active:
+        for c in gh(f"repos/{USER}/{name}/commits?per_page=8&author={USER}") or []:
+            msg = c["commit"]["message"].splitlines()[0]
+            if msg.startswith(("Merge pull request", "Merge branch", "Merge remote")):
+                continue  # says who pressed the button, not what changed
+            commits.append((c["commit"]["author"]["date"], name, msg))
+    if not commits:
+        return None
+
+    commits.sort(reverse=True)
+    lines = [f"{d[:10]}  {r:<18.18}  {m[:58]}" for d, r, m in commits[:5]]
+    return "```console\n" + "\n".join(lines) + "\n```"
 
 
 def render_usage():

@@ -86,11 +86,11 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.8B tokens · 31,748 messages
+last 7 days · 3.8B tokens · 31,803 messages
 
-  gpt-5.6-sol         ███████████████████░░░  84.6%     3183M
+  gpt-5.6-sol         ███████████████████░░░  84.5%     3186M
   gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   9.1%      342M
-  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   3.3%      125M
+  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   3.5%      131M
   claude-opus-4-8     ░░░░░░░░░░░░░░░░░░░░░░   1.2%       46M
   claude-fable-5      ░░░░░░░░░░░░░░░░░░░░░░   0.7%       28M
   gpt-5.6-terra       ░░░░░░░░░░░░░░░░░░░░░░   0.5%       20M
@@ -103,7 +103,11 @@ last 7 days · 3.8B tokens · 31,748 messages
 
 <!-- NOW:START -->
 ```console
-2026-07-25  coralline           released v0.10.1
+2026-07-25  TokenBar            fix(vendor): fall back from empty Kimi Code roots
+2026-07-25  TokenBar            fix(auth): preserve committed Antigravity refresh writes
+2026-07-25  pilotfish           docs: align bilingual sponsorship guidance
+2026-07-25  remora-cc           docs: add Ko-fi sponsorship details
+2026-07-25  pilotfish           docs: add Ko-fi sponsorship details
 ```
 <!-- NOW:END -->
 
