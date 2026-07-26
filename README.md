@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 22 sources (git), 1,322 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 22 sources (git), 1,323 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 182d up, 0 open ports      │
@@ -65,9 +65,9 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 542 | `v1.3.4` | — | today |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 541 | `v1.3.4` | — | today |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 511 | `v0.10.1` | — | today |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 186 | `v1.8.1` | 3.5k | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 188 | `v1.8.1` | 3.5k | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.15` | 82 | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 26 | `—` | — | 13mo ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 15d ago |
@@ -86,14 +86,14 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.8B tokens · 31,803 messages
+last 7 days · 3.2B tokens · 25,586 messages
 
-  gpt-5.6-sol         ███████████████████░░░  84.5%     3186M
-  gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   9.1%      342M
-  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   3.5%      131M
-  claude-opus-4-8     ░░░░░░░░░░░░░░░░░░░░░░   1.2%       46M
-  claude-fable-5      ░░░░░░░░░░░░░░░░░░░░░░   0.7%       28M
-  gpt-5.6-terra       ░░░░░░░░░░░░░░░░░░░░░░   0.5%       20M
+  gpt-5.6-sol         ███████████████████░░░  85.6%     2710M
+  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   6.0%      191M
+  gpt-5.6-luna        █░░░░░░░░░░░░░░░░░░░░░   5.8%      182M
+  claude-opus-4-8     ░░░░░░░░░░░░░░░░░░░░░░   1.3%       42M
+  codex-auto-review   ░░░░░░░░░░░░░░░░░░░░░░   0.5%       15M
+  gpt-5.6-terra       ░░░░░░░░░░░░░░░░░░░░░░   0.5%       15M
 ```
 <!-- USAGE:END -->
 
@@ -103,11 +103,11 @@ last 7 days · 3.8B tokens · 31,803 messages
 
 <!-- NOW:START -->
 ```console
-2026-07-25  TokenBar            fix(vendor): fall back from empty Kimi Code roots
-2026-07-25  TokenBar            fix(auth): preserve committed Antigravity refresh writes
-2026-07-25  pilotfish           docs: align bilingual sponsorship guidance
-2026-07-25  remora-cc           docs: add Ko-fi sponsorship details
-2026-07-25  pilotfish           docs: add Ko-fi sponsorship details
+2026-07-26  TokenBar            fix(sponsors): use native Patreon funding entry (#104)
+2026-07-26  remora-cc           fix(sponsors): use native Patreon funding entry (#16)
+2026-07-26  coralline           fix(sponsors): use native Patreon funding entry (#52)
+2026-07-26  pilotfish           fix(sponsors): use native Patreon funding entry (#34)
+2026-07-26  TokenBar            chore(sponsors): switch repository funding to Patreon (#10
 ```
 <!-- NOW:END -->
 
