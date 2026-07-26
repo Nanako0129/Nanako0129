@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 22 sources (git), 1,321 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 22 sources (git), 1,322 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 182d up, 0 open ports      │
@@ -65,7 +65,7 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 541 | `v1.3.4` | — | today |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 542 | `v1.3.4` | — | today |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 511 | `v0.10.1` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 186 | `v1.8.1` | 3.5k | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.15` | 82 | today |
@@ -86,14 +86,14 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.6B tokens · 30,858 messages
+last 7 days · 3.8B tokens · 31,748 messages
 
-  gpt-5.6-sol         ███████████████████░░░  84.6%     3084M
-  gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   9.2%      337M
-  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   3.3%      119M
-  claude-opus-4-8     ░░░░░░░░░░░░░░░░░░░░░░   1.3%       46M
-  claude-fable-5      ░░░░░░░░░░░░░░░░░░░░░░   0.8%       28M
-  gpt-5.6-terra       ░░░░░░░░░░░░░░░░░░░░░░   0.6%       20M
+  gpt-5.6-sol         ███████████████████░░░  84.6%     3183M
+  gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   9.1%      342M
+  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   3.3%      125M
+  claude-opus-4-8     ░░░░░░░░░░░░░░░░░░░░░░   1.2%       46M
+  claude-fable-5      ░░░░░░░░░░░░░░░░░░░░░░   0.7%       28M
+  gpt-5.6-terra       ░░░░░░░░░░░░░░░░░░░░░░   0.5%       20M
 ```
 <!-- USAGE:END -->
 
@@ -104,7 +104,6 @@ last 7 days · 3.6B tokens · 30,858 messages
 <!-- NOW:START -->
 ```console
 2026-07-25  coralline           released v0.10.1
-2026-07-25  pilotfish           released v1.3.4
 ```
 <!-- NOW:END -->
 
@@ -176,12 +175,12 @@ Headphones  Sony IER-M9 · MDR-MV1 · MDR-M1 · iFi xDSD Gryphon
 ```
 
 ```console
-~ ❯ kofi --thanks
+~ ❯ patreon --thanks
 ```
 
-If any of this saved you time or money, a coffee keeps the cron jobs running.
+If any of this saved you time or money, a membership keeps the cron jobs running.
 
-[![Ko-fi](https://img.shields.io/badge/Buy%20me%20a%20coffee-Ko--fi-FF5E5B?logo=ko-fi&logoColor=white&style=for-the-badge)](https://ko-fi.com/nanako0129)
+[![Patreon](https://img.shields.io/badge/Support%20on-Patreon-FF424D?logo=patreon&logoColor=white&style=for-the-badge)](https://www.patreon.com/cw/Nanako0129/membership)
 
 ```console
 ~ ❯ contact
