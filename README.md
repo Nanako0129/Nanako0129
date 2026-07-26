@@ -86,11 +86,11 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.6B tokens · 30,387 messages
+last 7 days · 3.6B tokens · 30,391 messages
 
   gpt-5.6-sol         ███████████████████░░░  84.4%     3022M
   gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   9.4%      337M
-  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   3.2%      113M
+  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   3.2%      115M
   claude-opus-4-8     ░░░░░░░░░░░░░░░░░░░░░░   1.3%       46M
   claude-fable-5      ░░░░░░░░░░░░░░░░░░░░░░   0.8%       28M
   gpt-5.6-terra       ░░░░░░░░░░░░░░░░░░░░░░   0.6%       20M
@@ -122,6 +122,7 @@ graph LR
   P1["<b>pilotfish</b><br/>Claude Code"] --> P2["pilotfish-grok"]
   P1 --> P3["pilotfish-codex"]
   P1 --> P4["remora-cc"]
+  P4 --> P5["calico-claude<br/><i>after a-connoisseur/<br/>patch-claude-code</i>"]
 
   C1["<b>coralline</b><br/>statusline"]
   W1["postmortem-prose"] --> W2["md-style"]
