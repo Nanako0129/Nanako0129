@@ -16,6 +16,12 @@ git pull --rebase --quiet
 python3 scripts/update_readme.py
 git add -A
 git diff --cached --quiet || {
-  git commit -q -m "chore(readme): local usage sync"
+  # Commit as the bot, not as me. GitHub credits the contribution graph by the
+  # commit author's email, so four automated commits a day under my own address
+  # would fill the graph with a cron job's work. Scoped with -c rather than
+  # written into the repo config, so commits I actually make stay mine.
+  git -c user.name="github-actions[bot]" \
+      -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+      commit -q -m "chore(readme): local usage sync"
   git push -q
 }
