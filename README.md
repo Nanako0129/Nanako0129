@@ -17,9 +17,9 @@
 │        Za*##MWWWWWW&&&&88&&&&WW#*oaaw      Pronouns: she / her                          │
 │       q*MWWWW&&88888888888%8888&WMMMop     OS: macOS 26.5.2 arm64                       │
 │      oW&8WWM/M/)&%%%%%%%%%%*)&rC&888WMa    Host: MacBook Air (M5, 2026), 32GB / 1TB     │
-│     h****W&<>|<<(%B%%%%%%%8+<|+<(8W#***k   Kernel: SRE, platform & DevSecOps            │
-│     #&8W*M&&&88%%%%%%%%%%%%%%%8888M*&8&*   Uptime: 27 years                             │
-│     hM#&8bW&&&&888%%%%%%%%%888888*&8#oWh   Install Date: 2018-11-04 (github.com)        │
+│     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
+│     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
+│     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
 │      oW&fW&8&888888888888888888&&&oM8&o    Packages: 22 sources (git), 1,317 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
@@ -83,11 +83,11 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.6B tokens · 30,250 messages
+last 7 days · 3.6B tokens · 30,264 messages
 
-  gpt-5.6-sol         ███████████████████░░░  84.6%     3004M
+  gpt-5.6-sol         ███████████████████░░░  84.5%     3005M
   gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   9.5%      337M
-  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   2.9%      103M
+  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   3.0%      106M
   claude-opus-4-8     ░░░░░░░░░░░░░░░░░░░░░░   1.3%       46M
   claude-fable-5      ░░░░░░░░░░░░░░░░░░░░░░   0.8%       28M
   gpt-5.6-terra       ░░░░░░░░░░░░░░░░░░░░░░   0.6%       20M
@@ -199,4 +199,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself nightly · last sync: 2026-07-25 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself nightly · last sync: 2026-07-26 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>

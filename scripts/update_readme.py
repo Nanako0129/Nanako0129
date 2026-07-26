@@ -159,8 +159,11 @@ BIRTH = os.environ.get("BIRTH_DATE")
 # than mistaken for background; each cell then takes the 82nd percentile of its
 # pixels rather than the mean, which is what makes the eyes legible — they are
 # bright yellow (luminance ~225) against near-black fur, and averaging buried
-# them. The whiskers are simply below the resolution of the medium: a few pixels
-# of stitching in a 28-pixel cell, invisible at any width that fits the page.
+# them. The whiskers are the three `-` strokes on each cheek and they are drawn
+# by hand: a few pixels of white stitching inside a 28-pixel cell cannot move
+# that cell's statistic far enough to change a glyph, so no sampling parameter
+# recovers them. Placed one column inside the silhouette on each side so the
+# outline stays closed, and mirrored about column 21.5.
 # Deliberately ASCII and nothing else.
 # An earlier braille version looked better but had to sit above the info block
 # rather than beside it: braille renders at one cell in GitHub's code font and
@@ -176,9 +179,9 @@ CAT = r"""
        Za*##MWWWWWW&&&&88&&&&WW#*oaaw
       q*MWWWW&&88888888888%8888&WMMMop
      oW&8WWM/M/)&%%%%%%%%%%*)&rC&888WMa
-    h****W&<>|<<(%B%%%%%%%8+<|+<(8W#***k
-    #&8W*M&&&88%%%%%%%%%%%%%%%8888M*&8&*
-    hM#&8bW&&&&888%%%%%%%%%888888*&8#oWh
+    h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k
+    #----M&&&88%%%%%%%%%%%%%%%8888M----*
+    h---8bW&&&&888%%%%%%%%%888888*&8---h
      oW&fW&8&888888888888888888&&&oM8&o
       daM&&&888888888888888888888&&M#op
        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M
