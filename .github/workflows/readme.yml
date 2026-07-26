@@ -2,7 +2,11 @@ name: readme
 
 on:
   schedule:
-    - cron: "17 20 * * *" # 04:17 Asia/Taipei
+    # Every six hours. GitHub treats `schedule` as best-effort and drops runs
+    # under load, so four attempts a day mean a dropped one is covered six
+    # hours later instead of a day later. Offset from the hour because the top
+    # of the hour is the most contended slot on the queue.
+    - cron: "23 2,8,14,20 * * *" # 10:23 / 16:23 / 22:23 / 04:23 Asia/Taipei
   workflow_dispatch:
 
 permissions:
@@ -20,5 +24,7 @@ jobs:
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -am "chore(readme): nightly sync" || echo "nothing to commit"
-          git push
+          git commit -am "chore(readme): scheduled sync" || echo "nothing to commit"
+          # The Mac's launchd agent pushes to the same branch; four runs a day
+          # makes an overlap likelier, so rebase and retry rather than fail.
+          git push || (git pull --rebase && git push)
