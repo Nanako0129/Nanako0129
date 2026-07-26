@@ -86,11 +86,11 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.6B tokens · 30,840 messages
+last 7 days · 3.6B tokens · 30,853 messages
 
-  gpt-5.6-sol         ███████████████████░░░  84.6%     3082M
+  gpt-5.6-sol         ███████████████████░░░  84.6%     3083M
   gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   9.2%      337M
-  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   3.2%      116M
+  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   3.3%      119M
   claude-opus-4-8     ░░░░░░░░░░░░░░░░░░░░░░   1.3%       46M
   claude-fable-5      ░░░░░░░░░░░░░░░░░░░░░░   0.8%       28M
   gpt-5.6-terra       ░░░░░░░░░░░░░░░░░░░░░░   0.6%       20M
@@ -170,7 +170,7 @@ Observability   Prometheus · Grafana · Loki · Tempo · OpenTelemetry · eBPF
 ```console
 Coffee      Sunbeam Barista Max + Option-O Lagom Casa
             nutty / chocolate base, with the occasional fruit bomb
-Hamsters    one, past 900 days and nearly three. There were two.
+Hamsters    one, past 900 days. There were two.
 Headphones  Sony IER-M9 · MDR-MV1 · MDR-M1 · iFi xDSD Gryphon
 ```
 
