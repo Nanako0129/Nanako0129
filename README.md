@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 22 sources (git), 1,325 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 22 sources (git), 1,327 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 182d up, 0 open ports      │
@@ -65,8 +65,8 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 541 | `v1.3.4` | — | today |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 512 | `v0.11.0` | — | today |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 542 | `v1.3.4` | — | today |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 513 | `v0.11.0` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 188 | `v1.8.1` | 3.5k | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.15` | 82 | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 26 | `—` | — | 13mo ago |
@@ -103,11 +103,11 @@ last 7 days · 3.4B tokens · 26,904 messages
 
 <!-- NOW:START -->
 ```console
+2026-07-27  TokenBar-Windows    fix(windows): sync merged Native diagnostics
+2026-07-27  TokenBar            fix(agent-usage): preserve quotas and type transport diagn
+2026-07-27  TokenBar-Windows    fix(windows): preserve transport diagnostics
+2026-07-26  TokenBar-Windows    test(windows): sync Claude cache fixture identity
 2026-07-26  coralline           fix(subagent): make every status legible on the panel name
-2026-07-26  coralline           feat(themes): add morning-haze, a hazy-pastel palette on s
-2026-07-26  TokenBar            fix(sponsors): use native Patreon funding entry (#104)
-2026-07-26  remora-cc           fix(sponsors): use native Patreon funding entry (#16)
-2026-07-26  coralline           fix(sponsors): use native Patreon funding entry (#52)
 ```
 <!-- NOW:END -->
 
