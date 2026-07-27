@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 22 sources (git), 1,323 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 22 sources (git), 1,324 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 182d up, 0 open ports      │
@@ -65,12 +65,12 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 541 | `v1.3.4` | — | today |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 542 | `v1.3.4` | — | today |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 511 | `v0.10.1` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 188 | `v1.8.1` | 3.5k | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.15` | 82 | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 26 | `—` | — | 13mo ago |
-| **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 15d ago |
+| **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 16d ago |
 <!-- PROJECTS:END -->
 
 ```console
@@ -86,14 +86,14 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.2B tokens · 25,586 messages
+last 7 days · 3.3B tokens · 26,272 messages
 
-  gpt-5.6-sol         ███████████████████░░░  85.6%     2710M
-  claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   6.0%      191M
-  gpt-5.6-luna        █░░░░░░░░░░░░░░░░░░░░░   5.8%      182M
+  gpt-5.6-sol         ██████████████████░░░░  83.6%     2755M
+  claude-opus-5       ██░░░░░░░░░░░░░░░░░░░░   8.4%      276M
+  gpt-5.6-luna        █░░░░░░░░░░░░░░░░░░░░░   5.5%      182M
   claude-opus-4-8     ░░░░░░░░░░░░░░░░░░░░░░   1.3%       42M
-  codex-auto-review   ░░░░░░░░░░░░░░░░░░░░░░   0.5%       15M
-  gpt-5.6-terra       ░░░░░░░░░░░░░░░░░░░░░░   0.5%       15M
+  codex-auto-review   ░░░░░░░░░░░░░░░░░░░░░░   0.4%       15M
+  gpt-5.6-terra       ░░░░░░░░░░░░░░░░░░░░░░   0.4%       15M
 ```
 <!-- USAGE:END -->
 
@@ -208,4 +208,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself nightly · last sync: 2026-07-26 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself nightly · last sync: 2026-07-27 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
