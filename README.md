@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 22 sources (git), 1,327 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 22 sources (git), 1,328 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 182d up, 0 open ports      │
@@ -66,7 +66,7 @@ roadmap.
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 542 | `v1.3.4` | — | today |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 513 | `v0.11.0` | — | today |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 514 | `v0.11.0` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 188 | `v1.8.1` | 3.5k | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.15` | 82 | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 26 | `—` | — | 13mo ago |
@@ -86,13 +86,13 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.4B tokens · 26,904 messages
+last 7 days · 4.0B tokens · 32,053 messages
 
-  gpt-5.6-sol         ██████████████████░░░░  81.8%     2796M
-  claude-opus-5       ██░░░░░░░░░░░░░░░░░░░░   9.6%      327M
-  gpt-5.6-luna        █░░░░░░░░░░░░░░░░░░░░░   6.1%      210M
-  claude-opus-4-8     ░░░░░░░░░░░░░░░░░░░░░░   1.2%       42M
-  codex-auto-review   ░░░░░░░░░░░░░░░░░░░░░░   0.5%       17M
+  gpt-5.6-sol         ██████████████████░░░░  79.8%     3181M
+  claude-opus-5       ██░░░░░░░░░░░░░░░░░░░░   9.1%      363M
+  gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   7.7%      306M
+  codex-auto-review   ░░░░░░░░░░░░░░░░░░░░░░   1.6%       65M
+  claude-opus-4-8     ░░░░░░░░░░░░░░░░░░░░░░   1.1%       42M
   gpt-5.6-terra       ░░░░░░░░░░░░░░░░░░░░░░   0.4%       15M
 ```
 <!-- USAGE:END -->
@@ -103,11 +103,11 @@ last 7 days · 3.4B tokens · 26,904 messages
 
 <!-- NOW:START -->
 ```console
+2026-07-27  TokenBar            docs(knowledge): close the M19-B1 alignment cycle
 2026-07-27  TokenBar-Windows    fix(windows): sync merged Native diagnostics
 2026-07-27  TokenBar            fix(agent-usage): preserve quotas and type transport diagn
 2026-07-27  TokenBar-Windows    fix(windows): preserve transport diagnostics
 2026-07-26  TokenBar-Windows    test(windows): sync Claude cache fixture identity
-2026-07-26  coralline           fix(subagent): make every status legible on the panel name
 ```
 <!-- NOW:END -->
 
