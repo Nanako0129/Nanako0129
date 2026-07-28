@@ -103,11 +103,11 @@ last 7 days · 4.5B tokens · 35,703 messages
 
 <!-- NOW:START -->
 ```console
+2026-07-28  TokenBar-Windows    docs(crosscheck): require recursive Native checkout
+2026-07-28  TokenBar-Windows    refactor(core): consume shared engine as a submodule
 2026-07-28  TokenBar            docs(core): retire pre-extraction plans
 2026-07-28  TokenBar            refactor(core): consume tokscale-core as a submodule
 2026-07-28  tokscale-core       docs(upstream): distinguish Grok epoch handling
-2026-07-28  tokscale-core       ci(core): avoid duplicate pull request runs
-2026-07-28  tokscale-core       ci(core): pin standalone verification
 ```
 <!-- NOW:END -->
 
