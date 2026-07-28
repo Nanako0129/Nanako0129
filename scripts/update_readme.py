@@ -4,9 +4,11 @@
 Runs in two places with the same code:
   - GitHub Actions (daily)   -> fills NEOFETCH / PROJECTS / NOW from the GitHub API
   - the Mac (launchd, daily) -> additionally fills USAGE from local `tokscale`
+    and Proxmox uptime over LAN SSH (CI cannot reach the homelab)
 
 Blocks it does not have data for are left untouched, so a CI run never wipes
-the usage panel and a local run never needs network beyond `gh`.
+the usage panel / last-known Proxmox uptime and a local run never needs
+network beyond `gh` (plus optional LAN SSH for the homelab line).
 """
 
 import json
@@ -167,6 +169,58 @@ JOINED = "2018-11-04"
 # value, so the rendered page does not flip back and forth.
 BIRTH = os.environ.get("BIRTH_DATE")
 
+
+def fetch_proxmox_uptime_days():
+    """Days since boot on the Proxmox host, via SSH to /proc/uptime.
+
+    Local-only. Target comes only from HOMELAB_SSH (set in
+    ~/.config/nanako-readme.env by sync-local.sh) — never hardcoded in the
+    public repo. CI has no route to the LAN and no env, so this returns None
+    and the caller keeps the last value already in README.md (same contract
+    as USAGE / tokscale).
+    """
+    host = os.environ.get("HOMELAB_SSH")
+    if not host or not shutil.which("ssh"):
+        return None
+    r = subprocess.run(
+        [
+            "ssh",
+            "-o",
+            "BatchMode=yes",
+            "-o",
+            "ConnectTimeout=5",
+            "-o",
+            "StrictHostKeyChecking=accept-new",
+            host,
+            "cat /proc/uptime",
+        ],
+        capture_output=True,
+        text=True,
+    )
+    if r.returncode != 0:
+        return None
+    try:
+        seconds = float(r.stdout.split()[0])
+    except (IndexError, ValueError):
+        return None
+    return int(seconds // 86400)
+
+
+def resolve_proxmox_uptime_days(readme_text):
+    """Live days from the host, else the last number already rendered."""
+    live = fetch_proxmox_uptime_days()
+    if live is not None:
+        return live
+    # Prefer the neofetch line; fall back to the homelab section.
+    for pat in (
+        r"Homelab: Proxmox, (\d+)d up",
+        r"Proxmox VE\s+(\d+)d uptime",
+    ):
+        m = re.search(pat, readme_text)
+        if m:
+            return int(m.group(1))
+    return None
+
 # Traced from the reference plush photo. The silhouette comes from a flood fill
 # of the white background, so light features *inside* the cat are kept rather
 # than mistaken for background; each cell then takes the 82nd percentile of its
@@ -226,7 +280,7 @@ def cell_width(s):
     return len(s)
 
 
-def render_neofetch():
+def render_neofetch(proxmox_days=None):
     all_repos = gh(f"users/{USER}/repos?per_page=100&type=owner") or []
     sources = [r for r in all_repos if not r["fork"]]
     stars = sum(r["stargazers_count"] for r in sources)
@@ -242,6 +296,12 @@ def render_neofetch():
         age = now.year - born.year - ((now.month, now.day) < (born.month, born.day))
         uptime = [f"Uptime: {age} years"]
 
+    if proxmox_days is not None:
+        homelab = f"Homelab: Proxmox, {proxmox_days}d up, 0 open ports"
+    else:
+        # No live read and nothing preserved — still true without a fake number.
+        homelab = "Homelab: Proxmox, 0 open ports"
+
     info = [
         title,
         "─" * len(title),
@@ -255,7 +315,7 @@ def render_neofetch():
         f"Packages: {len(sources)} sources (git), {stars:,} stars",
         "Shell: zsh + powerlevel10k",
         "DE: coralline (Claude Code statusline)",
-        "Homelab: Proxmox, 182d up, 0 open ports",
+        homelab,
         "CPU: Rust, Swift, Python, Ansible, K8s",
         "Locale: zh_TW.UTF-8 (English via translator)",
         "",
@@ -279,14 +339,24 @@ def render_neofetch():
 
 def main():
     text = README.read_text()
+    proxmox_days = resolve_proxmox_uptime_days(text)
     for name, body in (
-        ("NEOFETCH", render_neofetch()),
+        ("NEOFETCH", render_neofetch(proxmox_days)),
         ("PROJECTS", render_projects()),
         ("NOW", render_now()),
         ("USAGE", render_usage()),
     ):
         if body:
             text = replace_block(text, name, body)
+    if proxmox_days is not None:
+        text, n = re.subn(
+            r"(Proxmox VE\s+)\d+d uptime",
+            rf"\g<1>{proxmox_days}d uptime",
+            text,
+            count=1,
+        )
+        if n != 1:
+            sys.exit("Proxmox VE uptime line not found in README.md")
     text = re.sub(
         r"(last sync: )[\d-]+", lambda m: m.group(1) + datetime.now(timezone.utc).strftime("%Y-%m-%d"), text
     )

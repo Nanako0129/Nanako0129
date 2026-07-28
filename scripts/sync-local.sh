@@ -14,9 +14,9 @@ cd "$(dirname "$0")/.."
 # every renderer treats a missing tool as "leave that block alone".
 PATH="/opt/homebrew/bin:$HOME/.bun/bin:$PATH"
 export PATH
-# BIRTH_DATE lives here, outside the repo, so it is never committed. CI gets the
-# same value from the BIRTH_DATE repository secret. Without it the Uptime row is
-# omitted, which would make the two environments disagree — keep both supplied.
+# Secrets / LAN endpoints live here, outside the repo, so they are never
+# committed. CI gets BIRTH_DATE from a repository secret. HOMELAB_SSH (user@host
+# for the Proxmox uptime probe) is Mac-only and must not appear in git.
 [ -f "$HOME/.config/nanako-readme.env" ] && . "$HOME/.config/nanako-readme.env"
 
 # --- 1. Force the remote CI job (same workflow the cron would run) ---
