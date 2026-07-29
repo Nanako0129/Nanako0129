@@ -86,9 +86,9 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 5.4B tokens · 43,227 messages
+last 7 days · 5.4B tokens · 43,251 messages
 
-  gpt-5.6-sol         ██████████████████░░░░  83.0%     4447M
+  gpt-5.6-sol         ██████████████████░░░░  83.0%     4450M
   gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   7.3%      391M
   claude-opus-5       █░░░░░░░░░░░░░░░░░░░░░   6.8%      365M
   codex-auto-review   █░░░░░░░░░░░░░░░░░░░░░   2.4%      128M
