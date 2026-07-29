@@ -46,7 +46,11 @@ git diff --cached --quiet || {
   git -c user.name="github-actions[bot]" \
       -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
       commit -q -m "chore(readme): local usage sync"
-  git push -q
+  if ! git push -q; then
+    # The dispatched workflow may have pushed after our initial pull.
+    git pull --rebase --quiet
+    git push -q
+  fi
 }
 
 # Non-zero only if the remote force failed *and* we never got a local commit
