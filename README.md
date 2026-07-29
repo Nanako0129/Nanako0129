@@ -68,7 +68,7 @@ roadmap.
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 546 | `v1.3.5` | — | today |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 516 | `v0.12.0` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 212 | `v1.9.0` | 3.7k | today |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.16` | 86 | today |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.16` | 88 | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 26 | `—` | — | 13mo ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 18d ago |
 <!-- PROJECTS:END -->
@@ -103,11 +103,11 @@ last 7 days · 4.5B tokens · 35,703 messages
 
 <!-- NOW:START -->
 ```console
+2026-07-29  calico-claude       fix(verifier): fail closed on unknown Claude versions
+2026-07-29  calico-claude       fix(verifier): preserve historical thinking checks
+2026-07-29  calico-claude       fix(thinking): preserve live blocks in main brief mode
+2026-07-29  TokenBar            feat(settings): organize preferences with native sidebar
 2026-07-29  pilotfish-grok      docs(release): complete v1.0.6 changelog
-2026-07-29  remora-cc           chore(release): prepare v0.1.16
-2026-07-29  pilotfish-grok      fix(orchestration): enforce cue-free role routing
-2026-07-29  remora-cc           fix(orchestration): make recovery identity source-complete
-2026-07-29  pilotfish-grok      fix(orchestration): make recovery identity source-complete
 ```
 <!-- NOW:END -->
 
