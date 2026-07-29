@@ -65,12 +65,12 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 546 | `v1.3.4` | — | 2d ago |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 546 | `v1.3.4` | — | today |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 516 | `v0.12.0` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 211 | `v1.9.0` | 3.7k | today |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.15` | 82 | 2d ago |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.15` | 82 | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 26 | `—` | — | 13mo ago |
-| **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 17d ago |
+| **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 18d ago |
 <!-- PROJECTS:END -->
 
 ```console
@@ -103,11 +103,11 @@ last 7 days · 4.5B tokens · 35,703 messages
 
 <!-- NOW:START -->
 ```console
+2026-07-29  TokenBar            fix(tabs): preserve hidden slots during direct reorder
 2026-07-28  calico-claude       fix(remora): require executable compact-source injection i
 2026-07-28  calico-claude       fix(remora): strip spoofed compact source on all remora tr
 2026-07-28  calico-claude       fix(remora): harden compact header ownership and verifier 
 2026-07-28  TokenBar            docs(core): correct closeout evidence
-2026-07-28  calico-claude       fix(remora): default compact to medium effort with thinkin
 ```
 <!-- NOW:END -->
 
@@ -208,4 +208,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself nightly · last sync: 2026-07-28 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself nightly · last sync: 2026-07-29 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
