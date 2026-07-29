@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 23 sources (git), 1,357 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 23 sources (git), 1,358 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 212d up, 0 open ports      │
@@ -65,10 +65,10 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 546 | `v1.3.4` | — | today |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 546 | `v1.3.5` | — | today |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 516 | `v0.12.0` | — | today |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 211 | `v1.9.0` | 3.7k | today |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.15` | 82 | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 212 | `v1.9.0` | 3.7k | today |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.16` | 86 | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 26 | `—` | — | 13mo ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 18d ago |
 <!-- PROJECTS:END -->
@@ -103,11 +103,11 @@ last 7 days · 4.5B tokens · 35,703 messages
 
 <!-- NOW:START -->
 ```console
-2026-07-29  TokenBar            fix(tabs): preserve hidden slots during direct reorder
-2026-07-28  calico-claude       fix(remora): require executable compact-source injection i
-2026-07-28  calico-claude       fix(remora): strip spoofed compact source on all remora tr
-2026-07-28  calico-claude       fix(remora): harden compact header ownership and verifier 
-2026-07-28  TokenBar            docs(core): correct closeout evidence
+2026-07-29  pilotfish-grok      docs(release): complete v1.0.6 changelog
+2026-07-29  remora-cc           chore(release): prepare v0.1.16
+2026-07-29  pilotfish-grok      fix(orchestration): enforce cue-free role routing
+2026-07-29  remora-cc           fix(orchestration): make recovery identity source-complete
+2026-07-29  pilotfish-grok      fix(orchestration): make recovery identity source-complete
 ```
 <!-- NOW:END -->
 
