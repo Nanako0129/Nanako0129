@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 23 sources (git), 1,358 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 23 sources (git), 1,359 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 212d up, 0 open ports      │
@@ -66,7 +66,7 @@ roadmap.
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 546 | `v1.3.5` | — | today |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 516 | `v0.12.0` | — | 1d ago |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 517 | `v0.12.0` | — | 1d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 212 | `v1.9.0` | 3.7k | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.16` | 88 | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 26 | `—` | — | 13mo ago |
@@ -103,11 +103,11 @@ last 7 days · 5.5B tokens · 43,987 messages
 
 <!-- NOW:START -->
 ```console
+2026-07-29  TokenBar-Windows    docs(release): close Phase 10 after v0.1.0 publication
+2026-07-29  TokenBar-Windows    fix(release): sanitize startup host evidence
+2026-07-29  TokenBar-Windows    fix(release): align stable lock and host evidence
+2026-07-29  TokenBar-Windows    chore(release): prepare v0.1.0 stable
 2026-07-29  calico-claude       fix(verifier): fail closed on unknown Claude versions
-2026-07-29  calico-claude       fix(verifier): preserve historical thinking checks
-2026-07-29  calico-claude       fix(thinking): preserve live blocks in main brief mode
-2026-07-29  TokenBar            feat(settings): organize preferences with native sidebar
-2026-07-29  pilotfish-grok      docs(release): complete v1.0.6 changelog
 ```
 <!-- NOW:END -->
 
