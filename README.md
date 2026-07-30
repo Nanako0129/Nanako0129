@@ -173,8 +173,7 @@ Observability   Prometheus · Grafana · Loki · Tempo · OpenTelemetry · eBPF
 ```console
 Coffee      Sunbeam Barista Max + Option-O Lagom Casa
             nutty / chocolate base, with the occasional fruit bomb
-Hamsters    one left, past 900 days now. Wobbly on her back legs these days,
-            but still eating well and still bites like she means it.
+Hamsters    once shared my life with two hamsters — 877 and 907 days, respectively.
 Headphones  Sony IER-M9 · MDR-MV1 · MDR-M1 · iFi xDSD Gryphon
 ```
 
