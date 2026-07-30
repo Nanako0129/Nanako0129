@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 23 sources (git), 1,362 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 23 sources (git), 1,363 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 212d up, 0 open ports      │
@@ -65,7 +65,7 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 547 | `v1.3.5` | — | 1d ago |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 548 | `v1.3.5` | — | 1d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 517 | `v0.12.0` | — | 2d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 214 | `v1.9.0` | 3.8k | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.16` | 88 | 1d ago |
@@ -103,11 +103,11 @@ last 7 days · 5.8B tokens · 45,442 messages
 
 <!-- NOW:START -->
 ```console
+2026-07-30  TokenBar-Windows    docs(release): mark the v0.1.0 contract as an archived rec
 2026-07-30  NyanCogs            fix(embedfixer): expose help and settings commands
 2026-07-30  NyanCogs            fix(embedfixer): render settings overview as an embed
 2026-07-30  NyanCogs            fix(embedfixer): revalidate control setup outside state lo
 2026-07-30  TokenBar            fix(pace): learn historical projection from fit quality
-2026-07-30  NyanCogs            fix(embedfixer): bound persisted reaction work
 ```
 <!-- NOW:END -->
 
