@@ -103,11 +103,11 @@ last 7 days · 5.8B tokens · 45,442 messages
 
 <!-- NOW:START -->
 ```console
+2026-07-30  NyanCogs            fix(embedfixer): expose help and settings commands
+2026-07-30  NyanCogs            fix(embedfixer): render settings overview as an embed
 2026-07-30  NyanCogs            fix(embedfixer): revalidate control setup outside state lo
 2026-07-30  TokenBar            fix(pace): learn historical projection from fit quality
 2026-07-30  NyanCogs            fix(embedfixer): bound persisted reaction work
-2026-07-30  NyanCogs            fix(embedfixer): serialize provider rotation transactions
-2026-07-30  NyanCogs            fix(embedfixer): harden review-triggered transaction races
 ```
 <!-- NOW:END -->
 
