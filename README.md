@@ -103,11 +103,11 @@ last 7 days · 5.3B tokens · 42,083 messages
 
 <!-- NOW:START -->
 ```console
-2026-07-29  TokenBar-Windows    docs(release): close Phase 10 after v0.1.0 publication
-2026-07-29  TokenBar-Windows    fix(release): sanitize startup host evidence
-2026-07-29  TokenBar-Windows    fix(release): align stable lock and host evidence
-2026-07-29  TokenBar-Windows    chore(release): prepare v0.1.0 stable
-2026-07-29  calico-claude       fix(verifier): fail closed on unknown Claude versions
+2026-07-30  NyanCogs            fix(embedfixer): revalidate control setup outside state lo
+2026-07-30  TokenBar            fix(pace): learn historical projection from fit quality
+2026-07-30  NyanCogs            fix(embedfixer): bound persisted reaction work
+2026-07-30  NyanCogs            fix(embedfixer): serialize provider rotation transactions
+2026-07-30  NyanCogs            fix(embedfixer): harden review-triggered transaction races
 ```
 <!-- NOW:END -->
 
