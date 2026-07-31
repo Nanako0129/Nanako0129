@@ -65,12 +65,12 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 548 | `v1.3.5` | — | 1d ago |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 517 | `v0.12.0` | — | 2d ago |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 548 | `v1.3.5` | — | today |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 517 | `v0.12.0` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 214 | `v1.9.0` | 3.8k | today |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.16` | 88 | 1d ago |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.16` | 88 | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 26 | `—` | — | 13mo ago |
-| **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 19d ago |
+| **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 20d ago |
 <!-- PROJECTS:END -->
 
 ```console
@@ -103,11 +103,11 @@ last 7 days · 5.8B tokens · 44,978 messages
 
 <!-- NOW:START -->
 ```console
+2026-07-31  coralline           chore(test): drop disposable differential harness
+2026-07-31  coralline           fix(state): sort retained legacy rows before estimator mer
+2026-07-31  TokenBar            refactor(pace): retire the unused Codex v2 evaluator (#121
+2026-07-31  TokenBar-Windows    chore(version): move the version contract to 0.2.0
 2026-07-30  TokenBar-Windows    docs(release): mark the v0.1.0 contract as an archived rec
-2026-07-30  NyanCogs            fix(embedfixer): expose help and settings commands
-2026-07-30  NyanCogs            fix(embedfixer): render settings overview as an embed
-2026-07-30  NyanCogs            fix(embedfixer): revalidate control setup outside state lo
-2026-07-30  TokenBar            fix(pace): learn historical projection from fit quality
 ```
 <!-- NOW:END -->
 
@@ -207,4 +207,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself nightly · last sync: 2026-07-30 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself nightly · last sync: 2026-07-31 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
