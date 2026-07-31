@@ -68,7 +68,7 @@ roadmap.
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 548 | `v1.3.5` | — | today |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 517 | `v0.12.0` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 214 | `v1.9.0` | 3.8k | today |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.16` | 88 | today |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.17` | 90 | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 26 | `—` | — | 13mo ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 20d ago |
 <!-- PROJECTS:END -->
@@ -103,11 +103,11 @@ last 7 days · 5.9B tokens · 46,140 messages
 
 <!-- NOW:START -->
 ```console
+2026-07-31  remora-cc           fix(orchestration): clarify the final readiness pass
+2026-07-31  remora-cc           fix(orchestration): bound independent review convergence
 2026-07-31  coralline           chore(test): drop disposable differential harness
 2026-07-31  coralline           fix(state): sort retained legacy rows before estimator mer
 2026-07-31  TokenBar            refactor(pace): retire the unused Codex v2 evaluator (#121
-2026-07-31  TokenBar-Windows    chore(version): move the version contract to 0.2.0
-2026-07-30  TokenBar-Windows    docs(release): mark the v0.1.0 contract as an archived rec
 ```
 <!-- NOW:END -->
 
