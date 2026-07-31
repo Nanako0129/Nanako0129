@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 23 sources (git), 1,363 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 23 sources (git), 1,362 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 212d up, 0 open ports      │
@@ -65,7 +65,7 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 548 | `v1.3.5` | — | today |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 547 | `v1.3.6` | — | today |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 517 | `v0.12.0` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 214 | `v1.9.0` | 3.8k | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.17` | 90 | today |
@@ -103,11 +103,11 @@ last 7 days · 5.9B tokens · 46,140 messages
 
 <!-- NOW:START -->
 ```console
-2026-07-31  remora-cc           fix(orchestration): clarify the final readiness pass
-2026-07-31  remora-cc           fix(orchestration): bound independent review convergence
-2026-07-31  coralline           chore(test): drop disposable differential harness
-2026-07-31  coralline           fix(state): sort retained legacy rows before estimator mer
-2026-07-31  TokenBar            refactor(pace): retire the unused Codex v2 evaluator (#121
+2026-07-31  TokenBar-Windows    fix(release): validate the Velopack display title
+2026-07-31  TokenBar-Windows    feat(release): add the Velopack packaging command
+2026-07-31  TokenBar            docs(knowledge): record Grok attribution handoff
+2026-07-31  pilotfish           fix(orchestration): calibrate independent review (#38)
+2026-07-31  coralline           fix(state): restore cheap one-second Bash polling (#59)
 ```
 <!-- NOW:END -->
 
