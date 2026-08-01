@@ -68,7 +68,7 @@ roadmap.
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 564 | `v1.3.6` | — | today |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 524 | `v0.12.0` | — | 1d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 215 | `v1.9.0` | 3.9k | today |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.17` | 90 | today |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.17` | 90 | 1d ago |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 27 | `—` | — | 13mo ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 21d ago |
 <!-- PROJECTS:END -->
@@ -103,11 +103,11 @@ last 7 days · 6.6B tokens · 50,961 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-01  pilotfish           docs(readme): state the Calico corroboration range as ten 
 2026-07-31  pilotfish           docs(readme): document the two Agent-suppression injection
 2026-07-31  TokenBar            fix(vendor): adopt Grok generation-scoped model attributio
 2026-07-31  tokscale-core       fix(grok): match pass two precedence for parent evidence
 2026-07-31  tokscale-core       fix(grok): retro-attribute parent rows within a generation
-2026-07-31  TokenBar-Windows    feat(update): add user-confirmed Velopack flow
 ```
 <!-- NOW:END -->
 
