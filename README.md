@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 23 sources (git), 1,392 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 23 sources (git), 1,393 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 212d up, 0 open ports      │
@@ -65,12 +65,12 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 566 | `v1.3.6` | — | today |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 567 | `v1.3.6` | — | today |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 526 | `v0.12.0` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 215 | `v1.9.0` | 3.9k | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.17` | 90 | 1d ago |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 27 | `—` | — | 13mo ago |
-| **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 21d ago |
+| **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 22d ago |
 <!-- PROJECTS:END -->
 
 ```console
@@ -103,11 +103,11 @@ last 7 days · 6.9B tokens · 51,757 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-01  coralline           fix(limit): apply the ownership rule to the burn projectio
+2026-08-01  coralline           fix(limit): never display another session's rate-limit rea
 2026-08-01  coralline           fix(limit): let a session's own reading win its own window
 2026-08-01  coralline           fix(limit): require an observed elapsed window before fall
 2026-08-01  coralline           fix(win): escape the literal control bytes in the config p
-2026-08-01  coralline           fix(win): keep limit5h/limit7d visible after a window elap
-2026-08-01  pilotfish           docs(readme): state the Calico corroboration range as ten 
 ```
 <!-- NOW:END -->
 
@@ -207,4 +207,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself nightly · last sync: 2026-08-01 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself nightly · last sync: 2026-08-02 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
