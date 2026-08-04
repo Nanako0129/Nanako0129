@@ -67,9 +67,9 @@ roadmap.
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 575 | `v1.3.8` | — | today |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 531 | `v0.13.0` | — | today |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 237 | `v1.11.0` | 4.1k | today |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.17` | 90 | 3d ago |
-| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 28 | `v0.1.0` | — | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 237 | `v1.12.0` | 4.2k | today |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.17` | 90 | 4d ago |
+| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 28 | `v0.1.0` | 1 | today |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 24d ago |
 <!-- PROJECTS:END -->
 
@@ -103,11 +103,11 @@ last 7 days · 7.0B tokens · 44,522 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-04  TokenBar            chore(release): prepare v1.12.0 notes
 2026-08-04  TokenBar            docs(discord): state the published-surface contract in sat
 2026-08-04  TokenBar            test(crosscheck): emit todayTopClient from the cross-port 
 2026-08-04  TokenBar            feat(discord): pure payload builder for opt-in Rich Presen
 2026-08-04  TokenBar            ci: compile the release configuration on main
-2026-08-04  TokenBar            fix(selftest): guard the DEBUG-only raster assertion so re
 ```
 <!-- NOW:END -->
 
