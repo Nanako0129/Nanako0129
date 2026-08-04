@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 24 sources (git), 1,425 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 24 sources (git), 1,430 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 212d up, 0 open ports      │
@@ -67,7 +67,7 @@ roadmap.
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 575 | `v1.3.8` | — | today |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 531 | `v0.13.0` | — | today |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 232 | `v1.11.0` | 4.1k | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 237 | `v1.11.0` | 4.1k | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.17` | 90 | 3d ago |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 28 | `v0.1.0` | — | today |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 24d ago |
@@ -103,11 +103,11 @@ last 7 days · 6.8B tokens · 43,739 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-04  TokenBar            perf(usage): stop the heatmap re-rendering on every frame 
-2026-08-04  Cryptocentrus       feat(config): add durable plugin settings (#6)
-2026-08-04  TokenBar            fix(usage): heatmap tooltip clears on scroll and reflects 
-2026-08-04  TokenBar            fix(usage): ⌘G cycles all three chart views, last-column m
-2026-08-04  TokenBar            fix(usage): heatmap clips a future selected year to today 
+2026-08-04  TokenBar            docs(discord): state the published-surface contract in sat
+2026-08-04  TokenBar            test(crosscheck): emit todayTopClient from the cross-port 
+2026-08-04  TokenBar            feat(discord): pure payload builder for opt-in Rich Presen
+2026-08-04  TokenBar            ci: compile the release configuration on main
+2026-08-04  TokenBar            fix(selftest): guard the DEBUG-only raster assertion so re
 ```
 <!-- NOW:END -->
 
