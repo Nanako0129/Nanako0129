@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 24 sources (git), 1,442 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 24 sources (git), 1,443 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 212d up, 0 open ports      │
@@ -67,9 +67,9 @@ roadmap.
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 579 | `v1.3.8` | — | 1d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 534 | `v0.13.0` | — | today |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 240 | `v1.12.0` | 4.4k | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 241 | `v1.12.0` | 4.4k | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.17` | 90 | 5d ago |
-| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 28 | `v0.1.0` | 1 | 1d ago |
+| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 28 | `v0.1.0` | 2 | 1d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 25d ago |
 <!-- PROJECTS:END -->
 
@@ -103,11 +103,11 @@ last 7 days · 6.7B tokens · 38,827 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-05  TokenBar            fix(discord): a write that skips the publish floor must no
-2026-08-05  TokenBar            fix(discord): close-on-exec at birth; a connect deadline t
-2026-08-05  TokenBar            fix(discord): separate what the user wants from what the s
-2026-08-05  TokenBar            fix(discord): a clear is not a new sample, and stop() must
-2026-08-05  TokenBar            fix(discord): bring the presence back after the connection
+2026-08-05  TokenBar            docs(discord): the Consent comment claimed a bump site it 
+2026-08-05  TokenBar            fix(discord): let a reduction retire what was computed bef
+2026-08-05  TokenBar            docs(selftest): stop A15d's control justifying itself with
+2026-08-05  TokenBar            fix(discord): stop a lost clear from being mistaken for a 
+2026-08-05  TokenBar            fix(discord): gate every write on consent, not just the pa
 ```
 <!-- NOW:END -->
 
