@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 24 sources (git), 1,438 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 24 sources (git), 1,440 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 212d up, 0 open ports      │
@@ -67,7 +67,7 @@ roadmap.
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 578 | `v1.3.8` | — | 1d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 532 | `v0.13.0` | — | 1d ago |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 239 | `v1.12.0` | 4.3k | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 241 | `v1.12.0` | 4.3k | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 25 | `v0.1.17` | 90 | 4d ago |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 28 | `v0.1.0` | 1 | 1d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 25d ago |
@@ -103,11 +103,11 @@ last 7 days · 5.9B tokens · 35,711 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-04  TokenBar            fix(usage): reserve ring room on the horizontal edges too,
-2026-08-04  TokenBar            feat(usage): ring the hovered heatmap cell, like the bar c
-2026-08-04  TokenBar            fix(icons): give Codex its monochrome mark instead of the 
-2026-08-04  TokenBar            chore(release): prepare v1.12.0 notes
-2026-08-04  TokenBar            docs(discord): state the published-surface contract in sat
+2026-08-05  TokenBar            fix(discord): a write that skips the publish floor must no
+2026-08-05  TokenBar            fix(discord): close-on-exec at birth; a connect deadline t
+2026-08-05  TokenBar            fix(discord): separate what the user wants from what the s
+2026-08-05  TokenBar            fix(discord): a clear is not a new sample, and stop() must
+2026-08-05  TokenBar            fix(discord): bring the presence back after the connection
 ```
 <!-- NOW:END -->
 
