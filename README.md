@@ -69,7 +69,7 @@ roadmap.
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 535 | `v0.13.0` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 241 | `v1.12.0` | 4.4k | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.17` | 90 | 5d ago |
-| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 28 | `v0.1.0` | 2 | 2d ago |
+| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 28 | `v0.1.0` | 3 | 2d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 26d ago |
 <!-- PROJECTS:END -->
 
@@ -103,11 +103,11 @@ last 7 days · 6.2B tokens · 33,738 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-05  TokenBar            docs(discord): the Consent comment claimed a bump site it 
-2026-08-05  TokenBar            fix(discord): let a reduction retire what was computed bef
-2026-08-05  TokenBar            docs(selftest): stop A15d's control justifying itself with
-2026-08-05  TokenBar            fix(discord): stop a lost clear from being mistaken for a 
-2026-08-05  TokenBar            fix(discord): gate every write on consent, not just the pa
+2026-08-06  TokenBar            fix(discord): close three findings from the verification p
+2026-08-06  TokenBar            fix(selftest): drop pace assertions that belong to another
+2026-08-06  TokenBar            fix(discord): make the disclosure, the translation and the
+2026-08-06  TokenBar            feat(discord): logarithmic cost bands and an opt-in whole-
+2026-08-06  pilotfish           feat(benchmarks): add a resumable dispatch-rate study harn
 ```
 <!-- NOW:END -->
 
