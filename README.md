@@ -103,11 +103,11 @@ last 7 days · 6.5B tokens · 34,864 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-06  TokenBar            fix(discord): close three findings from the verification p
-2026-08-06  TokenBar            fix(selftest): drop pace assertions that belong to another
-2026-08-06  TokenBar            fix(discord): make the disclosure, the translation and the
-2026-08-06  TokenBar            feat(discord): logarithmic cost bands and an opt-in whole-
-2026-08-06  pilotfish           feat(benchmarks): add a resumable dispatch-rate study harn
+2026-08-06  pilotfish           revert(benchmarks): remove untrustworthy dispatch-rate har
+2026-08-06  pilotfish           docs(benchmarks): record cue-free TUI diagnostic (#50)
+2026-08-06  TokenBar            fix(discord): put the cost mode back into the disclosure
+2026-08-06  TokenBar            docs(discord): shorten the consent copy to what it disclos
+2026-08-06  TokenBar            test(discord): drop A26d, and say plainly what the suite c
 ```
 <!-- NOW:END -->
 
