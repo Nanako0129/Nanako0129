@@ -103,11 +103,11 @@ last 7 days · 5.6B tokens · 27,139 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-07  TokenBar            feat(discord): a one-time card so the feature is findable 
 2026-08-07  pilotfish           docs: link activation guide from READMEs (#54)
 2026-08-07  TokenBar            docs(discord): qualify the floor sentence — a clear does n
 2026-08-07  TokenBar            docs(discord): purge the bypass from the prose it no longe
 2026-08-07  TokenBar            refactor(discord): delete the publish-floor bypass
-2026-08-07  pilotfish           docs: streamline README navigation (#52)
 ```
 <!-- NOW:END -->
 
