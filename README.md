@@ -103,11 +103,11 @@ last 7 days · 6.8B tokens · 30,123 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-08  TokenBar            fix(discord): distinguish an unloaded scan from one that f
+2026-08-08  TokenBar            test(discord): make the picker's tab order falsifiable
+2026-08-08  TokenBar            fix(discord): offer only agents the presence can actually 
 2026-08-08  TokenBar            fix(release): stop guaranteeing that totals cannot change
 2026-08-08  TokenBar            fix(release): the terms policy governs the leftover case, 
-2026-08-08  TokenBar            docs(release): disclose the token component, and cover the
-2026-08-08  TokenBar            fix(release): the retention fix is prospective, not retroa
-2026-08-08  TokenBar            fix(release): stop presenting arm endpoints as the paired 
 ```
 <!-- NOW:END -->
 
