@@ -66,9 +66,9 @@ roadmap.
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 588 | `v1.3.10` | — | today |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 533 | `v0.13.0` | — | 2d ago |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 533 | `v0.13.0` | — | 3d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 247 | `v1.12.0` | 4.5k | today |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.17` | 90 | 7d ago |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.17` | 90 | 8d ago |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 28 | `v0.1.0` | 3 | 4d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 28d ago |
 <!-- PROJECTS:END -->
@@ -103,11 +103,11 @@ last 7 days · 6.6B tokens · 29,764 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-07  pilotfish           chore(release): prepare v1.3.10 (#58)
-2026-08-07  pilotfish           chore(release): prepare v1.3.9 (#57)
-2026-08-07  tokscale-core       fix(test): derive the claude cache fixture key from the sc
-2026-08-07  tokscale-core       fix(test): key the claude cache fixture with the scanner's
-2026-08-07  tokscale-core       fix(ci): drop an example I committed without reading, and 
+2026-08-07  tokscale-core       fix(claude): re-resolve a retained sidechain agent from it
+2026-08-07  tokscale-core       fix(claude): reconcile the turn marker and cost, not only 
+2026-08-07  tokscale-core       fix(bench): preserve array order except where the report h
+2026-08-07  tokscale-core       fix(claude): stop treating any copy as authoritative on co
+2026-08-07  tokscale-core       test(bench): hash the whole serialized report instead of a
 ```
 <!-- NOW:END -->
 
