@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 24 sources (git), 1,462 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 24 sources (git), 1,463 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 212d up, 0 open ports      │
@@ -66,9 +66,9 @@ roadmap.
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 590 | `v1.3.10` | — | 1d ago |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 533 | `v0.13.0` | — | 3d ago |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 248 | `v1.13.1` | 4.6k | today |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.19` | 96 | today |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 533 | `v0.13.0` | — | 4d ago |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 249 | `v1.13.1` | 4.6k | today |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.20` | 98 | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 28 | `v0.1.0` | 3 | 5d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 29d ago |
 <!-- PROJECTS:END -->
@@ -103,11 +103,11 @@ last 7 days · 6.2B tokens · 27,117 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-09  remora-cc           fix(orchestration): align remora with pilotfish-codex v1.6
-2026-08-09  TokenBar-Windows    docs(release): record the Velopack release contract
-2026-08-08  TokenBar-Windows    ci(release): name the publishable assets instead of counti
-2026-08-08  remora-cc           feat(release): prepare remora v0.1.18
-2026-08-08  TokenBar-Windows    ci(release): resolve a dispatch input as refs/tags, not a 
+2026-08-09  TokenBar-Windows    feat(usage): align daily activity and metric windows
+2026-08-09  remora-cc           chore(release): prepare remora v0.1.20
+2026-08-09  remora-cc           fix(agents): hand off long commands from every leaf
+2026-08-09  remora-cc           fix(verifier): return long commands to the parent
+2026-08-09  TokenBar            fix(pace): color the deficit marker by the gap, not by the
 ```
 <!-- NOW:END -->
 
