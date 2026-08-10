@@ -103,11 +103,11 @@ last 7 days · 6.4B tokens · 27,695 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-10  tokscale-core       fix(graph): preserve Kilo cost provenance
+2026-08-10  tokscale-core       fix(graph): price selected Trae rows
+2026-08-10  tokscale-core       fix(graph): count message-only cost coverage
+2026-08-10  tokscale-core       docs(upstream): reconcile MiMo provenance guidance
 2026-08-10  SocksBypass         docs(readme): show the Android screenshot next to the iOS 
-2026-08-09  TokenBar            fix(clients): drop the form-factor suffix from three non-s
-2026-08-09  TokenBar            chore(release): state the reset by condition, not by provi
-2026-08-09  TokenBar            chore(release): prepare v1.13.2 notes
-2026-08-09  TokenBar            build(sparkle): compile the updater with installed-name no
 ```
 <!-- NOW:END -->
 
