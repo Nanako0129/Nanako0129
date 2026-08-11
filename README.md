@@ -103,11 +103,11 @@ last 7 days · 5.3B tokens · 20,559 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-11  TokenBar            fix(attribution): drop empty rows where the card drops the
+2026-08-11  TokenBar            fix(attribution): state the merge as something only some c
+2026-08-11  TokenBar            fix(attribution): match the breakdown card's own test for 
+2026-08-11  TokenBar            fix(attribution): disclose the routes the engine merged, a
 2026-08-10  TokenBar-Windows    fix(crosscheck): decode graph contract metadata
-2026-08-10  TokenBar-Windows    feat(graph): expose local-first usage contract
-2026-08-10  tokscale-core       fix(graph): preserve Kilo cost provenance
-2026-08-10  tokscale-core       fix(graph): price selected Trae rows
-2026-08-10  tokscale-core       fix(graph): count message-only cost coverage
 ```
 <!-- NOW:END -->
 
