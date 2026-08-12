@@ -86,9 +86,9 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 5.0B tokens · 20,663 messages
+last 7 days · 5.0B tokens · 20,694 messages
 
-  claude-opus-5       ██████████████░░░░░░░░  64.0%     3198M
+  claude-opus-5       ██████████████░░░░░░░░  64.0%     3200M
   gpt-5.6-sol         █████░░░░░░░░░░░░░░░░░  22.6%     1128M
   claude-sonnet-5     █░░░░░░░░░░░░░░░░░░░░░   6.5%      326M
   gpt-5.6-luna        █░░░░░░░░░░░░░░░░░░░░░   4.9%      243M
