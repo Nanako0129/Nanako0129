@@ -66,10 +66,10 @@ roadmap.
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 594 | `v1.3.10` | — | 5d ago |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 531 | `v0.13.0` | — | 7d ago |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 257 | `v1.13.2` | 4.9k | today |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.20` | 100 | 3d ago |
-| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 72 | `v0.1.0` | 20 | 2d ago |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 531 | `v0.13.0` | — | 8d ago |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 257 | `v1.13.2` | 5.0k | today |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.20` | 100 | 4d ago |
+| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 72 | `v0.1.0` | 20 | 3d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
 <!-- PROJECTS:END -->
 
@@ -103,11 +103,11 @@ last 7 days · 5.1B tokens · 22,059 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-13  NyanCogs            fix(embedfixer): trust canonical Threads redirects
 2026-08-13  TokenBar-Windows    fix(core): bound decoded snapshot strings
 2026-08-13  TokenBar-Windows    fix(core): preserve strict snapshot result categories
 2026-08-13  TokenBar-Windows    feat(core): add strict graph snapshot storage
 2026-08-13  NyanCogs            perf(embedfixer): shorten link processing latency
-2026-08-12  TokenBar            chore(vendor): advance Native engine baseline to 731a2dc
 ```
 <!-- NOW:END -->
 
