@@ -103,11 +103,11 @@ last 7 days · 4.7B tokens · 19,952 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-13  TokenBar-Windows    fix(core): bound decoded snapshot strings
+2026-08-13  TokenBar-Windows    fix(core): preserve strict snapshot result categories
+2026-08-13  TokenBar-Windows    feat(core): add strict graph snapshot storage
 2026-08-13  NyanCogs            perf(embedfixer): shorten link processing latency
 2026-08-12  TokenBar            chore(vendor): advance Native engine baseline to 731a2dc
-2026-08-12  TokenBar-Windows    fix(graph): schedule lazy reports once per request
-2026-08-12  TokenBar-Windows    fix(dashboard): clear stale query surfaces while loading
-2026-08-12  tokscale-core       fix(paths): resolve Windows scan home natively
 ```
 <!-- NOW:END -->
 
