@@ -65,7 +65,7 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 594 | `v1.3.10` | — | 4d ago |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 594 | `v1.3.10` | — | 5d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 531 | `v0.13.0` | — | 7d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 256 | `v1.13.2` | 4.9k | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.20` | 100 | 3d ago |
@@ -103,11 +103,11 @@ last 7 days · 4.6B tokens · 19,226 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-13  NyanCogs            perf(embedfixer): shorten link processing latency
+2026-08-12  TokenBar            chore(vendor): advance Native engine baseline to 731a2dc
+2026-08-12  TokenBar-Windows    fix(graph): schedule lazy reports once per request
+2026-08-12  TokenBar-Windows    fix(dashboard): clear stale query surfaces while loading
 2026-08-12  tokscale-core       fix(paths): resolve Windows scan home natively
-2026-08-12  TokenBar            test(quota-history): exercise clock repair through loader
-2026-08-11  TokenBar            fix(dashboard): retry stale models on manual refresh
-2026-08-11  TokenBar            fix(dashboard): keep retired models from replacing reopen 
-2026-08-11  TokenBar            test(selftest): gate model re-entry arrivals deterministic
 ```
 <!-- NOW:END -->
 
@@ -207,4 +207,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself nightly · last sync: 2026-08-12 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself nightly · last sync: 2026-08-13 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
