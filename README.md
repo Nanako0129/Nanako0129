@@ -103,11 +103,11 @@ last 7 days · 4.5B tokens · 21,457 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-14  NyanCogs            fix(channelsummary): bound provider DNS resolution
+2026-08-14  NyanCogs            fix(channelsummary): keep long-run progress manageable
+2026-08-14  NyanCogs            fix(channelsummary): allow longer provider requests
 2026-08-14  NyanCogs            fix(channelsummary): preserve complete time ranges and del
 2026-08-14  NyanCogs            fix(channelsummary): frame Discord evidence as structured 
-2026-08-14  NyanCogs            fix(channelsummary): reject legacy numeric citation hosts
-2026-08-14  NyanCogs            fix(channelsummary): close provider output boundaries
-2026-08-14  NyanCogs            fix(channelsummary): close final review edge cases
 ```
 <!-- NOW:END -->
 
