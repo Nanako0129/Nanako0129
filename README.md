@@ -65,7 +65,7 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 596 | `v1.3.10` | — | 7d ago |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 596 | `v1.3.10` | — | 8d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 530 | `v0.13.0` | — | 10d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 263 | `v1.13.3` | 5.1k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 75 | `v0.1.0` | 21 | 5d ago |
@@ -86,11 +86,11 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.6B tokens · 21,689 messages
+last 7 days · 3.6B tokens · 21,883 messages
 
-  gpt-5.6-sol         ███████████████░░░░░░░  67.3%     2430M
-  claude-opus-5       █████░░░░░░░░░░░░░░░░░  21.1%      762M
-  gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   9.7%      351M
+  gpt-5.6-sol         ███████████████░░░░░░░  67.1%     2442M
+  claude-opus-5       █████░░░░░░░░░░░░░░░░░  21.1%      768M
+  gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░  10.0%      365M
   claude-sonnet-5     ░░░░░░░░░░░░░░░░░░░░░░   1.4%       51M
   claude-haiku-4-5    ░░░░░░░░░░░░░░░░░░░░░░   0.4%       14M
   codex-auto-review   ░░░░░░░░░░░░░░░░░░░░░░   0.1%        3M
@@ -147,7 +147,6 @@ Proxmox VE      231d uptime · every service in Compose, every service healthche
 Zero trust      Cloudflare Tunnel + Access · 5 tunnels · 20 ZTNA apps · 0 inbound ports
 Home Assistant  140 integrations · 377 entities · 53 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
-Observability   Prometheus · Grafana · Loki · Tempo · OpenTelemetry · eBPF
 ```
 
 ```console
