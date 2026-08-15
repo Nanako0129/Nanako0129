@@ -13,14 +13,20 @@ network beyond `gh` (plus optional LAN SSH for the homelab line).
 
 import json
 import os
+import platform
 import re
 import shutil
 import subprocess
 import sys
+import urllib.error
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
 USER = "Nanako0129"
+# Which repos appear in the table, and how each is described. NOT the order:
+# the heading above the table says --sort=stars, so render_projects() sorts by
+# star count and this list only decides membership.
 FEATURED = [
     ("pilotfish", "Multi-model orchestration for Claude Code"),
     ("coralline", "Powerlevel10k-inspired statusline for Claude Code"),
@@ -77,18 +83,20 @@ def render_projects():
         releases = gh(f"repos/{USER}/{name}/releases?per_page=100") or []
         dl = sum(a["download_count"] for r in releases for a in r.get("assets", []))
         tag = releases[0]["tag_name"] if releases else "—"
-        rows.append(
+        rows.append((
+            repo["stargazers_count"],
             f"| **[{name}](https://github.com/{USER}/{name})** | {blurb} | "
             f"★ {repo['stargazers_count']} | `{tag}` | "
-            f"{human(dl) if dl else '—'} | {ago(repo['pushed_at'])} |"
-        )
+            f"{human(dl) if dl else '—'} | {ago(repo['pushed_at'])} |",
+        ))
     if not rows:
         return None
+    rows.sort(key=lambda r: -r[0])
     head = (
         "| Project | What it is | Stars | Latest | Downloads | Updated |\n"
         "| :-- | :-- | --: | :-- | --: | :-- |"
     )
-    return head + "\n" + "\n".join(rows)
+    return head + "\n" + "\n".join(row for _, row in rows)
 
 
 def render_now():
@@ -206,6 +214,143 @@ def fetch_proxmox_uptime_days():
     return int(seconds // 86400)
 
 
+def http(url, headers, body=None, timeout=15):
+    """Small GET/POST helper. Returns decoded text, or None on any failure.
+
+    Every homelab reader below is best-effort by design: CI has no route to the
+    LAN and no tokens, and a Mac run with the VPN down should leave the page
+    alone rather than publish a zero. Callers turn None into "keep whatever
+    README.md already says".
+    """
+    req = urllib.request.Request(
+        url,
+        data=body.encode() if body else None,
+        headers=headers,
+        method="POST" if body else "GET",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return r.read().decode()
+    except (urllib.error.URLError, OSError, TimeoutError):
+        return None
+
+
+# One render pass returns both counts, so the 377-entity state dump is not
+# downloaded merely to call len() on it.
+HA_TEMPLATE = (
+    "{{ states|count }}|"
+    "{{ states|map(attribute='entity_id')|map('device_id')|reject('none')|unique|list|count }}"
+)
+
+
+def fetch_homeassistant_counts():
+    """(integrations, entities, devices) from Home Assistant, or None.
+
+    The three numbers were hand-typed and nobody wrote down what they counted,
+    which is how 141/369/53 sat there while the instance moved on. Pinned here:
+
+    integrations  top-level names in /api/config `components`. That list also
+                  carries platform rows (cast.media_player, backup.sensor);
+                  they are not integrations, so anything with a dot is dropped.
+    entities      everything in the state machine.
+    devices       distinct devices reachable from an entity. The device
+                  registry is WebSocket-only — /api/config/device_registry/list
+                  is a 404 — and one number on a profile page does not justify
+                  hand-rolling an RFC 6455 client, so this counts device_id
+                  across all entities via the template API instead. A device
+                  with no entities at all would be missed; on this instance the
+                  two definitions agree exactly (53).
+    """
+    url, token = os.environ.get("HA_URL"), os.environ.get("HA_TOKEN")
+    if not url or not token:
+        return None
+    auth = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
+
+    cfg = http(f"{url.rstrip('/')}/api/config", auth)
+    rendered = http(
+        f"{url.rstrip('/')}/api/template", auth, json.dumps({"template": HA_TEMPLATE})
+    )
+    if not cfg or not rendered or "|" not in rendered:
+        return None
+    try:
+        components = json.loads(cfg)["components"]
+        entities, devices = (int(x) for x in rendered.split("|", 1))
+    except (ValueError, KeyError, TypeError):
+        return None
+    return len([c for c in components if "." not in c]), entities, devices
+
+
+def fetch_cloudflare_counts():
+    """(tunnels, ztna_apps) from the Cloudflare API, or None.
+
+    Same archaeology as above — both numbers turned out to be right, but only
+    because they encoded a definition that lived nowhere:
+
+    tunnels   healthy ones only. A down or inactive tunnel is a retired
+              machine, not a route into the homelab, and counting it would
+              overstate what is actually reachable.
+    apps      Access applications minus app_launcher and warp. The launcher is
+              the index page listing the others, warp is the device enrolment
+              policy; neither is an application anyone opens.
+    """
+    token, account = os.environ.get("CF_API_TOKEN"), os.environ.get("CF_ACCOUNT_ID")
+    if not token or not account:
+        return None
+    base = f"https://api.cloudflare.com/client/v4/accounts/{account}"
+    auth = {"Authorization": f"Bearer {token}"}
+
+    def result(path):
+        raw = http(f"{base}/{path}", auth)
+        if not raw:
+            return None
+        try:
+            payload = json.loads(raw)
+        except ValueError:
+            return None
+        return payload["result"] if payload.get("success") else None
+
+    tunnels = result("cfd_tunnel?is_deleted=false&per_page=100")
+    apps = result("access/apps?per_page=100")
+    if tunnels is None or apps is None:
+        return None
+    return (
+        sum(t.get("status") == "healthy" for t in tunnels),
+        sum(a.get("type") not in ("app_launcher", "warp") for a in apps),
+    )
+
+
+def substitute(text, pattern, replacement, what):
+    """Rewrite exactly one line, or fail the build.
+
+    A silent no-op here is the failure mode that already cost 19 days of stale
+    uptime: the renderer ran, matched nothing, wrote the file back unchanged
+    and exited 0.
+    """
+    text, n = re.subn(pattern, replacement, text, count=1)
+    if n != 1:
+        sys.exit(f"{what}: no line matched {pattern!r} in README.md")
+    return text
+
+
+def resolve_os_line(readme_text):
+    """The `OS:` row, read off the running Mac — or kept as-is.
+
+    render_neofetch() also runs on the CI runner, where platform.mac_ver() is
+    empty and platform.machine() answers x86_64, so deriving this
+    unconditionally would let ubuntu overwrite the row with its own identity
+    every six hours. Same contract as USAGE and the Proxmox uptime: only the
+    environment that can actually observe a value may write it, everywhere
+    else the last observed one stands. Matched up to the box border, since the
+    row is padded out to the frame.
+    """
+    if sys.platform == "darwin":
+        ver = platform.mac_ver()[0]
+        if ver:
+            return f"OS: macOS {ver} {platform.machine()}"
+    m = re.search(r"(OS: \S[^│]*?)\s*│", readme_text)
+    return m.group(1) if m else None
+
+
 def resolve_proxmox_uptime_days(readme_text):
     """Live days from the host, else the last number already rendered."""
     live = fetch_proxmox_uptime_days()
@@ -280,7 +425,7 @@ def cell_width(s):
     return len(s)
 
 
-def render_neofetch(proxmox_days=None):
+def render_neofetch(proxmox_days=None, os_line=None):
     all_repos = gh(f"users/{USER}/repos?per_page=100&type=owner") or []
     sources = [r for r in all_repos if not r["fork"]]
     stars = sum(r["stargazers_count"] for r in sources)
@@ -307,7 +452,7 @@ def render_neofetch(proxmox_days=None):
         "─" * len(title),
         "Name: Nanako, or Nyanako",
         "Pronouns: she / her",
-        "OS: macOS 26.5.2 arm64",
+        *([os_line] if os_line else []),
         "Host: MacBook Air (M5, 2026), 32GB / 1TB",
         "Kernel: SRE, platform & DevSecOps",
         *uptime,
@@ -340,23 +485,41 @@ def render_neofetch(proxmox_days=None):
 def main():
     text = README.read_text()
     proxmox_days = resolve_proxmox_uptime_days(text)
+    os_line = resolve_os_line(text)
     for name, body in (
-        ("NEOFETCH", render_neofetch(proxmox_days)),
+        ("NEOFETCH", render_neofetch(proxmox_days, os_line)),
         ("PROJECTS", render_projects()),
         ("NOW", render_now()),
         ("USAGE", render_usage()),
     ):
         if body:
             text = replace_block(text, name, body)
+    # The homelab panel stays prose in README.md and only its numbers are
+    # rewritten here. Generating the whole block would drag the curated service
+    # lists into this file, where they are harder to read and to edit.
     if proxmox_days is not None:
-        text, n = re.subn(
+        text = substitute(
+            text,
             r"(Proxmox VE\s+)\d+d uptime",
             rf"\g<1>{proxmox_days}d uptime",
-            text,
-            count=1,
+            "Proxmox uptime",
         )
-        if n != 1:
-            sys.exit("Proxmox VE uptime line not found in README.md")
+    ha = fetch_homeassistant_counts()
+    if ha:
+        text = substitute(
+            text,
+            r"(Home Assistant\s+)\d+ integrations · \d+ entities · \d+ devices",
+            rf"\g<1>{ha[0]} integrations · {ha[1]} entities · {ha[2]} devices",
+            "Home Assistant counts",
+        )
+    cf = fetch_cloudflare_counts()
+    if cf:
+        text = substitute(
+            text,
+            r"(Cloudflare Tunnel \+ Access · )\d+ tunnels · \d+ ZTNA apps",
+            rf"\g<1>{cf[0]} tunnels · {cf[1]} ZTNA apps",
+            "Cloudflare counts",
+        )
     text = re.sub(
         r"(last sync: )[\d-]+", lambda m: m.group(1) + datetime.now(timezone.utc).strftime("%Y-%m-%d"), text
     )

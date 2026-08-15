@@ -18,6 +18,14 @@ export PATH
 # committed. CI gets BIRTH_DATE from a repository secret. HOMELAB_SSH (user@host
 # for the Proxmox uptime probe) is Mac-only and must not appear in git.
 [ -f "$HOME/.config/nanako-readme.env" ] && . "$HOME/.config/nanako-readme.env"
+# Every renderer treats a missing input as "leave that block alone", which is
+# right for CI and silent everywhere else: HOMELAB_SSH was set in that file but
+# never exported, so the Proxmox probe saw nothing and the README kept copying
+# the same uptime forward for 19 days without one line of complaint. The
+# fallback stays; what it lacked was a way to notice it had engaged.
+for v in HOMELAB_SSH HA_URL HA_TOKEN CF_API_TOKEN CF_ACCOUNT_ID; do
+  eval "[ -n \"\$$v\" ]" || echo "sync-local: $v unset (must be exported); that homelab number will keep its last value" >&2
+done
 
 # --- 1. Force the remote CI job (same workflow the cron would run) ---
 # schedule is best-effort; workflow_dispatch is on-demand. Failure here must not

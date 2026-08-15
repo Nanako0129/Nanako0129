@@ -15,7 +15,7 @@
 │         *%B@@#akwwqpdbkkbqwmdh*@@@B&       ─────────────                                │
 │         8%*ooo#MWWWWWWWWWWMM#oahaaB%Z      Name: Nanako, or Nyanako                     │
 │        Za*##MWWWWWW&&&&88&&&&WW#*oaaw      Pronouns: she / her                          │
-│       q*MWWWW&&88888888888%8888&WMMMop     OS: macOS 26.5.2 arm64                       │
+│       q*MWWWW&&88888888888%8888&WMMMop     OS: macOS 26.6.1 arm64                       │
 │      oW&8WWM/M/)&%%%%%%%%%%*)&rC&888WMa    Host: MacBook Air (M5, 2026), 32GB / 1TB     │
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
@@ -23,7 +23,7 @@
 │      oW&fW&8&888888888888888888&&&oM8&o    Packages: 24 sources (git), 1,530 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
-│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 212d up, 0 open ports      │
+│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 231d up, 0 open ports      │
 │        dW88%%%88&&&8$$$$W8%88%%88&M*h&     CPU: Rust, Swift, Python, Ansible, K8s       │
 │        mM&8%BB%8&W&&$@$MW8BBB%B88&Mk       Locale: zh_TW.UTF-8 (English via translator) │
 │         b*&8%%%8%%8  $$BM&8888%88Ma                                                     │
@@ -68,8 +68,8 @@ roadmap.
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 596 | `v1.3.10` | — | 7d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 530 | `v0.13.0` | — | 10d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 263 | `v1.13.3` | 5.1k | today |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.20` | 100 | 6d ago |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 75 | `v0.1.0` | 21 | 5d ago |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.20` | 100 | 6d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
 <!-- PROJECTS:END -->
 
@@ -86,14 +86,14 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 4.3B tokens · 22,704 messages
+last 7 days · 3.6B tokens · 21,689 messages
 
-  gpt-5.6-sol         ████████████░░░░░░░░░░  54.7%     2339M
-  claude-opus-5       ████████░░░░░░░░░░░░░░  34.2%     1464M
-  gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   8.6%      370M
-  claude-sonnet-5     ░░░░░░░░░░░░░░░░░░░░░░   1.7%       71M
-  codex-auto-review   ░░░░░░░░░░░░░░░░░░░░░░   0.5%       21M
-  claude-haiku-4-5    ░░░░░░░░░░░░░░░░░░░░░░   0.3%       14M
+  gpt-5.6-sol         ███████████████░░░░░░░  67.3%     2430M
+  claude-opus-5       █████░░░░░░░░░░░░░░░░░  21.1%      762M
+  gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   9.7%      351M
+  claude-sonnet-5     ░░░░░░░░░░░░░░░░░░░░░░   1.4%       51M
+  claude-haiku-4-5    ░░░░░░░░░░░░░░░░░░░░░░   0.4%       14M
+  codex-auto-review   ░░░░░░░░░░░░░░░░░░░░░░   0.1%        3M
 ```
 <!-- USAGE:END -->
 
@@ -103,11 +103,11 @@ last 7 days · 4.3B tokens · 22,704 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-15  TokenBar            fix(claude): preserve missing Keychain target classificati
+2026-08-15  TokenBar            fix(grok): accept refresh-only auth targets
 2026-08-15  TokenBar-Windows    feat(ffi): bind local scans to immutable source context
+2026-08-15  TokenBar            fix(refresh): stop usage when durable auth target changes
 2026-08-15  tokscale-core       test(scanner): compare Crush cwd source contents
-2026-08-15  tokscale-core       docs(upstream): record Crush cwd closeout head
-2026-08-15  tokscale-core       fix(source-context): bind Crush projects to capture cwd
-2026-08-15  tokscale-core       docs(upstream): record Linux config parity head
 ```
 <!-- NOW:END -->
 
@@ -143,9 +143,9 @@ graph LR
 The same discipline, off the clock — everything below runs at home:
 
 ```console
-Proxmox VE      212d uptime · every service in Compose, every service healthchecked
+Proxmox VE      231d uptime · every service in Compose, every service healthchecked
 Zero trust      Cloudflare Tunnel + Access · 5 tunnels · 20 ZTNA apps · 0 inbound ports
-Home Assistant  141 integrations · 369 entities · 53 devices · one Lovelace panel
+Home Assistant  140 integrations · 377 entities · 53 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
 Observability   Prometheus · Grafana · Loki · Tempo · OpenTelemetry · eBPF
 ```
