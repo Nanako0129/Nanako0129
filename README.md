@@ -106,8 +106,8 @@ last 7 days · 4.1B tokens · 21,495 messages
 2026-08-15  NyanCogs            fix(channelsummary): accept empty chat tool content
 2026-08-15  NyanCogs            feat(channelsummary): add Firecrawl agent web tools
 2026-08-15  NyanCogs            feat(channelsummary): add contextual image summaries
+2026-08-15  TokenBar            fix(claude): treat a credential store without `claudeAiOau
 2026-08-14  TokenBar            test(account-scope): close remaining route and race gaps
-2026-08-14  TokenBar            test(account-scope): restore remaining recovery owners
 ```
 <!-- NOW:END -->
 
