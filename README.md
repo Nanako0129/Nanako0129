@@ -117,7 +117,8 @@ last 7 days · 4.3B tokens · 22,704 messages
 
 ```mermaid
 graph LR
-  TS["tokscale<br/><i>junhoyeo · Rust engine</i>"] --> T2
+  TS["tokscale<br/><i>junhoyeo · upstream</i>"] --> TC["tokscale-core<br/><i>shared Rust core,<br/>extracted from TokenBar</i>"]
+  TC --> T2
   T1["TokenBar-Tauri<br/><i>Tauri 2 · retired</i>"] --> T2["<b>TokenBar</b><br/>Swift shell"]
   T2 --> T3["TokenBar-Windows"]
   T2 --> T4["homebrew-tokenbar"]
@@ -128,6 +129,7 @@ graph LR
   P4 --> P5["calico-claude<br/><i>after a-connoisseur/<br/>patch-claude-code</i>"]
 
   C1["<b>coralline</b><br/>statusline"]
+  N1["NyanCogs<br/><i>Red Discord bot cogs</i>"]
   W1["postmortem-prose"] --> W2["md-style"]
 
   classDef flagship fill:#2f81f7,stroke:#1f6feb,color:#fff
