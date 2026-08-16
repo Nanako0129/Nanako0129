@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 24 sources (git), 1,530 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 24 sources (git), 1,533 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 231d up, 0 open ports      │
@@ -67,7 +67,7 @@ roadmap.
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 596 | `v1.3.10` | — | 8d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 530 | `v0.13.0` | — | 10d ago |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 263 | `v1.13.3` | 5.1k | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 266 | `v1.13.3` | 5.1k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 75 | `v0.1.0` | 21 | 5d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.20` | 100 | 6d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
@@ -103,11 +103,11 @@ last 7 days · 3.6B tokens · 21,883 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-16  tokscale-core       perf(cache): memoize retained token shards
+2026-08-15  tokscale-core       fix(cache): include retained history in source tokens
+2026-08-15  TokenBar-Windows    fix(graph): fence snapshot writes across queries
+2026-08-15  TokenBar-Windows    feat(graph): restore fresh persisted snapshots
 2026-08-15  TokenBar            fix(claude): preserve missing Keychain target classificati
-2026-08-15  TokenBar            fix(grok): accept refresh-only auth targets
-2026-08-15  TokenBar-Windows    feat(ffi): bind local scans to immutable source context
-2026-08-15  TokenBar            fix(refresh): stop usage when durable auth target changes
-2026-08-15  tokscale-core       test(scanner): compare Crush cwd source contents
 ```
 <!-- NOW:END -->
 
@@ -208,4 +208,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself nightly · last sync: 2026-08-15 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself nightly · last sync: 2026-08-16 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
