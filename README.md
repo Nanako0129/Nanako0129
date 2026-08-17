@@ -23,7 +23,7 @@
 │      oW&fW&8&888888888888888888&&&oM8&o    Packages: 25 sources (git), 1,553 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
-│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 232d up, 0 open ports      │
+│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 233d up, 0 open ports      │
 │        dW88%%%88&&&8$$$$W8%88%%88&M*h&     CPU: Rust, Swift, Python, Ansible, K8s       │
 │        mM&8%BB%8&W&&$@$MW8BBB%B88&Mk       Locale: zh_TW.UTF-8 (English via translator) │
 │         b*&8%%%8%%8  $$BM&8888%88Ma                                                     │
@@ -67,10 +67,9 @@ roadmap.
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 601 | `—` | — | 9d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 531 | `—` | — | 12d ago |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 280 | `v1.13.3` | 5.3k | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 280 | `—` | — | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 75 | `—` | — | 7d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `—` | — | today |
-| **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
 <!-- PROJECTS:END -->
 
 ```console
@@ -86,11 +85,11 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 4.4B tokens · 25,400 messages
+last 7 days · 4.5B tokens · 25,934 messages
 
-  gpt-5.6-sol         ██████████████░░░░░░░░  61.8%     2718M
-  claude-opus-5       ██████░░░░░░░░░░░░░░░░  26.8%     1180M
-  gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   9.4%      414M
+  gpt-5.6-sol         █████████████░░░░░░░░░  60.9%     2771M
+  claude-opus-5       ██████░░░░░░░░░░░░░░░░  28.1%     1276M
+  gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   9.1%      414M
   claude-sonnet-5     ░░░░░░░░░░░░░░░░░░░░░░   1.5%       68M
   claude-haiku-4-5    ░░░░░░░░░░░░░░░░░░░░░░   0.3%       14M
   codex-auto-review   ░░░░░░░░░░░░░░░░░░░░░░   0.1%        3M
@@ -143,7 +142,7 @@ graph LR
 The same discipline, off the clock — everything below runs at home:
 
 ```console
-Proxmox VE      232d uptime · every service in Compose, every service healthchecked
+Proxmox VE      233d uptime · every service in Compose, every service healthchecked
 Zero trust      Cloudflare Tunnel + Access · 5 tunnels · 20 ZTNA apps · 0 inbound ports
 Home Assistant  140 integrations · 377 entities · 53 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
