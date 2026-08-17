@@ -65,11 +65,11 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 601 | `v1.3.10` | — | 9d ago |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 531 | `v0.13.0` | — | 11d ago |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 601 | `—` | — | 9d ago |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 531 | `—` | — | 12d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 280 | `v1.13.3` | 5.3k | today |
-| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 75 | `v0.1.0` | 21 | 6d ago |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.20` | 100 | today |
+| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 75 | `—` | — | 7d ago |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `—` | — | today |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
 <!-- PROJECTS:END -->
 
@@ -103,11 +103,11 @@ last 7 days · 4.4B tokens · 25,400 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-17  remora-cc           fix(docs): align pinned install isolation wording
+2026-08-17  remora-cc           chore(release): prepare remora v0.1.22
+2026-08-17  remora-cc           fix(release): harden provenance verification
+2026-08-17  remora-cc           chore(release): prepare remora v0.1.21
 2026-08-17  remora-cc           feat(context): use GPT-5.6 maximum windows
-2026-08-17  Syrtis-Agent        Initial commit
-2026-08-17  remora-cc           docs(cliproxyapi): document GPT-5.6 long-context limits
-2026-08-17  calico-claude       fix(native): preserve legacy extraction fallbacks
-2026-08-17  tokscale-core       revert(remote-report): restore the public fold's validatio
 ```
 <!-- NOW:END -->
 
