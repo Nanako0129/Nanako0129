@@ -86,14 +86,14 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.9B tokens · 21,918 messages
+last 7 days · 3.6B tokens · 20,548 messages
 
-  gpt-5.6-sol         █████████████░░░░░░░░░  58.7%     2286M
-  claude-opus-5       ███████░░░░░░░░░░░░░░░  31.8%     1240M
-  gpt-5.6-luna        ██░░░░░░░░░░░░░░░░░░░░   8.4%      325M
-  claude-sonnet-5     ░░░░░░░░░░░░░░░░░░░░░░   0.5%       21M
+  gpt-5.6-sol         █████████████░░░░░░░░░  60.0%     2187M
+  claude-opus-5       ███████░░░░░░░░░░░░░░░  32.6%     1188M
+  gpt-5.6-luna        █░░░░░░░░░░░░░░░░░░░░░   6.2%      227M
+  claude-sonnet-5     ░░░░░░░░░░░░░░░░░░░░░░   0.6%       22M
   claude-haiku-4-5    ░░░░░░░░░░░░░░░░░░░░░░   0.3%       12M
-  claude-fable-5      ░░░░░░░░░░░░░░░░░░░░░░   0.1%        6M
+  claude-fable-5      ░░░░░░░░░░░░░░░░░░░░░░   0.2%        6M
 ```
 <!-- USAGE:END -->
 
