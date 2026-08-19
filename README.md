@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 25 sources (git), 1,597 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 25 sources (git), 1,601 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 234d up, 0 open ports      │
@@ -65,11 +65,11 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 643 | `v1.3.10` | — | 11d ago |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 532 | `v0.13.0` | — | 13d ago |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 281 | `v1.13.3` | 5.4k | today |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 644 | `v1.3.10` | — | 11d ago |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 533 | `v0.13.0` | — | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 283 | `v1.13.3` | 5.5k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 75 | `v0.1.0` | 21 | 1d ago |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 114 | 1d ago |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 114 | 2d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
 <!-- PROJECTS:END -->
 
@@ -103,11 +103,11 @@ last 7 days · 3.6B tokens · 20,548 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-17  remora-cc           fix(docs): align pinned install isolation wording
-2026-08-17  remora-cc           chore(release): prepare remora v0.1.22
+2026-08-19  coralline           docs: refresh pinned --ref examples from v0.9.1 to v0.13.0
 2026-08-17  Syrtis-Agent        fix(security): restore the frozen decoded-offer bound
 2026-08-17  Syrtis-Agent        test(security): make the nine transition guards falsifiabl
-2026-08-17  remora-cc           fix(release): harden provenance verification
+2026-08-17  Syrtis-Agent        chore(ci): let the digest manifest say what it pins
+2026-08-17  Syrtis-Agent        fix(security): advance the durable clock and make every co
 ```
 <!-- NOW:END -->
 
