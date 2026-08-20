@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 25 sources (git), 1,609 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 25 sources (git), 1,610 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 236d up, 0 open ports      │
@@ -65,10 +65,10 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 648 | `v1.3.10` | — | 12d ago |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 649 | `v1.3.10` | — | 12d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 535 | `v0.13.0` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 284 | `v1.13.3` | 5.6k | today |
-| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 76 | `v0.1.0` | 21 | 2d ago |
+| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 76 | `v0.1.0` | 21 | 3d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 114 | 3d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
 <!-- PROJECTS:END -->
@@ -103,11 +103,11 @@ last 7 days · 3.3B tokens · 18,367 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-19  coralline           docs: refresh pinned --ref examples from v0.9.1 to v0.13.0
-2026-08-17  Syrtis-Agent        fix(security): restore the frozen decoded-offer bound
-2026-08-17  Syrtis-Agent        test(security): make the nine transition guards falsifiabl
-2026-08-17  Syrtis-Agent        chore(ci): let the digest manifest say what it pins
-2026-08-17  Syrtis-Agent        fix(security): advance the durable clock and make every co
+2026-08-20  TokenBar-Windows    docs(settings): register the flyout shortcut parity gap as
+2026-08-20  TokenBar-Windows    feat(settings): let the user hide individual lenses
+2026-08-20  tokscale-core       test(codex): pin the reasoning clamp that nothing was guar
+2026-08-20  tokscale-core       docs(upstream): make the parser_version rule general, not 
+2026-08-20  tokscale-core       docs(upstream): record that the Codex reasoning fix landed
 ```
 <!-- NOW:END -->
 
