@@ -65,11 +65,11 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 650 | `v1.3.10` | — | 13d ago |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 536 | `v0.13.0` | — | today |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 649 | `v1.3.10` | — | 13d ago |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 536 | `v0.14.0` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 284 | `v1.13.3` | 5.6k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 76 | `v0.1.0` | 21 | 3d ago |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 116 | 3d ago |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 116 | 4d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
 <!-- PROJECTS:END -->
 
@@ -103,11 +103,11 @@ last 7 days · 4.0B tokens · 19,054 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-21  TokenBar-Windows    fix(app): give the icon a margin so it stops reading as fl
-2026-08-21  TokenBar-Windows    fix(i18n): localize the two paths a screenshot cannot reac
-2026-08-21  TokenBar-Windows    fix(i18n): finish the settings window, page by page
-2026-08-21  TokenBar-Windows    feat(i18n): translate the settings window
-2026-08-21  TokenBar            fix(extra-roots): gate cache publication on a root-registr
+2026-08-21  coralline           docs: refresh pinned --ref examples from v0.13.0 to v0.14.
+2026-08-21  calico-claude       fix(ci): tag releases at the commit that built them
+2026-08-21  calico-claude       fix(auto-update): restore the record when the swap fails, 
+2026-08-21  calico-claude       docs(playbook): state which dollar sequences an identifier
+2026-08-21  calico-claude       fix(patch): route captured-identifier replacements through
 ```
 <!-- NOW:END -->
 
