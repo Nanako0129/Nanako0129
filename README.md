@@ -69,7 +69,7 @@ roadmap.
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 536 | `v0.13.0` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 284 | `v1.13.3` | 5.6k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 76 | `v0.1.0` | 21 | 3d ago |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 114 | 3d ago |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 116 | 3d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
 <!-- PROJECTS:END -->
 
@@ -103,11 +103,11 @@ last 7 days · 3.5B tokens · 17,669 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-21  TokenBar-Windows    fix(dashboard): let the lens tab row scroll
-2026-08-21  TokenBar-Windows    feat(dashboard): port the Monthly lens
-2026-08-21  TokenBar-Windows    docs(flyout): record how the OEM shortcuts behave under an
-2026-08-21  TokenBar-Windows    fix(flyout): make the OEM-key shortcuts actually fire
-2026-08-20  TokenBar-Windows    docs(settings): register the flyout shortcut parity gap as
+2026-08-21  TokenBar-Windows    fix(app): give the icon a margin so it stops reading as fl
+2026-08-21  TokenBar-Windows    fix(i18n): localize the two paths a screenshot cannot reac
+2026-08-21  TokenBar-Windows    fix(i18n): finish the settings window, page by page
+2026-08-21  TokenBar-Windows    feat(i18n): translate the settings window
+2026-08-21  TokenBar            fix(extra-roots): gate cache publication on a root-registr
 ```
 <!-- NOW:END -->
 
