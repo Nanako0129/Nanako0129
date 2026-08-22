@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 25 sources (git), 1,616 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 25 sources (git), 1,617 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 238d up, 0 open ports      │
@@ -66,9 +66,9 @@ roadmap.
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 651 | `v1.3.10` | — | today |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 536 | `v0.14.0` | — | 1d ago |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 285 | `v1.13.3` | 5.7k | today |
-| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 77 | `v0.1.0` | 24 | 4d ago |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 536 | `v0.14.0` | — | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 286 | `v1.13.3` | 5.7k | today |
+| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 77 | `v0.1.0` | 24 | 5d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 116 | 5d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
 <!-- PROJECTS:END -->
@@ -103,11 +103,11 @@ last 7 days · 4.0B tokens · 17,422 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-22  pilotfish           feat(plugin): qualify installable macOS and Linux beta (#6
+2026-08-22  coralline           fix(state): let reading-less renders claim burn-store main
+2026-08-22  coralline           fix(state): anchor election tokens to the store name and k
+2026-08-22  coralline           perf(state): batch trim rewrites and elect one burn writer
 2026-08-21  coralline           docs: refresh pinned --ref examples from v0.13.0 to v0.14.
-2026-08-21  calico-claude       fix(ci): tag releases at the commit that built them
-2026-08-21  calico-claude       fix(auto-update): restore the record when the swap fails, 
-2026-08-21  calico-claude       docs(playbook): state which dollar sequences an identifier
-2026-08-21  calico-claude       fix(patch): route captured-identifier replacements through
 ```
 <!-- NOW:END -->
 
