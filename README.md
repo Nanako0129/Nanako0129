@@ -103,11 +103,11 @@ last 7 days · 4.0B tokens · 17,422 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-22  pilotfish           feat(plugin): qualify installable macOS and Linux beta (#6
-2026-08-22  coralline           fix(state): let reading-less renders claim burn-store main
-2026-08-22  coralline           fix(state): anchor election tokens to the store name and k
-2026-08-22  coralline           perf(state): batch trim rewrites and elect one burn writer
-2026-08-21  coralline           docs: refresh pinned --ref examples from v0.13.0 to v0.14.
+2026-08-22  pilotfish           docs(plugin): add Traditional Chinese migration guide (#61
+2026-08-22  calico-claude       Merge origin/main into docs/hidden-settings-2-1-239
+2026-08-22  calico-claude       docs(hidden-settings): correct the direct-input claim left
+2026-08-22  calico-claude       docs(hidden-settings): require stripping headers, and stop
+2026-08-22  calico-claude       docs(hidden-settings): sort the pinned inputs under C coll
 ```
 <!-- NOW:END -->
 
