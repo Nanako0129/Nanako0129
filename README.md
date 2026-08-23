@@ -23,7 +23,7 @@
 │      oW&fW&8&888888888888888888&&&oM8&o    Packages: 25 sources (git), 1,623 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
-│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 238d up, 0 open ports      │
+│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 239d up, 0 open ports      │
 │        dW88%%%88&&&8$$$$W8%88%%88&M*h&     CPU: Rust, Swift, Python, Ansible, K8s       │
 │        mM&8%BB%8&W&&$@$MW8BBB%B88&Mk       Locale: zh_TW.UTF-8 (English via translator) │
 │         b*&8%%%8%%8  $$BM&8888%88Ma                                                     │
@@ -86,13 +86,13 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 4.2B tokens · 14,380 messages
+last 7 days · 4.3B tokens · 14,571 messages
 
-  claude-opus-5       ███████████████░░░░░░░  68.1%     2849M
-  gpt-5.6-sol         █████░░░░░░░░░░░░░░░░░  22.6%      947M
-  claude-fable-5      █░░░░░░░░░░░░░░░░░░░░░   5.6%      234M
-  claude-sonnet-5     ░░░░░░░░░░░░░░░░░░░░░░   2.1%       88M
-  gpt-5.6-luna        ░░░░░░░░░░░░░░░░░░░░░░   0.9%       36M
+  claude-opus-5       ███████████████░░░░░░░  69.2%     3005M
+  gpt-5.6-sol         █████░░░░░░░░░░░░░░░░░  21.8%      947M
+  claude-fable-5      █░░░░░░░░░░░░░░░░░░░░░   5.4%      234M
+  claude-sonnet-5     ░░░░░░░░░░░░░░░░░░░░░░   2.0%       88M
+  gpt-5.6-luna        ░░░░░░░░░░░░░░░░░░░░░░   0.8%       36M
   claude-opus-4-8     ░░░░░░░░░░░░░░░░░░░░░░   0.4%       17M
 ```
 <!-- USAGE:END -->
@@ -143,7 +143,7 @@ graph LR
 The same discipline, off the clock — everything below runs at home:
 
 ```console
-Proxmox VE      238d uptime · every service in Compose, every service healthchecked
+Proxmox VE      239d uptime · every service in Compose, every service healthchecked
 Zero trust      Cloudflare Tunnel + Access · 5 tunnels · 20 ZTNA apps · 0 inbound ports
 Home Assistant  140 integrations · 394 entities · 54 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
