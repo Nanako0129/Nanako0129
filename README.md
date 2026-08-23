@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 25 sources (git), 1,623 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 25 sources (git), 1,624 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 239d up, 0 open ports      │
@@ -65,10 +65,10 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 655 | `v1.4.0` | — | today |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 656 | `v1.4.0` | — | today |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 536 | `v0.15.0` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 287 | `v1.13.3` | 5.8k | today |
-| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 77 | `v0.1.0` | 27 | 5d ago |
+| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 77 | `v0.1.0` | 27 | 6d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 116 | 6d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
 <!-- PROJECTS:END -->
@@ -103,11 +103,11 @@ last 7 days · 4.3B tokens · 14,571 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-23  TokenBar            docs(quota-history): finish reconciling the current-schema
+2026-08-23  TokenBar            docs(quota-history): name schema 4 as the current gate eve
+2026-08-23  TokenBar-Windows    feat(i18n): translate the dashboard lenses (S4c-2b)
 2026-08-23  TokenBar            fix(quota): make the model scope a required argument, and 
 2026-08-23  TokenBar            fix(quota): apply the model scope in the history folds, no
-2026-08-23  TokenBar            feat(quota): count only the scoped model in a model-scoped
-2026-08-23  TokenBar-Windows    feat(i18n): localize Format and extract the drill-down sum
-2026-08-23  TokenBar-Windows    feat(i18n): translate the pace and cost-authority copy (S4
 ```
 <!-- NOW:END -->
 
