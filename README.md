@@ -103,11 +103,11 @@ last 7 days · 4.0B tokens · 13,957 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-23  TokenBar            fix(quota): make the model scope a required argument, and 
+2026-08-23  TokenBar            fix(quota): apply the model scope in the history folds, no
+2026-08-23  TokenBar            feat(quota): count only the scoped model in a model-scoped
 2026-08-23  TokenBar-Windows    feat(i18n): localize Format and extract the drill-down sum
 2026-08-23  TokenBar-Windows    feat(i18n): translate the pace and cost-authority copy (S4
-2026-08-23  TokenBar-Windows    fix(flyout): hide the tab rows' horizontal scrollbars
-2026-08-23  coralline           docs: refresh pinned --ref examples from v0.14.0 to v0.15.
-2026-08-22  coralline           fix(state): bound a cached estimate's reset by the produce
 ```
 <!-- NOW:END -->
 
