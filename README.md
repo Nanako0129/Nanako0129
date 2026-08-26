@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 25 sources (git), 1,650 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 25 sources (git), 1,651 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 241d up, 0 open ports      │
@@ -67,7 +67,7 @@ roadmap.
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 672 | `v1.4.0` | — | 3d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 537 | `v0.15.0` | — | 3d ago |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 295 | `v1.14.3` | 6.2k | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 296 | `v1.14.3` | 6.2k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 78 | `v0.1.0` | 28 | 1d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 118 | 8d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
@@ -103,11 +103,11 @@ last 7 days · 4.2B tokens · 13,038 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-25  TokenBar            chore(release): state the axis on the Grok weekly correcti
-2026-08-25  TokenBar            chore(release): notes for v1.14.3
-2026-08-25  TokenBar-Windows    ci(crosscheck): advance the Swift oracle and port the pace
-2026-08-25  TokenBar            fix(grok): let a product row refute an empty week, never s
-2026-08-25  TokenBar            fix(grok): start a new weekly pace series for the pool per
+2026-08-26  calico-claude       fix(local-verify): make the TUI harness self-contained and
+2026-08-26  calico-claude       fix(patch): resolve the stream reducer's message helper in
+2026-08-26  calico-claude       fix(patch): stop routing cross-chunk helpers through globa
+2026-08-26  calico-claude       fix(patch): splice the streamingThinking injection by offs
+2026-08-26  calico-claude       docs(playbook): record the 2.1.242 chunk-split rules and t
 ```
 <!-- NOW:END -->
 
