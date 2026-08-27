@@ -41,11 +41,37 @@ ROOT = Path(__file__).resolve().parent.parent
 README = ROOT / "README.md"
 
 
-def gh(path):
+def gh(path, paginate=False):
     if not shutil.which("gh"):
         return None
-    r = subprocess.run(["gh", "api", path], capture_output=True, text=True)
+    cmd = ["gh", "api"]
+    if paginate:
+        cmd.append("--paginate")
+    cmd.append(path)
+    r = subprocess.run(cmd, capture_output=True, text=True)
     return json.loads(r.stdout) if r.returncode == 0 else None
+
+
+# download_count on a release asset is not an install. Sparkle (and the old
+# updater) polls latest.json on every check; those hits are not people who
+# fetched the app. TokenBar's badge already sums only installer archives
+# (\.(tar.gz|dmg|zip|pkg)$) and drops the metadata. This table used to add
+# every asset, so TokenBar's cell was the badge plus the feed traffic.
+# checksums.txt is the same class. apk is included because SocksBypass ships
+# one, and TokenBar's allow-list would zero it.
+INSTALL_ASSET = re.compile(
+    r"\.(tar\.gz|tgz|dmg|zip|pkg|apk|ipa|exe|msi|appimage|deb|rpm)$",
+    re.I,
+)
+
+
+def installer_downloads(releases):
+    return sum(
+        a["download_count"]
+        for r in releases
+        for a in r.get("assets", [])
+        if INSTALL_ASSET.search(a.get("name") or "")
+    )
 
 
 def replace_block(text, name, body):
@@ -80,8 +106,8 @@ def render_projects():
         repo = gh(f"repos/{USER}/{name}")
         if not repo:
             continue
-        releases = gh(f"repos/{USER}/{name}/releases?per_page=100") or []
-        dl = sum(a["download_count"] for r in releases for a in r.get("assets", []))
+        releases = gh(f"repos/{USER}/{name}/releases?per_page=100", paginate=True) or []
+        dl = installer_downloads(releases)
         tag = releases[0]["tag_name"] if releases else "—"
         rows.append((
             repo["stargazers_count"],

@@ -52,6 +52,31 @@ def test_homelab_readers_stay_out_of_ci():
         assert u.fetch_cloudflare_counts() is None
 
 
+def test_installer_downloads_drop_updater_metadata():
+    # The failure this guards is TokenBar's latest.json (Sparkle poll traffic)
+    # inflating the table to look like GitHub's raw download total. checksums
+    # are the same class; an .apk is a real artefact and has to survive.
+    releases = [
+        {
+            "assets": [
+                {"name": "TokenBar.app.tar.gz", "download_count": 3980},
+                {"name": "latest.json", "download_count": 2321},
+            ]
+        },
+        {"assets": [{"name": "TokenBar-Beta.app.tar.gz", "download_count": 43}]},
+        {
+            "assets": [
+                {"name": "remora-cc-0.1.22.tar.gz", "download_count": 5},
+                {"name": "checksums.txt", "download_count": 61},
+            ]
+        },
+        {"assets": [{"name": "app-debug.apk", "download_count": 30}]},
+        {"assets": []},
+        {},
+    ]
+    assert u.installer_downloads(releases) == 3980 + 43 + 5 + 30
+
+
 def test_homelab_patterns_still_match():
     # substitute() exits non-zero on a miss, but only on a run that reached the
     # API. Reword the panel and this fails now instead of at 05:30.
@@ -70,5 +95,6 @@ if __name__ == "__main__":
     test_os_line()
     test_readme_row_is_matchable()
     test_homelab_readers_stay_out_of_ci()
+    test_installer_downloads_drop_updater_metadata()
     test_homelab_patterns_still_match()
     print("ok")
