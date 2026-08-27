@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 25 sources (git), 1,664 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 25 sources (git), 1,665 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 243d up, 0 open ports      │
@@ -103,11 +103,11 @@ last 7 days · 4.2B tokens · 12,798 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-27  calico-claude       fix(patch): support Claude 2.1.248's hoisted session-id he
 2026-08-27  pilotfish           feat(benchmarks): bind spontaneous dispatch attempts (#79)
 2026-08-27  pilotfish           feat(benchmarks): bind issue 29 recovery attempts (#78)
 2026-08-27  TokenBar            refactor(test): table-drive DayBars and tooltip geometry f
 2026-08-27  pilotfish           feat(benchmarks): bind compact policy attempts (#77)
-2026-08-27  pilotfish           feat(benchmarks): bind Baton compatibility attempts (#76)
 ```
 <!-- NOW:END -->
 
