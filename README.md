@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 25 sources (git), 1,651 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 25 sources (git), 1,652 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 242d up, 0 open ports      │
@@ -65,9 +65,9 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 671 | `v1.4.0` | — | 3d ago |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 538 | `v0.15.0` | — | 3d ago |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 296 | `v1.14.3` | 6.3k | today |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 671 | `v1.4.0` | — | 4d ago |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 538 | `v0.15.0` | — | 4d ago |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 297 | `v1.14.3` | 6.3k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 78 | `v0.1.0` | 28 | 2d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 118 | 9d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
@@ -103,11 +103,11 @@ last 7 days · 4.1B tokens · 11,569 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-26  calico-claude       fix(local-verify): make the TUI harness self-contained and
-2026-08-26  calico-claude       fix(patch): resolve the stream reducer's message helper in
-2026-08-26  calico-claude       fix(patch): stop routing cross-chunk helpers through globa
-2026-08-26  calico-claude       fix(patch): splice the streamingThinking injection by offs
-2026-08-26  calico-claude       docs(playbook): record the 2.1.242 chunk-split rules and t
+2026-08-26  calico-claude       fix(verify): require reducer plumbing when the extras mark
+2026-08-26  calico-claude       fix(native-bun): clear stale sourcemaps in the offset-pres
+2026-08-26  calico-claude       fix(verify): version-gate the inline transcript-extras rel
+2026-08-26  calico-claude       fix(patch): resolve the message helper inside the position
+2026-08-26  calico-claude       fix(native-bun): write back only changed modules, and drop
 ```
 <!-- NOW:END -->
 
@@ -208,4 +208,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself nightly · last sync: 2026-08-26 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself nightly · last sync: 2026-08-27 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
