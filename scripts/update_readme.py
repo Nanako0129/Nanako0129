@@ -2,8 +2,8 @@
 """Regenerate the auto-updated blocks in README.md.
 
 Runs in two places with the same code:
-  - GitHub Actions (daily)   -> fills NEOFETCH / PROJECTS / NOW from the GitHub API
-  - the Mac (launchd, daily) -> additionally fills USAGE from local `tokscale`
+  - GitHub Actions (every 6h)   -> fills NEOFETCH / PROJECTS / NOW from the GitHub API
+  - the Mac (launchd, every 6h) -> additionally fills USAGE from local `tokscale`
     and Proxmox uptime over LAN SSH (CI cannot reach the homelab)
 
 Blocks it does not have data for are left untouched, so a CI run never wipes
@@ -31,6 +31,7 @@ FEATURED = [
     ("pilotfish", "Multi-model orchestration for Claude Code"),
     ("coralline", "Powerlevel10k-inspired statusline for Claude Code"),
     ("TokenBar", "Native macOS menu-bar monitor for AI token usage"),
+    ("sepia", "De-AI writing skill for coding agents"),
     ("remora-cc", "Session-scoped GPT-5.6 agent routing"),
     ("SocksBypass", "SOCKS5 proxy for iOS, built to defeat tethering limits"),
     ("postmortem-prose", "zh-TW tech longform in a postmortem voice"),
@@ -134,7 +135,7 @@ def render_now():
     commit message from it silently gets nothing. Asking each repository
     directly costs a handful of calls and actually returns messages.
 
-    This repo is skipped. Its history is mostly the nightly sync rewriting this
+    This repo is skipped. Its history is mostly the scheduled sync rewriting this
     very block, which would leave the section reporting on itself.
     """
     repos = gh(f"users/{USER}/repos?per_page=100&type=owner") or []

@@ -1,6 +1,6 @@
 <!--
   ╭─ hey, you opened the raw file ─────────────────────────────╮
-  │  Most of this page rebuilds itself every night:            │
+  │  Most of this page rebuilds itself every six hours:        │
   │  scripts/update_readme.py + .github/workflows/readme.yml   │
   │  The numbers below are not decoration. They are the build. │
   ╰────────────────────────────────────────────────────────────╯
@@ -23,7 +23,7 @@
 │      oW&fW&8&888888888888888888&&&oM8&o    Packages: 26 sources (git), 1,760 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
-│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 243d up, 0 open ports      │
+│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 244d up, 0 open ports      │
 │        dW88%%%88&&&8$$$$W8%88%%88&M*h&     CPU: Rust, Swift, Python, Ansible, K8s       │
 │        mM&8%BB%8&W&&$@$MW8BBB%B88&Mk       Locale: zh_TW.UTF-8 (English via translator) │
 │         b*&8%%%8%%8  $$BM&8888%88Ma                                                     │
@@ -41,18 +41,16 @@ Nanako (菜菜子), or Nyanako (喵菜子) if you know me from Discord. I'm an S
 systems reliable is the day job — the projects here are the same instinct pointed
 somewhere else.
 
-**UX has frontend engineers. DX has SRE.** That's the thread running from my work into
-everything on this page.
+**UX has frontend engineers. DX has SRE.**
 
 Every one of these started because I needed it. TokenBar exists because I wanted to know
 what a session actually cost without opening a dashboard. coralline exists because I've
 used Powerlevel10k in zsh for years and wanted the same thing in my Claude Code
 statusline — I only packaged it up because people kept asking how I'd done it.
 
-That's the whole pattern: I build it for myself, I share it because sharing is the good
-part, and once it's public I maintain it properly. What comes next is genuinely unknown —
-whatever I hit while learning, whatever annoys me enough to open a new repo. That's the
-roadmap.
+I share it because sharing is the good part, and once it's public I maintain it properly.
+What comes next is genuinely unknown — whatever I hit while learning, whatever annoys me
+enough to open a new repo.
 
 > The full story of the TokenBar rewrite — Rust core, Swift shell, and the FFI seam
 > between them — is written up here (zh-TW):
@@ -68,6 +66,7 @@ roadmap.
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 676 | `v1.4.1` | — | today |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 538 | `v0.15.0` | — | 5d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 302 | `v1.14.3` | 4.1k | today |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 94 | `v0.2.0` | — | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 78 | `v0.1.0` | 30 | 3d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 57 | 11d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
@@ -77,7 +76,7 @@ roadmap.
 ~ ❯ tokscale models --week --group-by model
 ```
 
-> Real usage, pushed here nightly by a cron job on my Mac. The numbers come from
+> Real usage, pushed here every six hours by a cron job on my Mac. The numbers come from
 > [tokscale](https://github.com/junhoyeo/tokscale) — junhoyeo's Rust engine for reading
 > agent session data, and the engine [TokenBar](https://github.com/Nanako0129/TokenBar)
 > runs on. I send fixes upstream when I trip over them; the Swift shell around it is my
@@ -86,13 +85,13 @@ roadmap.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 4.6B tokens · 14,122 messages
+last 7 days · 4.7B tokens · 14,377 messages
 
-  claude-opus-5       █████████████░░░░░░░░░  60.6%     2797M
-  gpt-5.6-sol         █████░░░░░░░░░░░░░░░░░  23.1%     1065M
-  claude-sonnet-5     █░░░░░░░░░░░░░░░░░░░░░   5.5%      253M
-  claude-fable-5      █░░░░░░░░░░░░░░░░░░░░░   4.4%      205M
-  grok-4.6            █░░░░░░░░░░░░░░░░░░░░░   2.9%      132M
+  claude-opus-5       █████████████░░░░░░░░░  60.2%     2808M
+  gpt-5.6-sol         █████░░░░░░░░░░░░░░░░░  23.0%     1073M
+  claude-sonnet-5     █░░░░░░░░░░░░░░░░░░░░░   5.4%      253M
+  claude-fable-5      █░░░░░░░░░░░░░░░░░░░░░   5.0%      235M
+  grok-4.6            █░░░░░░░░░░░░░░░░░░░░░   2.8%      132M
   gpt-5.6-luna        ░░░░░░░░░░░░░░░░░░░░░░   1.9%       88M
 ```
 <!-- USAGE:END -->
@@ -143,7 +142,7 @@ graph LR
 The same discipline, off the clock — everything below runs at home:
 
 ```console
-Proxmox VE      243d uptime · every service in Compose, every service healthchecked
+Proxmox VE      244d uptime · every service in Compose, every service healthchecked
 Zero trust      Cloudflare Tunnel + Access · 5 tunnels · 20 ZTNA apps · 0 inbound ports
 Home Assistant  140 integrations · 396 entities · 54 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
@@ -208,4 +207,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself nightly · last sync: 2026-08-28 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself every six hours · last sync: 2026-08-28 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
