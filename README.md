@@ -65,9 +65,9 @@ roadmap.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 677 | `v1.4.1` | — | today |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 539 | `v0.15.0` | — | 4d ago |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 301 | `v1.14.3` | 4.0k | today |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 676 | `v1.4.1` | — | today |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 539 | `v0.15.0` | — | 5d ago |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 302 | `v1.14.3` | 4.0k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 78 | `v0.1.0` | 30 | 3d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 57 | 10d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
@@ -103,11 +103,11 @@ last 7 days · 4.2B tokens · 12,798 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-28  pilotfish           feat(benchmarks): bind verifier paid summaries (#82)
+2026-08-28  pilotfish           feat(benchmarks): bind verifier boundary attempts (#81)
 2026-08-27  calico-claude       fix(patch): support Claude 2.1.248's hoisted session-id he
 2026-08-27  pilotfish           feat(benchmarks): bind spontaneous dispatch attempts (#79)
 2026-08-27  pilotfish           feat(benchmarks): bind issue 29 recovery attempts (#78)
-2026-08-27  TokenBar            refactor(test): table-drive DayBars and tooltip geometry f
-2026-08-27  pilotfish           feat(benchmarks): bind compact policy attempts (#77)
 ```
 <!-- NOW:END -->
 
@@ -208,4 +208,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself nightly · last sync: 2026-08-27 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself nightly · last sync: 2026-08-28 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
