@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 25 sources (git), 1,665 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 26 sources (git), 1,686 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 243d up, 0 open ports      │
@@ -66,8 +66,8 @@ roadmap.
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 676 | `v1.4.1` | — | today |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 539 | `v0.15.0` | — | 5d ago |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 302 | `v1.14.3` | 4.0k | today |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 538 | `v0.15.0` | — | 5d ago |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 302 | `v1.14.3` | 4.1k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 78 | `v0.1.0` | 30 | 3d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 57 | 10d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
@@ -103,11 +103,11 @@ last 7 days · 4.3B tokens · 13,175 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-28  pilotfish           feat(benchmarks): bind verifier paid summaries (#82)
-2026-08-28  pilotfish           feat(benchmarks): bind verifier boundary attempts (#81)
-2026-08-27  calico-claude       fix(patch): support Claude 2.1.248's hoisted session-id he
-2026-08-27  pilotfish           feat(benchmarks): bind spontaneous dispatch attempts (#79)
-2026-08-27  pilotfish           feat(benchmarks): bind issue 29 recovery attempts (#78)
+2026-08-28  calico-claude       fix(watch-poke): persist CALICO_WATCH_REPO into the instal
+2026-08-28  sepia               docs(install): native install + update commands per platfo
+2026-08-28  calico-claude       fix(watch-poke): XML-escape the paths interpolated into th
+2026-08-28  calico-claude       fix(ci): pin a bun version that exists, and poke the watch
+2026-08-28  sepia               docs: promote the Chinese README to a full peer translatio
 ```
 <!-- NOW:END -->
 
