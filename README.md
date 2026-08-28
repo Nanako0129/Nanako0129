@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 26 sources (git), 1,731 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 26 sources (git), 1,760 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 243d up, 0 open ports      │
@@ -103,11 +103,11 @@ last 7 days · 4.6B tokens · 14,122 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-28  sepia               docs(zh): retranslate the Chinese README via a Codex-led t
+2026-08-28  sepia               docs(zh): calibration targets the whole human distribution
+2026-08-28  sepia               docs(zh): restore frontier qualifier (頂尖 LLM); rename 表面風格
+2026-08-28  sepia               docs(zh): de-AI pass on the Chinese README + fix a CJK bol
 2026-08-28  calico-claude       fix(watch-poke): persist CALICO_WATCH_REPO into the instal
-2026-08-28  sepia               docs(install): native install + update commands per platfo
-2026-08-28  calico-claude       fix(watch-poke): XML-escape the paths interpolated into th
-2026-08-28  calico-claude       fix(ci): pin a bun version that exists, and poke the watch
-2026-08-28  sepia               docs: promote the Chinese README to a full peer translatio
 ```
 <!-- NOW:END -->
 
