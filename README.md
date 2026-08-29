@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 26 sources (git), 2,232 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 26 sources (git), 2,245 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 244d up, 0 open ports      │
@@ -64,9 +64,9 @@ enough to open a new repo.
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 678 | `v1.4.1` | — | 1d ago |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 564 | `v0.2.0` | — | today |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 576 | `v0.2.0` | — | today |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 538 | `v0.15.0` | — | 6d ago |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 304 | `v1.14.3` | 4.1k | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 305 | `v1.14.3` | 4.1k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 78 | `v0.1.0` | 31 | 4d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 57 | 12d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
@@ -102,11 +102,11 @@ last 7 days · 4.3B tokens · 12,924 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-28  calico-claude       fix(verify): bound the gateway handler segments to their o
-2026-08-28  calico-claude       fix(patch,verify): support Claude 2.1.251's statusline and
-2026-08-28  sepia               docs(zh): retranslate the Chinese README via a Codex-led t
-2026-08-28  sepia               docs(zh): calibration targets the whole human distribution
-2026-08-28  sepia               docs(zh): restore frontier qualifier (頂尖 LLM); rename 表面風格
+2026-08-29  calico-claude       ci(watch): compare staleness even when a platform release 
+2026-08-29  calico-claude       ci(watch): decide staleness by excluding non-build paths, 
+2026-08-29  calico-claude       ci(watch): track the release workflow in the stale-source 
+2026-08-29  calico-claude       ci(watch): republish when a release predates the patch sou
+2026-08-29  calico-claude       feat(patch): restore the fullscreen sticky prompt header, 
 ```
 <!-- NOW:END -->
 
