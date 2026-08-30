@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 26 sources (git), 2,442 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 26 sources (git), 2,456 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 245d up, 0 open ports      │
@@ -63,7 +63,7 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 770 | `v0.2.0` | — | today |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 784 | `v0.2.0` | — | today |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 678 | `v1.4.1` | — | 2d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 538 | `v0.15.0` | — | 7d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 308 | `v1.14.3` | 4.1k | today |
@@ -102,11 +102,11 @@ last 7 days · 3.4B tokens · 11,084 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-30  sepia               chore(release): prepare v0.3.0
+2026-08-29  sepia               fix(readme): meet dark-theme chart contrast
+2026-08-29  sepia               docs(readme): add repository-owned Star trend snapshot
 2026-08-29  TokenBar            fix(quota): date the handover instead of trusting coverage
-2026-08-29  TokenBar            fix(quota): close irregular-reset windows on a measured su
-2026-08-29  NyanCogs            fix(channelsummary): expose safe validation reasons
-2026-08-29  NyanCogs            fix(channelsummary): accept bounded valid source reference
-2026-08-29  calico-claude       ci(watch): compare staleness even when a platform release 
+2026-08-29  sepia               feat(plugin): expose explicit Sepia operations
 ```
 <!-- NOW:END -->
 
