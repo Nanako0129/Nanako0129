@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 26 sources (git), 2,519 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 2,543 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 246d up, 0 open ports      │
@@ -63,7 +63,7 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 844 | `v0.3.0` | — | today |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 868 | `v0.3.0` | — | today |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 680 | `v1.4.1` | — | 2d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 538 | `v0.15.0` | — | 7d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 309 | `v1.14.4` | 4.2k | today |
@@ -102,11 +102,11 @@ last 7 days · 3.6B tokens · 11,520 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-30  asia-yo-sre-hiring  docs: 附上與 AI agent 的對話記錄
+2026-08-30  asia-yo-sre-hiring  docs(scenario): 情境實戰測驗題目四——新服務串接 ELK/EFK
+2026-08-30  asia-yo-sre-hiring  docs(scenario): 情境實戰測驗題目三——EC2 服務正常但無法 SSH 登入
+2026-08-30  asia-yo-sre-hiring  docs(scenario): 情境實戰測驗題目二——叢集單機回應逾時的排查
 2026-08-30  sepia               docs(platforms): align Antigravity skill discovery
-2026-08-30  TokenBar            chore(release): run the notes through a prose pass
-2026-08-30  TokenBar            chore(release): bound the projection exclusion at nine ten
-2026-08-30  TokenBar            chore(release): qualify which early-ended windows survive
-2026-08-30  TokenBar            chore(release): correct which estimate the exclusion appli
 ```
 <!-- NOW:END -->
 
