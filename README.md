@@ -20,10 +20,10 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 26 sources (git), 2,456 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 26 sources (git), 2,476 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
-│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 245d up, 0 open ports      │
+│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 246d up, 0 open ports      │
 │        dW88%%%88&&&8$$$$W8%88%%88&M*h&     CPU: Rust, Swift, Python, Ansible, K8s       │
 │        mM&8%BB%8&W&&$@$MW8BBB%B88&Mk       Locale: zh_TW.UTF-8 (English via translator) │
 │         b*&8%%%8%%8  $$BM&8888%88Ma                                                     │
@@ -63,11 +63,11 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 784 | `v0.2.0` | — | today |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 678 | `v1.4.1` | — | 2d ago |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 803 | `v0.3.0` | — | today |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 679 | `v1.4.1` | — | 2d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 538 | `v0.15.0` | — | 7d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 308 | `v1.14.3` | 4.1k | today |
-| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS, built to defeat tethering limits | ★ 78 | `v0.1.0` | 32 | 5d ago |
+| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 78 | `v0.1.0` | 32 | 5d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 58 | 12d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
 <!-- PROJECTS:END -->
@@ -85,13 +85,13 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.4B tokens · 11,213 messages
+last 7 days · 3.5B tokens · 11,336 messages
 
-  claude-opus-5       ███████████░░░░░░░░░░░  49.9%     1713M
-  gpt-5.6-sol         ███████░░░░░░░░░░░░░░░  32.5%     1115M
+  claude-opus-5       ███████████░░░░░░░░░░░  50.0%     1736M
+  gpt-5.6-sol         ███████░░░░░░░░░░░░░░░  32.6%     1133M
   claude-sonnet-5     █░░░░░░░░░░░░░░░░░░░░░   5.8%      200M
   grok-4.6            █░░░░░░░░░░░░░░░░░░░░░   3.8%      132M
-  claude-fable-5      █░░░░░░░░░░░░░░░░░░░░░   2.9%      101M
+  claude-fable-5      █░░░░░░░░░░░░░░░░░░░░░   2.9%      102M
   gpt-5.6-luna        █░░░░░░░░░░░░░░░░░░░░░   2.9%      101M
 ```
 <!-- USAGE:END -->
@@ -102,11 +102,11 @@ last 7 days · 3.4B tokens · 11,213 messages
 
 <!-- NOW:START -->
 ```console
+2026-08-30  sepia               docs(readme): prioritize product context
 2026-08-30  sepia               chore(release): prepare v0.3.0
 2026-08-29  sepia               fix(readme): meet dark-theme chart contrast
-2026-08-29  sepia               docs(readme): add repository-owned Star trend snapshot
 2026-08-29  TokenBar            fix(quota): date the handover instead of trusting coverage
-2026-08-29  sepia               feat(plugin): expose explicit Sepia operations
+2026-08-29  TokenBar            fix(quota): close irregular-reset windows on a measured su
 ```
 <!-- NOW:END -->
 
@@ -119,8 +119,9 @@ graph LR
   TS["tokscale<br/><i>junhoyeo · upstream</i>"] --> TC["tokscale-core<br/><i>shared Rust core,<br/>extracted from TokenBar</i>"]
   TC --> T2
   T1["TokenBar-Tauri<br/><i>Tauri 2 · retired</i>"] --> T2["<b>TokenBar</b><br/>Swift shell"]
-  T2 --> T3["TokenBar-Windows"]
+  T2 --> T3["TokenBar-Windows<br/><i>ships as Nyanako.Syrtis</i>"]
   T2 --> T4["homebrew-tokenbar"]
+  SY["Syrtis-Agent<br/><i>frozen protocol contracts,<br/>remote usage sharing</i>"] --> T3
 
   P1["<b>pilotfish</b><br/>Claude Code"] --> P2["pilotfish-grok"]
   P1 --> P3["pilotfish-codex"]
@@ -129,10 +130,14 @@ graph LR
 
   C1["<b>coralline</b><br/>statusline"]
   N1["NyanCogs<br/><i>Red Discord bot cogs</i>"]
+  S1["SocksBypass<br/><i>iOS Swift · Android Kotlin</i>"]
+  CR["Cryptocentrus<br/><i>goal guardian · Codex</i>"]
+
+  SS["StoryScope<br/><i>Russell et al. · arXiv</i>"] --> W3["<b>sepia</b><br/>de-AI writing"]
   W1["postmortem-prose"] --> W2["md-style"]
 
   classDef flagship fill:#2f81f7,stroke:#1f6feb,color:#fff
-  class T2,P1,C1 flagship
+  class T2,P1,C1,W3 flagship
 ```
 
 ```console
@@ -142,7 +147,7 @@ graph LR
 The same discipline, off the clock — everything below runs at home:
 
 ```console
-Proxmox VE      245d uptime · every service in Compose, every service healthchecked
+Proxmox VE      246d uptime · every service in Compose, every service healthchecked
 Zero trust      Cloudflare Tunnel + Access · 5 tunnels · 20 ZTNA apps · 0 inbound ports
 Home Assistant  140 integrations · 396 entities · 54 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS

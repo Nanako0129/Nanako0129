@@ -33,7 +33,7 @@ FEATURED = [
     ("TokenBar", "Native macOS menu-bar monitor for AI token usage"),
     ("sepia", "De-AI writing skill for coding agents"),
     ("remora-cc", "Session-scoped GPT-5.6 agent routing"),
-    ("SocksBypass", "SOCKS5 proxy for iOS, built to defeat tethering limits"),
+    ("SocksBypass", "SOCKS5 proxy for iOS and Android, built to defeat tethering limits"),
     ("postmortem-prose", "zh-TW tech longform in a postmortem voice"),
 ]
 BAR_WIDTH = 22
