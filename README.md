@@ -201,8 +201,7 @@ easier and you want to say so there, that's welcome as well — I read every one
 **Anything formal** → email me at **nanakotsai@nyanako.com**.
 
 **Anything casual** → the Discord above, DM me there, or find me on
-[Threads](https://www.threads.com/@nyanako0129). My X account is private, so
-that's not the way in.
+[Threads](https://www.threads.com/@nyanako0129) and [X](https://x.com/Nyanako0129).
 
 A note on language: I'm a native Traditional Chinese speaker and my English isn't fluent —
 some of my replies go through a translator. Chinese is very welcome, and please bear with
