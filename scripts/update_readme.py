@@ -2,9 +2,14 @@
 """Regenerate the auto-updated blocks in README.md.
 
 Runs in two places with the same code:
-  - GitHub Actions (every 6h)   -> fills NEOFETCH / PROJECTS / NOW from the GitHub API
-  - the Mac (launchd, every 6h) -> additionally fills USAGE from local `tokscale`
-    and Proxmox uptime over LAN SSH (CI cannot reach the homelab)
+  - GitHub Actions    -> fills NEOFETCH / PROJECTS / NOW from the GitHub API
+  - the Mac (launchd) -> additionally fills USAGE from local `tokscale`
+                         and Proxmox uptime over LAN SSH (CI cannot reach the
+                         homelab)
+
+How often each runs is stated in .github/workflows/readme.yml and
+scripts/com.nanako.readme-sync.plist, and nowhere else. cadence_report() below
+reconciles the two against every sentence in README.md that claims a frequency.
 
 Blocks it does not have data for are left untouched, so a CI run never wipes
 the usage panel / last-known Proxmox uptime and a local run never needs
@@ -618,8 +623,8 @@ def resolve_os_line(readme_text):
 
     render_neofetch() also runs on the CI runner, where platform.mac_ver() is
     empty and platform.machine() answers x86_64, so deriving this
-    unconditionally would let ubuntu overwrite the row with its own identity
-    every six hours. Same contract as USAGE and the Proxmox uptime: only the
+    unconditionally would let ubuntu overwrite the row with its own identity on
+    every scheduled run. Same contract as USAGE and the Proxmox uptime: only the
     environment that can actually observe a value may write it, everywhere
     else the last observed one stands. Matched up to the box border, since the
     row is padded out to the frame.

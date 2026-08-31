@@ -16,9 +16,11 @@
     <string>/bin/sh</string>
     <string>/Users/nanako/side-project/Nanako0129/scripts/sync-local.sh</string>
   </array>
-  <!-- Every six hours, ~1h after CI (04:23/10:23/16:23/22:23 Asia/Taipei) so
-       the two do not push at the same moment. Avoids the morning commute slot
-       around 09:30. A run missed because the Mac was asleep fires once on wake. -->
+  <!-- Every six hours, about an hour after each CI run so the two do not push at
+       the same moment. The times live in the entries below and nowhere else:
+       this comment used to repeat them and was repeating CI's schedule, not this
+       agent's. Avoids the morning commute slot around 09:30. A run missed because
+       the Mac was asleep fires once on wake. -->
   <key>StartCalendarInterval</key>
   <array>
     <dict><key>Hour</key><integer>5</integer><key>Minute</key><integer>30</integer></dict>

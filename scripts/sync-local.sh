@@ -30,7 +30,7 @@ done
 # A rebase already in flight is a human's, not ours: this script is the only
 # other writer here and it never leaves one behind (see pull_rebase). Touching
 # it would throw away a conflict resolution someone is in the middle of, so
-# stop instead — the sync is six hours from running again.
+# stop instead — the sync will run again before long.
 git_dir=$(git rev-parse --git-dir)
 if [ -d "$git_dir/rebase-merge" ] || [ -d "$git_dir/rebase-apply" ]; then
   echo "sync-local: a rebase is already in progress; leaving the repo alone" >&2
@@ -77,8 +77,8 @@ python3 scripts/update_readme.py || readme_ok=$?
 git add -A
 git diff --cached --quiet || {
   # Commit as the bot, not as me. GitHub credits the contribution graph by the
-  # commit author's email, so four automated commits a day under my own address
-  # would fill the graph with a cron job's work. Scoped with -c rather than
+  # commit author's email, so automated commits under my own address would fill
+  # the graph with a cron job's work. Scoped with -c rather than
   # written into the repo config, so commits I actually make stay mine.
   git -c user.name="github-actions[bot]" \
       -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
