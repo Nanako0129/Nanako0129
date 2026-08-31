@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 2,738 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 2,861 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 246d up, 0 open ports      │
@@ -63,12 +63,12 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 1058 | `v0.4.0` | — | today |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 681 | `v1.4.1` | — | 3d ago |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 1179 | `v0.4.0` | — | today |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 682 | `v1.4.1` | — | 3d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 538 | `v0.15.0` | — | 8d ago |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 313 | `v1.14.4` | 4.3k | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 314 | `v1.14.4` | 4.3k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 78 | `v0.1.0` | 32 | 6d ago |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 58 | 13d ago |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 58 | 14d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
 <!-- PROJECTS:END -->
 
@@ -102,11 +102,11 @@ last 7 days · 3.4B tokens · 11,345 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-31  TokenBar-Windows    fix(pack): read the wrapper's payload in a child process
-2026-08-31  TokenBar-Windows    fix(install): a blank path argument is not the absence of 
-2026-08-31  TokenBar-Windows    fix(install): delete the partial payload when extraction f
-2026-08-31  TokenBar-Windows    fix(install): route a failed payload extraction to the sam
-2026-08-31  calico-claude       ci(notify): scope workflow_run notifier to watcher failure
+2026-08-31  TokenBar-Windows    fix(quota): retry a history read the writer replaced mid-f
+2026-08-31  TokenBar-Windows    fix(quota): validate the store before exporting it
+2026-08-31  TokenBar-Windows    feat(quota): export stored quota history and fold it into 
+2026-08-31  sepia               fix(install-docs): align claim strength with evidence per 
+2026-08-31  TokenBar-Windows    fix(overview): show today as zero, because the header alre
 ```
 <!-- NOW:END -->
 
