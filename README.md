@@ -20,10 +20,10 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 2,682 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 2,875 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
-│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 246d up, 0 open ports      │
+│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 247d up, 0 open ports      │
 │        dW88%%%88&&&8$$$$W8%88%%88&M*h&     CPU: Rust, Swift, Python, Ansible, K8s       │
 │        mM&8%BB%8&W&&$@$MW8BBB%B88&Mk       Locale: zh_TW.UTF-8 (English via translator) │
 │         b*&8%%%8%%8  $$BM&8888%88Ma                                                     │
@@ -63,12 +63,12 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 1003 | `v0.4.0` | — | today |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 681 | `v1.4.1` | — | 3d ago |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 1193 | `v0.4.0` | — | today |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 682 | `v1.4.1` | — | 3d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 538 | `v0.15.0` | — | 8d ago |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 312 | `v1.14.4` | 4.2k | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 314 | `v1.14.4` | 4.3k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 78 | `v0.1.0` | 32 | 6d ago |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 58 | 13d ago |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 58 | 14d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
 <!-- PROJECTS:END -->
 
@@ -85,14 +85,14 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.2B tokens · 11,059 messages
+last 7 days · 3.5B tokens · 11,640 messages
 
-  claude-opus-5       ██████████░░░░░░░░░░░░  44.7%     1446M
-  gpt-5.6-sol         ████████░░░░░░░░░░░░░░  36.3%     1175M
-  claude-sonnet-5     █░░░░░░░░░░░░░░░░░░░░░   5.1%      164M
-  claude-fable-5      █░░░░░░░░░░░░░░░░░░░░░   5.1%      164M
-  grok-4.6            █░░░░░░░░░░░░░░░░░░░░░   4.1%      132M
-  gpt-5.6-luna        █░░░░░░░░░░░░░░░░░░░░░   3.1%      101M
+  claude-opus-5       ██████████░░░░░░░░░░░░  47.6%     1647M
+  gpt-5.6-sol         ████████░░░░░░░░░░░░░░  34.4%     1190M
+  claude-fable-5      █░░░░░░░░░░░░░░░░░░░░░   5.8%      202M
+  claude-sonnet-5     █░░░░░░░░░░░░░░░░░░░░░   5.1%      176M
+  grok-4.6            █░░░░░░░░░░░░░░░░░░░░░   3.9%      134M
+  gpt-5.6-luna        █░░░░░░░░░░░░░░░░░░░░░   2.8%       98M
 ```
 <!-- USAGE:END -->
 
@@ -102,11 +102,11 @@ last 7 days · 3.2B tokens · 11,059 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-31  calico-claude       ci(notify): scope workflow_run notifier to watcher failure
-2026-08-31  calico-claude       ci(patch): notify Discord in-pipeline on failure
-2026-08-31  sepia               fix(voice-skills): style-pass thresholds unchanged under a
-2026-08-31  sepia               chore(release): prepare v0.4.0
-2026-08-31  calico-claude       ci(watch): stop treating unrelated workflows as build inpu
+2026-08-31  TokenBar-Windows    fix(quota): retry a history read the writer replaced mid-f
+2026-08-31  TokenBar-Windows    fix(quota): validate the store before exporting it
+2026-08-31  TokenBar-Windows    feat(quota): export stored quota history and fold it into 
+2026-08-31  sepia               fix(install-docs): align claim strength with evidence per 
+2026-08-31  TokenBar-Windows    fix(overview): show today as zero, because the header alre
 ```
 <!-- NOW:END -->
 
@@ -147,7 +147,7 @@ graph LR
 The same discipline, off the clock — everything below runs at home:
 
 ```console
-Proxmox VE      246d uptime · every service in Compose, every service healthchecked
+Proxmox VE      247d uptime · every service in Compose, every service healthchecked
 Zero trust      Cloudflare Tunnel + Access · 5 tunnels · 20 ZTNA apps · 0 inbound ports
 Home Assistant  140 integrations · 396 entities · 54 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS

@@ -205,6 +205,47 @@ def test_every_cron_trigger_counts():
     assert u.ci_interval_hours(six + '    - cron: "23 JAN * * *"\n') is None
 
 
+def test_a_wrapped_claim_is_still_a_claim():
+    """Reflowing prose must not change what the check sees.
+
+    Both directions failed before: with every claim wrapped the run reported
+    correct prose as missing, and with one claim wrapped and wrong it read
+    straight past it. The README wraps near ninety columns and the usage
+    sentence sits in a blockquote, so this is an ordinary edit, not an exotic one.
+    """
+    quote = "> Real usage, pushed here every six hours by a cron job on my Mac."
+    assert quote in _README
+
+    # Wrapped inside a blockquote — the continuation line starts with "> ".
+    wrapped = _README.replace(
+        quote, "> Real usage, pushed here every six\n> hours by a cron job on my Mac."
+    )
+    assert u.cadence_report(wrapped) == []
+    # Wrapped and wrong is still caught.
+    bad = _README.replace(
+        quote, "> Real usage, pushed here every three\n> hours by a cron job on my Mac."
+    )
+    assert "'every three hours'" in u.cadence_report(bad)[0], u.cadence_report(bad)
+
+    # Every claim wrapped at once: the backstop must not fire on true prose.
+    every = wrapped.replace(
+        "Most of this page rebuilds itself every six hours:",
+        "Most of this page rebuilds itself every six\n  │  hours:",
+    ).replace(
+        "This page rebuilds itself every six hours ·",
+        "This page rebuilds itself every six\nhours ·",
+    )
+    assert u.cadence_report(every) == []
+
+    # A blank line is a paragraph break, not a wrap, and flatten must not join
+    # across one — otherwise two unrelated paragraphs could be spliced into a
+    # phrase neither of them contains.
+    assert u.flatten("pushed here every six\n> hours by a cron job") == (
+        "pushed here every six hours by a cron job"
+    )
+    assert "\n" not in u.flatten("a\n  │  b  │\n> c")
+
+
 def test_both_schedulers_refuse_the_same_things():
     """The two parsers are one contract in two implementations.
 
@@ -420,6 +461,7 @@ if __name__ == "__main__":
     test_launchd_minutes_are_part_of_the_schedule()
     test_launchd_calendar_restrictions_are_unchecked()
     test_every_cron_trigger_counts()
+    test_a_wrapped_claim_is_still_a_claim()
     test_both_schedulers_refuse_the_same_things()
     test_the_workflow_comment_is_checked_too()
     test_day_restricted_cron_is_unchecked()

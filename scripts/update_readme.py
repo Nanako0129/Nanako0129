@@ -67,9 +67,10 @@ FEATURED = [
     (
         "sepia",
         "De-AI writing skill for coding agents",
-        "De-AI writing skill for Claude Code, Codex, Grok Build, and Antigravity — "
-        "narrative-architecture repair for fiction, venue-matched rules for "
-        "professional prose. Based on StoryScope (arXiv:2604.03136).",
+        "De-AI writing skill for any Agent Skills-compatible agent (77+ via the "
+        "Skills CLI), with native plugins for Claude Code, Codex, Grok Build, and "
+        "Antigravity. Narrative-architecture repair for fiction, venue-matched "
+        "rules for professional prose. Based on StoryScope (arXiv:2604.03136).",
     ),
     (
         "remora-cc",
@@ -501,10 +502,26 @@ def prose_only(text):
     return GENERATED_BLOCK.sub("", text)
 
 
+def flatten(paragraph):
+    """One paragraph as a single line, with the markdown and box-drawing
+    prefixes that start its continuation lines removed.
+
+    A claim that wraps is still a claim. This README wraps at about ninety
+    columns and its cadence sentences sit inside a blockquote, so reflowing one
+    into "every six\\n> hours" is an ordinary edit — and it used to make the
+    phrase invisible to the scan, which then either reported correct prose as
+    missing or read straight past a wrong claim. CADENCE_CLAIM matches on single
+    spaces and relies on this; the normalisation lives here and only here.
+    """
+    lines = (re.sub(r"^[\s>#│]+|[\s│]+$", "", line) for line in paragraph.splitlines())
+    return " ".join(" ".join(lines).split())
+
+
 def cadence_claims(body):
     """Cadence phrases from paragraphs that are about rebuilding this page."""
     claims = set()
     for para in re.split(r"\n\s*\n", prose_only(body)):
+        para = flatten(para)
         if REBUILD_CONTEXT.search(para):
             claims |= {m.group(0).lower() for m in CADENCE_CLAIM.finditer(para)}
     return claims
