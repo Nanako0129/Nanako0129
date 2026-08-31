@@ -179,6 +179,43 @@ def test_every_cron_trigger_counts():
     assert u.ci_interval_hours(six + '    - cron: "23 JAN * * *"\n') is None
 
 
+def test_day_restricted_cron_is_unchecked():
+    # `23 2,8,14,20 * * 1-5` is six-hourly inside a weekday and 54 hours from
+    # Friday 20:23 to Monday 02:23. An interval cannot describe it, so it must
+    # not be given one. Same mistake as reading the hour and calling it the time.
+    for expr in (
+        "23 2,8,14,20 * * 1-5",   # weekdays only
+        "23 2,8,14,20 1 * *",     # first of the month
+        "23 2,8,14,20 * 6 *",     # June only
+        "23 2,8,14,20 * *",       # too few fields
+        "23 2,8,14,20 * * * *",   # too many
+    ):
+        assert u.ci_interval_hours(f'    - cron: "{expr}"\n') is None, expr
+    assert u.ci_interval_hours('    - cron: "23 2,8,14,20 * * *"\n') == 6
+
+
+def test_a_daily_schedule_may_be_called_daily():
+    # If both schedulers move to once a day, "rebuilds daily" is true prose and
+    # must not fail the run. cadence_phrases(24) used to accept only the
+    # arithmetic spelling.
+    assert u.ci_interval_hours('    - cron: "0 5 * * *"\n') == 24
+    with mock.patch.object(u, "ci_interval_hours", lambda *a, **k: 24), \
+         mock.patch.object(u, "agent_interval_hours", lambda *a, **k: 24), \
+         mock.patch.object(u, "_read", lambda p: ""):
+        assert u.cadence_report("This page rebuilds itself daily.") == []
+        assert u.cadence_report("This page is regenerated every day.") == []
+        assert u.cadence_report("This page rebuilds itself every six hours.")
+
+
+def test_accepted_phrases_are_all_matchable():
+    # cadence_phrases() and CADENCE_CLAIM are two statements of one contract.
+    # If the accepted set grows a phrase the matcher cannot find, cadence_claims()
+    # returns nothing for it and the backstop reports true prose as missing.
+    for hours in (1, 2, 3, 4, 6, 8, 12, 24):
+        for phrase in u.cadence_phrases(hours):
+            assert u.CADENCE_CLAIM.fullmatch(phrase), (hours, phrase)
+
+
 def test_generated_blocks_are_not_prose():
     # render_now() copies commit subjects out of other repositories verbatim.
     # Someone else committing "daily backup schedule" must not fail this sync.
@@ -294,6 +331,9 @@ if __name__ == "__main__":
     test_cadence_reads_both_real_schedules()
     test_launchd_minutes_are_part_of_the_schedule()
     test_every_cron_trigger_counts()
+    test_day_restricted_cron_is_unchecked()
+    test_a_daily_schedule_may_be_called_daily()
+    test_accepted_phrases_are_all_matchable()
     test_generated_blocks_are_not_prose()
     test_every_spelling_of_one_schedule_agrees()
     test_cadence_ignores_prose_that_is_not_about_rebuilding()

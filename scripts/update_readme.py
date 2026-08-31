@@ -442,8 +442,14 @@ def fetch_cloudflare_counts():
 WORKFLOW = ROOT / ".github" / "workflows" / "readme.yml"
 PLIST = ROOT / "scripts" / "com.nanako.readme-sync.plist"
 NUMBER_WORDS = {1: "one", 2: "two", 3: "three", 4: "four", 6: "six", 8: "eight", 12: "twelve"}
-# Any phrase that asserts a rebuild frequency, right or wrong.
-CADENCE_CLAIM = re.compile(r"\bnightly\b|\bdaily\b|\bevery night\b|\bevery [a-z0-9-]+ hours?\b", re.I)
+# Any phrase that asserts a rebuild frequency, right or wrong. This has to be at
+# least as wide as everything cadence_phrases() can emit: a phrase the check
+# calls correct but cannot find would leave the backstop firing on true prose.
+CADENCE_CLAIM = re.compile(
+    r"\bnightly\b|\bdaily\b|\bevery night\b|\bevery day\b"
+    r"|\bhourly\b|\bevery hour\b|\bevery [a-z0-9-]+ hours\b",
+    re.I,
+)
 # ...but only where the surrounding paragraph is talking about this page being
 # rebuilt. "TokenBar is my daily driver" is not a claim about the schedule, and a
 # check that fails the run over it would be edited out rather than obeyed. Whole
@@ -458,14 +464,25 @@ REBUILD_CONTEXT = re.compile(r"rebuild|refresh|regenerat|sync|push|cron|schedul|
 
 
 def cadence_phrases(hours):
-    """Every spelling of the same interval that should count as correct.
+    """Every spelling of one interval that should count as correct.
 
-    "every six hours" and "every 6 hours" say the same thing, and only one of
-    them was accepted until a fresh reviewer pointed out that writing the other
-    would fail the run for no reason.
+    Both the word and the digit are right — "every six hours" and "every 6
+    hours" — and only one of them was accepted until a reviewer pointed out that
+    writing the other would fail a run for no reason. At the ends of the range
+    English has its own words: a once-a-day schedule is "daily", an hourly one
+    is "hourly", and a check accepting only "every 24 hours" would reject prose
+    that was true.
+
+    "nightly" is deliberately absent even from the 24-hour set. It says *when*,
+    not only how often, and this reconciliation measures the interval alone — it
+    cannot tell whether a daily run happens at night. Every phrase returned here
+    must also be matchable by CADENCE_CLAIM, or the backstop fires on true
+    prose; test_accepted_phrases_are_all_matchable holds the two together.
     """
     if hours == 1:
         return {"hourly", "every hour"}
+    if hours == 24:
+        return {"daily", "every day", "every twenty-four hours", "every 24 hours"}
     return {f"every {NUMBER_WORDS.get(hours, hours)} hours", f"every {hours} hours"}
 
 
@@ -567,9 +584,17 @@ def _cron_field(field, highest):
 
 
 def _cron_times(expr):
-    """Minutes past midnight a cron expression fires at, or None."""
+    """Minutes past midnight a cron expression fires at, or None.
+
+    Only a schedule that runs every day can be described by an interval at all.
+    `23 2,8,14,20 * * 1-5` is six-hourly within a weekday and 54 hours from
+    Friday evening to Monday morning, so any restriction on day-of-month, month
+    or day-of-week makes the interval unchecked rather than confirmed. Reading
+    the minute and hour and calling that the schedule is the same mistake as
+    reading the hour and calling that the time.
+    """
     fields = expr.split()
-    if len(fields) < 2:
+    if len(fields) != 5 or any(f != "*" for f in fields[2:]):
         return None
     minutes = _cron_field(fields[0], 59)
     hours = _cron_field(fields[1], 23)
