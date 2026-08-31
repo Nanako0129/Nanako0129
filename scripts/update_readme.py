@@ -633,6 +633,18 @@ def agent_times(text=None):
     Parsed with plistlib rather than a regex: the hour and the minute of one
     entry have to stay paired, and matching them separately is how the minute
     got dropped in the first place.
+
+    Only Hour and Minute are modelled. A StartCalendarInterval entry may also
+    carry Day, Weekday or Month, and any of those turns the schedule into
+    something no interval describes: adding Weekday=1 to the four entries here
+    makes it Monday-only while the hours go on reading as six-hourly. Such an
+    entry is refused rather than approximated — the same refusal _cron_times()
+    makes for a day-restricted expression, and the symmetry is the point. This
+    check has now twice mistaken part of a schedule for the whole of one.
+
+    An entry with a Minute and no Hour is refused too. launchd reads it as
+    hourly, modelling it would be easy, and asserting that without having
+    measured launchd is how a comment becomes wrong.
     """
     text = _read(PLIST) if text is None else text
     if text is None:
@@ -643,10 +655,18 @@ def agent_times(text=None):
         return None
     if isinstance(entries, dict):  # launchd accepts a single entry unwrapped
         entries = [entries]
-    try:
-        times = {e["Hour"] * 60 + e.get("Minute", 0) for e in entries if "Hour" in e}
-    except (TypeError, AttributeError):
+    if not isinstance(entries, list) or not entries:
         return None
+    times = set()
+    for entry in entries:
+        if not isinstance(entry, dict) or "Hour" not in entry:
+            return None
+        if set(entry) - {"Hour", "Minute"}:
+            return None
+        try:
+            times.add(int(entry["Hour"]) * 60 + int(entry.get("Minute", 0)))
+        except (TypeError, ValueError):
+            return None
     return times or None
 
 

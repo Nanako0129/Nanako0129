@@ -164,6 +164,32 @@ def test_launchd_minutes_are_part_of_the_schedule():
     assert u.agent_interval_hours("not a plist at all") is None
 
 
+def test_launchd_calendar_restrictions_are_unchecked():
+    # A StartCalendarInterval entry may carry Weekday, Day or Month. Weekday=1
+    # makes these four entries a Monday-only schedule while their hours go on
+    # reading as six-hourly — the launchd mirror of the day-restricted cron, and
+    # refused the same way rather than approximated.
+    def with_key(key, value):
+        return _plist([(5, 30), (11, 30), (17, 30), (23, 30)]).replace(
+            "<key>Hour</key><integer>5</integer>",
+            f"<key>{key}</key><integer>{value}</integer><key>Hour</key><integer>5</integer>",
+            1,
+        )
+
+    assert u.agent_interval_hours(with_key("Weekday", 1)) is None
+    assert u.agent_interval_hours(with_key("Day", 1)) is None
+    assert u.agent_interval_hours(with_key("Month", 6)) is None
+    # An entry with no Hour is hourly to launchd; unmeasured here, so unchecked.
+    assert u.agent_interval_hours(
+        '<?xml version="1.0"?><plist version="1.0"><dict>'
+        "<key>StartCalendarInterval</key><array>"
+        "<dict><key>Minute</key><integer>30</integer></dict>"
+        "</array></dict></plist>"
+    ) is None
+    # The unrestricted schedule is still read.
+    assert u.agent_interval_hours(_plist([(5, 30), (11, 30), (17, 30), (23, 30)])) == 6
+
+
 def test_every_cron_trigger_counts():
     # A workflow may carry several schedules; their union is the real one.
     six = '    - cron: "23 2,8,14,20 * * *"\n'
@@ -330,6 +356,7 @@ if __name__ == "__main__":
     test_blurb_drift_is_reported_not_repaired()
     test_cadence_reads_both_real_schedules()
     test_launchd_minutes_are_part_of_the_schedule()
+    test_launchd_calendar_restrictions_are_unchecked()
     test_every_cron_trigger_counts()
     test_day_restricted_cron_is_unchecked()
     test_a_daily_schedule_may_be_called_daily()
