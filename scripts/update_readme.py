@@ -664,9 +664,16 @@ def agent_times(text=None):
         if set(entry) - {"Hour", "Minute"}:
             return None
         try:
-            times.add(int(entry["Hour"]) * 60 + int(entry.get("Minute", 0)))
+            hour, minute = int(entry["Hour"]), int(entry.get("Minute", 0))
         except (TypeError, ValueError):
             return None
+        # The cron side has bounds-checked its fields since it was written; this
+        # side had not, which let Hour=25 through and certified a cadence from an
+        # agent that cannot be running it. Same contract, both parsers —
+        # test_both_schedulers_refuse_the_same_things holds them together.
+        if not (0 <= hour <= 23 and 0 <= minute <= 59):
+            return None
+        times.add(hour * 60 + minute)
     return times or None
 
 
@@ -690,10 +697,18 @@ def cadence_report(readme_text):
             "before it can be the right one."
         ]
     accepted = cadence_phrases(ci)
+    # Every file that states the cadence in words, including the workflow's own
+    # comment. That one was left out deliberately at first, on the argument that
+    # it sits two lines from the cron it describes and any diff touching the cron
+    # would show it. The argument was about likelihood; a reviewer pointed out
+    # the check costs nothing here, because the workflow carries no prose beyond
+    # its schedule comments and so brings no false-alarm surface with it. A free
+    # certainty beats a good probability.
     sources = {"README.md": readme_text}
-    plist_text = _read(PLIST)
-    if plist_text is not None:
-        sources[PLIST.name] = plist_text
+    for path in (PLIST, WORKFLOW):
+        body = _read(path)
+        if body is not None:
+            sources[path.name] = body
     problems = []
     for where, body in sources.items():
         wrong = sorted(cadence_claims(body) - accepted)

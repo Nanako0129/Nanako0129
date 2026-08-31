@@ -205,6 +205,68 @@ def test_every_cron_trigger_counts():
     assert u.ci_interval_hours(six + '    - cron: "23 JAN * * *"\n') is None
 
 
+def test_both_schedulers_refuse_the_same_things():
+    """The two parsers are one contract in two implementations.
+
+    Three of the review findings on this work were the same defect discovered
+    once per side: the minute ignored, then the day fields ignored, then the
+    launchd calendar keys ignored. Each was fixed where it was found. This
+    asserts the symmetry directly, so the next gap fails here instead of being
+    found a fourth time.
+    """
+    def cron(expr):
+        return u.ci_interval_hours(f'    - cron: "{expr}"\n')
+
+    def agent(entry_xml):
+        return u.agent_interval_hours(
+            '<?xml version="1.0"?><plist version="1.0"><dict>'
+            f"<key>StartCalendarInterval</key><array>{entry_xml}</array></dict></plist>"
+        )
+
+    hhmm = "<key>Hour</key><integer>{}</integer><key>Minute</key><integer>{}</integer>"
+
+    # Both accept the same real schedule and agree on it.
+    assert cron("30 5,11,17,23 * * *") == 6
+    assert agent("".join(f"<dict>{hhmm.format(h, 30)}</dict>" for h in (5, 11, 17, 23))) == 6
+
+    # Both refuse an hour outside 0-23.
+    assert cron("30 25 * * *") is None
+    assert agent(f"<dict>{hhmm.format(25, 30)}</dict>") is None
+
+    # Both refuse a minute outside 0-59.
+    assert cron("90 5 * * *") is None
+    assert agent(f"<dict>{hhmm.format(5, 90)}</dict>") is None
+    # Four entries at :90 used to come back as a tidy six-hourly schedule.
+    assert agent("".join(f"<dict>{hhmm.format(h, 90)}</dict>" for h in (5, 11, 17, 23))) is None
+
+    # Both refuse a restriction that makes the schedule not-every-day.
+    assert cron("30 5,11,17,23 * * 1-5") is None
+    assert agent(
+        "<dict><key>Weekday</key><integer>1</integer>"
+        + hhmm.format(5, 30)
+        + "</dict>"
+    ) is None
+
+    # Both refuse an uneven schedule rather than averaging it.
+    assert cron("30 5,9,13,17 * * *") is None
+    assert agent("".join(f"<dict>{hhmm.format(h, 30)}</dict>" for h in (5, 9, 13, 17))) is None
+
+
+def test_the_workflow_comment_is_checked_too():
+    # readme.yml states the cadence in words two lines from the cron. It was
+    # left unscanned at first; it is free to include, since the file carries no
+    # prose beyond its schedule comments.
+    # Clean today: the live workflow agrees with the live schedule.
+    assert u.cadence_report(_README) == []
+    stale = u.WORKFLOW.read_text().replace("Every six hours", "Every three hours", 1)
+    assert stale != u.WORKFLOW.read_text()
+    with mock.patch.object(
+        u, "_read", lambda p: stale if p is u.WORKFLOW else u.PLIST.read_text()
+    ):
+        report = u.cadence_report(_README)
+    assert report and u.WORKFLOW.name in report[0], report
+
+
 def test_day_restricted_cron_is_unchecked():
     # `23 2,8,14,20 * * 1-5` is six-hourly inside a weekday and 54 hours from
     # Friday 20:23 to Monday 02:23. An interval cannot describe it, so it must
@@ -358,6 +420,8 @@ if __name__ == "__main__":
     test_launchd_minutes_are_part_of_the_schedule()
     test_launchd_calendar_restrictions_are_unchecked()
     test_every_cron_trigger_counts()
+    test_both_schedulers_refuse_the_same_things()
+    test_the_workflow_comment_is_checked_too()
     test_day_restricted_cron_is_unchecked()
     test_a_daily_schedule_may_be_called_daily()
     test_accepted_phrases_are_all_matchable()
