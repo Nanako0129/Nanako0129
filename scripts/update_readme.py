@@ -19,6 +19,7 @@ network beyond `gh` (plus optional LAN SSH for the homelab line).
 import json
 import os
 import platform
+import plistlib
 import re
 import shutil
 import subprocess
@@ -468,10 +469,25 @@ def cadence_phrases(hours):
     return {f"every {NUMBER_WORDS.get(hours, hours)} hours", f"every {hours} hours"}
 
 
+# Everything between a START/END marker pair is written by this script from a
+# source, every run. It cannot be stale, and it must not be read as if a person
+# had written it: render_now() copies commit subjects out of other repositories
+# verbatim, so one of them saying "daily backup" beside another saying
+# "scheduled sync" is enough to look like a claim about this page's cadence.
+# Every sync would then exit non-zero over someone else's commit message.
+GENERATED_BLOCK = re.compile(r"<!-- (\w+):START -->.*?<!-- \1:END -->", re.S)
+
+
+def prose_only(text):
+    """README with the generated blocks removed. Only the hand-written half can
+    go stale, so only the hand-written half is checked."""
+    return GENERATED_BLOCK.sub("", text)
+
+
 def cadence_claims(body):
     """Cadence phrases from paragraphs that are about rebuilding this page."""
     claims = set()
-    for para in re.split(r"\n\s*\n", body):
+    for para in re.split(r"\n\s*\n", prose_only(body)):
         if REBUILD_CONTEXT.search(para):
             claims |= {m.group(0).lower() for m in CADENCE_CLAIM.finditer(para)}
     return claims
@@ -486,44 +502,52 @@ def _read(path):
         return None
 
 
-def _interval_hours(hours):
-    """The even gap between runs, or None when no single number describes them.
+def _interval_hours(times):
+    """The even gap between run times, in whole hours, or None.
 
-    Counting runs and dividing 24 answers a different question, and answers it
-    confidently wrong: `*/7` fires at 0, 7, 14 and 21 — four times a day, so that
-    arithmetic says "every six hours", while the real gaps are 7, 7, 7 and 3.
-    The page can only state one interval, so an uneven schedule has no honest
-    number and must come back as unchecked. Gaps are measured around the clock,
-    which is why 2,8,14,20 is even (the last gap wraps to 6) and 5,9,13,17 is not.
+    Takes minutes past midnight, because a schedule is a set of times and not a
+    set of hours. 05:30, 11:00, 17:30, 23:30 is not six-hourly however evenly its
+    hour numbers are spaced; reading only the hour certified exactly that until a
+    reviewer pointed at the minute field.
+
+    Counting runs and dividing 24 gets it wrong a second way: `*/7` fires at 0,
+    7, 14 and 21 — four times a day, so that arithmetic says "every six hours",
+    while the real gaps are 7, 7, 7 and 3. The page can only state one interval,
+    so anything uneven, or even but not a whole number of hours, has no honest
+    number and comes back unchecked. Gaps wrap around the clock, which is why
+    02:00,08:00,14:00,20:00 is even and 05:00,09:00,13:00,17:00 is not.
     """
-    if not hours:
+    if not times:
         return None
-    ordered = sorted(hours)
+    ordered = sorted(times)
     if len(ordered) == 1:
         return 24
-    gaps = {(b - a) % 24 for a, b in zip(ordered, ordered[1:] + ordered[:1])}
-    return gaps.pop() if len(gaps) == 1 else None
+    gaps = {(b - a) % (24 * 60) for a, b in zip(ordered, ordered[1:] + ordered[:1])}
+    if len(gaps) != 1:
+        return None
+    gap = gaps.pop()
+    return gap // 60 if gap and not gap % 60 else None
 
 
-def _cron_hours(field):
-    """The distinct hours a cron hour-field selects, or None if it is not a shape
-    this understands.
+def _cron_field(field, highest):
+    """The distinct values a cron field selects, or None for any shape this does
+    not recognise.
 
     Every spelling of the same schedule has to give the same answer. `2,8,14,20`,
     `*/6` and `0-23/6` are all six-hourly, and rewriting one as another is a
     legitimate edit — a checker that answered 24 for the third would turn that
     edit into a red CI run and a claim the page was wrong when it was not.
-    Anything unrecognised returns None, which surfaces as "unchecked" rather than
-    as a confident wrong number.
+    Unrecognised shapes surface as "unchecked" rather than as a confident wrong
+    number.
     """
-    hours = set()
+    values = set()
     for part in field.split(","):
         base, sep, step_text = part.strip().partition("/")
         if sep and not (step_text.isdigit() and int(step_text)):
             return None
         step = int(step_text) if sep else 1
         if base == "*":
-            lo, hi = 0, 23
+            lo, hi = 0, highest
         elif re.fullmatch(r"\d{1,2}", base):
             # `0/6` means 0,6,12,18 in Vixie cron and a single run at 00:00 in a
             # strict reading. Which one GitHub's parser takes has not been
@@ -536,37 +560,73 @@ def _cron_hours(field):
             lo, hi = (int(x) for x in base.split("-"))
         else:
             return None
-        if not 0 <= lo <= hi <= 23:
+        if not 0 <= lo <= hi <= highest:
             return None
-        hours |= set(range(lo, hi + 1, step))
-    return hours or None
+        values |= set(range(lo, hi + 1, step))
+    return values or None
+
+
+def _cron_times(expr):
+    """Minutes past midnight a cron expression fires at, or None."""
+    fields = expr.split()
+    if len(fields) < 2:
+        return None
+    minutes = _cron_field(fields[0], 59)
+    hours = _cron_field(fields[1], 23)
+    if minutes is None or hours is None:
+        return None
+    return {h * 60 + m for h in hours for m in minutes}
 
 
 def ci_interval_hours(text=None):
-    """From the cron in readme.yml. Takes the text so the parsing can be tested
-    without the file."""
+    """From readme.yml. Takes the text so the parsing can be tested without the
+    file.
+
+    Every `- cron:` entry counts, not just the first. A workflow may carry
+    several triggers, and their union is the real schedule: adding a lone daily
+    cron beside the six-hourly one makes the gaps uneven, and reading only the
+    first entry would have gone on certifying "every six hours".
+    """
     text = _read(WORKFLOW) if text is None else text
     if text is None:
         return None
-    m = re.search(r'^\s*-\s*cron:\s*["\']([^"\']+)["\']', text, re.M)
-    if not m or len(m.group(1).split()) < 2:
+    exprs = re.findall(r'^\s*-\s*cron:\s*["\']([^"\']+)["\']', text, re.M)
+    if not exprs:
         return None
-    return _interval_hours(_cron_hours(m.group(1).split()[1]))
+    times = set()
+    for expr in exprs:
+        fired = _cron_times(expr)
+        if fired is None:
+            return None
+        times |= fired
+    return _interval_hours(times)
 
 
-def agent_interval_hours(text=None):
-    """From StartCalendarInterval in the launchd plist.
+def agent_times(text=None):
+    """Minutes past midnight the launchd agent fires at, or None.
 
-    Reads the hours themselves, not how many there are: four entries at 5, 9, 13
-    and 17 would be four runs a day and still not six-hourly, and this side of the
-    reconciliation has to be able to say so too.
+    Parsed with plistlib rather than a regex: the hour and the minute of one
+    entry have to stay paired, and matching them separately is how the minute
+    got dropped in the first place.
     """
     text = _read(PLIST) if text is None else text
     if text is None:
         return None
-    return _interval_hours(
-        {int(h) for h in re.findall(r"<key>Hour</key>\s*<integer>(\d+)</integer>", text)}
-    )
+    try:
+        entries = plistlib.loads(text.encode())["StartCalendarInterval"]
+    except (plistlib.InvalidFileException, KeyError, ValueError, TypeError):
+        return None
+    if isinstance(entries, dict):  # launchd accepts a single entry unwrapped
+        entries = [entries]
+    try:
+        times = {e["Hour"] * 60 + e.get("Minute", 0) for e in entries if "Hour" in e}
+    except (TypeError, AttributeError):
+        return None
+    return times or None
+
+
+def agent_interval_hours(text=None):
+    return _interval_hours(agent_times(text))
 
 
 def cadence_report(readme_text):

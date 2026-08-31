@@ -140,22 +140,81 @@ def test_cadence_reads_both_real_schedules():
     assert u.agent_interval_hours("<plist></plist>") is None
 
 
+def _plist(entries):
+    body = "".join(
+        f"<dict><key>Hour</key><integer>{h}</integer>"
+        f"<key>Minute</key><integer>{m}</integer></dict>"
+        for h, m in entries
+    )
+    return (
+        '<?xml version="1.0"?><plist version="1.0"><dict>'
+        f"<key>StartCalendarInterval</key><array>{body}</array></dict></plist>"
+    )
+
+
+def test_launchd_minutes_are_part_of_the_schedule():
+    # 05:30, 11:00, 17:30, 23:30 has evenly spaced *hours* and gaps of 5h30,
+    # 6h30, 6h, 6h. Reading only <key>Hour</key> certified it as six-hourly.
+    assert u.agent_interval_hours(_plist([(5, 30), (11, 30), (17, 30), (23, 30)])) == 6
+    assert u.agent_interval_hours(_plist([(5, 30), (11, 0), (17, 30), (23, 30)])) is None
+    # A Minute of 0 may be omitted entirely, and a lone entry is daily.
+    assert u.agent_interval_hours(_plist([(0, 0), (12, 0)])) == 12
+    assert u.agent_interval_hours(_plist([(9, 0)])) == 24
+    assert u.agent_interval_hours("<plist></plist>") is None
+    assert u.agent_interval_hours("not a plist at all") is None
+
+
+def test_every_cron_trigger_counts():
+    # A workflow may carry several schedules; their union is the real one.
+    six = '    - cron: "23 2,8,14,20 * * *"\n'
+    assert u.ci_interval_hours(six) == 6
+    # Adding a lone daily trigger makes the real gaps uneven. Reading only the
+    # first entry went on answering 6.
+    assert u.ci_interval_hours(six + '    - cron: "23 5 * * *"\n') is None
+    # Two triggers that together are six-hourly must still read as six-hourly.
+    assert u.ci_interval_hours('    - cron: "0 0,12 * * *"\n    - cron: "0 6,18 * * *"\n') == 6
+    # The minute field is part of the time: 00:00 and 00:30 are not 12h apart.
+    assert u.ci_interval_hours('    - cron: "0,30 */12 * * *"\n') is None
+    # One unreadable entry makes the whole schedule unchecked, not partly checked.
+    assert u.ci_interval_hours(six + '    - cron: "23 JAN * * *"\n') is None
+
+
+def test_generated_blocks_are_not_prose():
+    # render_now() copies commit subjects out of other repositories verbatim.
+    # Someone else committing "daily backup schedule" must not fail this sync.
+    polluted = _README.replace(
+        "<!-- NOW:START -->",
+        "<!-- NOW:START -->\n2026-08-31  otherrepo  chore: daily backup schedule",
+        1,
+    )
+    assert u.cadence_report(polluted) == []
+    # The hand-written half is still read.
+    assert u.cadence_report(_README.replace("rebuilds itself every six hours",
+                                            "rebuilds itself daily", 1))
+
+
 def test_every_spelling_of_one_schedule_agrees():
     # A fresh reviewer found `0-23/6` answering 24 instead of 6, which would have
     # failed the run over a cron that was correct. Every spelling of six-hourly
     # must land on 6, or rewriting the cron becomes a trap.
+    # Driven through the public entry point rather than the field parser, so the
+    # test keeps holding when the internals move.
+    def ci(hour_field):
+        return u.ci_interval_hours(f'    - cron: "23 {hour_field} * * *"\n')
+
     for field in ("2,8,14,20", "*/6", "0-23/6", "2-20/6", "0-23/6,0-23/6"):
-        assert u._interval_hours(u._cron_hours(field)) == 6, field
+        assert ci(field) == 6, field
     for field, expected in (("*", 1), ("0-23", 1), ("0,12", 12), ("3", 24)):
-        assert u._interval_hours(u._cron_hours(field)) == expected, field
+        assert ci(field) == expected, field
     # Unrecognised shapes must be None — "unchecked" beats a confident wrong number.
-    for field in ("*/0", "*/x", "JAN", "0-99", "20-2", "", "0/6"):
-        assert u._cron_hours(field) is None, field
+    for field in ("*/0", "*/x", "JAN", "0-99", "20-2", "0/6"):
+        assert ci(field) is None, field
+    assert u.ci_interval_hours("no cron here at all") is None
     # Uneven schedules have no single interval and must not be given one. */7
     # fires four times a day, which naive arithmetic called "every six hours"
     # while the real gaps were 7,7,7,3.
     for field in ("*/7", "5-17/4", "1-3/2", "*/13", "1-5,9", "0,1"):
-        assert u._interval_hours(u._cron_hours(field)) is None, field
+        assert ci(field) is None, field
 
 
 def test_cadence_ignores_prose_that_is_not_about_rebuilding():
@@ -233,6 +292,9 @@ if __name__ == "__main__":
     test_homelab_patterns_still_match()
     test_blurb_drift_is_reported_not_repaired()
     test_cadence_reads_both_real_schedules()
+    test_launchd_minutes_are_part_of_the_schedule()
+    test_every_cron_trigger_counts()
+    test_generated_blocks_are_not_prose()
     test_every_spelling_of_one_schedule_agrees()
     test_cadence_ignores_prose_that_is_not_about_rebuilding()
     test_unreadable_repo_is_reported_not_skipped()
