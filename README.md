@@ -23,7 +23,7 @@
 │      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 2,861 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
-│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 246d up, 0 open ports      │
+│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 247d up, 0 open ports      │
 │        dW88%%%88&&&8$$$$W8%88%%88&M*h&     CPU: Rust, Swift, Python, Ansible, K8s       │
 │        mM&8%BB%8&W&&$@$MW8BBB%B88&Mk       Locale: zh_TW.UTF-8 (English via translator) │
 │         b*&8%%%8%%8  $$BM&8888%88Ma                                                     │
@@ -85,14 +85,14 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.4B tokens · 11,345 messages
+last 7 days · 3.5B tokens · 11,961 messages
 
-  claude-opus-5       ██████████░░░░░░░░░░░░  45.9%     1539M
-  gpt-5.6-sol         ████████░░░░░░░░░░░░░░  35.1%     1176M
-  claude-sonnet-5     █░░░░░░░░░░░░░░░░░░░░░   5.3%      176M
-  claude-fable-5      █░░░░░░░░░░░░░░░░░░░░░   5.1%      173M
-  grok-4.6            █░░░░░░░░░░░░░░░░░░░░░   3.9%      132M
-  gpt-5.6-luna        █░░░░░░░░░░░░░░░░░░░░░   3.0%      101M
+  claude-opus-5       ███████████░░░░░░░░░░░  47.9%     1697M
+  gpt-5.6-sol         ███████░░░░░░░░░░░░░░░  33.2%     1178M
+  claude-fable-5      █░░░░░░░░░░░░░░░░░░░░░   5.7%      202M
+  claude-sonnet-5     █░░░░░░░░░░░░░░░░░░░░░   5.0%      176M
+  grok-4.6            █░░░░░░░░░░░░░░░░░░░░░   3.8%      134M
+  gpt-5.6-luna        █░░░░░░░░░░░░░░░░░░░░░   2.8%      101M
 ```
 <!-- USAGE:END -->
 
@@ -147,7 +147,7 @@ graph LR
 The same discipline, off the clock — everything below runs at home:
 
 ```console
-Proxmox VE      246d uptime · every service in Compose, every service healthchecked
+Proxmox VE      247d uptime · every service in Compose, every service healthchecked
 Zero trust      Cloudflare Tunnel + Access · 5 tunnels · 20 ZTNA apps · 0 inbound ports
 Home Assistant  140 integrations · 396 entities · 54 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
