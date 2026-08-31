@@ -68,7 +68,12 @@ fi
 
 # --- 2. Local half (usage panel + same API blocks + push as bot) ---
 pull_rebase
-python3 scripts/update_readme.py
+# Non-zero here means the script wrote the page and then found prose that no
+# longer matches its source (a blurb behind its repo's description, a stated
+# cadence behind the cron). The fresh page is still worth committing, so keep
+# the code and carry it to the end rather than letting `set -e` drop the commit.
+readme_ok=0
+python3 scripts/update_readme.py || readme_ok=$?
 git add -A
 git diff --cached --quiet || {
   # Commit as the bot, not as me. GitHub credits the contribution graph by the
@@ -92,5 +97,13 @@ git diff --cached --quiet || {
 # abort earlier via set -e (expected: fix SSH / network).
 if [ "$dispatch_ok" -ne 1 ]; then
   echo "sync-local: remote workflow_dispatch did not succeed (local half ran)" >&2
+fi
+
+# Carried from update_readme.py: the page synced, but something it says no
+# longer matches what it says it from. The detail is already on stderr above,
+# which under launchd means /tmp/readme-sync.log.
+if [ "$readme_ok" -ne 0 ]; then
+  echo "sync-local: update_readme.py reported stale prose (see above); page still synced" >&2
+  exit "$readme_ok"
 fi
 

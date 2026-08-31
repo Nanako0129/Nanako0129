@@ -14,6 +14,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import update_readme as u  # noqa: E402
 
 BOX = "│     h---8bW&&&&888*&8---h   OS: macOS 26.5.2 arm64                       │"
+_README = (Path(__file__).resolve().parent.parent / "README.md").read_text()
 
 
 def test_os_line():
@@ -91,10 +92,150 @@ def test_homelab_patterns_still_match():
         assert len(re.findall(pattern, text)) == 1, pattern
 
 
+def test_blurb_drift_is_reported_not_repaired():
+    # The failure this guards is the one that actually happened: SocksBypass
+    # shipped an Android client, its GitHub description said so, and the blurb
+    # went on saying "for iOS" because nothing compared the two.
+    repos = {
+        "repos/Nanako0129/only": {
+            "description": "now mentions Android",
+            "stargazers_count": 1,
+            "pushed_at": "2026-08-31T00:00:00Z",
+        }
+    }
+    featured = [("only", "a blurb about iOS", "was iOS only")]
+    with mock.patch.object(u, "FEATURED", featured), \
+         mock.patch.object(u, "gh", lambda p, paginate=False: repos.get(p, [])):
+        body, drift = u.render_projects()
+    assert len(drift) == 1, drift
+    # The report has to carry all three strings, or it cannot be acted on.
+    assert "a blurb about iOS" in drift[0]
+    assert "was iOS only" in drift[0]
+    assert "now mentions Android" in drift[0]
+    # And the table is still rendered: drift never blocks the page.
+    assert "a blurb about iOS" in body
+
+    # Matching description, no report — the common case must stay silent.
+    featured = [("only", "a blurb about iOS", "now mentions Android")]
+    with mock.patch.object(u, "FEATURED", featured), \
+         mock.patch.object(u, "gh", lambda p, paginate=False: repos.get(p, [])):
+        _, drift = u.render_projects()
+    assert drift == [], drift
+
+
+def test_cadence_reads_both_real_schedules():
+    # Not a fixture: the live workflow and plist. If either schedule is edited
+    # into a shape these parsers cannot read, that surfaces here rather than as
+    # a silently unchecked claim at 05:30.
+    ci, agent = u.ci_interval_hours(), u.agent_interval_hours()
+    assert ci == agent, f"CI every {ci}h vs launchd every {agent}h"
+    assert ci in u.NUMBER_WORDS, ci
+    # Both cron spellings must give the same answer, or swapping one for the
+    # other would raise a false alarm on a legitimate edit.
+    for cron, expected in (("23 2,8,14,20 * * *", 6), ("23 */6 * * *", 6), ("0 * * * *", 1)):
+        assert u.ci_interval_hours(f'    - cron: "{cron}"\n') == expected, cron
+    # An unparseable schedule must return None, so cadence_report says the claim
+    # is unchecked instead of quietly passing it.
+    assert u.ci_interval_hours("no cron here") is None
+    assert u.agent_interval_hours("<plist></plist>") is None
+
+
+def test_every_spelling_of_one_schedule_agrees():
+    # A fresh reviewer found `0-23/6` answering 24 instead of 6, which would have
+    # failed the run over a cron that was correct. Every spelling of six-hourly
+    # must land on 6, or rewriting the cron becomes a trap.
+    for field in ("2,8,14,20", "*/6", "0-23/6", "2-20/6", "0-23/6,0-23/6"):
+        assert u._interval_hours(u._cron_hours(field)) == 6, field
+    for field, expected in (("*", 1), ("0-23", 1), ("0,12", 12), ("3", 24)):
+        assert u._interval_hours(u._cron_hours(field)) == expected, field
+    # Unrecognised shapes must be None — "unchecked" beats a confident wrong number.
+    for field in ("*/0", "*/x", "JAN", "0-99", "20-2", "", "0/6"):
+        assert u._cron_hours(field) is None, field
+    # Uneven schedules have no single interval and must not be given one. */7
+    # fires four times a day, which naive arithmetic called "every six hours"
+    # while the real gaps were 7,7,7,3.
+    for field in ("*/7", "5-17/4", "1-3/2", "*/13", "1-5,9", "0,1"):
+        assert u._interval_hours(u._cron_hours(field)) is None, field
+
+
+def test_cadence_ignores_prose_that_is_not_about_rebuilding():
+    # "daily driver" is not a claim about the schedule. A guard that fails the
+    # run over it gets deleted rather than obeyed.
+    for innocent in (
+        "TokenBar is my daily driver.",
+        "I read every one.\n\nA daily standup, nightly builds elsewhere.",
+    ):
+        assert u.cadence_report(_README + "\n\n" + innocent) == [], innocent
+    # The numeric spelling of the true cadence is correct English and must pass.
+    assert u.cadence_report(_README.replace("every six hours", "every 6 hours")) == []
+    # But the same words inside a rebuild sentence still fail.
+    assert u.cadence_report(_README + "\n\nThis page rebuilds itself daily.")
+
+
+def test_unreadable_repo_is_reported_not_skipped():
+    # Exiting 0 has to mean the blurbs were compared. A renamed or 404 repo used
+    # to drop out silently, taking its blurb out of the check with it.
+    live = {
+        "repos/Nanako0129/ok": {
+            "description": "d", "stargazers_count": 1, "pushed_at": "2026-08-31T00:00:00Z",
+        }
+    }
+    featured = [("ok", "b", "d"), ("gone", "b", "d")]
+    with mock.patch.object(u, "FEATURED", featured), \
+         mock.patch.object(u, "gh", lambda p, paginate=False: live.get(p, [])):
+        _, drift = u.render_projects()
+    assert any("gone" in d and "not checked" in d for d in drift), drift
+
+    # With no `gh` on the machine at all, nothing is readable *by design* and the
+    # script must stay a silent no-op — CI without a token, a Mac mid-upgrade.
+    with mock.patch.object(u, "FEATURED", featured), \
+         mock.patch.object(u, "gh", lambda p, paginate=False: None), \
+         mock.patch.object(u.shutil, "which", lambda _: None):
+        body, drift = u.render_projects()
+    assert body is None and drift == [], drift
+
+    # But `gh` installed and answering for nothing is a different thing — an
+    # expired token, a rate limit — and used to be indistinguishable from the
+    # line above. It has to say so instead of exiting 0 as if all was checked.
+    with mock.patch.object(u, "FEATURED", featured), \
+         mock.patch.object(u, "gh", lambda p, paginate=False: None), \
+         mock.patch.object(u.shutil, "which", lambda _: "/opt/homebrew/bin/gh"):
+        body, drift = u.render_projects()
+    assert body is None and any("not checked" in d for d in drift), drift
+
+
+def test_cadence_catches_a_stale_claim():
+    # "nightly" is the exact word that sat on the page for weeks, so the message
+    # has to name it. Asserting merely that the report is non-empty let a mutant
+    # that deleted \bnightly\b from the pattern survive: the run still failed,
+    # but via the "no longer states how often it rebuilds" backstop instead.
+    assert "'nightly'" in u.cadence_report("This page rebuilds itself nightly.")[0]
+    assert "'every three hours'" in u.cadence_report("pushed here every three hours by cron")[0]
+    # A reworded verb must not walk past the paragraph filter.
+    assert "'nightly'" in u.cadence_report("This page is refreshed nightly.")[0]
+    # The live README must agree with the live schedules.
+    assert u.cadence_report(_README) == []
+
+
+def test_cadence_notices_the_claim_disappearing_entirely():
+    # The backstop had no test at all: deleting the whole branch passed the suite.
+    # A page that stopped saying how often it rebuilds is not a page that passed.
+    silent = _README.replace("every six hours", "on a schedule")
+    report = u.cadence_report(silent)
+    assert report and "no longer states" in report[0], report
+
+
 if __name__ == "__main__":
     test_os_line()
     test_readme_row_is_matchable()
     test_homelab_readers_stay_out_of_ci()
     test_installer_downloads_drop_updater_metadata()
     test_homelab_patterns_still_match()
+    test_blurb_drift_is_reported_not_repaired()
+    test_cadence_reads_both_real_schedules()
+    test_every_spelling_of_one_schedule_agrees()
+    test_cadence_ignores_prose_that_is_not_about_rebuilding()
+    test_unreadable_repo_is_reported_not_skipped()
+    test_cadence_catches_a_stale_claim()
+    test_cadence_notices_the_claim_disappearing_entirely()
     print("ok")

@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 2,618 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 2,665 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 246d up, 0 open ports      │
@@ -63,10 +63,10 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 942 | `v0.3.0` | — | today |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 681 | `v1.4.1` | — | 2d ago |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 987 | `v0.3.0` | — | today |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 681 | `v1.4.1` | — | 3d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 538 | `v0.15.0` | — | 8d ago |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 309 | `v1.14.4` | 4.2k | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 311 | `v1.14.4` | 4.2k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 78 | `v0.1.0` | 32 | 6d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 58 | 13d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
@@ -85,14 +85,14 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.1B tokens · 10,499 messages
+last 7 days · 3.1B tokens · 10,852 messages
 
-  claude-opus-5       ██████████░░░░░░░░░░░░  43.4%     1324M
-  gpt-5.6-sol         ████████░░░░░░░░░░░░░░  38.5%     1174M
-  claude-sonnet-5     █░░░░░░░░░░░░░░░░░░░░░   4.8%      147M
-  grok-4.6            █░░░░░░░░░░░░░░░░░░░░░   4.3%      132M
-  claude-fable-5      █░░░░░░░░░░░░░░░░░░░░░   3.9%      119M
-  gpt-5.6-luna        █░░░░░░░░░░░░░░░░░░░░░   3.3%      101M
+  claude-opus-5       ██████████░░░░░░░░░░░░  44.2%     1385M
+  gpt-5.6-sol         ████████░░░░░░░░░░░░░░  37.5%     1175M
+  claude-sonnet-5     █░░░░░░░░░░░░░░░░░░░░░   5.2%      164M
+  grok-4.6            █░░░░░░░░░░░░░░░░░░░░░   4.2%      132M
+  claude-fable-5      █░░░░░░░░░░░░░░░░░░░░░   3.9%      123M
+  gpt-5.6-luna        █░░░░░░░░░░░░░░░░░░░░░   3.2%      101M
 ```
 <!-- USAGE:END -->
 
@@ -102,11 +102,11 @@ last 7 days · 3.1B tokens · 10,499 messages
 
 <!-- NOW:START -->
 ```console
-2026-08-30  asia-yo-sre-hiring  docs: 附上與 AI agent 的對話記錄
-2026-08-30  asia-yo-sre-hiring  docs(scenario): 情境實戰測驗題目四——新服務串接 ELK/EFK
-2026-08-30  asia-yo-sre-hiring  docs(scenario): 情境實戰測驗題目三——EC2 服務正常但無法 SSH 登入
-2026-08-30  asia-yo-sre-hiring  docs(scenario): 情境實戰測驗題目二——叢集單機回應逾時的排查
-2026-08-30  sepia               docs(platforms): align Antigravity skill discovery
+2026-08-31  TokenBar-Windows    fix(install): trust the unique log name, and drop the time
+2026-08-31  TokenBar-Windows    fix(install): say what the payload is, not what this wrapp
+2026-08-31  TokenBar-Windows    fix(install): name the unsupported switch, not the token a
+2026-08-31  TokenBar-Windows    fix(install): give each run its own log instead of proving
+2026-08-31  TokenBar-Windows    refactor(install): parse the request once, and put the bou
 ```
 <!-- NOW:END -->
 
