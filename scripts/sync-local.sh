@@ -30,7 +30,7 @@ done
 # A rebase already in flight is a human's, not ours: this script is the only
 # other writer here and it never leaves one behind (see pull_rebase). Touching
 # it would throw away a conflict resolution someone is in the middle of, so
-# stop instead — the sync is six hours from running again.
+# stop instead — the sync will run again before long.
 git_dir=$(git rev-parse --git-dir)
 if [ -d "$git_dir/rebase-merge" ] || [ -d "$git_dir/rebase-apply" ]; then
   echo "sync-local: a rebase is already in progress; leaving the repo alone" >&2
@@ -68,12 +68,17 @@ fi
 
 # --- 2. Local half (usage panel + same API blocks + push as bot) ---
 pull_rebase
-python3 scripts/update_readme.py
+# Non-zero here means the script wrote the page and then found prose that no
+# longer matches its source (a blurb behind its repo's description, a stated
+# cadence behind the cron). The fresh page is still worth committing, so keep
+# the code and carry it to the end rather than letting `set -e` drop the commit.
+readme_ok=0
+python3 scripts/update_readme.py || readme_ok=$?
 git add -A
 git diff --cached --quiet || {
   # Commit as the bot, not as me. GitHub credits the contribution graph by the
-  # commit author's email, so four automated commits a day under my own address
-  # would fill the graph with a cron job's work. Scoped with -c rather than
+  # commit author's email, so automated commits under my own address would fill
+  # the graph with a cron job's work. Scoped with -c rather than
   # written into the repo config, so commits I actually make stay mine.
   git -c user.name="github-actions[bot]" \
       -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
@@ -92,5 +97,13 @@ git diff --cached --quiet || {
 # abort earlier via set -e (expected: fix SSH / network).
 if [ "$dispatch_ok" -ne 1 ]; then
   echo "sync-local: remote workflow_dispatch did not succeed (local half ran)" >&2
+fi
+
+# Carried from update_readme.py: the page synced, but something it says no
+# longer matches what it says it from. The detail is already on stderr above,
+# which under launchd means /tmp/readme-sync.log.
+if [ "$readme_ok" -ne 0 ]; then
+  echo "sync-local: update_readme.py reported stale prose (see above); page still synced" >&2
+  exit "$readme_ok"
 fi
 

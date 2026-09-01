@@ -21,7 +21,12 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BIRTH_DATE: ${{ secrets.BIRTH_DATE }}
-      - run: |
+      # Runs even when the step above exited non-zero. update_readme.py writes
+      # the page before reporting stale prose, so the fresh numbers are already
+      # on disk and worth committing; the job still ends red, which is what
+      # actually delivers the report as mail.
+      - if: always()
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -am "chore(readme): scheduled sync" || echo "nothing to commit"

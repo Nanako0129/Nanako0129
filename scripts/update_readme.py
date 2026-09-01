@@ -2,9 +2,14 @@
 """Regenerate the auto-updated blocks in README.md.
 
 Runs in two places with the same code:
-  - GitHub Actions (every 6h)   -> fills NEOFETCH / PROJECTS / NOW from the GitHub API
-  - the Mac (launchd, every 6h) -> additionally fills USAGE from local `tokscale`
-    and Proxmox uptime over LAN SSH (CI cannot reach the homelab)
+  - GitHub Actions    -> fills NEOFETCH / PROJECTS / NOW from the GitHub API
+  - the Mac (launchd) -> additionally fills USAGE from local `tokscale`
+                         and Proxmox uptime over LAN SSH (CI cannot reach the
+                         homelab)
+
+How often each runs is stated in .github/workflows/readme.yml and
+scripts/com.nanako.readme-sync.plist, and nowhere else. cadence_report() below
+reconciles the two against every sentence in README.md that claims a frequency.
 
 Blocks it does not have data for are left untouched, so a CI run never wipes
 the usage panel / last-known Proxmox uptime and a local run never needs
@@ -14,6 +19,7 @@ network beyond `gh` (plus optional LAN SSH for the homelab line).
 import json
 import os
 import platform
+import plistlib
 import re
 import shutil
 import subprocess
@@ -27,14 +33,64 @@ USER = "Nanako0129"
 # Which repos appear in the table, and how each is described. NOT the order:
 # the heading above the table says --sort=stars, so render_projects() sorts by
 # star count and this list only decides membership.
+#
+# Third field: the repository's GitHub description as it read when the blurb
+# beside it was last written. Nothing renders it — it exists so drift_report()
+# can tell when upstream has moved on and the blurb has not. The blurb said
+# "SOCKS5 proxy for iOS" for weeks after the repo shipped an Android client,
+# and nothing on this page had any way to notice; recording what the blurb was
+# written from is what turns that into a message instead of a silence.
+#
+# When a mismatch is reported: read the new description, decide whether the
+# change is material to the blurb, edit the blurb if it is — then paste the new
+# description in here either way, because that is what closes the report.
 FEATURED = [
-    ("pilotfish", "Multi-model orchestration for Claude Code"),
-    ("coralline", "Powerlevel10k-inspired statusline for Claude Code"),
-    ("TokenBar", "Native macOS menu-bar monitor for AI token usage"),
-    ("sepia", "De-AI writing skill for coding agents"),
-    ("remora-cc", "Session-scoped GPT-5.6 agent routing"),
-    ("SocksBypass", "SOCKS5 proxy for iOS and Android, built to defeat tethering limits"),
-    ("postmortem-prose", "zh-TW tech longform in a postmortem voice"),
+    (
+        "pilotfish",
+        "Multi-model orchestration for Claude Code",
+        "Multi-model orchestration layer for Claude Code — the frontier model plans, "
+        "cheaper models execute, verification guards quality. One-prompt install.",
+    ),
+    (
+        "coralline",
+        "Powerlevel10k-inspired statusline for Claude Code",
+        "🪸 Powerlevel10k-inspired statusline for Claude Code — paste one prompt and "
+        "your AI interviews you, then installs it",
+    ),
+    (
+        "TokenBar",
+        "Native macOS menu-bar monitor for AI token usage",
+        "AI token usage & quota monitor for the macOS menu bar — native Swift, Liquid "
+        "Glass, 3D contribution graph. Tracks Claude Code, Codex, Cursor, OpenCode & "
+        "25+ agents locally.",
+    ),
+    (
+        "sepia",
+        "De-AI writing skill for coding agents",
+        "De-AI writing skill for any Agent Skills-compatible agent (77+ via the "
+        "Skills CLI), with native plugins for Claude Code, Codex, Grok Build, and "
+        "Antigravity. Narrative-architecture repair for fiction, venue-matched "
+        "rules for professional prose. Based on StoryScope (arXiv:2604.03136).",
+    ),
+    (
+        "remora-cc",
+        "Session-scoped GPT-5.6 agent routing",
+        "Session-scoped GPT-5.6 agent routing for Claude Code",
+    ),
+    (
+        "SocksBypass",
+        "SOCKS5 proxy for iOS and Android, built to defeat tethering limits",
+        "A SOCKS5 proxy that runs on your iPhone or Android phone, so a tethered "
+        "laptop's traffic leaves the radio as the phone's own. Swift + "
+        "Network.framework on iOS; Kotlin with every upstream socket bound to "
+        "cellular on Android.",
+    ),
+    (
+        "postmortem-prose",
+        "zh-TW tech longform in a postmortem voice",
+        "Write zh-TW tech longform in a postmortem voice: a personal, battle-tested "
+        "style guide for de-AI-flavored engineering writing (Claude Code skill)",
+    ),
 ]
 BAR_WIDTH = 22
 
@@ -102,11 +158,28 @@ def bar(frac):
 
 
 def render_projects():
-    rows = []
-    for name, blurb in FEATURED:
+    """The project table, plus any blurb whose upstream description has moved on.
+
+    Returns (body, drift). Drift is reported, never repaired: only a person can
+    judge whether a description change is material to a nine-word blurb, and a
+    machine paraphrase of an upstream sentence is precisely the prose this page
+    is written to avoid. The check is free — the description arrives in the same
+    API response the star count does.
+    """
+    rows, drift, unreadable = [], [], []
+    for name, blurb, recorded in FEATURED:
         repo = gh(f"repos/{USER}/{name}")
         if not repo:
+            unreadable.append(name)
             continue
+        live = (repo.get("description") or "").strip()
+        if live != recorded.strip():
+            drift.append(
+                f"{name}: its GitHub description changed after this blurb was written\n"
+                f"      blurb: {blurb}\n"
+                f"    written from: {recorded.strip()}\n"
+                f"             now: {live or '(no description)'}"
+            )
         releases = gh(f"repos/{USER}/{name}/releases?per_page=100", paginate=True) or []
         dl = installer_downloads(releases)
         tag = releases[0]["tag_name"] if releases else "—"
@@ -116,14 +189,25 @@ def render_projects():
             f"★ {repo['stargazers_count']} | `{tag}` | "
             f"{human(dl) if dl else '—'} | {ago(repo['pushed_at'])} |",
         ))
+    # A repo that could not be read is a blurb that was not checked, and exiting
+    # 0 would imply it was. Silent only when there is no `gh` at all — then the
+    # whole script is a deliberate no-op and must not start failing. `gh` present
+    # but answering for nothing is a different thing (an expired token, a rate
+    # limit) and used to look identical from the outside.
+    if unreadable and (rows or shutil.which("gh")):
+        drift.append(
+            f"could not read {', '.join(unreadable)} from the API, so "
+            f"{'those blurbs were' if len(unreadable) > 1 else 'that blurb was'} "
+            "not checked this run"
+        )
     if not rows:
-        return None
+        return None, drift
     rows.sort(key=lambda r: -r[0])
     head = (
         "| Project | What it is | Stars | Latest | Downloads | Updated |\n"
         "| :-- | :-- | --: | :-- | --: | :-- |"
     )
-    return head + "\n" + "\n".join(row for _, row in rows)
+    return head + "\n" + "\n".join(row for _, row in rows), drift
 
 
 def render_now():
@@ -346,6 +430,328 @@ def fetch_cloudflare_counts():
     )
 
 
+# --- Cadence: the page's own claim about how often it rebuilds -------------
+#
+# "nightly" sat in three sentences while both schedulers ran four times a day,
+# and it survived because the claim and the schedule live in different files and
+# nobody reads a cron to check a sentence. Both schedules are machine-readable,
+# so the sentence does not have to be taken on trust. This reports; it does not
+# rewrite the prose, because one of the three sentences is inside a hand-padded
+# ASCII box and a renderer that silently re-flows a drawing is worse than a
+# message saying which line to edit.
+
+WORKFLOW = ROOT / ".github" / "workflows" / "readme.yml"
+PLIST = ROOT / "scripts" / "com.nanako.readme-sync.plist"
+NUMBER_WORDS = {1: "one", 2: "two", 3: "three", 4: "four", 6: "six", 8: "eight", 12: "twelve"}
+# Any phrase that asserts a rebuild frequency, right or wrong. This has to be at
+# least as wide as everything cadence_phrases() can emit: a phrase the check
+# calls correct but cannot find would leave the backstop firing on true prose.
+CADENCE_CLAIM = re.compile(
+    r"\bnightly\b|\bdaily\b|\bevery night\b|\bevery day\b"
+    r"|\bhourly\b|\bevery hour\b|\bevery [a-z0-9-]+ hours\b",
+    re.I,
+)
+# ...but only where the surrounding paragraph is talking about this page being
+# rebuilt. "TokenBar is my daily driver" is not a claim about the schedule, and a
+# check that fails the run over it would be edited out rather than obeyed. Whole
+# paragraphs, not lines: the sentences that do make the claim wrap across several.
+# `refresh` and `regenerat` are here because a fresh reviewer showed that
+# rewording "rebuilds itself nightly" to "is refreshed nightly" walked straight
+# past the filter. That is the standing cost of narrowing the scan to cut false
+# alarms, and it is not fully closable: a synonym nobody listed will escape.
+# Widening it further starts catching ordinary prose again, which is the failure
+# that gets a check deleted rather than obeyed.
+REBUILD_CONTEXT = re.compile(r"rebuild|refresh|regenerat|sync|push|cron|schedul|CI run", re.I)
+
+
+def cadence_phrases(hours):
+    """Every spelling of one interval that should count as correct.
+
+    Both the word and the digit are right — "every six hours" and "every 6
+    hours" — and only one of them was accepted until a reviewer pointed out that
+    writing the other would fail a run for no reason. At the ends of the range
+    English has its own words: a once-a-day schedule is "daily", an hourly one
+    is "hourly", and a check accepting only "every 24 hours" would reject prose
+    that was true.
+
+    "nightly" is deliberately absent even from the 24-hour set. It says *when*,
+    not only how often, and this reconciliation measures the interval alone — it
+    cannot tell whether a daily run happens at night. Every phrase returned here
+    must also be matchable by CADENCE_CLAIM, or the backstop fires on true
+    prose; test_accepted_phrases_are_all_matchable holds the two together.
+    """
+    if hours == 1:
+        return {"hourly", "every hour"}
+    if hours == 24:
+        return {"daily", "every day", "every twenty-four hours", "every 24 hours"}
+    return {f"every {NUMBER_WORDS.get(hours, hours)} hours", f"every {hours} hours"}
+
+
+# Everything between a START/END marker pair is written by this script from a
+# source, every run. It cannot be stale, and it must not be read as if a person
+# had written it: render_now() copies commit subjects out of other repositories
+# verbatim, so one of them saying "daily backup" beside another saying
+# "scheduled sync" is enough to look like a claim about this page's cadence.
+# Every sync would then exit non-zero over someone else's commit message.
+GENERATED_BLOCK = re.compile(r"<!-- (\w+):START -->.*?<!-- \1:END -->", re.S)
+
+
+def prose_only(text):
+    """README with the generated blocks removed. Only the hand-written half can
+    go stale, so only the hand-written half is checked."""
+    return GENERATED_BLOCK.sub("", text)
+
+
+def flatten(paragraph):
+    """One paragraph as a single line, with the markdown and box-drawing
+    prefixes that start its continuation lines removed.
+
+    A claim that wraps is still a claim. This README wraps at about ninety
+    columns and its cadence sentences sit inside a blockquote, so reflowing one
+    into "every six\\n> hours" is an ordinary edit — and it used to make the
+    phrase invisible to the scan, which then either reported correct prose as
+    missing or read straight past a wrong claim. CADENCE_CLAIM matches on single
+    spaces and relies on this; the normalisation lives here and only here.
+    """
+    lines = (re.sub(r"^[\s>#│]+|[\s│]+$", "", line) for line in paragraph.splitlines())
+    return " ".join(" ".join(lines).split())
+
+
+def cadence_claims(body):
+    """Cadence phrases from paragraphs that are about rebuilding this page."""
+    claims = set()
+    for para in re.split(r"\n\s*\n", prose_only(body)):
+        para = flatten(para)
+        if REBUILD_CONTEXT.search(para):
+            claims |= {m.group(0).lower() for m in CADENCE_CLAIM.finditer(para)}
+    return claims
+
+
+def _read(path):
+    """File text, or None. A schedule this cannot read is reported as unchecked
+    rather than crashing a sync that had nothing else wrong with it."""
+    try:
+        return path.read_text()
+    except OSError:
+        return None
+
+
+def _interval_hours(times):
+    """The even gap between run times, in whole hours, or None.
+
+    Takes minutes past midnight, because a schedule is a set of times and not a
+    set of hours. 05:30, 11:00, 17:30, 23:30 is not six-hourly however evenly its
+    hour numbers are spaced; reading only the hour certified exactly that until a
+    reviewer pointed at the minute field.
+
+    Counting runs and dividing 24 gets it wrong a second way: `*/7` fires at 0,
+    7, 14 and 21 — four times a day, so that arithmetic says "every six hours",
+    while the real gaps are 7, 7, 7 and 3. The page can only state one interval,
+    so anything uneven, or even but not a whole number of hours, has no honest
+    number and comes back unchecked. Gaps wrap around the clock, which is why
+    02:00,08:00,14:00,20:00 is even and 05:00,09:00,13:00,17:00 is not.
+    """
+    if not times:
+        return None
+    ordered = sorted(times)
+    if len(ordered) == 1:
+        return 24
+    gaps = {(b - a) % (24 * 60) for a, b in zip(ordered, ordered[1:] + ordered[:1])}
+    if len(gaps) != 1:
+        return None
+    gap = gaps.pop()
+    return gap // 60 if gap and not gap % 60 else None
+
+
+def _cron_field(field, highest):
+    """The distinct values a cron field selects, or None for any shape this does
+    not recognise.
+
+    Every spelling of the same schedule has to give the same answer. `2,8,14,20`,
+    `*/6` and `0-23/6` are all six-hourly, and rewriting one as another is a
+    legitimate edit — a checker that answered 24 for the third would turn that
+    edit into a red CI run and a claim the page was wrong when it was not.
+    Unrecognised shapes surface as "unchecked" rather than as a confident wrong
+    number.
+    """
+    values = set()
+    for part in field.split(","):
+        base, sep, step_text = part.strip().partition("/")
+        if sep and not (step_text.isdigit() and int(step_text)):
+            return None
+        step = int(step_text) if sep else 1
+        if base == "*":
+            lo, hi = 0, highest
+        elif re.fullmatch(r"\d{1,2}", base):
+            # `0/6` means 0,6,12,18 in Vixie cron and a single run at 00:00 in a
+            # strict reading. Which one GitHub's parser takes has not been
+            # measured here, so neither is asserted: an ambiguous field is
+            # unchecked, not guessed.
+            if sep:
+                return None
+            lo = hi = int(base)
+        elif re.fullmatch(r"\d{1,2}-\d{1,2}", base):
+            lo, hi = (int(x) for x in base.split("-"))
+        else:
+            return None
+        if not 0 <= lo <= hi <= highest:
+            return None
+        values |= set(range(lo, hi + 1, step))
+    return values or None
+
+
+def _cron_times(expr):
+    """Minutes past midnight a cron expression fires at, or None.
+
+    Only a schedule that runs every day can be described by an interval at all.
+    `23 2,8,14,20 * * 1-5` is six-hourly within a weekday and 54 hours from
+    Friday evening to Monday morning, so any restriction on day-of-month, month
+    or day-of-week makes the interval unchecked rather than confirmed. Reading
+    the minute and hour and calling that the schedule is the same mistake as
+    reading the hour and calling that the time.
+    """
+    fields = expr.split()
+    if len(fields) != 5 or any(f != "*" for f in fields[2:]):
+        return None
+    minutes = _cron_field(fields[0], 59)
+    hours = _cron_field(fields[1], 23)
+    if minutes is None or hours is None:
+        return None
+    return {h * 60 + m for h in hours for m in minutes}
+
+
+def ci_interval_hours(text=None):
+    """From readme.yml. Takes the text so the parsing can be tested without the
+    file.
+
+    Every `- cron:` entry counts, not just the first. A workflow may carry
+    several triggers, and their union is the real schedule: adding a lone daily
+    cron beside the six-hourly one makes the gaps uneven, and reading only the
+    first entry would have gone on certifying "every six hours".
+    """
+    text = _read(WORKFLOW) if text is None else text
+    if text is None:
+        return None
+    exprs = re.findall(r'^\s*-\s*cron:\s*["\']([^"\']+)["\']', text, re.M)
+    if not exprs:
+        return None
+    times = set()
+    for expr in exprs:
+        fired = _cron_times(expr)
+        if fired is None:
+            return None
+        times |= fired
+    return _interval_hours(times)
+
+
+def agent_times(text=None):
+    """Minutes past midnight the launchd agent fires at, or None.
+
+    Parsed with plistlib rather than a regex: the hour and the minute of one
+    entry have to stay paired, and matching them separately is how the minute
+    got dropped in the first place.
+
+    Only Hour and Minute are modelled. A StartCalendarInterval entry may also
+    carry Day, Weekday or Month, and any of those turns the schedule into
+    something no interval describes: adding Weekday=1 to the four entries here
+    makes it Monday-only while the hours go on reading as six-hourly. Such an
+    entry is refused rather than approximated — the same refusal _cron_times()
+    makes for a day-restricted expression, and the symmetry is the point. This
+    check has now twice mistaken part of a schedule for the whole of one.
+
+    An entry missing either Hour or Minute is refused. launchd.plist(5) says a
+    missing calendar argument is a wildcard, so {Hour: 5} is every minute of the
+    hour and {Minute: 30} is every hour at half past — neither is a single daily
+    time, and neither reading has been measured here. This half was being guessed
+    at until a reviewer cited the man page: the Hour-less case was already
+    refused for exactly this reason while the Minute-less case quietly defaulted
+    to :00, which is the same unmeasured assertion the refusal exists to avoid.
+    """
+    text = _read(PLIST) if text is None else text
+    if text is None:
+        return None
+    try:
+        entries = plistlib.loads(text.encode())["StartCalendarInterval"]
+    except (plistlib.InvalidFileException, KeyError, ValueError, TypeError):
+        return None
+    if isinstance(entries, dict):  # launchd accepts a single entry unwrapped
+        entries = [entries]
+    if not isinstance(entries, list) or not entries:
+        return None
+    times = set()
+    for entry in entries:
+        # Exactly Hour and Minute: no key missing (a wildcard) and none extra (a
+        # calendar restriction). One statement rather than two, so there is one
+        # place for it to be wrong.
+        if not isinstance(entry, dict) or set(entry) != {"Hour", "Minute"}:
+            return None
+        hour, minute = entry["Hour"], entry["Minute"]
+        # plistlib maps <real> to float, <string> to str and <true/> to bool, and
+        # int() takes all three: 5.9 would truncate to 5 and <true/> to 1, each
+        # certifying a schedule launchd does not read that way. Coercion is the
+        # wrong verb here — the value either is an integer or the plist is not
+        # describing the times this claims to check. bool is excluded explicitly
+        # because it is a subclass of int.
+        if any(not isinstance(v, int) or isinstance(v, bool) for v in (hour, minute)):
+            return None
+        # The cron side has bounds-checked its fields since it was written; this
+        # side had not, which let Hour=25 through and certified a cadence from an
+        # agent that cannot be running it. Same contract, both parsers —
+        # test_both_schedulers_refuse_the_same_things holds them together.
+        if not (0 <= hour <= 23 and 0 <= minute <= 59):
+            return None
+        times.add(hour * 60 + minute)
+    return times or None
+
+
+def agent_interval_hours(text=None):
+    return _interval_hours(agent_times(text))
+
+
+def cadence_report(readme_text):
+    """Every stated cadence, reconciled against both schedulers and each other."""
+    ci, agent = ci_interval_hours(), agent_interval_hours()
+    if ci is None or agent is None:
+        return [
+            f"cadence: could not read a schedule — {WORKFLOW.name} gave {ci}, "
+            f"{PLIST.name} gave {agent}. Every sentence about how often this page "
+            "rebuilds is therefore unchecked, not confirmed."
+        ]
+    if ci != agent:
+        return [
+            f"cadence: {WORKFLOW.name} runs every {ci}h but {PLIST.name} every "
+            f"{agent}h. The page states one number; the two schedules have to agree "
+            "before it can be the right one."
+        ]
+    accepted = cadence_phrases(ci)
+    # Every file that states the cadence in words, including the workflow's own
+    # comment. That one was left out deliberately at first, on the argument that
+    # it sits two lines from the cron it describes and any diff touching the cron
+    # would show it. The argument was about likelihood; a reviewer pointed out
+    # the check costs nothing here, because the workflow carries no prose beyond
+    # its schedule comments and so brings no false-alarm surface with it. A free
+    # certainty beats a good probability.
+    sources = {"README.md": readme_text}
+    for path in (PLIST, WORKFLOW):
+        body = _read(path)
+        if body is not None:
+            sources[path.name] = body
+    problems = []
+    for where, body in sources.items():
+        wrong = sorted(cadence_claims(body) - accepted)
+        if wrong:
+            problems.append(
+                f"cadence: {where} says {', '.join(repr(w) for w in wrong)} but both "
+                f"schedulers run {' / '.join(sorted(accepted))}"
+            )
+    if not problems and not (cadence_claims(readme_text) & accepted):
+        problems.append(
+            "cadence: README.md no longer states how often it rebuilds; both "
+            f"schedulers run {' / '.join(sorted(accepted))}"
+        )
+    return problems
+
+
 def substitute(text, pattern, replacement, what):
     """Rewrite exactly one line, or fail the build.
 
@@ -364,8 +770,8 @@ def resolve_os_line(readme_text):
 
     render_neofetch() also runs on the CI runner, where platform.mac_ver() is
     empty and platform.machine() answers x86_64, so deriving this
-    unconditionally would let ubuntu overwrite the row with its own identity
-    every six hours. Same contract as USAGE and the Proxmox uptime: only the
+    unconditionally would let ubuntu overwrite the row with its own identity on
+    every scheduled run. Same contract as USAGE and the Proxmox uptime: only the
     environment that can actually observe a value may write it, everywhere
     else the last observed one stands. Matched up to the box border, since the
     row is padded out to the frame.
@@ -513,9 +919,10 @@ def main():
     text = README.read_text()
     proxmox_days = resolve_proxmox_uptime_days(text)
     os_line = resolve_os_line(text)
+    projects, problems = render_projects()
     for name, body in (
         ("NEOFETCH", render_neofetch(proxmox_days, os_line)),
-        ("PROJECTS", render_projects()),
+        ("PROJECTS", projects),
         ("NOW", render_now()),
         ("USAGE", render_usage()),
     ):
@@ -551,6 +958,24 @@ def main():
         r"(last sync: )[\d-]+", lambda m: m.group(1) + datetime.now(timezone.utc).strftime("%Y-%m-%d"), text
     )
     README.write_text(text)
+
+    # Reported after the write, deliberately. These findings are about prose a
+    # person has to edit, not about the generated blocks — freezing the star
+    # counter until someone rewords a blurb would punish the wrong thing. So the
+    # page still gets its fresh data and the run still ends non-zero, which is
+    # the only channel here that actually reaches anyone: a red Actions run sends
+    # mail. Both callers are set up to commit the fresh page anyway and then
+    # carry the failure outward (readme.yml's commit step is `if: always()`,
+    # sync-local.sh keeps the exit code and reports it at the end).
+    problems += cadence_report(text)
+    if problems:
+        print(
+            "\n".join(
+                ["update_readme: the page says things its sources no longer say:", *problems]
+            ),
+            file=sys.stderr,
+        )
+        sys.exit(1)
 
 
 if __name__ == "__main__":
