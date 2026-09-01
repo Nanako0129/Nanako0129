@@ -659,9 +659,13 @@ def agent_times(text=None):
     makes for a day-restricted expression, and the symmetry is the point. This
     check has now twice mistaken part of a schedule for the whole of one.
 
-    An entry with a Minute and no Hour is refused too. launchd reads it as
-    hourly, modelling it would be easy, and asserting that without having
-    measured launchd is how a comment becomes wrong.
+    An entry missing either Hour or Minute is refused. launchd.plist(5) says a
+    missing calendar argument is a wildcard, so {Hour: 5} is every minute of the
+    hour and {Minute: 30} is every hour at half past — neither is a single daily
+    time, and neither reading has been measured here. This half was being guessed
+    at until a reviewer cited the man page: the Hour-less case was already
+    refused for exactly this reason while the Minute-less case quietly defaulted
+    to :00, which is the same unmeasured assertion the refusal exists to avoid.
     """
     text = _read(PLIST) if text is None else text
     if text is None:
@@ -676,12 +680,13 @@ def agent_times(text=None):
         return None
     times = set()
     for entry in entries:
-        if not isinstance(entry, dict) or "Hour" not in entry:
-            return None
-        if set(entry) - {"Hour", "Minute"}:
+        # Exactly Hour and Minute: no key missing (a wildcard) and none extra (a
+        # calendar restriction). One statement rather than two, so there is one
+        # place for it to be wrong.
+        if not isinstance(entry, dict) or set(entry) != {"Hour", "Minute"}:
             return None
         try:
-            hour, minute = int(entry["Hour"]), int(entry.get("Minute", 0))
+            hour, minute = int(entry["Hour"]), int(entry["Minute"])
         except (TypeError, ValueError):
             return None
         # The cron side has bounds-checked its fields since it was written; this

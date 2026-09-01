@@ -157,9 +157,27 @@ def test_launchd_minutes_are_part_of_the_schedule():
     # 6h30, 6h, 6h. Reading only <key>Hour</key> certified it as six-hourly.
     assert u.agent_interval_hours(_plist([(5, 30), (11, 30), (17, 30), (23, 30)])) == 6
     assert u.agent_interval_hours(_plist([(5, 30), (11, 0), (17, 30), (23, 30)])) is None
-    # A Minute of 0 may be omitted entirely, and a lone entry is daily.
     assert u.agent_interval_hours(_plist([(0, 0), (12, 0)])) == 12
     assert u.agent_interval_hours(_plist([(9, 0)])) == 24
+    # An omitted Minute is a wildcard to launchd, not :00 — launchd.plist(5)
+    # says a missing calendar argument matches everything, so {Hour: 5} fires
+    # through the whole hour. It used to be read as 05:00 and could certify a
+    # cadence the agent is not running. Refused, like an omitted Hour.
+    for entry in (
+        "<dict><key>Hour</key><integer>5</integer></dict>",
+        "<dict><key>Minute</key><integer>30</integer></dict>",
+    ):
+        assert u.agent_interval_hours(
+            '<?xml version="1.0"?><plist version="1.0"><dict>'
+            f"<key>StartCalendarInterval</key><array>{entry}</array></dict></plist>"
+        ) is None, entry
+    # Four hours with no Minute would have looked like a tidy six-hourly run.
+    assert u.agent_interval_hours(
+        '<?xml version="1.0"?><plist version="1.0"><dict>'
+        "<key>StartCalendarInterval</key><array>"
+        + "".join(f"<dict><key>Hour</key><integer>{h}</integer></dict>" for h in (0, 6, 12, 18))
+        + "</array></dict></plist>"
+    ) is None
     assert u.agent_interval_hours("<plist></plist>") is None
     assert u.agent_interval_hours("not a plist at all") is None
 
