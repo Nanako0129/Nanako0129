@@ -171,6 +171,17 @@ def test_launchd_minutes_are_part_of_the_schedule():
             '<?xml version="1.0"?><plist version="1.0"><dict>'
             f"<key>StartCalendarInterval</key><array>{entry}</array></dict></plist>"
         ) is None, entry
+    # A calendar value of another plist type is not an integer launchd would
+    # act on: <real>5.9</real> used to truncate to 5, <string>5</string> and
+    # <true/> were taken at face value by int().
+    for hour_xml in ("<real>5.9</real>", "<string>5</string>", "<true/>"):
+        assert u.agent_interval_hours(
+            '<?xml version="1.0"?><plist version="1.0"><dict>'
+            "<key>StartCalendarInterval</key><array><dict>"
+            f"<key>Hour</key>{hour_xml}<key>Minute</key><integer>30</integer>"
+            "</dict></array></dict></plist>"
+        ) is None, hour_xml
+
     # Four hours with no Minute would have looked like a tidy six-hourly run.
     assert u.agent_interval_hours(
         '<?xml version="1.0"?><plist version="1.0"><dict>'

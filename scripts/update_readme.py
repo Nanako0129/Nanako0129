@@ -685,9 +685,14 @@ def agent_times(text=None):
         # place for it to be wrong.
         if not isinstance(entry, dict) or set(entry) != {"Hour", "Minute"}:
             return None
-        try:
-            hour, minute = int(entry["Hour"]), int(entry["Minute"])
-        except (TypeError, ValueError):
+        hour, minute = entry["Hour"], entry["Minute"]
+        # plistlib maps <real> to float, <string> to str and <true/> to bool, and
+        # int() takes all three: 5.9 would truncate to 5 and <true/> to 1, each
+        # certifying a schedule launchd does not read that way. Coercion is the
+        # wrong verb here — the value either is an integer or the plist is not
+        # describing the times this claims to check. bool is excluded explicitly
+        # because it is a subclass of int.
+        if any(not isinstance(v, int) or isinstance(v, bool) for v in (hour, minute)):
             return None
         # The cron side has bounds-checked its fields since it was written; this
         # side had not, which let Hour=25 through and certified a cadence from an
