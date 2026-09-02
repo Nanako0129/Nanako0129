@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 3,038 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 3,051 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 247d up, 0 open ports      │
@@ -63,9 +63,9 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 1351 | `v0.4.1` | — | today |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 1364 | `v0.4.1` | — | today |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 683 | `v1.4.1` | — | 4d ago |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 539 | `v0.15.0` | — | 9d ago |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 539 | `v0.15.0` | — | 10d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 317 | `v1.14.4` | 4.4k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 78 | `v0.1.0` | 34 | 1d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 58 | 15d ago |
@@ -102,11 +102,11 @@ last 7 days · 3.5B tokens · 11,897 messages
 
 <!-- NOW:START -->
 ```console
+2026-09-02  calico-claude       fix(thinking-streaming): patch the React-Compiler form of 
+2026-09-01  calico-claude       ci(patch): report the live-thinking result after the relea
+2026-09-01  calico-claude       ci(patch): correct two false claims in the live-thinking t
+2026-09-01  calico-claude       ci(patch): stop the live-thinking test from blocking the m
 2026-09-01  calico-claude       fix(verify): keep verifying the precompute-window bypass
-2026-09-01  calico-claude       fix(patch,verify): support Claude 2.1.257, and stop pinnin
-2026-09-01  sepia               chore(release): bump version to 0.4.1
-2026-09-01  sepia               fix: one canonical key grammar closes the spelling class f
-2026-09-01  sepia               chore: merge current main into issue policy
 ```
 <!-- NOW:END -->
 
@@ -211,4 +211,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself every six hours · last sync: 2026-09-01 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself every six hours · last sync: 2026-09-02 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
