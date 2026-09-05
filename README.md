@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 3,902 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 3,937 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 247d up, 0 open ports      │
@@ -63,10 +63,10 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2202 | `v0.7.0` | — | today |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2235 | `v0.8.0` | — | today |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 683 | `v1.4.1` | — | 8d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 539 | `v0.15.0` | — | 13d ago |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 327 | `v1.15.0` | 4.6k | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 328 | `v1.15.0` | 4.7k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 78 | `v0.1.0` | 38 | 4d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 27 | `v0.1.22` | 58 | 19d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 1mo ago |
@@ -102,11 +102,11 @@ last 7 days · 3.5B tokens · 11,897 messages
 
 <!-- NOW:START -->
 ```console
-2026-09-05  sepia               docs(readme): the built-in profile follows the opt-in rule
-2026-09-05  sepia               docs(readme): retract two round-3 edits the fourth review 
-2026-09-05  sepia               docs(readme): apply the third sepia review; one verificati
-2026-09-05  sepia               docs(readme): apply the sepia review findings; English pro
-2026-09-05  NyanCogs            fix(channelsummary): require MessageType.reply for reply_t
+2026-09-05  TokenBar            fix(i18n): translate the last window-label site and close 
+2026-09-05  sepia               chore(release): bump version to 0.8.0
+2026-09-05  sepia               fix(sepia): load §4's tests on every non-fiction refactor;
+2026-09-05  sepia               fix(sepia): repair is exempt from the reversion test as we
+2026-09-05  sepia               refactor(sepia): drop the one-for-one payment; add the rev
 ```
 <!-- NOW:END -->
 
