@@ -102,11 +102,11 @@ last 7 days · 3.5B tokens · 11,897 messages
 
 <!-- NOW:START -->
 ```console
+2026-09-12  TokenBar            docs(window): record why a scan that cannot answer settles
 2026-09-12  NyanCogs            feat(channelsummary): let guild Manage Messages bypass the
+2026-09-12  TokenBar            fix(window): make a scan answer only for the range it walk
 2026-09-12  Syrtis-Windows      docs(readme): title the port Syrtis, and point the banner 
 2026-09-12  NyanCogs            refactor(channelsummary): present the data-export disclosu
-2026-09-12  NyanCogs            fix(channelsummary): keep a model-compatible default outpu
-2026-09-12  NyanCogs            feat(channelsummary): denser summaries, heading-aligned pa
 ```
 <!-- NOW:END -->
 
