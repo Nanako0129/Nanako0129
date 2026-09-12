@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 4,295 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 4,296 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 247d up, 0 open ports      │
@@ -63,7 +63,7 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2568 | `v0.10.0` | — | 1d ago |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2569 | `v0.10.0` | — | 1d ago |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 688 | `v1.4.1` | — | 15d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.16.1` | — | 5d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 345 | `v1.17.0` | 5.3k | today |
@@ -102,11 +102,11 @@ last 7 days · 3.5B tokens · 11,897 messages
 
 <!-- NOW:START -->
 ```console
-2026-09-12  TokenBar            Merge origin/main into fix/cache-write-1h-comment
-2026-09-11  calico-claude       fix(patterns): escape captured minified identifiers before
-2026-09-10  TokenBar            docs(current-state): restore the pricing advance and drop 
-2026-09-10  TokenBar            docs(vendor): reconcile the pin summaries and the invalida
-2026-09-10  TokenBar            chore(vendor): advance the engine pin to the Codex turn-co
+2026-09-12  tokscale-core       docs(upstream): reconcile the window row with what the cod
+2026-09-12  TokenBar            fix(release): check the notes on the tag, not only on the 
+2026-09-12  tokscale-core       feat(window): reconcile get_window_usage's two divergent i
+2026-09-12  TokenBar            fix(release): compare measurements, not identifiers, and r
+2026-09-12  TokenBar            fix(release): compare the sign in the notes consistency ch
 ```
 <!-- NOW:END -->
 
