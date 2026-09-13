@@ -102,11 +102,11 @@ last 7 days · 3.5B tokens · 11,897 messages
 
 <!-- NOW:START -->
 ```console
-2026-09-13  Syrtis-Windows      ci(release): name the platform in the GitHub release title
-2026-09-12  TokenBar            docs(window): record why a scan that cannot answer settles
-2026-09-12  NyanCogs            feat(channelsummary): let guild Manage Messages bypass the
-2026-09-12  TokenBar            fix(window): make a scan answer only for the range it walk
-2026-09-12  Syrtis-Windows      docs(readme): title the port Syrtis, and point the banner 
+2026-09-13  Syrtis-Windows      docs(winget): record that licensing no longer blocks submi
+2026-09-13  Syrtis-Windows      feat(packaging): complete the winget manifests with Licens
+2026-09-13  Syrtis-Windows      docs(notices): stop the file claiming completeness, and na
+2026-09-13  Syrtis-Windows      docs(notices): stop claiming the Rust crates are covered, 
+2026-09-13  Syrtis-Windows      feat(packaging): add winget manifests, and stop the README
 ```
 <!-- NOW:END -->
 
