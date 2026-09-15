@@ -102,11 +102,11 @@ last 7 days · 3.5B tokens · 11,897 messages
 
 <!-- NOW:START -->
 ```console
+2026-09-15  TokenBar            Merge origin/main into codex/feat-grok-bot
+2026-09-15  TokenBar            fix(grok-bot): resolve credential paths through the reposi
+2026-09-15  TokenBar            fix(settings): expand grouped members inside the limits un
 2026-09-15  Syrtis-Windows      ci: compare CrossCheck in its own job so Windows stops que
-2026-09-15  TokenBar            test(quota): assert the second grow step, which the delete
-2026-09-15  TokenBar            fix(quota): key the history card on the resolved window, n
-2026-09-15  TokenBar            fix(quota): drop the history card's expansion when the rea
-2026-09-15  Syrtis-Windows      docs(agents): the escape hatch needs cargo build first, pr
+2026-09-15  TokenBar            fix(settings): configure the preview's quota visibility in
 ```
 <!-- NOW:END -->
 
