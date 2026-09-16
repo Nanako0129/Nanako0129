@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 4,371 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 4,379 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 247d up, 0 open ports      │
@@ -63,7 +63,7 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2623 | `v0.10.0` | — | today |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2631 | `v0.10.0` | — | today |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 694 | `v1.4.1` | — | 18d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 542 | `v0.16.1` | — | 8d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 349 | `v1.17.0` | 5.5k | today |
@@ -102,11 +102,11 @@ last 7 days · 3.5B tokens · 11,897 messages
 
 <!-- NOW:START -->
 ```console
+2026-09-16  calico-claude       fix(background-agent-usage): track raw usage on both track
+2026-09-16  calico-claude       fix(patterns): re-anchor the three modules upstream 2.1.27
 2026-09-15  TokenBar            Merge origin/main into codex/feat-grok-bot
 2026-09-15  TokenBar            fix(grok-bot): resolve credential paths through the reposi
 2026-09-15  TokenBar            fix(settings): expand grouped members inside the limits un
-2026-09-15  Syrtis-Windows      ci: compare CrossCheck in its own job so Windows stops que
-2026-09-15  TokenBar            fix(settings): configure the preview's quota visibility in
 ```
 <!-- NOW:END -->
 
@@ -211,4 +211,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself every six hours · last sync: 2026-09-15 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself every six hours · last sync: 2026-09-16 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
