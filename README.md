@@ -15,7 +15,7 @@
 │         *%B@@#akwwqpdbkkbqwmdh*@@@B&       ─────────────                                │
 │         8%*ooo#MWWWWWWWWWWMM#oahaaB%Z      Name: Nanako, or Nyanako                     │
 │        Za*##MWWWWWW&&&&88&&&&WW#*oaaw      Pronouns: she / her                          │
-│       q*MWWWW&&88888888888%8888&WMMMop     OS: macOS 26.6.1 arm64                       │
+│       q*MWWWW&&88888888888%8888&WMMMop     OS: macOS 26.7 arm64                         │
 │      oW&8WWM/M/)&%%%%%%%%%%*)&rC&888WMa    Host: MacBook Air (M5, 2026), 32GB / 1TB     │
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
@@ -23,7 +23,7 @@
 │      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 4,411 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
-│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 247d up, 0 open ports      │
+│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 15d up, 0 open ports       │
 │        dW88%%%88&&&8$$$$W8%88%%88&M*h&     CPU: Rust, Swift, Python, Ansible, K8s       │
 │        mM&8%BB%8&W&&$@$MW8BBB%B88&Mk       Locale: zh_TW.UTF-8 (English via translator) │
 │         b*&8%%%8%%8  $$BM&8888%88Ma                                                     │
@@ -85,14 +85,14 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 3.5B tokens · 11,897 messages
+last 7 days · 3.9B tokens · 10,015 messages
 
-  claude-opus-5       ███████████░░░░░░░░░░░  48.1%     1695M
-  gpt-5.6-sol         ███████░░░░░░░░░░░░░░░  33.9%     1195M
-  claude-fable-5      █░░░░░░░░░░░░░░░░░░░░░   6.0%      211M
-  claude-sonnet-5     █░░░░░░░░░░░░░░░░░░░░░   5.0%      176M
-  grok-4.6            █░░░░░░░░░░░░░░░░░░░░░   3.8%      134M
-  gpt-5.6-luna        █░░░░░░░░░░░░░░░░░░░░░   2.8%       98M
+  claude-opus-5       █████████████████░░░░░  75.2%     2908M
+  claude-fable-5-1    ████░░░░░░░░░░░░░░░░░░  19.1%      738M
+  claude-sonnet-5     █░░░░░░░░░░░░░░░░░░░░░   3.1%      120M
+  grok-4.6            ░░░░░░░░░░░░░░░░░░░░░░   1.4%       53M
+  gpt-5.6-sol         ░░░░░░░░░░░░░░░░░░░░░░   0.9%       34M
+  gpt-5.6-luna        ░░░░░░░░░░░░░░░░░░░░░░   0.2%        8M
 ```
 <!-- USAGE:END -->
 
@@ -147,9 +147,9 @@ graph LR
 The same discipline, off the clock — everything below runs at home:
 
 ```console
-Proxmox VE      247d uptime · every service in Compose, every service healthchecked
+Proxmox VE      15d uptime · every service in Compose, every service healthchecked
 Zero trust      Cloudflare Tunnel + Access · 5 tunnels · 20 ZTNA apps · 0 inbound ports
-Home Assistant  140 integrations · 396 entities · 54 devices · one Lovelace panel
+Home Assistant  140 integrations · 399 entities · 56 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
 ```
 
