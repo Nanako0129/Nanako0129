@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 4,409 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 4,411 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 247d up, 0 open ports      │
@@ -63,7 +63,7 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2661 | `v0.10.0` | — | today |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2663 | `v0.10.0` | — | today |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 693 | `v1.4.1` | — | 20d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 542 | `v0.16.1` | — | 10d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 355 | `v1.18.0` | 5.7k | today |
@@ -102,11 +102,11 @@ last 7 days · 3.5B tokens · 11,897 messages
 
 <!-- NOW:START -->
 ```console
-2026-09-17  calico-claude       fix(background-agent-usage): publish the transcript sweep 
-2026-09-17  calico-claude       fix(gateway-fast-mode): escape the dispatch record local b
-2026-09-16  sepia               fix(sepia): journalism baseline matches rules 3 and 6 on l
-2026-09-16  sepia               fix(sepia): journalism tells: primary zh-TW marks in the c
-2026-09-16  sepia               fix(sepia): journalism routing does not depend on sourcing
+2026-09-17  Syrtis-Windows      ci: give the workspace tests their own job, since build wa
+2026-09-17  sepia               fix(qwenpaw): slash-command metadata reads the version fro
+2026-09-17  sepia               fix(qwenpaw): prompt allows reading the packaged skill fil
+2026-09-17  sepia               fix(qwenpaw): flag values capture any non-whitespace run; 
+2026-09-17  sepia               fix(qwenpaw): reject --lang outside en|zh; README install 
 ```
 <!-- NOW:END -->
 
