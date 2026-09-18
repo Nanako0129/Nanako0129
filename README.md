@@ -65,7 +65,7 @@ enough to open a new repo.
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2679 | `v0.10.0` | — | today |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 693 | `v1.4.1` | — | 21d ago |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.16.1` | — | today |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.16.1` | — | 1d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 358 | `v1.18.0` | 5.8k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 78 | `—` | — | 11d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 67 | 11d ago |
@@ -104,9 +104,9 @@ last 7 days · 4.1B tokens · 10,725 messages
 ```console
 2026-09-17  calico-claude       fix(verify): require one percentage spelling across all fo
 2026-09-17  calico-claude       fix(statusline-rate-limit-windows): accept the hoisted per
+2026-09-17  sepia               fix(zh): §0 numerals row cites §1c as aggregate direction 
+2026-09-17  sepia               fix(zh): journalism-only rows gated by route; the no-sampl
 2026-09-17  Syrtis-Windows      docs(parity): make the survey's commands runnable, and nam
-2026-09-17  Syrtis-Windows      ci: run workspace tests without LTO, now that the wall is 
-2026-09-17  Syrtis-Windows      ci: skip example compiles in cargo-test, they are not the 
 ```
 <!-- NOW:END -->
 
