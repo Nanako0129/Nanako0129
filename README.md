@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 4,430 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 4,431 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 16d up, 0 open ports       │
@@ -63,7 +63,7 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2679 | `v0.10.0` | — | today |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2680 | `v0.10.0` | — | today |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 693 | `v1.4.1` | — | 21d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.16.1` | — | 1d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 358 | `v1.18.0` | 5.8k | today |
@@ -102,11 +102,11 @@ last 7 days · 4.1B tokens · 10,725 messages
 
 <!-- NOW:START -->
 ```console
-2026-09-17  calico-claude       fix(verify): require one percentage spelling across all fo
-2026-09-17  calico-claude       fix(statusline-rate-limit-windows): accept the hoisted per
-2026-09-17  sepia               fix(zh): §0 numerals row cites §1c as aggregate direction 
-2026-09-17  sepia               fix(zh): journalism-only rows gated by route; the no-sampl
-2026-09-17  Syrtis-Windows      docs(parity): make the survey's commands runnable, and nam
+2026-09-18  TokenBar            docs(tabs): document the functions #349 touched, and resto
+2026-09-18  TokenBar            docs(build): state the Swift 6.2 floor where it binds, and
+2026-09-18  TokenBar            fix(tabs): honour a saved tab position stored under the pr
+2026-09-18  TokenBar            fix(demo): give the Antigravity subscription one demo card
+2026-09-18  calico-claude       fix(client-factory): a field name inside a quoted default 
 ```
 <!-- NOW:END -->
 
