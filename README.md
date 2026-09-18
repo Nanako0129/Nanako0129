@@ -23,7 +23,7 @@
 │      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 4,426 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
-│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 15d up, 0 open ports       │
+│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 16d up, 0 open ports       │
 │        dW88%%%88&&&8$$$$W8%88%%88&M*h&     CPU: Rust, Swift, Python, Ansible, K8s       │
 │        mM&8%BB%8&W&&$@$MW8BBB%B88&Mk       Locale: zh_TW.UTF-8 (English via translator) │
 │         b*&8%%%8%%8  $$BM&8888%88Ma                                                     │
@@ -85,12 +85,12 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 4.0B tokens · 10,608 messages
+last 7 days · 4.0B tokens · 10,651 messages
 
-  claude-opus-5       ████████████████░░░░░░  74.2%     2995M
-  claude-fable-5-1    ████░░░░░░░░░░░░░░░░░░  18.5%      748M
-  grok-4.6            █░░░░░░░░░░░░░░░░░░░░░   3.1%      125M
+  claude-opus-5       █████████████████░░░░░  75.4%     3031M
+  claude-fable-5-1    ████░░░░░░░░░░░░░░░░░░  18.6%      748M
   claude-sonnet-5     █░░░░░░░░░░░░░░░░░░░░░   3.0%      120M
+  grok-4.6            ░░░░░░░░░░░░░░░░░░░░░░   1.9%       74M
   gpt-5.6-sol         ░░░░░░░░░░░░░░░░░░░░░░   0.9%       34M
   gpt-5.6-luna        ░░░░░░░░░░░░░░░░░░░░░░   0.2%        8M
 ```
@@ -147,9 +147,9 @@ graph LR
 The same discipline, off the clock — everything below runs at home:
 
 ```console
-Proxmox VE      15d uptime · every service in Compose, every service healthchecked
+Proxmox VE      16d uptime · every service in Compose, every service healthchecked
 Zero trust      Cloudflare Tunnel + Access · 5 tunnels · 20 ZTNA apps · 0 inbound ports
-Home Assistant  140 integrations · 399 entities · 56 devices · one Lovelace panel
+Home Assistant  140 integrations · 409 entities · 56 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
 ```
 
