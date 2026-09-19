@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 27 sources (git), 4,432 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 28 sources (git), 4,434 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 16d up, 0 open ports       │
@@ -63,10 +63,10 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2681 | `v0.10.0` | — | today |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2681 | `v0.11.0` | — | today |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 693 | `v1.4.1` | — | today |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.16.1` | — | today |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 358 | `v1.18.0` | 5.8k | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 358 | `v1.19.1` | 5.9k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 78 | `—` | — | 11d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 67 | today |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 2mo ago |
@@ -102,11 +102,11 @@ last 7 days · 4.3B tokens · 11,301 messages
 
 <!-- NOW:START -->
 ```console
-2026-09-18  NyanCogs            fix(channelsummary): honour the HTTP-date form of Retry-Af
-2026-09-18  sepia               ci(eval): pass --trust-plugin so the behavioral eval runs 
-2026-09-18  NyanCogs            feat(channelsummary): record which side refused a rate-lim
-2026-09-18  NyanCogs            feat(channelsummary): retry a rate-limited provider instea
-2026-09-18  NyanCogs            test(channelsummary): keep the status-matrix assertions in
+2026-09-19  lorenzini           fix: close four gates the independent review found open
+2026-09-19  lorenzini           feat: collect the three PR review-gate skills into one rep
+2026-09-19  pilotfish           docs: state every source that outranks the user-level Expl
+2026-09-19  pilotfish           docs: make the post-restart /model check match what Step 3
+2026-09-19  pilotfish           docs: correct the restart reason in the global install run
 ```
 <!-- NOW:END -->
 
@@ -211,4 +211,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself every six hours · last sync: 2026-09-18 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself every six hours · last sync: 2026-09-19 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
