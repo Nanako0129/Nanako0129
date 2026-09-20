@@ -23,7 +23,7 @@
 │      oW&fW&8&888888888888888888&&&oM8&o    Packages: 28 sources (git), 4,467 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
-│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 17d up, 0 open ports       │
+│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 18d up, 0 open ports       │
 │        dW88%%%88&&&8$$$$W8%88%%88&M*h&     CPU: Rust, Swift, Python, Ansible, K8s       │
 │        mM&8%BB%8&W&&$@$MW8BBB%B88&Mk       Locale: zh_TW.UTF-8 (English via translator) │
 │         b*&8%%%8%%8  $$BM&8888%88Ma                                                     │
@@ -85,11 +85,11 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 4.4B tokens · 11,773 messages
+last 7 days · 4.4B tokens · 11,851 messages
 
-  claude-opus-5       ██████████████████░░░░  80.5%     3536M
-  claude-fable-5-1    ███░░░░░░░░░░░░░░░░░░░  14.9%      654M
-  grok-4.6            ░░░░░░░░░░░░░░░░░░░░░░   2.1%       91M
+  claude-opus-5       ██████████████████░░░░  80.7%     3571M
+  claude-fable-5-1    ███░░░░░░░░░░░░░░░░░░░  14.8%      654M
+  grok-4.6            ░░░░░░░░░░░░░░░░░░░░░░   2.0%       90M
   claude-sonnet-5     ░░░░░░░░░░░░░░░░░░░░░░   1.5%       66M
   gpt-5.6-sol         ░░░░░░░░░░░░░░░░░░░░░░   0.7%       31M
   gpt-5.6-luna        ░░░░░░░░░░░░░░░░░░░░░░   0.2%        8M
@@ -147,7 +147,7 @@ graph LR
 The same discipline, off the clock — everything below runs at home:
 
 ```console
-Proxmox VE      17d uptime · every service in Compose, every service healthchecked
+Proxmox VE      18d uptime · every service in Compose, every service healthchecked
 Zero trust      Cloudflare Tunnel + Access · 5 tunnels · 20 ZTNA apps · 0 inbound ports
 Home Assistant  140 integrations · 409 entities · 56 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
