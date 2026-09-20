@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 28 sources (git), 4,480 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 29 sources (git), 4,482 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 18d up, 0 open ports       │
@@ -63,7 +63,7 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2711 | `v0.12.0` | — | today |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2712 | `v0.12.0` | — | today |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 696 | `v1.4.1` | — | 1d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.16.1` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 360 | `v1.19.1` | 6.0k | today |
@@ -102,11 +102,11 @@ last 7 days · 5.6B tokens · 14,464 messages
 
 <!-- NOW:START -->
 ```console
-2026-09-20  TokenBar            feat(quota): hover breakdown on the window history rows an
-2026-09-20  NyanCogs            fix(messagewatch): reject an infinite token count, and sto
-2026-09-20  NyanCogs            feat(messagewatch): account for what it spends, and show i
-2026-09-20  sepia               release: v0.12.0
-2026-09-20  NyanCogs            feat(messagewatch): let one channel use a different rule t
+2026-09-20  lorenzini           docs: the documented quota verdict was missing a third of 
+2026-09-20  lorenzini           docs(skill): quota advice belongs only on the quota verdic
+2026-09-20  lorenzini           docs: three review findings, two of them documentation tha
+2026-09-20  lorenzini           docs: rewrite the README and add a Traditional Chinese one
+2026-09-20  stingray            chore: initial commit — MIT license
 ```
 <!-- NOW:END -->
 
