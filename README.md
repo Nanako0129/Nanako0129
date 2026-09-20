@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 28 sources (git), 4,467 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 28 sources (git), 4,471 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 18d up, 0 open ports       │
@@ -63,11 +63,11 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2699 | `v0.11.0` | — | 1d ago |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2703 | `v0.11.0` | — | today |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 695 | `v1.4.1` | — | 1d ago |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.16.1` | — | 1d ago |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.16.1` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 360 | `v1.19.1` | 6.0k | today |
-| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 78 | `—` | — | 12d ago |
+| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 78 | `—` | — | 13d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 67 | 1d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 2mo ago |
 <!-- PROJECTS:END -->
@@ -102,11 +102,11 @@ last 7 days · 4.4B tokens · 11,851 messages
 
 <!-- NOW:START -->
 ```console
-2026-09-19  NyanCogs            fix(channelsummary): give a span inside a full-width brack
-2026-09-19  TokenBar            fix(quota): seed the window identity on restore, and cache
-2026-09-19  TokenBar            feat(quota): draw the quota lens' four cards from the reop
-2026-09-19  TokenBar            refactor(quota): state the failed-window retention rule on
-2026-09-19  TokenBar            fix(quota): retain a failed window's qualifying cycles, an
+2026-09-20  TokenBar            fix(quota): carry the cycles the history card draws from a
+2026-09-20  TokenBar            feat(series): fold the previous open's rows at constructio
+2026-09-20  Syrtis-Agent        docs: write down how this repository goes back to CodeRabb
+2026-09-20  homebrew-tokenbar   docs: write down how this repository goes back to CodeRabb
+2026-09-20  NyanCogs            docs: write down how this repository goes back to CodeRabb
 ```
 <!-- NOW:END -->
 
