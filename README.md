@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 28 sources (git), 4,473 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 28 sources (git), 4,475 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 18d up, 0 open ports       │
@@ -63,7 +63,7 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2705 | `v0.11.0` | — | today |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2707 | `v0.11.0` | — | today |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 695 | `v1.4.1` | — | 1d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.16.1` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 360 | `v1.19.1` | 6.0k | today |
@@ -102,11 +102,11 @@ last 7 days · 5.0B tokens · 12,986 messages
 
 <!-- NOW:START -->
 ```console
-2026-09-20  NyanCogs            fix(messagewatch): never show a rule-breaker's message und
-2026-09-20  NyanCogs            fix(messagewatch): recheck consent where the text actually
-2026-09-20  NyanCogs            fix(messagewatch): make a bare command group answer instea
-2026-09-20  NyanCogs            fix(messagewatch): disclose the stored route, and anchor t
-2026-09-20  NyanCogs            fix(messagewatch): stop the purpose note leaving a channel
+2026-09-20  NyanCogs            test(messagewatch): stop two tests leaking the sweep the m
+2026-09-20  lorenzini           fix(copilot): mirror the three read defects found against 
+2026-09-20  NyanCogs            Merge main into the actions branch, and hold what the merg
+2026-09-20  lorenzini           fix(copilot): stop claiming a count this code cannot compu
+2026-09-20  lorenzini           fix(copilot): paginate the review-thread query
 ```
 <!-- NOW:END -->
 
