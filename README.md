@@ -119,7 +119,7 @@ graph LR
   TS["tokscale<br/><i>junhoyeo · upstream</i>"] --> TC["tokscale-core<br/><i>shared Rust core,<br/>extracted from TokenBar</i>"]
   TC --> T2
   T1["TokenBar-Tauri<br/><i>Tauri 2 · retired</i>"] --> T2["<b>TokenBar</b><br/>Swift shell"]
-  T2 --> T3["TokenBar-Windows<br/><i>ships as Nyanako.Syrtis</i>"]
+  T2 --> T3["Syrtis-Windows<br/><i>WinUI 3 shell,<br/>ships as Nyanako.Syrtis</i>"]
   T2 --> T4["homebrew-tokenbar"]
   SY["Syrtis-Agent<br/><i>frozen protocol contracts,<br/>remote usage sharing</i>"] --> T3
 
@@ -129,6 +129,8 @@ graph LR
   P4 --> P5["calico-claude<br/><i>after a-connoisseur/<br/>patch-claude-code</i>"]
 
   C1["<b>coralline</b><br/>statusline"]
+  L1["lorenzini<br/><i>PR-reviewer gates:<br/>does the verdict mean pass?</i>"]
+  ST["stingray<br/><i>Stop hook for the<br/>turn that ends half-done</i>"]
   N1["NyanCogs<br/><i>Red Discord bot cogs</i>"]
   S1["SocksBypass<br/><i>iOS Swift · Android Kotlin</i>"]
   CR["Cryptocentrus<br/><i>goal guardian · Codex</i>"]
