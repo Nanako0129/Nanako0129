@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 29 sources (git), 4,488 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 29 sources (git), 4,500 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 18d up, 0 open ports       │
@@ -63,10 +63,10 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2716 | `v0.12.0` | — | today |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2725 | `v0.12.0` | — | today |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 696 | `v1.4.1` | — | 2d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.16.1` | — | today |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 360 | `v1.19.1` | 6.1k | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 360 | `v1.20.0` | 6.1k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 78 | `—` | — | 13d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 67 | 2d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 2mo ago |
@@ -102,11 +102,11 @@ last 7 days · 6.6B tokens · 16,277 messages
 
 <!-- NOW:START -->
 ```console
-2026-09-21  stingray            docs(zh): unify the dash on two stray em-dash pairs
-2026-09-21  stingray            docs: point at TypeSafe's terms instead of paraphrasing th
-2026-09-21  NyanCogs            fix(messagewatch): say zero out loud on the dashboard inst
-2026-09-21  stingray            docs: the liability cap is a formula, not USD 50
-2026-09-21  stingray            docs: three places where the pages contradicted themselves
+2026-09-21  stingray            fix(shape3): write the refusal into the match instead of w
+2026-09-21  stingray            fix(shape3): the possessive exclusion applies to the forwa
+2026-09-21  stingray            feat(shape3): an aspect marker is a claim without needing 
+2026-09-21  stingray            fix(shape3): decide the exclusion on the line it withdraws
+2026-09-21  NyanCogs            fix(messagewatch): read the whole response body, not the f
 ```
 <!-- NOW:END -->
 
