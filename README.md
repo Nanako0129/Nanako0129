@@ -161,7 +161,7 @@ Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueN
 
 ### 卯咪卯的窩 · a Chinese-speaking dev community
 
-[![Discord](https://img.shields.io/discord/1523004250152501341?label=%E5%8D%AF%E5%92%AA%E5%8D%AF%E7%9A%84%E7%AA%A9&logo=discord&logoColor=white&color=5865F2&style=for-the-badge)](https://discord.gg/HD8GzXzBEu)
+[![Discord](https://img.shields.io/discord/1523004250152501341?label=%E5%8D%AF%E5%92%AA%E5%8D%AF%E7%9A%84%E7%AA%A9&logo=discord&logoColor=white&color=5865F2&style=for-the-badge)](https://discord.gg/C6NRm5jHMt)
 
 我一直想要一個地方：能認真聊技術，也能放心做自己。找不到，那就自己開一個。
 
@@ -171,7 +171,7 @@ Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueN
 
 不管你是哪一種（或同時是好幾種），這裡都有你的位置。沒有門檻，潛水歡迎。
 
-**[→ 進來坐](https://discord.gg/HD8GzXzBEu)**
+**[→ 進來坐](https://discord.gg/C6NRm5jHMt)**
 
 ```console
 ~ ❯ cat .offline
