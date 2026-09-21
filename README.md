@@ -129,7 +129,7 @@ graph LR
   P4 --> P5["calico-claude<br/><i>after a-connoisseur/<br/>patch-claude-code</i>"]
 
   C1["<b>coralline</b><br/>statusline"]
-  L1["lorenzini<br/><i>PR-reviewer gates:<br/>does the verdict mean pass?</i>"]
+  JV["TypeSafe Jev<br/><i>System One · jev-1.13.0</i>"] -->|"shadow check:<br/>can only withhold a pass"| L1["lorenzini<br/><i>PR-reviewer gates:<br/>does the verdict mean pass?</i>"]
   ST["stingray<br/><i>Stop hook for the<br/>turn that ends half-done</i>"]
   N1["NyanCogs<br/><i>Red Discord bot cogs</i>"]
   S1["SocksBypass<br/><i>iOS Swift · Android Kotlin</i>"]
