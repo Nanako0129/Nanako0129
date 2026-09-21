@@ -78,6 +78,12 @@ FEATURED = [
         "Session-scoped GPT-5.6 agent routing for Claude Code",
     ),
     (
+        "lorenzini",
+        "PR-reviewer gates that decide whether a verdict means pass",
+        "Claude Code skills that wait for a third-party PR reviewer and decide "
+        "whether its verdict actually means pass",
+    ),
+    (
         "SocksBypass",
         "SOCKS5 proxy for iOS and Android, built to defeat tethering limits",
         "A SOCKS5 proxy that runs on your iPhone or Android phone, so a tethered "

@@ -69,6 +69,7 @@ enough to open a new repo.
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 360 | `v1.19.1` | 6.1k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 78 | `—` | — | 13d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 67 | 2d ago |
+| **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.3` | — | today |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 2mo ago |
 <!-- PROJECTS:END -->
 
@@ -127,10 +128,12 @@ graph LR
   P1 --> P3["pilotfish-codex"]
   P1 --> P4["remora-cc"]
   P4 --> P5["calico-claude<br/><i>after a-connoisseur/<br/>patch-claude-code</i>"]
+  P1 --> L1["lorenzini<br/><i>PR-reviewer gates:<br/>does the verdict mean pass?</i>"]
+  P1 --> ST["stingray<br/><i>Stop hook for the<br/>turn that ends half-done</i>"]
 
   C1["<b>coralline</b><br/>statusline"]
-  JV["TypeSafe Jev<br/><i>System One · jev-1.13.0</i>"] --> L1["lorenzini<br/><i>PR-reviewer gates:<br/>does the verdict mean pass?</i>"]
-  JV --> ST["stingray<br/><i>Stop hook for the<br/>turn that ends half-done</i>"]
+  JV["TypeSafe Jev<br/><i>System One · jev-1.13.0</i>"] --> L1
+  JV --> ST
   JV --> N1["NyanCogs<br/><i>Red Discord bot cogs</i>"]
   S1["SocksBypass<br/><i>iOS Swift · Android Kotlin</i>"]
   CR["Cryptocentrus<br/><i>goal guardian · Codex</i>"]
