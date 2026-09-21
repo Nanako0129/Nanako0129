@@ -23,7 +23,7 @@
 │      oW&fW&8&888888888888888888&&&oM8&o    Packages: 29 sources (git), 4,506 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
-│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 18d up, 0 open ports       │
+│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 19d up, 0 open ports       │
 │        dW88%%%88&&&8$$$$W8%88%%88&M*h&     CPU: Rust, Swift, Python, Ansible, K8s       │
 │        mM&8%BB%8&W&&$@$MW8BBB%B88&Mk       Locale: zh_TW.UTF-8 (English via translator) │
 │         b*&8%%%8%%8  $$BM&8888%88Ma                                                     │
@@ -69,6 +69,7 @@ enough to open a new repo.
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 360 | `v1.20.0` | 6.1k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 78 | `—` | — | 13d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 67 | 2d ago |
+| **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.3` | — | today |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 2mo ago |
 <!-- PROJECTS:END -->
 
@@ -85,11 +86,11 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 6.6B tokens · 16,277 messages
+last 7 days · 6.9B tokens · 17,130 messages
 
-  claude-opus-5       ██████████████████░░░░  84.0%     5507M
-  claude-fable-5-1    ███░░░░░░░░░░░░░░░░░░░  12.3%      803M
-  grok-4.6            ░░░░░░░░░░░░░░░░░░░░░░   1.4%       91M
+  claude-opus-5       ███████████████████░░░  84.7%     5865M
+  claude-fable-5-1    ███░░░░░░░░░░░░░░░░░░░  11.6%      803M
+  grok-4.6            ░░░░░░░░░░░░░░░░░░░░░░   1.4%       99M
   claude-sonnet-5     ░░░░░░░░░░░░░░░░░░░░░░   1.2%       81M
   gemini-3.8-flash    ░░░░░░░░░░░░░░░░░░░░░░   0.5%       32M
   gpt-5.6-sol         ░░░░░░░░░░░░░░░░░░░░░░   0.4%       29M
@@ -119,7 +120,7 @@ graph LR
   TS["tokscale<br/><i>junhoyeo · upstream</i>"] --> TC["tokscale-core<br/><i>shared Rust core,<br/>extracted from TokenBar</i>"]
   TC --> T2
   T1["TokenBar-Tauri<br/><i>Tauri 2 · retired</i>"] --> T2["<b>TokenBar</b><br/>Swift shell"]
-  T2 --> T3["TokenBar-Windows<br/><i>ships as Nyanako.Syrtis</i>"]
+  T2 --> T3["Syrtis-Windows<br/><i>WinUI 3 shell,<br/>ships as Nyanako.Syrtis</i>"]
   T2 --> T4["homebrew-tokenbar"]
   SY["Syrtis-Agent<br/><i>frozen protocol contracts,<br/>remote usage sharing</i>"] --> T3
 
@@ -127,9 +128,13 @@ graph LR
   P1 --> P3["pilotfish-codex"]
   P1 --> P4["remora-cc"]
   P4 --> P5["calico-claude<br/><i>after a-connoisseur/<br/>patch-claude-code</i>"]
+  P1 --> L1["lorenzini<br/><i>PR-reviewer gates:<br/>does the verdict mean pass?</i>"]
+  P1 --> ST["stingray<br/><i>Stop hook for the<br/>turn that ends half-done</i>"]
 
   C1["<b>coralline</b><br/>statusline"]
-  N1["NyanCogs<br/><i>Red Discord bot cogs</i>"]
+  JV["TypeSafe Jev<br/><i>System One · jev-1.13.0</i>"] --> L1
+  JV --> ST
+  JV --> N1["NyanCogs<br/><i>Red Discord bot cogs</i>"]
   S1["SocksBypass<br/><i>iOS Swift · Android Kotlin</i>"]
   CR["Cryptocentrus<br/><i>goal guardian · Codex</i>"]
 
@@ -147,7 +152,7 @@ graph LR
 The same discipline, off the clock — everything below runs at home:
 
 ```console
-Proxmox VE      18d uptime · every service in Compose, every service healthchecked
+Proxmox VE      19d uptime · every service in Compose, every service healthchecked
 Zero trust      Cloudflare Tunnel + Access · 5 tunnels · 20 ZTNA apps · 0 inbound ports
 Home Assistant  140 integrations · 409 entities · 56 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
@@ -159,7 +164,7 @@ Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueN
 
 ### 卯咪卯的窩 · a Chinese-speaking dev community
 
-[![Discord](https://img.shields.io/discord/1523004250152501341?label=%E5%8D%AF%E5%92%AA%E5%8D%AF%E7%9A%84%E7%AA%A9&logo=discord&logoColor=white&color=5865F2&style=for-the-badge)](https://discord.gg/HD8GzXzBEu)
+[![Discord](https://img.shields.io/discord/1523004250152501341?label=%E5%8D%AF%E5%92%AA%E5%8D%AF%E7%9A%84%E7%AA%A9&logo=discord&logoColor=white&color=5865F2&style=for-the-badge)](https://discord.gg/C6NRm5jHMt)
 
 我一直想要一個地方：能認真聊技術，也能放心做自己。找不到，那就自己開一個。
 
@@ -169,7 +174,7 @@ Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueN
 
 不管你是哪一種（或同時是好幾種），這裡都有你的位置。沒有門檻，潛水歡迎。
 
-**[→ 進來坐](https://discord.gg/HD8GzXzBEu)**
+**[→ 進來坐](https://discord.gg/C6NRm5jHMt)**
 
 ```console
 ~ ❯ cat .offline
