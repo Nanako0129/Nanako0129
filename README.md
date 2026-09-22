@@ -63,9 +63,9 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2777 | `v0.12.1` | — | today |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 696 | `v1.4.1` | — | 3d ago |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.16.1` | — | 2d ago |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2777 | `v0.12.2` | — | today |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 696 | `v1.4.1` | — | today |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.16.1` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 363 | `v1.20.1` | 6.3k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 79 | `—` | — | 15d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 68 | 3d ago |
@@ -103,11 +103,11 @@ last 7 days · 6.9B tokens · 17,130 messages
 
 <!-- NOW:START -->
 ```console
-2026-09-22  Syrtis-Windows      feat(models): flag a reported cost the local price estimat
-2026-09-22  stingray            fix(lang): repair a spliced comment and give each language
-2026-09-22  Syrtis-Windows      feat(smoke): report which folded model rows the implausibl
-2026-09-22  Syrtis-Windows      feat(models): carry the estimate through the provider fold
-2026-09-22  stingray            test: fail setup when the hook interpreter cannot run
+2026-09-22  stingray            feat(lang)!: let Jev judge the language instead of countin
+2026-09-22  calico-claude       feat(patch): disable `claude install` in a Calico build
+2026-09-22  Syrtis-Windows      chore(release): point Scoop and the README at the publishe
+2026-09-22  stingray            docs: set the switches in settings.json, not in a shell ex
+2026-09-22  pilotfish           docs: qualify the Opus 5.5 effort guidance by alias resolu
 ```
 <!-- NOW:END -->
 
