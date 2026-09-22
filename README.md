@@ -65,9 +65,9 @@ enough to open a new repo.
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2775 | `v0.12.0` | — | 1d ago |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 696 | `v1.4.1` | — | 3d ago |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.16.1` | — | 1d ago |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.16.1` | — | 2d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 362 | `v1.20.0` | 6.3k | today |
-| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 78 | `—` | — | 14d ago |
+| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 78 | `—` | — | 15d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 68 | 3d ago |
 | **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.3` | — | 1d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 2mo ago |
@@ -103,11 +103,11 @@ last 7 days · 6.9B tokens · 17,130 messages
 
 <!-- NOW:START -->
 ```console
-2026-09-22  NyanCogs            chore(coderabbit): turn off the docstring coverage check
-2026-09-22  NyanCogs            fix(messagewatch): keep a scam finding's buttons off the h
-2026-09-21  NyanCogs            chore(coderabbit): route this repository to CodeRabbit aft
-2026-09-21  NyanCogs            docs(jev-integration): record why the hostility question g
-2026-09-21  NyanCogs            feat(messagewatch): point a hostility report at the messag
+2026-09-22  NyanCogs            docs(messagewatch): correct two numbers in the evasion not
+2026-09-22  NyanCogs            fix(messagewatch): bump the disclosure, because the accept
+2026-09-22  NyanCogs            docs(messagewatch): record the evasion this signal has, an
+2026-09-22  NyanCogs            feat(messagewatch): record what each report was made of, s
+2026-09-22  NyanCogs            fix(messagewatch): ask who would be hurt, and whether they
 ```
 <!-- NOW:END -->
 
