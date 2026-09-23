@@ -67,6 +67,16 @@ else
 fi
 
 # --- 2. Local half (usage panel + same API blocks + push as bot) ---
+# This half commits and pushes whatever branch is checked out. Left on a merged
+# feature branch after PR #2, eight syncs (2026-09-21 23:30 to 09-23 17:30)
+# landed there and the public USAGE panel sat two days stale with nothing
+# reporting it. The dispatch above is unaffected: gh run list shows every
+# dispatch in that window ran on main, so only this half stops.
+branch=$(git branch --show-current)
+if [ "$branch" != main ]; then
+  echo "sync-local: checkout is on '${branch:-detached HEAD}', not main; skipped local commit/push" >&2
+  exit 1
+fi
 pull_rebase
 # Non-zero here means the script wrote the page and then found prose that no
 # longer matches its source (a blurb behind its repo's description, a stated
