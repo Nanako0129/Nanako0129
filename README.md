@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 29 sources (git), 4,620 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 29 sources (git), 4,622 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 22d up, 0 open ports       │
@@ -63,8 +63,8 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2832 | `v0.12.2` | — | today |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 697 | `v1.4.1` | — | today |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2834 | `v0.12.2` | — | 1d ago |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 697 | `v1.4.1` | — | 1d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.17.0` | — | 1d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 366 | `v1.20.2` | 6.7k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 79 | `—` | — | 17d ago |
@@ -103,11 +103,11 @@ last 7 days · 6.2B tokens · 15,673 messages
 
 <!-- NOW:START -->
 ```console
-2026-09-24  calico-claude       fix(install): run the Windows update task through conhost 
-2026-09-24  calico-claude       feat(install): turn install-patched-claude.ps1 into a side
-2026-09-23  calico-claude       feat(install): turn install-patched-claude.sh into a side-
-2026-09-23  sepia               docs(fingerprints): list every Opus 5.5 writing statement 
-2026-09-23  pilotfish           docs: cite Anthropic's Opus 5.5 prompting guide for the ef
+2026-09-24  NyanCogs            fix(spotifyplaylist): skip non-object trackList entries
+2026-09-24  NyanCogs            fix(spotifyplaylist): flag possibly cut playlists from the
+2026-09-24  NyanCogs            fix(spotifyplaylist): survive a null embed entity and stat
+2026-09-24  TokenBar            fix(release): build Sparkle for macOS 14 so Xcode 27 accep
+2026-09-24  Syrtis-Windows      docs(parity): re-base the macOS parity survey on v1.20.2, 
 ```
 <!-- NOW:END -->
 
