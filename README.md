@@ -15,7 +15,7 @@
 │         *%B@@#akwwqpdbkkbqwmdh*@@@B&       ─────────────                                │
 │         8%*ooo#MWWWWWWWWWWMM#oahaaB%Z      Name: Nanako, or Nyanako                     │
 │        Za*##MWWWWWW&&&&88&&&&WW#*oaaw      Pronouns: she / her                          │
-│       q*MWWWW&&88888888888%8888&WMMMop     OS: macOS 26.7 arm64                         │
+│       q*MWWWW&&88888888888%8888&WMMMop     OS: macOS 27.0 arm64                         │
 │      oW&8WWM/M/)&%%%%%%%%%%*)&rC&888WMa    Host: MacBook Air (M5, 2026), 32GB / 1TB     │
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
@@ -86,10 +86,10 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 6.2B tokens · 15,634 messages
+last 7 days · 6.2B tokens · 15,673 messages
 
-  claude-opus-5       ████████████████░░░░░░  71.5%     4462M
-  claude-opus-5-5     █████░░░░░░░░░░░░░░░░░  21.3%     1330M
+  claude-opus-5       ████████████████░░░░░░  71.4%     4462M
+  claude-opus-5-5     █████░░░░░░░░░░░░░░░░░  21.4%     1334M
   claude-fable-5-1    █░░░░░░░░░░░░░░░░░░░░░   4.1%      258M
   grok-4.6            ░░░░░░░░░░░░░░░░░░░░░░   1.4%       90M
   claude-sonnet-5     ░░░░░░░░░░░░░░░░░░░░░░   0.9%       58M
