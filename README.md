@@ -103,11 +103,11 @@ last 7 days · 6.4B tokens · 16,307 messages
 
 <!-- NOW:START -->
 ```console
+2026-09-24  Syrtis-Windows      fix(core): resync Grok with macOS, and port two Antigravit
+2026-09-24  Syrtis-Windows      chore(quota): retire agent_history.rs, as macOS did in 2ea
+2026-09-24  Syrtis-Windows      fix(quota): keep the window tabs in the provider's order, 
+2026-09-24  Syrtis-Windows      fix(quota): resync quota history with macOS, key it by His
 2026-09-24  NyanCogs            fix(spotifyplaylist): skip non-object trackList entries
-2026-09-24  NyanCogs            fix(spotifyplaylist): flag possibly cut playlists from the
-2026-09-24  NyanCogs            fix(spotifyplaylist): survive a null embed entity and stat
-2026-09-24  TokenBar            fix(release): build Sparkle for macOS 14 so Xcode 27 accep
-2026-09-24  Syrtis-Windows      docs(parity): re-base the macOS parity survey on v1.20.2, 
 ```
 <!-- NOW:END -->
 
