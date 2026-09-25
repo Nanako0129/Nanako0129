@@ -64,11 +64,11 @@ enough to open a new repo.
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2834 | `v0.12.2` | — | 1d ago |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 697 | `v1.4.1` | — | 1d ago |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.17.0` | — | 1d ago |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 696 | `v1.4.1` | — | 1d ago |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.18.0` | — | today |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 366 | `v1.20.2` | 6.7k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 79 | `—` | — | 17d ago |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 70 | 5d ago |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 70 | 6d ago |
 | **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.3` | — | 3d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 2mo ago |
 <!-- PROJECTS:END -->
@@ -103,11 +103,11 @@ last 7 days · 6.4B tokens · 16,307 messages
 
 <!-- NOW:START -->
 ```console
-2026-09-24  Syrtis-Windows      fix(core): resync Grok with macOS, and port two Antigravit
-2026-09-24  Syrtis-Windows      chore(quota): retire agent_history.rs, as macOS did in 2ea
-2026-09-24  Syrtis-Windows      fix(quota): keep the window tabs in the provider's order, 
-2026-09-24  Syrtis-Windows      fix(quota): resync quota history with macOS, key it by His
-2026-09-24  NyanCogs            fix(spotifyplaylist): skip non-object trackList entries
+2026-09-25  TokenBar            fix(probe): settle the window card milestones for hidden o
+2026-09-25  Syrtis-Windows      chore(release): point Scoop and the README at the publishe
+2026-09-25  TokenBar            fix(probe): give every --launch-timeline task a milestone
+2026-09-25  TokenBar            perf(graph): compute the graph once for concurrent request
+2026-09-25  Syrtis-Windows      chore(release): bump the version contract to 0.5.0, and co
 ```
 <!-- NOW:END -->
 
@@ -216,4 +216,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself every six hours · last sync: 2026-09-24 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself every six hours · last sync: 2026-09-25 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
