@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 30 sources (git), 4,631 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 30 sources (git), 4,634 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 23d up, 0 open ports       │
@@ -63,13 +63,13 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2841 | `v0.12.2` | — | 1d ago |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 696 | `v1.4.1` | — | 1d ago |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2844 | `v0.12.2` | — | 1d ago |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 696 | `v1.4.1` | — | today |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.18.1` | — | today |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 367 | `v1.20.2` | 6.7k | today |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 367 | `v1.20.2` | 6.8k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 79 | `—` | — | 18d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 70 | 6d ago |
-| **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.3` | — | 4d ago |
+| **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.3` | — | today |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 2mo ago |
 <!-- PROJECTS:END -->
 
@@ -103,11 +103,11 @@ last 7 days · 8.6B tokens · 21,824 messages
 
 <!-- NOW:START -->
 ```console
-2026-09-25  limpet              fix(shim): single-quote the executable path in the generat
-2026-09-25  limpet              fix(watch): point each profile's LaunchAgent at the CLI sh
-2026-09-25  Syrtis-Windows      fix(stats): match raw client ids against the short-id sele
-2026-09-25  Syrtis-Windows      fix(settings): draw the preset selection ring outside the 
-2026-09-25  Syrtis-Windows      feat(icon): ship the lit Syrtis app icon (macOS v2.0 light
+2026-09-25  limpet              chore(coderabbit): give this repository a review configura
+2026-09-25  TokenBar            chore(engine): advance tokscale-core to be0861d4
+2026-09-25  limpet              fix(sync): refuse a non-numeric transfers value and multi-
+2026-09-25  limpet              fix(sync): refuse quoted/hostile additionalRcloneFlags ins
+2026-09-25  limpet              fix(sync): stop the sync script from eval'ing config value
 ```
 <!-- NOW:END -->
 
