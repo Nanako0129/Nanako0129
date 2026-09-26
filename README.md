@@ -103,11 +103,11 @@ last 7 days · 7.7B tokens · 19,783 messages
 
 <!-- NOW:START -->
 ```console
-2026-09-26  syrtis              fix(antigravity): rate-limit the agy login-shell discovery
-2026-09-26  homebrew-tokenbar   tokenbar: deprecate in favour of nanako0129/tap/syrtis; de
-2026-09-26  syrtis              docs(glass): record that .regular tooltips follow the syst
-2026-09-26  syrtis              docs(release): notes for v2.0.1
-2026-09-26  syrtis              fix(glass): frost the hover tooltips so rows beneath them 
+2026-09-26  Syrtis-Windows      docs(engine): fix the stale cache-format note in ENGINE.md
+2026-09-26  tokscale-core       fix(grouping): keep raw-keyed aliases and reject malformed
+2026-09-26  syrtis              fix(models): gate a near-expiry restored report and distru
+2026-09-26  tokscale-core       docs(upstream): record the re-vendor rule for builtin_grou
+2026-09-26  tokscale-core       feat(grouping): fold grok-<version>-build into grok-<versi
 ```
 <!-- NOW:END -->
 
