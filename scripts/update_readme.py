@@ -58,7 +58,7 @@ FEATURED = [
         "your AI interviews you, then installs it",
     ),
     (
-        "TokenBar",
+        "Syrtis",
         "Native macOS menu-bar monitor for AI token usage",
         "AI token usage & quota monitor for the macOS menu bar — native Swift, Liquid "
         "Glass, 3D contribution graph. Tracks Claude Code, Codex, Cursor, OpenCode & "
