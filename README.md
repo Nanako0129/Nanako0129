@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 31 sources (git), 4,655 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 31 sources (git), 4,661 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 23d up, 0 open ports       │
@@ -63,13 +63,13 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2860 | `v0.12.2` | — | 2d ago |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 697 | `v1.4.2` | — | today |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 540 | `v0.18.1` | — | 1d ago |
-| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 371 | `v2.0.0` | 6.9k | today |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2862 | `v0.12.2` | — | 3d ago |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 698 | `v1.4.2` | — | 1d ago |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.18.1` | — | 1d ago |
+| **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 373 | `v2.0.1` | 6.9k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 79 | `—` | — | 19d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 70 | 7d ago |
-| **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.3` | — | today |
+| **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.3` | — | 1d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 2mo ago |
 <!-- PROJECTS:END -->
 
@@ -103,11 +103,11 @@ last 7 days · 7.7B tokens · 19,783 messages
 
 <!-- NOW:START -->
 ```console
-2026-09-26  limpet              style(wizard): explicit self for every state write in crea
-2026-09-26  limpet              docs(menu): state the measured range where .named matches 
-2026-09-26  limpet              fix(menu): say "now" for a sync under a second old instead
-2026-09-26  limpet              fix(l5.1): accept every rclone "Copied (…)" success; drop 
-2026-09-26  syrtis              docs(release): name the existing-Syrtis.app case where the
+2026-09-26  syrtis              fix(antigravity): rate-limit the agy login-shell discovery
+2026-09-26  homebrew-tokenbar   tokenbar: deprecate in favour of nanako0129/tap/syrtis; de
+2026-09-26  syrtis              docs(glass): record that .regular tooltips follow the syst
+2026-09-26  syrtis              docs(release): notes for v2.0.1
+2026-09-26  syrtis              fix(glass): frost the hover tooltips so rows beneath them 
 ```
 <!-- NOW:END -->
 
