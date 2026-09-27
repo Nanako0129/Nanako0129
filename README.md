@@ -64,11 +64,11 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 9.6B tokens · 26,726 messages
+last 7 days · 9.6B tokens · 26,849 messages
 
-  claude-opus-5-5     ██████████████░░░░░░░░  62.0%     5934M
-  claude-opus-5       █████░░░░░░░░░░░░░░░░░  23.2%     2216M
-  claude-sonnet-5     ███░░░░░░░░░░░░░░░░░░░  12.6%     1202M
+  claude-opus-5-5     ██████████████░░░░░░░░  62.2%     5966M
+  claude-opus-5       █████░░░░░░░░░░░░░░░░░  23.1%     2216M
+  claude-sonnet-5     ███░░░░░░░░░░░░░░░░░░░  12.5%     1202M
   claude-fable-5-1    ░░░░░░░░░░░░░░░░░░░░░░   1.1%      108M
   grok-4.6            ░░░░░░░░░░░░░░░░░░░░░░   0.4%       36M
   gemini-3.8-flash    ░░░░░░░░░░░░░░░░░░░░░░   0.3%       29M
