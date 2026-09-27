@@ -20,7 +20,7 @@
 │     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
 │     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
 │     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 31 sources (git), 4,675 stars      │
+│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 31 sources (git), 4,677 stars      │
 │       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
 │        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
 │       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 23d up, 0 open ports       │
@@ -63,7 +63,7 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2875 | `v0.12.2` | — | 3d ago |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2877 | `v0.12.2` | — | 3d ago |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 698 | `v1.4.2` | — | 1d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.18.1` | — | 1d ago |
 | **[TokenBar](https://github.com/Nanako0129/TokenBar)** | Native macOS menu-bar monitor for AI token usage | ★ 374 | `v2.0.1` | 6.9k | today |
@@ -103,11 +103,11 @@ last 7 days · 7.7B tokens · 19,783 messages
 
 <!-- NOW:START -->
 ```console
+2026-09-27  syrtis              fix(demo): stop completed demo cycles short of their reset
+2026-09-27  syrtis              test(models): pin attribution to the raw id beside the gro
+2026-09-27  syrtis              Merge origin/main into feat/model-alias-grouping
 2026-09-27  syrtis              ci: skip the app build for docs-only PRs
-2026-09-27  syrtis              test(selftest): extend the probe window to agedRaced, fix 
 2026-09-26  Syrtis-Windows      docs(engine): fix the stale cache-format note in ENGINE.md
-2026-09-26  tokscale-core       fix(grouping): keep raw-keyed aliases and reject malformed
-2026-09-26  tokscale-core       docs(upstream): record the re-vendor rule for builtin_grou
 ```
 <!-- NOW:END -->
 
