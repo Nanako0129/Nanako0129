@@ -79,7 +79,7 @@ enough to open a new repo.
 
 > Real usage, pushed here every six hours by a cron job on my Mac. The numbers come from
 > [tokscale](https://github.com/junhoyeo/tokscale) — junhoyeo's Rust engine for reading
-> agent session data, and the engine [TokenBar](https://github.com/Nanako0129/TokenBar)
+> agent session data, and the engine [TokenBar](https://github.com/Nanako0129/syrtis)
 > runs on. I send fixes upstream when I trip over them; the Swift shell around it is my
 > part. Grouped by model rather than by client, because the client would lie: I drive
 > GPT models through Claude Code.
