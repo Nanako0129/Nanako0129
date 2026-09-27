@@ -17,6 +17,7 @@ network beyond `gh` (plus optional LAN SSH for the homelab line).
 """
 
 import json
+from html import escape
 import os
 import platform
 import plistlib
@@ -779,14 +780,14 @@ def resolve_os_line(readme_text):
     unconditionally would let ubuntu overwrite the row with its own identity on
     every scheduled run. Same contract as USAGE and the Proxmox uptime: only the
     environment that can actually observe a value may write it, everywhere
-    else the last observed one stands. Matched up to the box border, since the
-    row is padded out to the frame.
+    else the last observed one stands. Read from the neofetch image's alt text,
+    where rows are joined by ALT_SEP.
     """
     if sys.platform == "darwin":
         ver = platform.mac_ver()[0]
         if ver:
             return f"OS: macOS {ver} {platform.machine()}"
-    m = re.search(r"(OS: \S[^│]*?)\s*│", readme_text)
+    m = re.search(r"(OS: [^·\"]*?)\s*(?:·|\")", readme_text)
     return m.group(1) if m else None
 
 
@@ -815,13 +816,8 @@ def resolve_proxmox_uptime_days(readme_text):
 # that cell's statistic far enough to change a glyph, so no sampling parameter
 # recovers them. Placed one column inside the silhouette on each side so the
 # outline stays closed, and mirrored about column 21.5.
-# Deliberately ASCII and nothing else.
-# An earlier braille version looked better but had to sit above the info block
-# rather than beside it: braille renders at one cell in GitHub's code font and
-# about 1.1 in some editors, and whole spaces cannot pay a fractional cell, so
-# the two columns could never agree. ASCII is exactly one cell everywhere,
-# which is what buys back the side-by-side neofetch layout. cell_width() fails
-# the build if anything wider sneaks in.
+# Kept as ASCII by choice now that it is drawn into an SVG rather than a code
+# block: the art is the point, and the SVG only adds colour to it.
 CAT = r"""
          w*aw                   kok
         m8BB8Mk              Za8BB%*
@@ -843,25 +839,102 @@ CAT = r"""
            M88%%%         &88%%8
 """.strip("\n").splitlines()
 
+# Glyph classes of CAT. `<>|(+` occur only in the two eye runs of row 7 and `-`
+# only in the whiskers, so colouring by glyph needs no coordinates that a
+# retrace would silently invalidate.
+CAT_EYE = set("<>|(+")
+CAT_WHISKER = set("-")
 
-FRAME = "─│╭╮╰╯"
+# Colours, light / dark. Sampled from the reference photo where it has one:
+# the embroidered eyes average rgb(227,194,104) over the yellow pixels, the fur
+# rgb(11,11,14), the whisker stitching pure white.
+EYE = ("#e3c268", "#e3c268")        # photo eye yellow, both themes
+FUR = ("#1f2328", "#6e7681")        # light: near the photo's black; dark: lifted
+                                    # to grey, or a black cat vanishes on #0d1117
+WHISKER = ("#8c959f", "#ffffff")    # dark: the photo's white stitching; light:
+                                    # grey, since white on white is invisible
+ACCENT = ("#8250df", "#d2a8ff")     # labels and user@host
+# The row of colour blocks under a real neofetch, ANSI order.
+SWATCHES = ["#1f2328", "#cf222e", "#1a7f37", "#e3c268",
+            "#0969da", "#8250df", "#1b7c83", "#d0d7de"]
+
+NEOFETCH_SVG = Path(__file__).resolve().parent.parent / "assets" / "neofetch.svg"
+# Separates rows in the image's alt text, which is also where CI reads the
+# last observed OS and Proxmox values back from (see resolve_*).
+ALT_SEP = " · "
 
 
-def cell_width(s):
-    """Frame padding assumes one rendered column per character.
+def _cat_row(line):
+    """One CAT line as <tspan> runs, one per glyph class."""
+    def cls(c):
+        return "eye" if c in CAT_EYE else "wh" if c in CAT_WHISKER else "fur"
+    runs, cur, buf = [], None, ""
+    for c in line:
+        k = cls(c) if c != " " else cur
+        if k != cur and buf:
+            runs.append((cur, buf))
+            buf = ""
+        cur = k or "fur"
+        buf += c
+    if buf:
+        runs.append((cur, buf))
+    return "".join(f'<tspan class="{k}">{escape(s)}</tspan>' for k, s in runs)
 
-    ASCII is the only thing that reliably holds to that across every font a
-    reader might have. CJK ragged the border on github.com by falling back to a
-    proportional face; braille was fine there but ran about 1.1 cells wide in an
-    editor, and a fractional cell cannot be paid for with whole spaces. Since
-    the art now shares a line with the info column, anything but ASCII breaks
-    the layout somewhere — so fail the build instead. Chinese belongs in the
-    prose below, which needs no alignment at all.
-    """
-    bad = [c for c in s if not (c.isascii() or c in FRAME)]
-    if bad:
-        sys.exit(f"non-monospace glyph in the neofetch block: {bad!r} in {s!r}")
-    return len(s)
+
+def neofetch_svg(title, info):
+    fs, lh = 14, 19                      # font size / line height, px
+    cw = fs * 0.61                       # widest common monospace advance
+    pad, top = 28, 44
+    art_w = max(len(l) for l in CAT) * cw
+    ix = pad + art_w + 3 * cw            # info column x
+    rows = max(len(CAT), len(info) + 2)
+    sw_y = top + (len(info) + 1) * lh
+    width = round(ix + max(len(l) for l in info) * cw + pad)
+    height = round(top + (rows - 1) * lh + pad)
+
+    (el, ed), (fl, fd), (wl, wd), (al, ad) = EYE, FUR, WHISKER, ACCENT
+    out = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
+        f'viewBox="0 0 {width} {height}" role="img" aria-label="neofetch">',
+        f"""<style>
+  text {{ font: {fs}px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+         fill: #1f2328; white-space: pre; }}
+  .frame {{ fill: #ffffff; stroke: #d0d7de; }}
+  .ttl {{ fill: #ffffff; }}
+  .eye {{ fill: {el}; font-weight: 700; }} .fur {{ fill: {fl}; }} .wh {{ fill: {wl}; }}
+  .k, .u {{ fill: {al}; font-weight: 700; }}
+  .m {{ fill: #59636e; }}
+  @media (prefers-color-scheme: dark) {{
+    text {{ fill: #f0f6fc; }}
+    .frame {{ fill: #0d1117; stroke: #3d444d; }}
+    .ttl {{ fill: #0d1117; }}
+    .fur {{ fill: {fd}; }} .wh {{ fill: {wd}; }} .eye {{ fill: {ed}; }}
+    .k, .u {{ fill: {ad}; }}
+    .m {{ fill: #9198a1; }}
+  }}
+</style>""",
+        f'<rect class="frame" x="1" y="10" width="{width - 2}" height="{height - 11}" rx="10"/>',
+    ]
+    tw = (len(title) + 2) * cw
+    out.append(f'<rect class="ttl" x="{pad - cw:g}" y="2" width="{tw:g}" height="16"/>')
+    out.append(f'<text class="m" x="{pad:g}" y="15">{escape(title)}</text>')
+    for i, line in enumerate(CAT):
+        out.append(f'<text x="{pad:g}" y="{top + i * lh}" xml:space="preserve">{_cat_row(line)}</text>')
+    for i, line in enumerate(info):
+        y = top + i * lh
+        if i == 0:
+            u, _, h = line.partition("@")
+            body = f'<tspan class="u">{escape(u)}</tspan>@<tspan class="u">{escape(h)}</tspan>'
+        elif ": " in line:
+            k, _, v = line.partition(": ")
+            body = f'<tspan class="k">{escape(k)}</tspan>: {escape(v)}'
+        else:
+            body = f'<tspan class="m">{escape(line)}</tspan>'
+        out.append(f'<text x="{ix:g}" y="{y}" xml:space="preserve">{body}</text>')
+    for j, c in enumerate(SWATCHES):
+        out.append(f'<rect x="{ix + j * 3 * cw:g}" y="{sw_y:g}" width="{3 * cw:g}" height="{lh - 3}" fill="{c}"/>')
+    out.append("</svg>")
+    return "\n".join(out) + "\n"
 
 
 def render_neofetch(proxmox_days=None, os_line=None):
@@ -906,19 +979,11 @@ def render_neofetch(proxmox_days=None, os_line=None):
         "Now: no roadmap. What I ship, I maintain.",
     ]
 
-    gutter = max(len(line) for line in CAT) + 3
-    body = []
-    for i in range(max(len(CAT), len(info)) + 2):
-        art = CAT[i - 1] if 0 < i <= len(CAT) else ""
-        text = info[i - 2] if 1 < i <= len(info) + 1 else ""
-        body.append(art.ljust(gutter) + text)
-
-    inner = max(cell_width(line) for line in body) + 2
-    head = f"╭─ {title} " + "─" * (inner - cell_width(title) - 3) + "╮"
-    out = [head]
-    out += [f"│ {line}" + " " * (inner - cell_width(line) - 1) + "│" for line in body]
-    out.append("╰" + "─" * inner + "╯")
-    return "```console\n" + "\n".join(out) + "\n```"
+    NEOFETCH_SVG.parent.mkdir(exist_ok=True)
+    NEOFETCH_SVG.write_text(neofetch_svg(title, info))
+    alt = ALT_SEP.join(l for l in info if l and not l.startswith("─"))
+    return (f'<p align="center"><img src="assets/neofetch.svg" '
+            f'alt="{escape(alt)}" width="100%"></p>')
 
 
 def main():

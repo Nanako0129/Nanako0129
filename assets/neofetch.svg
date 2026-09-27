@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="799" height="414" viewBox="0 0 799 414" role="img" aria-label="neofetch">
+<style>
+  text { font: 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+         fill: #1f2328; white-space: pre; }
+  .frame { fill: #ffffff; stroke: #d0d7de; }
+  .ttl { fill: #ffffff; }
+  .eye { fill: #e3c268; font-weight: 700; } .fur { fill: #1f2328; } .wh { fill: #8c959f; }
+  .k, .u { fill: #8250df; font-weight: 700; }
+  .m { fill: #59636e; }
+  @media (prefers-color-scheme: dark) {
+    text { fill: #f0f6fc; }
+    .frame { fill: #0d1117; stroke: #3d444d; }
+    .ttl { fill: #0d1117; }
+    .fur { fill: #6e7681; } .wh { fill: #ffffff; } .eye { fill: #e3c268; }
+    .k, .u { fill: #d2a8ff; }
+    .m { fill: #9198a1; }
+  }
+</style>
+<rect class="frame" x="1" y="10" width="797" height="403" rx="10"/>
+<rect class="ttl" x="19.46" y="2" width="128.1" height="16"/>
+<text class="m" x="28" y="15">nanako@taiwan</text>
+<text x="28" y="44" xml:space="preserve"><tspan class="fur">         w*aw                   kok</tspan></text>
+<text x="28" y="63" xml:space="preserve"><tspan class="fur">        m8BB8Mk              Za8BB%*</tspan></text>
+<text x="28" y="82" xml:space="preserve"><tspan class="fur">        *%B@@#akwwqpdbkkbqwmdh*@@@B&amp;</tspan></text>
+<text x="28" y="101" xml:space="preserve"><tspan class="fur">        8%*ooo#MWWWWWWWWWWMM#oahaaB%Z</tspan></text>
+<text x="28" y="120" xml:space="preserve"><tspan class="fur">       Za*##MWWWWWW&amp;&amp;&amp;&amp;88&amp;&amp;&amp;&amp;WW#*oaaw</tspan></text>
+<text x="28" y="139" xml:space="preserve"><tspan class="fur">      q*MWWWW&amp;&amp;88888888888%8888&amp;WMMMop</tspan></text>
+<text x="28" y="158" xml:space="preserve"><tspan class="fur">     oW&amp;8WWM/M/)&amp;%%%%%%%%%%*)&amp;rC&amp;888WMa</tspan></text>
+<text x="28" y="177" xml:space="preserve"><tspan class="fur">    h</tspan><tspan class="wh">---</tspan><tspan class="fur">*W&amp;</tspan><tspan class="eye">&lt;&gt;|&lt;&lt;(</tspan><tspan class="fur">%B%%%%%%%8</tspan><tspan class="eye">+&lt;|+&lt;(</tspan><tspan class="fur">8W#</tspan><tspan class="wh">---</tspan><tspan class="fur">k</tspan></text>
+<text x="28" y="196" xml:space="preserve"><tspan class="fur">    #</tspan><tspan class="wh">----</tspan><tspan class="fur">M&amp;&amp;&amp;88%%%%%%%%%%%%%%%8888M</tspan><tspan class="wh">----</tspan><tspan class="fur">*</tspan></text>
+<text x="28" y="215" xml:space="preserve"><tspan class="fur">    h</tspan><tspan class="wh">---</tspan><tspan class="fur">8bW&amp;&amp;&amp;&amp;888%%%%%%%%%888888*&amp;8</tspan><tspan class="wh">---</tspan><tspan class="fur">h</tspan></text>
+<text x="28" y="234" xml:space="preserve"><tspan class="fur">     oW&amp;fW&amp;8&amp;888888888888888888&amp;&amp;&amp;oM8&amp;o</tspan></text>
+<text x="28" y="253" xml:space="preserve"><tspan class="fur">      daM&amp;&amp;&amp;888888888888888888888&amp;&amp;M#op</tspan></text>
+<text x="28" y="272" xml:space="preserve"><tspan class="fur">       h**MMW&amp;&amp;&amp;&amp;8&amp;8&amp;888&amp;8&amp;&amp;&amp;&amp;&amp;&amp;WM#M&amp;8M</tspan></text>
+<text x="28" y="291" xml:space="preserve"><tspan class="fur">      mhM8%%BB%%88&amp;88&amp;&amp;&amp;888%BBBBB%8%h8#</tspan></text>
+<text x="28" y="310" xml:space="preserve"><tspan class="fur">       dW88%%%88&amp;&amp;&amp;8$$$$W8%88%%88&amp;M*h&amp;</tspan></text>
+<text x="28" y="329" xml:space="preserve"><tspan class="fur">       mM&amp;8%BB%8&amp;W&amp;&amp;$@$MW8BBB%B88&amp;Mk</tspan></text>
+<text x="28" y="348" xml:space="preserve"><tspan class="fur">        b*&amp;8%%%8%%8  $$BM&amp;8888%88Ma</tspan></text>
+<text x="28" y="367" xml:space="preserve"><tspan class="fur">           M88%%%         &amp;88%%8</tspan></text>
+<text x="395.22" y="44" xml:space="preserve"><tspan class="u">nanako</tspan>@<tspan class="u">taiwan</tspan></text>
+<text x="395.22" y="63" xml:space="preserve"><tspan class="m">─────────────</tspan></text>
+<text x="395.22" y="82" xml:space="preserve"><tspan class="k">Name</tspan>: Nanako, or Nyanako</text>
+<text x="395.22" y="101" xml:space="preserve"><tspan class="k">Pronouns</tspan>: she / her</text>
+<text x="395.22" y="120" xml:space="preserve"><tspan class="k">OS</tspan>: macOS 27.0 arm64</text>
+<text x="395.22" y="139" xml:space="preserve"><tspan class="k">Host</tspan>: MacBook Air (M5, 2026), 32GB / 1TB</text>
+<text x="395.22" y="158" xml:space="preserve"><tspan class="k">Kernel</tspan>: SRE, platform &amp; DevSecOps</text>
+<text x="395.22" y="177" xml:space="preserve"><tspan class="k">Uptime</tspan>: 27 years</text>
+<text x="395.22" y="196" xml:space="preserve"><tspan class="k">Install Date</tspan>: 2018-11-04 (github.com)</text>
+<text x="395.22" y="215" xml:space="preserve"><tspan class="k">Packages</tspan>: 31 sources (git), 4,684 stars</text>
+<text x="395.22" y="234" xml:space="preserve"><tspan class="k">Shell</tspan>: zsh + powerlevel10k</text>
+<text x="395.22" y="253" xml:space="preserve"><tspan class="k">DE</tspan>: coralline (Claude Code statusline)</text>
+<text x="395.22" y="272" xml:space="preserve"><tspan class="k">Homelab</tspan>: Proxmox, 25d up, 0 open ports</text>
+<text x="395.22" y="291" xml:space="preserve"><tspan class="k">CPU</tspan>: Rust, Swift, Python, Ansible, K8s</text>
+<text x="395.22" y="310" xml:space="preserve"><tspan class="k">Locale</tspan>: zh_TW.UTF-8 (English via translator)</text>
+<text x="395.22" y="329" xml:space="preserve"><tspan class="m"></tspan></text>
+<text x="395.22" y="348" xml:space="preserve"><tspan class="k">Now</tspan>: no roadmap. What I ship, I maintain.</text>
+<rect x="395.22" y="386" width="25.62" height="16" fill="#1f2328"/>
+<rect x="420.84" y="386" width="25.62" height="16" fill="#cf222e"/>
+<rect x="446.46" y="386" width="25.62" height="16" fill="#1a7f37"/>
+<rect x="472.08" y="386" width="25.62" height="16" fill="#e3c268"/>
+<rect x="497.7" y="386" width="25.62" height="16" fill="#0969da"/>
+<rect x="523.32" y="386" width="25.62" height="16" fill="#8250df"/>
+<rect x="548.94" y="386" width="25.62" height="16" fill="#1b7c83"/>
+<rect x="574.56" y="386" width="25.62" height="16" fill="#d0d7de"/>
+</svg>

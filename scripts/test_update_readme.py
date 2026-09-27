@@ -13,7 +13,7 @@ from unittest import mock
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import update_readme as u  # noqa: E402
 
-BOX = "│     h---8bW&&&&888*&8---h   OS: macOS 26.5.2 arm64                       │"
+BOX = '<img src="assets/neofetch.svg" alt="nanako@taiwan · Pronouns: she / her · OS: macOS 26.5.2 arm64 · Host: MacBook Air" width="100%">'
 _README = (Path(__file__).resolve().parent.parent / "README.md").read_text()
 
 

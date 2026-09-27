@@ -7,30 +7,7 @@
 -->
 
 <!-- NEOFETCH:START -->
-```console
-╭─ nanako@taiwan ─────────────────────────────────────────────────────────────────────────╮
-│                                                                                         │
-│          w*aw                   kok                                                     │
-│         m8BB8Mk              Za8BB%*       nanako@taiwan                                │
-│         *%B@@#akwwqpdbkkbqwmdh*@@@B&       ─────────────                                │
-│         8%*ooo#MWWWWWWWWWWMM#oahaaB%Z      Name: Nanako, or Nyanako                     │
-│        Za*##MWWWWWW&&&&88&&&&WW#*oaaw      Pronouns: she / her                          │
-│       q*MWWWW&&88888888888%8888&WMMMop     OS: macOS 27.0 arm64                         │
-│      oW&8WWM/M/)&%%%%%%%%%%*)&rC&888WMa    Host: MacBook Air (M5, 2026), 32GB / 1TB     │
-│     h---*W&<>|<<(%B%%%%%%%8+<|+<(8W#---k   Kernel: SRE, platform & DevSecOps            │
-│     #----M&&&88%%%%%%%%%%%%%%%8888M----*   Uptime: 27 years                             │
-│     h---8bW&&&&888%%%%%%%%%888888*&8---h   Install Date: 2018-11-04 (github.com)        │
-│      oW&fW&8&888888888888888888&&&oM8&o    Packages: 31 sources (git), 4,682 stars      │
-│       daM&&&888888888888888888888&&M#op    Shell: zsh + powerlevel10k                   │
-│        h**MMW&&&&8&8&888&8&&&&&&WM#M&8M    DE: coralline (Claude Code statusline)       │
-│       mhM8%%BB%%88&88&&&888%BBBBB%8%h8#    Homelab: Proxmox, 23d up, 0 open ports       │
-│        dW88%%%88&&&8$$$$W8%88%%88&M*h&     CPU: Rust, Swift, Python, Ansible, K8s       │
-│        mM&8%BB%8&W&&$@$MW8BBB%B88&Mk       Locale: zh_TW.UTF-8 (English via translator) │
-│         b*&8%%%8%%8  $$BM&8888%88Ma                                                     │
-│            M88%%%         &88%%8           Now: no roadmap. What I ship, I maintain.    │
-│                                                                                         │
-╰─────────────────────────────────────────────────────────────────────────────────────────╯
-```
+<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 31 sources (git), 4,684 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 25d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
 <!-- NEOFETCH:END -->
 
 ```console
@@ -64,10 +41,10 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2881 | `v0.12.2` | — | 3d ago |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2883 | `v0.12.2` | — | 3d ago |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 698 | `v1.4.2` | — | 1d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 541 | `v0.18.1` | — | 2d ago |
-| **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 375 | `v2.0.1` | 6.9k | today |
+| **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 375 | `v2.0.1` | 7.0k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 79 | `—` | — | 20d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 70 | 8d ago |
 | **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.3` | — | 1d ago |
@@ -87,13 +64,13 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 8.5B tokens · 22,141 messages
+last 7 days · 9.6B tokens · 26,726 messages
 
-  claude-opus-5-5     ████████████░░░░░░░░░░  52.5%     4450M
-  claude-opus-5       ███████░░░░░░░░░░░░░░░  33.0%     2795M
-  claude-sonnet-5     ██░░░░░░░░░░░░░░░░░░░░  11.4%      962M
-  claude-fable-5-1    ░░░░░░░░░░░░░░░░░░░░░░   1.9%      165M
-  grok-4.6            ░░░░░░░░░░░░░░░░░░░░░░   0.4%       37M
+  claude-opus-5-5     ██████████████░░░░░░░░  62.0%     5934M
+  claude-opus-5       █████░░░░░░░░░░░░░░░░░  23.2%     2216M
+  claude-sonnet-5     ███░░░░░░░░░░░░░░░░░░░  12.6%     1202M
+  claude-fable-5-1    ░░░░░░░░░░░░░░░░░░░░░░   1.1%      108M
+  grok-4.6            ░░░░░░░░░░░░░░░░░░░░░░   0.4%       36M
   gemini-3.8-flash    ░░░░░░░░░░░░░░░░░░░░░░   0.3%       29M
 ```
 <!-- USAGE:END -->
@@ -104,11 +81,11 @@ last 7 days · 8.5B tokens · 22,141 messages
 
 <!-- NOW:START -->
 ```console
+2026-09-27  syrtis              Merge origin/main into chore/remove-unbuilt-windows-code
 2026-09-27  syrtis              docs(verification): show --locked on the CI cargo commands
 2026-09-27  syrtis              docs(verification): separate what --all-targets does in th
 2026-09-27  syrtis              ci: run the Rust unit tests and Clippy wherever CI builds 
 2026-09-27  syrtis              docs(release): the CI gate stops the release, not the tag
-2026-09-27  syrtis              ci: refuse a release tag unless both CI runs are green
 ```
 <!-- NOW:END -->
 
@@ -125,7 +102,7 @@ last 7 days · 8.5B tokens · 22,141 messages
 The same discipline, off the clock — everything below runs at home:
 
 ```console
-Proxmox VE      23d uptime · every service in Compose, every service healthchecked
+Proxmox VE      25d uptime · every service in Compose, every service healthchecked
 Zero trust      Cloudflare Tunnel + Access · 6 tunnels · 20 ZTNA apps · 0 inbound ports
 Home Assistant  140 integrations · 409 entities · 56 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
