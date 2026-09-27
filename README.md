@@ -136,7 +136,11 @@ graph LR
   C1["<b>coralline</b><br/>statusline"]
   JV["TypeSafe Jev<br/><i>System One · jev-1.13.0</i>"] --> L1
   JV --> ST
-  JV --> N1["NyanCogs<br/><i>Red Discord bot cogs</i>"]
+  N1["NyanCogs<br/><i>Red Discord bot cogs</i>"] --> NC1["ChannelSummary<br/><i>LLM channel summaries</i>"]
+  N1 --> NC2["MessageWatch<br/><i>scam &amp; hostility reports</i>"]
+  N1 --> NC3["EmbedFixer<br/><i>provider-fixed social links</i>"]
+  N1 --> NC4["SpotifyPlaylist<br/><i>Spotify playlists in Audio</i>"]
+  JV --> NC2
   S1["SocksBypass<br/><i>iOS Swift · Android Kotlin</i>"]
   CR["Cryptocentrus<br/><i>goal guardian · Codex</i>"]
 
