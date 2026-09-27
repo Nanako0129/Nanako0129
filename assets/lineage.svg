@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="663" viewBox="0 0 850 663" role="img" aria-label="Project lineage">
+<style>
+  text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #1f2328; }
+  .n rect { fill: #ffffff; stroke: #d0d7de; stroke-width: 1; }
+  .n .s { font-size: 11px; fill: #59636e; }
+  .n .t { font-size: 13px; font-weight: 600; }
+  .flag rect { fill: #2f81f7; stroke: #2f81f7; }
+  .flag text, .flag .s { fill: #ffffff; }
+  .ext rect { stroke-dasharray: 4 3; stroke: #8c959f; }
+  .gone { opacity: .55; }
+  .e { fill: none; stroke: #8c959f; stroke-width: 1.2; }
+  .ah { fill: #8c959f; }
+  .lg { font-size: 11px; fill: #59636e; }
+  @media (prefers-color-scheme: dark) {
+    text { fill: #f0f6fc; }
+    .n rect { fill: #151b23; stroke: #3d444d; }
+    .n .s, .lg { fill: #9198a1; }
+    .flag rect { fill: #2f81f7; stroke: #2f81f7; }
+    .flag text, .flag .s { fill: #ffffff; }
+    .ext rect { stroke: #656c76; }
+    .e { stroke: #656c76; }
+    .ah { fill: #656c76; }
+  }
+</style>
+<defs><marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+<path class="ah" d="M0,0 L8,4 L0,8 z"/></marker></defs>
+<path class="e" marker-end="url(#a)" d="M196,32 C211,32 211,32 225,32"/>
+<path class="e" marker-end="url(#a)" d="M410,32 C425,32 425,82 439,82"/>
+<path class="e" marker-end="url(#a)" d="M410,132 C425,132 425,82 439,82"/>
+<path class="e" marker-end="url(#a)" d="M624,82 C639,82 639,32 653,32"/>
+<path class="e" marker-end="url(#a)" d="M624,32 C639,32 639,32 653,32"/>
+<path class="e" marker-end="url(#a)" d="M624,82 C639,82 639,132 653,132"/>
+<path class="e" marker-end="url(#a)" d="M624,132 C639,132 639,132 653,132"/>
+<path class="e" marker-end="url(#a)" d="M196,257 C211,257 211,207 225,207"/>
+<path class="e" marker-end="url(#a)" d="M196,257 C211,257 211,257 225,257"/>
+<path class="e" marker-end="url(#a)" d="M196,257 C211,257 211,307 225,307"/>
+<path class="e" marker-end="url(#a)" d="M410,307 C425,307 425,307 439,307"/>
+<path class="e" marker-end="url(#a)" d="M196,257 C211,257 211,357 225,357"/>
+<path class="e" marker-end="url(#a)" d="M196,257 C211,257 211,407 225,407"/>
+<path class="e" marker-end="url(#a)" d="M196,457 C211,457 211,357 225,357"/>
+<path class="e" marker-end="url(#a)" d="M196,457 C211,457 211,407 225,407"/>
+<path class="e" marker-end="url(#a)" d="M196,457 C211,457 211,457 225,457"/>
+<path class="e" marker-end="url(#a)" d="M196,532 C211,532 211,457 225,457"/>
+<path class="e" marker-end="url(#a)" d="M196,532 C211,532 211,507 225,507"/>
+<path class="e" marker-end="url(#a)" d="M196,532 C211,532 211,557 225,557"/>
+<path class="e" marker-end="url(#a)" d="M196,532 C211,532 211,607 225,607"/>
+<path class="e" marker-end="url(#a)" d="M624,407 C639,407 639,407 653,407"/>
+<path class="e" marker-end="url(#a)" d="M624,457 C639,457 639,457 653,457"/>
+<g class="n ext"><rect x="12" y="12" width="184" height="40" rx="6"/><text class="t" x="22" y="28">tokscale</text><text class="s" x="22" y="44">junhoyeo · upstream</text></g>
+<g class="n "><rect x="226" y="12" width="184" height="40" rx="6"/><text class="t" x="236" y="28">tokscale-core</text><text class="s" x="236" y="44">shared Rust core</text></g>
+<g class="n flag"><rect x="440" y="62" width="184" height="40" rx="6"/><text class="t" x="450" y="78">Syrtis</text><text class="s" x="450" y="94">Swift shell, ex-TokenBar</text></g>
+<g class="n gone"><rect x="226" y="112" width="184" height="40" rx="6"/><text class="t" x="236" y="128">TokenBar-Tauri</text><text class="s" x="236" y="144">Tauri 2 · retired</text></g>
+<g class="n "><rect x="440" y="12" width="184" height="40" rx="6"/><text class="t" x="450" y="28">Syrtis-Agent</text><text class="s" x="450" y="44">remote usage contracts</text></g>
+<g class="n "><rect x="654" y="12" width="184" height="40" rx="6"/><text class="t" x="664" y="28">Syrtis-Windows</text><text class="s" x="664" y="44">WinUI 3 shell</text></g>
+<g class="n "><rect x="654" y="112" width="184" height="40" rx="6"/><text class="t" x="664" y="137">homebrew-tap</text></g>
+<g class="n gone"><rect x="440" y="112" width="184" height="40" rx="6"/><text class="t" x="450" y="128">homebrew-tokenbar</text><text class="s" x="450" y="144">archived</text></g>
+<g class="n flag"><rect x="12" y="237" width="184" height="40" rx="6"/><text class="t" x="22" y="253">pilotfish</text><text class="s" x="22" y="269">orchestration layer</text></g>
+<g class="n "><rect x="226" y="187" width="184" height="40" rx="6"/><text class="t" x="236" y="212">pilotfish-grok</text></g>
+<g class="n "><rect x="226" y="237" width="184" height="40" rx="6"/><text class="t" x="236" y="262">pilotfish-codex</text></g>
+<g class="n "><rect x="226" y="287" width="184" height="40" rx="6"/><text class="t" x="236" y="303">remora-cc</text><text class="s" x="236" y="319">GPT-5.6 agent routing</text></g>
+<g class="n "><rect x="440" y="287" width="184" height="40" rx="6"/><text class="t" x="450" y="303">calico-claude</text><text class="s" x="450" y="319">after patch-claude-code</text></g>
+<g class="n "><rect x="226" y="337" width="184" height="40" rx="6"/><text class="t" x="236" y="353">lorenzini</text><text class="s" x="236" y="369">PR-reviewer gates</text></g>
+<g class="n "><rect x="226" y="387" width="184" height="40" rx="6"/><text class="t" x="236" y="403">stingray</text><text class="s" x="236" y="419">Stop hook for half-done</text></g>
+<g class="n ext"><rect x="12" y="437" width="184" height="40" rx="6"/><text class="t" x="22" y="453">TypeSafe Jev</text><text class="s" x="22" y="469">System One · jev-1.13.0</text></g>
+<g class="n "><rect x="12" y="512" width="184" height="40" rx="6"/><text class="t" x="22" y="528">NyanCogs</text><text class="s" x="22" y="544">Red Discord bot cogs</text></g>
+<g class="n "><rect x="226" y="437" width="184" height="40" rx="6"/><text class="t" x="236" y="453">MessageWatch</text><text class="s" x="236" y="469">scam &amp; hostility reports</text></g>
+<g class="n "><rect x="226" y="487" width="184" height="40" rx="6"/><text class="t" x="236" y="503">ChannelSummary</text><text class="s" x="236" y="519">LLM channel summaries</text></g>
+<g class="n "><rect x="226" y="537" width="184" height="40" rx="6"/><text class="t" x="236" y="553">EmbedFixer</text><text class="s" x="236" y="569">provider-fixed links</text></g>
+<g class="n "><rect x="226" y="587" width="184" height="40" rx="6"/><text class="t" x="236" y="603">SpotifyPlaylist</text><text class="s" x="236" y="619">playlists in Audio</text></g>
+<g class="n ext"><rect x="440" y="387" width="184" height="40" rx="6"/><text class="t" x="450" y="403">StoryScope</text><text class="s" x="450" y="419">Russell et al. · arXiv</text></g>
+<g class="n flag"><rect x="654" y="387" width="184" height="40" rx="6"/><text class="t" x="664" y="403">sepia</text><text class="s" x="664" y="419">de-AI writing</text></g>
+<g class="n "><rect x="440" y="437" width="184" height="40" rx="6"/><text class="t" x="450" y="453">postmortem-prose</text><text class="s" x="450" y="469">zh-TW postmortem voice</text></g>
+<g class="n "><rect x="654" y="437" width="184" height="40" rx="6"/><text class="t" x="664" y="462">md-style</text></g>
+<g class="n flag"><rect x="440" y="512" width="184" height="40" rx="6"/><text class="t" x="450" y="528">coralline</text><text class="s" x="450" y="544">Claude Code statusline</text></g>
+<g class="n "><rect x="654" y="512" width="184" height="40" rx="6"/><text class="t" x="664" y="528">SocksBypass</text><text class="s" x="664" y="544">SOCKS5 for iOS &amp; Android</text></g>
+<g class="n "><rect x="440" y="562" width="184" height="40" rx="6"/><text class="t" x="450" y="578">Cryptocentrus</text><text class="s" x="450" y="594">goal guardian · Codex</text></g>
+<text class="lg" x="12" y="655">filled = flagship · dashed = someone else's · faded = retired</text>
+</svg>

@@ -116,40 +116,37 @@ last 7 days · 8.5B tokens · 22,141 messages
 ~ ❯ tree ~/projects --lineage
 ```
 
-```mermaid
-graph LR
-  TS["tokscale<br/><i>junhoyeo · upstream</i>"] --> TC["tokscale-core<br/><i>shared Rust core,<br/>extracted from Syrtis</i>"]
-  TC --> T2
-  T1["TokenBar-Tauri<br/><i>Tauri 2 · retired</i>"] --> T2["<b>Syrtis</b><br/>Swift shell,<br/><i>formerly TokenBar</i>"]
-  T2 --> T3["Syrtis-Windows<br/><i>WinUI 3 shell,<br/>ships as Nyanako.Syrtis</i>"]
-  T2 --> T4["homebrew-tap"]
-  T5["homebrew-tokenbar<br/><i>archived</i>"] --> T4
-  SY["Syrtis-Agent<br/><i>frozen protocol contracts,<br/>remote usage sharing</i>"] --> T3
+```console
+~/projects
+├── tokscale                    junhoyeo · upstream
+│   └── tokscale-core           shared Rust core, extracted from Syrtis
+│       └── syrtis              Swift shell, ex-TokenBar  ← TokenBar-Tauri, retired
+│           ├── Syrtis-Windows  WinUI 3 shell, ships as Nyanako.Syrtis  ← Syrtis-Agent
+│           └── homebrew-tap    ← homebrew-tokenbar (archived)
+├── pilotfish                   multi-model orchestration for Claude Code
+│   ├── pilotfish-grok
+│   ├── pilotfish-codex
+│   ├── remora-cc
+│   │   └── calico-claude       after a-connoisseur/patch-claude-code
+│   ├── lorenzini               PR-reviewer gates: does the verdict mean pass?  ← Jev
+│   └── stingray                Stop hook for the turn that ends half-done  ← Jev
+├── NyanCogs                    Red Discord bot cogs
+│   ├── ChannelSummary          LLM channel summaries
+│   ├── MessageWatch            scam & hostility reports  ← Jev
+│   ├── EmbedFixer              provider-fixed social links
+│   └── SpotifyPlaylist         Spotify playlists in Audio
+├── StoryScope                  Russell et al. · arXiv
+│   └── sepia                   de-AI writing
+├── postmortem-prose
+│   └── md-style
+├── coralline                   Powerlevel10k-style statusline
+├── SocksBypass                 iOS Swift · Android Kotlin
+└── Cryptocentrus               goal guardian · Codex
 
-  P1["<b>pilotfish</b><br/>Claude Code"] --> P2["pilotfish-grok"]
-  P1 --> P3["pilotfish-codex"]
-  P1 --> P4["remora-cc"]
-  P4 --> P5["calico-claude<br/><i>after a-connoisseur/<br/>patch-claude-code</i>"]
-  P1 --> L1["lorenzini<br/><i>PR-reviewer gates:<br/>does the verdict mean pass?</i>"]
-  P1 --> ST["stingray<br/><i>Stop hook for the<br/>turn that ends half-done</i>"]
-
-  C1["<b>coralline</b><br/>statusline"]
-  JV["TypeSafe Jev<br/><i>System One · jev-1.13.0</i>"] --> L1
-  JV --> ST
-  N1["NyanCogs<br/><i>Red Discord bot cogs</i>"] --> NC1["ChannelSummary<br/><i>LLM channel summaries</i>"]
-  N1 --> NC2["MessageWatch<br/><i>scam &amp; hostility reports</i>"]
-  N1 --> NC3["EmbedFixer<br/><i>provider-fixed social links</i>"]
-  N1 --> NC4["SpotifyPlaylist<br/><i>Spotify playlists in Audio</i>"]
-  JV --> NC2
-  S1["SocksBypass<br/><i>iOS Swift · Android Kotlin</i>"]
-  CR["Cryptocentrus<br/><i>goal guardian · Codex</i>"]
-
-  SS["StoryScope<br/><i>Russell et al. · arXiv</i>"] --> W3["<b>sepia</b><br/>de-AI writing"]
-  W1["postmortem-prose"] --> W2["md-style"]
-
-  classDef flagship fill:#2f81f7,stroke:#1f6feb,color:#fff
-  class T2,P1,C1,W3 flagship
+Jev = TypeSafe Jev (System One · jev-1.13.0)
 ```
+
+<p align="center"><img src="assets/lineage.svg" alt="Project lineage: Syrtis, pilotfish, NyanCogs and their offshoots, as listed in the tree above" width="100%"></p>
 
 ```console
 ~ ❯ ssh homelab -- uptime
