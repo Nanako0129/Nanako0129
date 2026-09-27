@@ -116,37 +116,7 @@ last 7 days · 8.5B tokens · 22,141 messages
 ~ ❯ tree ~/projects --lineage
 ```
 
-```console
-~/projects
-├── tokscale                    junhoyeo · upstream
-│   └── tokscale-core           shared Rust core, extracted from Syrtis
-│       └── syrtis              Swift shell, ex-TokenBar  ← TokenBar-Tauri, retired
-│           ├── Syrtis-Windows  WinUI 3 shell, ships as Nyanako.Syrtis  ← Syrtis-Agent
-│           └── homebrew-tap    ← homebrew-tokenbar (archived)
-├── pilotfish                   multi-model orchestration for Claude Code
-│   ├── pilotfish-grok
-│   ├── pilotfish-codex
-│   ├── remora-cc
-│   │   └── calico-claude       after a-connoisseur/patch-claude-code
-│   ├── lorenzini               PR-reviewer gates: does the verdict mean pass?  ← Jev
-│   └── stingray                Stop hook for the turn that ends half-done  ← Jev
-├── NyanCogs                    Red Discord bot cogs
-│   ├── ChannelSummary          LLM channel summaries
-│   ├── MessageWatch            scam & hostility reports  ← Jev
-│   ├── EmbedFixer              provider-fixed social links
-│   └── SpotifyPlaylist         Spotify playlists in Audio
-├── StoryScope                  Russell et al. · arXiv
-│   └── sepia                   de-AI writing
-├── postmortem-prose
-│   └── md-style
-├── coralline                   Powerlevel10k-style statusline
-├── SocksBypass                 iOS Swift · Android Kotlin
-└── Cryptocentrus               goal guardian · Codex
-
-Jev = TypeSafe Jev (System One · jev-1.13.0)
-```
-
-<p align="center"><img src="assets/lineage.svg" alt="Project lineage: Syrtis, pilotfish, NyanCogs and their offshoots, as listed in the tree above" width="100%"></p>
+<p align="center"><img src="assets/lineage.svg" alt="Project lineage: tokscale to tokscale-core to Syrtis, which feeds Syrtis-Windows and homebrew-tap; pilotfish to pilotfish-grok, pilotfish-codex, remora-cc (then calico-claude), lorenzini and stingray; TypeSafe Jev to lorenzini, stingray and MessageWatch; NyanCogs to ChannelSummary, MessageWatch, EmbedFixer and SpotifyPlaylist; StoryScope to sepia; postmortem-prose to md-style; plus coralline, SocksBypass and Cryptocentrus" width="100%"></p>
 
 ```console
 ~ ❯ ssh homelab -- uptime
