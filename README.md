@@ -43,17 +43,18 @@ somewhere else.
 
 **UX has frontend engineers. DX has SRE.**
 
-Every one of these started because I needed it. TokenBar exists because I wanted to know
-what a session actually cost without opening a dashboard. coralline exists because I've
-used Powerlevel10k in zsh for years and wanted the same thing in my Claude Code
-statusline — I only packaged it up because people kept asking how I'd done it.
+Every one of these started because I needed it. Syrtis (formerly TokenBar) exists
+because I wanted to know what a session actually cost without opening a dashboard.
+coralline exists because I've used Powerlevel10k in zsh for years and wanted the same
+thing in my Claude Code statusline — I only packaged it up because people kept asking
+how I'd done it.
 
 I share it because sharing is the good part, and once it's public I maintain it properly.
 What comes next is genuinely unknown — whatever I hit while learning, whatever annoys me
 enough to open a new repo.
 
-> The full story of the TokenBar rewrite — Rust core, Swift shell, and the FFI seam
-> between them — is written up here (zh-TW):
+> The full story of the TokenBar rewrite (now Syrtis) — Rust core, Swift shell, and the
+> FFI seam between them — is written up here (zh-TW):
 > **[Rust 的引擎，Swift 的外殼](https://hackmd.io/@Nyanako0129/tokenbar-rust-swift-ffi-zh)**
 
 ```console
@@ -79,7 +80,7 @@ enough to open a new repo.
 
 > Real usage, pushed here every six hours by a cron job on my Mac. The numbers come from
 > [tokscale](https://github.com/junhoyeo/tokscale) — junhoyeo's Rust engine for reading
-> agent session data, and the engine [TokenBar](https://github.com/Nanako0129/syrtis)
+> agent session data, and the engine [Syrtis](https://github.com/Nanako0129/syrtis)
 > runs on. I send fixes upstream when I trip over them; the Swift shell around it is my
 > part. Grouped by model rather than by client, because the client would lie: I drive
 > GPT models through Claude Code.
@@ -117,11 +118,12 @@ last 7 days · 8.5B tokens · 22,141 messages
 
 ```mermaid
 graph LR
-  TS["tokscale<br/><i>junhoyeo · upstream</i>"] --> TC["tokscale-core<br/><i>shared Rust core,<br/>extracted from TokenBar</i>"]
+  TS["tokscale<br/><i>junhoyeo · upstream</i>"] --> TC["tokscale-core<br/><i>shared Rust core,<br/>extracted from Syrtis</i>"]
   TC --> T2
-  T1["TokenBar-Tauri<br/><i>Tauri 2 · retired</i>"] --> T2["<b>TokenBar</b><br/>Swift shell"]
+  T1["TokenBar-Tauri<br/><i>Tauri 2 · retired</i>"] --> T2["<b>Syrtis</b><br/>Swift shell,<br/><i>formerly TokenBar</i>"]
   T2 --> T3["Syrtis-Windows<br/><i>WinUI 3 shell,<br/>ships as Nyanako.Syrtis</i>"]
-  T2 --> T4["homebrew-tokenbar"]
+  T2 --> T4["homebrew-tap"]
+  T5["homebrew-tokenbar<br/><i>archived</i>"] --> T4
   SY["Syrtis-Agent<br/><i>frozen protocol contracts,<br/>remote usage sharing</i>"] --> T3
 
   P1["<b>pilotfish</b><br/>Claude Code"] --> P2["pilotfish-grok"]
