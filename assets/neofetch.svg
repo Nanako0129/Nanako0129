@@ -49,7 +49,7 @@
 <text x="395.22" y="215" xml:space="preserve"><tspan class="k">Packages</tspan>: 32 sources (git), 4,722 stars</text>
 <text x="395.22" y="234" xml:space="preserve"><tspan class="k">Shell</tspan>: zsh + powerlevel10k</text>
 <text x="395.22" y="253" xml:space="preserve"><tspan class="k">DE</tspan>: coralline (Claude Code statusline)</text>
-<text x="395.22" y="272" xml:space="preserve"><tspan class="k">Homelab</tspan>: Proxmox, 26d up, 0 open ports</text>
+<text x="395.22" y="272" xml:space="preserve"><tspan class="k">Homelab</tspan>: Proxmox, 27d up, 0 open ports</text>
 <text x="395.22" y="291" xml:space="preserve"><tspan class="k">CPU</tspan>: Rust, Swift, Python, Ansible, K8s</text>
 <text x="395.22" y="310" xml:space="preserve"><tspan class="k">Locale</tspan>: zh_TW.UTF-8 (English via translator)</text>
 <text x="395.22" y="329" xml:space="preserve"><tspan class="m"></tspan></text>
