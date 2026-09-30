@@ -7,7 +7,7 @@
 -->
 
 <!-- NEOFETCH:START -->
-<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 32 sources (git), 4,737 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 28d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
+<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 32 sources (git), 4,739 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 28d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
 <!-- NEOFETCH:END -->
 
 ```console
@@ -41,7 +41,7 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2917 | `v0.12.2` | — | 6d ago |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2918 | `v0.12.2` | — | 6d ago |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 698 | `v1.4.2` | — | 4d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 544 | `v0.18.1` | — | 5d ago |
 | **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 387 | `v2.2.0` | 7.4k | today |
@@ -84,8 +84,8 @@ last 7 days · 8.6B tokens · 24,731 messages
 2026-09-30  calico-claude       test(update): log curl argv with argument boundaries
 2026-09-30  calico-claude       fix(update): time out stalled curl requests instead of han
 2026-09-30  calico-claude       fix(patch): follow Claude 2.1.285's hoisted session header
+2026-09-29  Syrtis-Windows      fix(claude): build the Desktop retry diagnostic outside cf
 2026-09-29  calico-claude       feat(patch): keep non-empty thinking out of collapsed read
-2026-09-28  syrtis              docs(landing): offer the notarized DMG on macOS; drop the 
 ```
 <!-- NOW:END -->
 
