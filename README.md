@@ -81,11 +81,11 @@ last 7 days · 8.3B tokens · 24,082 messages
 
 <!-- NOW:START -->
 ```console
+2026-09-30  calico-claude       fix(patch): follow Claude 2.1.285's hoisted session header
 2026-09-29  calico-claude       feat(patch): keep non-empty thinking out of collapsed read
 2026-09-28  calico-claude       fix(patch): keep the clone-sync rewrite off string literal
 2026-09-28  calico-claude       fix(patch): follow Claude 2.1.284's if-form clone sync
 2026-09-28  syrtis              docs(landing): offer the notarized DMG on macOS; drop the 
-2026-09-28  syrtis              docs(release): notes for v2.2.0; README says releases are 
 ```
 <!-- NOW:END -->
 
