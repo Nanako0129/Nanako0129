@@ -7,7 +7,7 @@
 -->
 
 <!-- NEOFETCH:START -->
-<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 35 sources (git), 4,744 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 28d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
+<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 35 sources (git), 4,747 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 28d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
 <!-- NEOFETCH:END -->
 
 ```console
@@ -81,11 +81,11 @@ last 7 days · 8.8B tokens · 25,048 messages
 
 <!-- NOW:START -->
 ```console
+2026-10-01  computer-use-fast   feat(cu): --drag, a 150-line --read cap, ask-first rules; 
 2026-10-01  computer-use-fast   docs: measure focus independently of cua-driver; say plain
 2026-10-01  computer-use-fast   feat(cu): launch apps and pages in the background; documen
 2026-10-01  Syrtis-Windows      fix(claude): treat an empty Claude Desktop token cache as 
 2026-10-01  computer-use-fast   docs: highlights-only README, full docs/ in English and zh
-2026-10-01  computer-use-fast   docs: compare with jev-computer-use on the same task
 ```
 <!-- NOW:END -->
 
