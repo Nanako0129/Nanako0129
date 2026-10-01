@@ -166,4 +166,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself every six hours · last sync: 2026-09-30 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself every six hours · last sync: 2026-10-01 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
