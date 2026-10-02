@@ -7,7 +7,7 @@
 -->
 
 <!-- NEOFETCH:START -->
-<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 35 sources (git), 4,781 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 28d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
+<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 35 sources (git), 4,782 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 28d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
 <!-- NEOFETCH:END -->
 
 ```console
@@ -41,13 +41,13 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2933 | `v0.12.2` | — | 8d ago |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 699 | `v1.4.2` | — | 6d ago |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2934 | `v0.12.2` | — | 9d ago |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 699 | `v1.4.2` | — | 7d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 546 | `v0.18.1` | — | 7d ago |
 | **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 397 | `v2.2.0` | 7.5k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 79 | `—` | — | 25d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 72 | 13d ago |
-| **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.3` | — | 6d ago |
+| **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.3` | — | 7d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 2mo ago |
 <!-- PROJECTS:END -->
 
@@ -81,11 +81,11 @@ last 7 days · 8.8B tokens · 25,048 messages
 
 <!-- NOW:START -->
 ```console
+2026-10-02  syrtis              fix(clients): give reasonix, kimchi and omp distinct color
+2026-10-02  Syrtis-Windows      fix(clients): give omp, reasonix and kimchi colors no othe
+2026-10-02  Syrtis-Windows      fix(engine-sync): back the Senpi icon with white; correct 
+2026-10-02  syrtis              feat(vendor): advance tokscale-core to 6712ed8 and registe
 2026-10-02  syrtis              fix(antigravity): merge the agy card only when it was fetc
-2026-10-02  syrtis              fix(antigravity): check agy's login before each quota fetc
-2026-10-02  tokscale-core       feat(omp): give Oh My Pi its own client instead of scannin
-2026-10-02  tokscale-core       docs(upstream): record Senpi's shared-parser adaptation as
-2026-10-02  tokscale-core       feat(senpi): read Senpi (OmO Native) sessions through the 
 ```
 <!-- NOW:END -->
 
