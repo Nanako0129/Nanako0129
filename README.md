@@ -81,11 +81,11 @@ last 7 days · 8.8B tokens · 25,048 messages
 
 <!-- NOW:START -->
 ```console
-2026-10-02  tokscale-core       docs(upstream): record Zcode v2-only discovery as a local 
-2026-10-02  tokscale-core       docs(upstream): say the Cursor grok-4.6 tier keeps only it
-2026-10-02  tokscale-core       feat(zcode): read the ZCode v2 CLI usage database
-2026-10-02  tokscale-core       fix(pricing): price Kimi Work ids, retarget kimi-for-codin
-2026-10-02  tokscale-core       fix(pi): keep BOM-prefixed transcripts; lock the invalid-b
+2026-10-02  tokscale-core       docs(upstream): record the pending provider-inference dive
+2026-10-02  tokscale-core       docs(upstream): cite only #936 for the GPT-5.6 entries; re
+2026-10-02  tokscale-core       docs(upstream): record the Augment short-id pricing measur
+2026-10-02  tokscale-core       fix(pricing): bill GPT-5.6 / GPT-6 above 272K request-wide
+2026-10-02  tokscale-core       feat(augment): read Augment Code (Auggie) session snapshot
 ```
 <!-- NOW:END -->
 
