@@ -47,9 +47,9 @@ enough to open a new repo.
 | **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 400 | `v2.4.0` | 7.6k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 79 | `—` | — | 26d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 73 | 14d ago |
-| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 21 | `v0.6.0` | 244 | today |
+| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 21 | `v0.6.0` | 245 | today |
 | **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.3` | — | 8d ago |
-| **[calico-claude](https://github.com/Nanako0129/calico-claude)** | Display-patched Claude Code builds with a verified supply chain | ★ 12 | `v2.1.288-win32-x64-2` | 133 | today |
+| **[calico-claude](https://github.com/Nanako0129/calico-claude)** | Display-patched Claude Code builds with a verified supply chain | ★ 12 | `v2.1.289-win32-x64` | 134 | today |
 | **[computer-use-fast](https://github.com/Nanako0129/computer-use-fast)** | macOS GUI tasks for coding agents in one or two turns | ★ 10 | `—` | — | 2d ago |
 | **[stingray](https://github.com/Nanako0129/stingray)** | Stop hook that catches the turn that ends half-done | ★ 6 | `v0.3.7` | — | 2d ago |
 | **[NyanCogs](https://github.com/Nanako0129/NyanCogs)** | Cogs for Red Discord Bot | ★ 5 | `—` | — | today |
@@ -59,7 +59,7 @@ enough to open a new repo.
 | **[nacre](https://github.com/Nanako0129/nacre)** | LuCI theme for OpenWrt in coralline's palette | ★ 2 | `v0.2.1` | 15 | 5d ago |
 | **[limpet](https://github.com/Nanako0129/limpet)** | Menu-bar realtime one-way mirror, built on rclone | ★ 1 | `v1.0.0` | 4 | today |
 | **[pilotfish-grok](https://github.com/Nanako0129/pilotfish-grok)** | pilotfish, native to Grok Build | ★ 1 | `v1.0.6` | — | today |
-| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 0 | `v0.1.0` | 2 | today |
+| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 0 | `v0.1.1` | 3 | today |
 <!-- PROJECTS:END -->
 
 ```console
@@ -92,11 +92,11 @@ last 7 days · 8.8B tokens · 25,048 messages
 
 <!-- NOW:START -->
 ```console
-2026-10-03  shanjie             docs(s3b): point the section 11 install note at the v0.1.1
-2026-10-03  shanjie             docs: bring the exit-3 and left/right texts in line with t
-2026-10-03  shanjie             fix(macos): install enables the input method itself and ch
-2026-10-03  shanjie             fix(macos): draw the Retina menu icon at the right scale
-2026-10-03  shanjie             fix(core): left/right move the candidate selection instead
+2026-10-03  shanjie             test(core): Ctrl+\ drops a pending syllable too
+2026-10-03  shanjie             test(core): punctuation tests use 你好，我是 and cover an all-p
+2026-10-03  shanjie             feat(core): keep punctuation in the composition until Ente
+2026-10-03  shanjie             docs(s3d): contract for punctuation in the composition
+2026-10-03  shanjie             fix(macos): start the highlight fallback from the page's f
 ```
 <!-- NOW:END -->
 
