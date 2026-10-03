@@ -98,6 +98,73 @@ FEATURED = [
         "Write zh-TW tech longform in a postmortem voice: a personal, battle-tested "
         "style guide for de-AI-flavored engineering writing (Claude Code skill)",
     ),
+    (
+        "Syrtis-Windows",
+        "Syrtis for Windows: WinUI 3 tray app on the same Rust core",
+        "Windows port of TokenBar — a tray monitor for AI coding-agent token usage, "
+        "cost, and subscription quota. WinUI 3 shell on the same Rust parsing core.",
+    ),
+    (
+        "calico-claude",
+        "Display-patched Claude Code builds with a verified supply chain",
+        "Calico Claude — display-patched Claude Code native builds with verified "
+        "supply chain (fork of a-connoisseur/patch-claude-code)",
+    ),
+    (
+        "computer-use-fast",
+        "macOS GUI tasks for coding agents in one or two turns",
+        "Agent skill for macOS GUI tasks in one or two turns: a shell command when "
+        "one answers, else a single cu.py call that opens the app, clicks by visible "
+        "text, types, reads the screen and screenshots.",
+    ),
+    (
+        "stingray",
+        "Stop hook that catches the turn that ends half-done",
+        "A Stop hook for Claude Code, Codex and Grok Build, for the turn that ends "
+        "half-done — nothing done, an announced action never carried out, a promise "
+        "to watch CI with nothing running — or in the wrong language. Every "
+        "judgement is made by TypeSafe Jev.",
+    ),
+    (
+        "NyanCogs",
+        "Cogs for Red Discord Bot",
+        "Cogs for Red Discord Bot",
+    ),
+    (
+        "tokscale-core",
+        "Rust session-parsing engine behind Syrtis",
+        "Shared Rust session parsing, scanning, caching, and aggregation engine for "
+        "TokenBar.",
+    ),
+    (
+        "syrtis-film",
+        "Syrtis intro film, every frame generated in code",
+        "The Syrtis intro film, generated entirely in code: every frame a pure "
+        "function of time, NASA data, a score synthesized in NumPy.",
+    ),
+    (
+        "nacre",
+        "LuCI theme for OpenWrt in coralline's palette",
+        "A soft, layered LuCI theme for OpenWrt 25.12 — coralline's morning-haze "
+        "palette, a sidebar, and a login page you can dress in your own photo.",
+    ),
+    (
+        "limpet",
+        "Menu-bar realtime one-way mirror, built on rclone",
+        "One-way realtime local→remote mirror in your macOS menu bar, built on "
+        "rclone. Derived from SyncTray.",
+    ),
+    (
+        "pilotfish-grok",
+        "pilotfish, native to Grok Build",
+        "Grok Build–native multi-model orchestration, inspired by pilotfish. Frontier "
+        "main session plans; role agents execute; verification guards quality.",
+    ),
+    (
+        "shanjie",
+        "macOS Zhuyin input method that gets the homophone right (WIP)",
+        "善解：以選對同音字為第一優先的開源 macOS 注音輸入法（開發中）",
+    ),
 ]
 BAR_WIDTH = 22
 

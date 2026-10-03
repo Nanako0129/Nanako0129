@@ -41,14 +41,25 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2922 | `v0.12.2` | — | 7d ago |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 698 | `v1.4.2` | — | 5d ago |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 544 | `v0.18.1` | — | 5d ago |
-| **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 387 | `v2.2.0` | 7.4k | today |
-| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 79 | `—` | — | 23d ago |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 71 | 12d ago |
-| **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.3` | — | 5d ago |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2942 | `v0.12.2` | — | 9d ago |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 699 | `v1.4.2` | — | 7d ago |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 547 | `v0.19.0` | — | today |
+| **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 399 | `v2.4.0` | 7.6k | today |
+| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 79 | `—` | — | 26d ago |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 73 | 14d ago |
+| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 21 | `v0.6.0` | 244 | today |
+| **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.3` | — | 7d ago |
+| **[calico-claude](https://github.com/Nanako0129/calico-claude)** | Display-patched Claude Code builds with a verified supply chain | ★ 12 | `v2.1.288-win32-x64-2` | 133 | today |
+| **[computer-use-fast](https://github.com/Nanako0129/computer-use-fast)** | macOS GUI tasks for coding agents in one or two turns | ★ 10 | `—` | — | 2d ago |
+| **[stingray](https://github.com/Nanako0129/stingray)** | Stop hook that catches the turn that ends half-done | ★ 6 | `v0.3.7` | — | 2d ago |
+| **[NyanCogs](https://github.com/Nanako0129/NyanCogs)** | Cogs for Red Discord Bot | ★ 5 | `—` | — | 8d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 2mo ago |
+| **[tokscale-core](https://github.com/Nanako0129/tokscale-core)** | Rust session-parsing engine behind Syrtis | ★ 3 | `—` | — | today |
+| **[syrtis-film](https://github.com/Nanako0129/syrtis-film)** | Syrtis intro film, every frame generated in code | ★ 2 | `—` | — | 2d ago |
+| **[nacre](https://github.com/Nanako0129/nacre)** | LuCI theme for OpenWrt in coralline's palette | ★ 2 | `v0.2.1` | 15 | 5d ago |
+| **[limpet](https://github.com/Nanako0129/limpet)** | Menu-bar realtime one-way mirror, built on rclone | ★ 1 | `—` | — | today |
+| **[pilotfish-grok](https://github.com/Nanako0129/pilotfish-grok)** | pilotfish, native to Grok Build | ★ 1 | `v1.0.6` | — | 8d ago |
+| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 0 | `model-v1` | — | today |
 <!-- PROJECTS:END -->
 
 ```console
