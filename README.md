@@ -7,7 +7,7 @@
 -->
 
 <!-- NEOFETCH:START -->
-<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 35 sources (git), 4,747 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 29d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
+<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 36 sources (git), 4,793 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 28d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
 <!-- NEOFETCH:END -->
 
 ```console
@@ -75,12 +75,12 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 9.4B tokens · 26,629 messages
+last 7 days · 8.8B tokens · 25,048 messages
 
-  claude-opus-5-5     ██████████████████░░░░  81.6%     7633M
-  claude-sonnet-5     ███░░░░░░░░░░░░░░░░░░░  14.2%     1330M
-  claude-opus-5       ░░░░░░░░░░░░░░░░░░░░░░   2.1%      198M
-  grok-4.7            ░░░░░░░░░░░░░░░░░░░░░░   1.7%      157M
+  claude-opus-5-5     ██████████████████░░░░  80.4%     7045M
+  claude-sonnet-5     ███░░░░░░░░░░░░░░░░░░░  15.2%     1330M
+  claude-opus-5       ░░░░░░░░░░░░░░░░░░░░░░   2.3%      198M
+  grok-4.7            ░░░░░░░░░░░░░░░░░░░░░░   1.7%      153M
   claude-sonnet-5-5   ░░░░░░░░░░░░░░░░░░░░░░   0.1%       13M
   claude-haiku-4-5    ░░░░░░░░░░░░░░░░░░░░░░   0.1%       12M
 ```
@@ -92,11 +92,11 @@ last 7 days · 9.4B tokens · 26,629 messages
 
 <!-- NOW:START -->
 ```console
-2026-10-01  computer-use-fast   feat(cu): --drag, a 150-line --read cap, ask-first rules; 
-2026-10-01  computer-use-fast   docs: measure focus independently of cua-driver; say plain
-2026-10-01  computer-use-fast   feat(cu): launch apps and pages in the background; documen
-2026-10-01  Syrtis-Windows      fix(claude): treat an empty Claude Desktop token cache as 
-2026-10-01  computer-use-fast   docs: highlights-only README, full docs/ in English and zh
+2026-10-03  shanjie             ci: address the local code review of PR #1
+2026-10-03  limpet              fix(config-watcher): match FSEvents paths reached through 
+2026-10-03  shanjie             ci: pin the three actions to full commit SHAs
+2026-10-03  shanjie             ci: disable cargo colour when reading native-static-libs
+2026-10-03  syrtis              docs(release): notes for v2.4.0
 ```
 <!-- NOW:END -->
 
@@ -113,7 +113,7 @@ last 7 days · 9.4B tokens · 26,629 messages
 The same discipline, off the clock — everything below runs at home:
 
 ```console
-Proxmox VE      29d uptime · every service in Compose, every service healthchecked
+Proxmox VE      28d uptime · every service in Compose, every service healthchecked
 Zero trust      Cloudflare Tunnel + Access · 6 tunnels · 20 ZTNA apps · 0 inbound ports
 Home Assistant  140 integrations · 409 entities · 56 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
@@ -177,4 +177,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself every six hours · last sync: 2026-10-01 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself every six hours · last sync: 2026-10-03 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
