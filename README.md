@@ -7,7 +7,7 @@
 -->
 
 <!-- NEOFETCH:START -->
-<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 35 sources (git), 4,782 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 28d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
+<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 35 sources (git), 4,783 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 28d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
 <!-- NEOFETCH:END -->
 
 ```console
@@ -43,8 +43,8 @@ enough to open a new repo.
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2934 | `v0.12.2` | — | 9d ago |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 699 | `v1.4.2` | — | 7d ago |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 546 | `v0.18.1` | — | today |
-| **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 397 | `v2.2.0` | 7.5k | today |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 546 | `v0.19.0` | — | today |
+| **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 398 | `v2.3.0` | 7.5k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 79 | `—` | — | 25d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 72 | 14d ago |
 | **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.3` | — | 7d ago |
@@ -81,11 +81,11 @@ last 7 days · 8.8B tokens · 25,048 messages
 
 <!-- NOW:START -->
 ```console
-2026-10-02  limpet              fix(l63): local review round — tail -F, bounded lingering 
-2026-10-02  tokscale-core       docs(upstream): record the streaming prune scope left by l
-2026-10-02  limpet              fix(watchdog): EPERM counts as a live process group; harde
-2026-10-02  coralline           fix(toks): bound lookups across key changes; ps1 finds a m
-2026-10-02  limpet              fix(menu): plain VStack, no row animations, for the two ca
+2026-10-03  Syrtis-Windows      fix(dashboard): a hidden flyout never starts or shows the 
+2026-10-03  Syrtis-Windows      fix(dashboard): rebuild the heatmap on a theme change; cor
+2026-10-03  Syrtis-Windows      fix(dashboard): keep the heatmap position across refreshes
+2026-10-03  Syrtis-Windows      feat(dashboard): flat year heatmap as the third chart view
+2026-10-03  Syrtis-Windows      feat(dashboard): Ctrl+1..9 and Ctrl+[ ] navigate the tab r
 ```
 <!-- NOW:END -->
 
@@ -166,4 +166,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself every six hours · last sync: 2026-10-02 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself every six hours · last sync: 2026-10-03 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
