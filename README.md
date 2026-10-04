@@ -104,7 +104,7 @@ last 7 days · 8.8B tokens · 25,048 messages
 ~ ❯ tree ~/projects --lineage
 ```
 
-<p align="center"><img src="assets/lineage.svg" alt="Project lineage: tokscale to tokscale-core to Syrtis, which feeds Syrtis-Windows and homebrew-tap; pilotfish to pilotfish-grok, pilotfish-codex, remora-cc (then calico-claude), lorenzini and stingray; TypeSafe Jev to lorenzini, stingray and MessageWatch; NyanCogs to ChannelSummary, MessageWatch, EmbedFixer and SpotifyPlaylist; StoryScope to sepia; postmortem-prose to md-style; plus coralline, SocksBypass and Cryptocentrus" width="100%"></p>
+<p align="center"><img src="assets/lineage.svg" alt="Project lineage: tokscale to tokscale-core to Syrtis, which feeds Syrtis-Windows, homebrew-tap and syrtis-film; pilotfish to pilotfish-grok, pilotfish-codex, remora-cc (then calico-claude), lorenzini and stingray; TypeSafe Jev to lorenzini, stingray and MessageWatch; NyanCogs to ChannelSummary (then Learning), MessageWatch, EmbedFixer and SpotifyPlaylist; StoryScope to sepia; postmortem-prose to md-style; coralline to nacre; SyncTray to limpet; plus SocksBypass, Cryptocentrus, computer-use-fast and shanjie" width="100%"></p>
 
 ```console
 ~ ❯ ssh homelab -- uptime

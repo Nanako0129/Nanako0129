@@ -17,6 +17,7 @@ NODES = {
     "tt":   ("TokenBar-Tauri", "Tauri 2 · retired", 1, 2, "gone"),
     "sa":   ("Syrtis-Agent", "remote usage contracts", 2, 0, ""),
     "sw":   ("Syrtis-Windows", "WinUI 3 shell", 3, 0, ""),
+    "sf":   ("syrtis-film", "intro film, all code", 3, 1, ""),
     "ht":   ("homebrew-tap", "", 3, 2, ""),
     "hk":   ("homebrew-tokenbar", "archived", 2, 2, "gone"),
 
@@ -34,22 +35,28 @@ NODES = {
     "cs":   ("ChannelSummary", "LLM channel summaries", 1, 9.5, ""),
     "ef":   ("EmbedFixer", "provider-fixed links", 1, 10.5, ""),
     "sp":   ("SpotifyPlaylist", "playlists in Audio", 1, 11.5, ""),
+    "le":   ("Learning", "catch-up notes", 2, 9.5, ""),
+    "cu":   ("computer-use-fast", "macOS GUI in 1-2 turns", 0, 11, ""),
+    "sj":   ("shanjie", "Zhuyin IME · WIP", 0, 12, ""),
 
     "ss":   ("StoryScope", "Russell et al. · arXiv", 2, 7.5, "ext"),
     "se":   ("sepia", "de-AI writing", 3, 7.5, "flag"),
     "pp":   ("postmortem-prose", "zh-TW postmortem voice", 2, 8.5, ""),
     "md":   ("md-style", "", 3, 8.5, ""),
-    "co":   ("coralline", "Claude Code statusline", 2, 10, "flag"),
-    "sb":   ("SocksBypass", "SOCKS5 for iOS & Android", 3, 10, ""),
-    "cr":   ("Cryptocentrus", "goal guardian · Codex", 2, 11, ""),
+    "co":   ("coralline", "Claude Code statusline", 2, 10.5, "flag"),
+    "sb":   ("SocksBypass", "SOCKS5 for iOS & Android", 3, 10.5, ""),
+    "cr":   ("Cryptocentrus", "goal guardian · Codex", 2, 11.5, ""),
+    "na":   ("nacre", "OpenWrt LuCI theme", 3, 11.5, ""),
+    "st":   ("SyncTray", "menu-bar sync · upstream", 2, 12.5, "ext"),
+    "li":   ("limpet", "rclone menu-bar mirror", 3, 12.5, ""),
 }
 EDGES = [
     ("ts", "tc"), ("tc", "sy"), ("tt", "sy"), ("sy", "sw"), ("sa", "sw"),
-    ("sy", "ht"), ("hk", "ht"),
+    ("sy", "ht"), ("hk", "ht"), ("sy", "sf"),
     ("pf", "pg"), ("pf", "pc"), ("pf", "rm"), ("rm", "cc"), ("pf", "lz"), ("pf", "sr"),
     ("jv", "lz"), ("jv", "sr"), ("jv", "mw"),
-    ("nc", "mw"), ("nc", "cs"), ("nc", "ef"), ("nc", "sp"),
-    ("ss", "se"), ("pp", "md"),
+    ("nc", "mw"), ("nc", "cs"), ("nc", "ef"), ("nc", "sp"), ("cs", "le"),
+    ("ss", "se"), ("pp", "md"), ("co", "na"), ("st", "li"),
 ]
 
 W, H, COL, ROW, PAD = 184, 40, 214, 50, 12

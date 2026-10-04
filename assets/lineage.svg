@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="850" height="663" viewBox="0 0 850 663" role="img" aria-label="Project lineage">
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="713" viewBox="0 0 850 713" role="img" aria-label="Project lineage">
 <style>
   text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #1f2328; }
   .n rect { fill: #ffffff; stroke: #d0d7de; stroke-width: 1; }
@@ -31,6 +31,7 @@
 <path class="e" marker-end="url(#a)" d="M624,32 C639,32 639,32 653,32"/>
 <path class="e" marker-end="url(#a)" d="M624,82 C639,82 639,132 653,132"/>
 <path class="e" marker-end="url(#a)" d="M624,132 C639,132 639,132 653,132"/>
+<path class="e" marker-end="url(#a)" d="M624,82 C639,82 639,82 653,82"/>
 <path class="e" marker-end="url(#a)" d="M196,257 C211,257 211,207 225,207"/>
 <path class="e" marker-end="url(#a)" d="M196,257 C211,257 211,257 225,257"/>
 <path class="e" marker-end="url(#a)" d="M196,257 C211,257 211,307 225,307"/>
@@ -44,14 +45,18 @@
 <path class="e" marker-end="url(#a)" d="M196,532 C211,532 211,507 225,507"/>
 <path class="e" marker-end="url(#a)" d="M196,532 C211,532 211,557 225,557"/>
 <path class="e" marker-end="url(#a)" d="M196,532 C211,532 211,607 225,607"/>
+<path class="e" marker-end="url(#a)" d="M410,507 C425,507 425,507 439,507"/>
 <path class="e" marker-end="url(#a)" d="M624,407 C639,407 639,407 653,407"/>
 <path class="e" marker-end="url(#a)" d="M624,457 C639,457 639,457 653,457"/>
+<path class="e" marker-end="url(#a)" d="M624,557 C639,557 639,607 653,607"/>
+<path class="e" marker-end="url(#a)" d="M624,657 C639,657 639,657 653,657"/>
 <g class="n ext"><rect x="12" y="12" width="184" height="40" rx="6"/><text class="t" x="22" y="28">tokscale</text><text class="s" x="22" y="44">junhoyeo · upstream</text></g>
 <g class="n "><rect x="226" y="12" width="184" height="40" rx="6"/><text class="t" x="236" y="28">tokscale-core</text><text class="s" x="236" y="44">shared Rust core</text></g>
 <g class="n flag"><rect x="440" y="62" width="184" height="40" rx="6"/><text class="t" x="450" y="78">Syrtis</text><text class="s" x="450" y="94">Swift shell, ex-TokenBar</text></g>
 <g class="n gone"><rect x="226" y="112" width="184" height="40" rx="6"/><text class="t" x="236" y="128">TokenBar-Tauri</text><text class="s" x="236" y="144">Tauri 2 · retired</text></g>
 <g class="n "><rect x="440" y="12" width="184" height="40" rx="6"/><text class="t" x="450" y="28">Syrtis-Agent</text><text class="s" x="450" y="44">remote usage contracts</text></g>
 <g class="n "><rect x="654" y="12" width="184" height="40" rx="6"/><text class="t" x="664" y="28">Syrtis-Windows</text><text class="s" x="664" y="44">WinUI 3 shell</text></g>
+<g class="n "><rect x="654" y="62" width="184" height="40" rx="6"/><text class="t" x="664" y="78">syrtis-film</text><text class="s" x="664" y="94">intro film, all code</text></g>
 <g class="n "><rect x="654" y="112" width="184" height="40" rx="6"/><text class="t" x="664" y="137">homebrew-tap</text></g>
 <g class="n gone"><rect x="440" y="112" width="184" height="40" rx="6"/><text class="t" x="450" y="128">homebrew-tokenbar</text><text class="s" x="450" y="144">archived</text></g>
 <g class="n flag"><rect x="12" y="237" width="184" height="40" rx="6"/><text class="t" x="22" y="253">pilotfish</text><text class="s" x="22" y="269">orchestration layer</text></g>
@@ -67,12 +72,18 @@
 <g class="n "><rect x="226" y="487" width="184" height="40" rx="6"/><text class="t" x="236" y="503">ChannelSummary</text><text class="s" x="236" y="519">LLM channel summaries</text></g>
 <g class="n "><rect x="226" y="537" width="184" height="40" rx="6"/><text class="t" x="236" y="553">EmbedFixer</text><text class="s" x="236" y="569">provider-fixed links</text></g>
 <g class="n "><rect x="226" y="587" width="184" height="40" rx="6"/><text class="t" x="236" y="603">SpotifyPlaylist</text><text class="s" x="236" y="619">playlists in Audio</text></g>
+<g class="n "><rect x="440" y="487" width="184" height="40" rx="6"/><text class="t" x="450" y="503">Learning</text><text class="s" x="450" y="519">catch-up notes</text></g>
+<g class="n "><rect x="12" y="562" width="184" height="40" rx="6"/><text class="t" x="22" y="578">computer-use-fast</text><text class="s" x="22" y="594">macOS GUI in 1-2 turns</text></g>
+<g class="n "><rect x="12" y="612" width="184" height="40" rx="6"/><text class="t" x="22" y="628">shanjie</text><text class="s" x="22" y="644">Zhuyin IME · WIP</text></g>
 <g class="n ext"><rect x="440" y="387" width="184" height="40" rx="6"/><text class="t" x="450" y="403">StoryScope</text><text class="s" x="450" y="419">Russell et al. · arXiv</text></g>
 <g class="n flag"><rect x="654" y="387" width="184" height="40" rx="6"/><text class="t" x="664" y="403">sepia</text><text class="s" x="664" y="419">de-AI writing</text></g>
 <g class="n "><rect x="440" y="437" width="184" height="40" rx="6"/><text class="t" x="450" y="453">postmortem-prose</text><text class="s" x="450" y="469">zh-TW postmortem voice</text></g>
 <g class="n "><rect x="654" y="437" width="184" height="40" rx="6"/><text class="t" x="664" y="462">md-style</text></g>
-<g class="n flag"><rect x="440" y="512" width="184" height="40" rx="6"/><text class="t" x="450" y="528">coralline</text><text class="s" x="450" y="544">Claude Code statusline</text></g>
-<g class="n "><rect x="654" y="512" width="184" height="40" rx="6"/><text class="t" x="664" y="528">SocksBypass</text><text class="s" x="664" y="544">SOCKS5 for iOS &amp; Android</text></g>
-<g class="n "><rect x="440" y="562" width="184" height="40" rx="6"/><text class="t" x="450" y="578">Cryptocentrus</text><text class="s" x="450" y="594">goal guardian · Codex</text></g>
-<text class="lg" x="12" y="655">filled = flagship · dashed = someone else's · faded = retired</text>
+<g class="n flag"><rect x="440" y="537" width="184" height="40" rx="6"/><text class="t" x="450" y="553">coralline</text><text class="s" x="450" y="569">Claude Code statusline</text></g>
+<g class="n "><rect x="654" y="537" width="184" height="40" rx="6"/><text class="t" x="664" y="553">SocksBypass</text><text class="s" x="664" y="569">SOCKS5 for iOS &amp; Android</text></g>
+<g class="n "><rect x="440" y="587" width="184" height="40" rx="6"/><text class="t" x="450" y="603">Cryptocentrus</text><text class="s" x="450" y="619">goal guardian · Codex</text></g>
+<g class="n "><rect x="654" y="587" width="184" height="40" rx="6"/><text class="t" x="664" y="603">nacre</text><text class="s" x="664" y="619">OpenWrt LuCI theme</text></g>
+<g class="n ext"><rect x="440" y="637" width="184" height="40" rx="6"/><text class="t" x="450" y="653">SyncTray</text><text class="s" x="450" y="669">menu-bar sync · upstream</text></g>
+<g class="n "><rect x="654" y="637" width="184" height="40" rx="6"/><text class="t" x="664" y="653">limpet</text><text class="s" x="664" y="669">rclone menu-bar mirror</text></g>
+<text class="lg" x="12" y="705">filled = flagship · dashed = someone else's · faded = retired</text>
 </svg>
