@@ -78,14 +78,17 @@ if [ "$branch" != main ]; then
   exit 1
 fi
 pull_rebase
-# Non-zero here means the script wrote the page and then found prose that no
-# longer matches its source (a blurb behind its repo's description, a stated
-# cadence behind the cron). The fresh page is still worth committing, so keep
-# the code and carry it to the end rather than letting `set -e` drop the commit.
-readme_ok=0
-python3 scripts/update_readme.py || readme_ok=$?
-git add -A
-git diff --cached --quiet || {
+# Regenerate, commit, push. Returns 2 when there was a commit but the push was
+# rejected, so the caller knows HEAD is this run's own commit.
+sync_once() {
+  # Non-zero here means the script wrote the page and then found prose that no
+  # longer matches its source (a blurb behind its repo's description, a stated
+  # cadence behind the cron). The fresh page is still worth committing, so keep
+  # the code and carry it to the end rather than letting `set -e` drop the commit.
+  readme_ok=0
+  python3 scripts/update_readme.py || readme_ok=$?
+  git add -A
+  git diff --cached --quiet && return 0
   # Commit as the bot, not as me. GitHub credits the contribution graph by the
   # commit author's email, so automated commits under my own address would fill
   # the graph with a cron job's work. Scoped with -c rather than
@@ -93,18 +96,26 @@ git diff --cached --quiet || {
   git -c user.name="github-actions[bot]" \
       -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
       commit -q -m "chore(readme): local usage sync"
-  if ! git push -q; then
-    # The dispatched workflow may have pushed after our initial pull. If that
-    # rebase conflicts, pull_rebase aborts it and this exits non-zero with the
-    # commit still sitting in the local branch, ready for the next run.
-    pull_rebase
-    git push -q
-  fi
+  git push -q || return 2
 }
+# The dispatch above makes CI push the same blocks a minute or so into this
+# half, so a rejected push is the normal case, not an accident. Rebasing that
+# commit always conflicts (both sides rewrote the same generated lines), and
+# the old code left it behind locally, where it made every later run conflict
+# too: 733202f sat there 2026-10-01 to 10-04, b7df033 from 10-05. The commit
+# holds only data this run produced, so drop it, pull, and produce it again on
+# top of what CI pushed.
+rc=0
+sync_once || rc=$?
+if [ "$rc" -eq 2 ]; then
+  git reset -q --hard HEAD~1
+  pull_rebase
+  rc=0
+  sync_once || rc=$?
+fi
+[ "$rc" -eq 0 ] || { echo "sync-local: push still rejected after regenerating" >&2; exit 1; }
 
-# Non-zero only if the remote force failed *and* we never got a local commit
-# path that at least ran the script successfully. Local pull/push errors still
-# abort earlier via set -e (expected: fix SSH / network).
+# Local pull/push errors abort earlier (expected: fix SSH / network).
 if [ "$dispatch_ok" -ne 1 ]; then
   echo "sync-local: remote workflow_dispatch did not succeed (local half ran)" >&2
 fi
