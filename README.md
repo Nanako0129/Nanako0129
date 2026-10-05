@@ -7,7 +7,7 @@
 -->
 
 <!-- NEOFETCH:START -->
-<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0.1 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 36 sources (git), 4,823 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 32d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
+<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0.1 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 36 sources (git), 4,824 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 32d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
 <!-- NEOFETCH:END -->
 
 ```console
@@ -41,7 +41,7 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2958 | `v0.12.2` | — | 11d ago |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 2959 | `v0.12.2` | — | 11d ago |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 700 | `v1.4.2` | — | 9d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 548 | `v0.19.0` | — | today |
 | **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 402 | `v2.4.0` | 7.8k | today |
@@ -92,11 +92,11 @@ last 7 days · 13.0B tokens · 39,131 messages
 
 <!-- NOW:START -->
 ```console
+2026-10-05  shanjie             docs: review fixes for the v0.2.0 scope text
+2026-10-05  shanjie             docs: v0.2.0 scope and the next version in PLAN, README an
+2026-10-05  shanjie             eval: add seven user-reported conversions
 2026-10-05  syrtis              chore(engine): advance tokscale-core to a024eb7f
 2026-10-05  Syrtis-Windows      test(window-card): place the cycle so the unattributed and
-2026-10-05  Syrtis-Windows      docs(window-card): correct comments on the live-reading pa
-2026-10-05  NyanCogs            feat(learning): reach by message count instead of days, ad
-2026-10-05  Syrtis-Windows      test(window-card): put the binding tests' clock after thei
 ```
 <!-- NOW:END -->
 
