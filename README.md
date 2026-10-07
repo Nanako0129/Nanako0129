@@ -47,10 +47,10 @@ enough to open a new repo.
 | **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 405 | `v2.5.0` | 7.9k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 80 | `—` | — | 29d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 73 | 18d ago |
-| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 21 | `v1.0.0` | 318 | today |
+| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 21 | `v1.0.0` | 330 | today |
 | **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.4` | — | today |
 | **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 16 | `v0.2.1` | 22 | today |
-| **[calico-claude](https://github.com/Nanako0129/calico-claude)** | Display-patched Claude Code builds with a verified supply chain | ★ 12 | `v2.1.292-win32-x64` | 144 | today |
+| **[calico-claude](https://github.com/Nanako0129/calico-claude)** | Display-patched Claude Code builds with a verified supply chain | ★ 12 | `v2.1.292-win32-x64` | 146 | today |
 | **[computer-use-fast](https://github.com/Nanako0129/computer-use-fast)** | macOS GUI tasks for coding agents in one or two turns | ★ 11 | `—` | — | 5d ago |
 | **[stingray](https://github.com/Nanako0129/stingray)** | Stop hook that catches the turn that ends half-done | ★ 6 | `v0.3.7` | — | 2d ago |
 | **[NyanCogs](https://github.com/Nanako0129/NyanCogs)** | Cogs for Red Discord Bot | ★ 5 | `—` | — | today |
@@ -92,11 +92,11 @@ last 7 days · 15.3B tokens · 47,236 messages
 
 <!-- NOW:START -->
 ```console
-2026-10-06  Syrtis-Windows      chore(release): point Scoop and the README at the publishe
-2026-10-06  syrtis              test(settings): the Cursor sync wait test no longer depend
-2026-10-06  syrtis              fix(settings): a Cursor sync pass reads its generation bef
-2026-10-06  syrtis              docs(release): notes for v2.5.0
-2026-10-06  syrtis              fix(settings): Cursor sync reruns after a stale result; to
+2026-10-07  shanjie             docs(sw): holdout and device-check results
+2026-10-07  Syrtis-Windows      docs(engine): past tense for the 726efd70 entry now that i
+2026-10-07  shanjie             test(sw): drop two unused assignments in engine_demote
+2026-10-07  Syrtis-Windows      chore(engine): advance tokscale-core to 8fc63ced (Cursor u
+2026-10-06  tokscale-core       fix(tail): read an Antigravity CLI db's -wal before the db
 ```
 <!-- NOW:END -->
 
@@ -177,4 +177,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself every six hours · last sync: 2026-10-06 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself every six hours · last sync: 2026-10-07 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
