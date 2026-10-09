@@ -75,10 +75,10 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 14.4B tokens · 45,238 messages
+last 7 days · 14.7B tokens · 46,460 messages
 
-  claude-opus-5-5     █████████████████████░  95.8%    13756M
-  claude-sonnet-5-5   █░░░░░░░░░░░░░░░░░░░░░   3.5%      501M
+  claude-opus-5-5     █████████████████████░  95.9%    14111M
+  claude-sonnet-5-5   █░░░░░░░░░░░░░░░░░░░░░   3.5%      512M
   grok-4.7            ░░░░░░░░░░░░░░░░░░░░░░   0.3%       48M
   claude-fable-5-1    ░░░░░░░░░░░░░░░░░░░░░░   0.3%       38M
   grok-4.6            ░░░░░░░░░░░░░░░░░░░░░░   0.0%        7M
@@ -92,11 +92,11 @@ last 7 days · 14.4B tokens · 45,238 messages
 
 <!-- NOW:START -->
 ```console
+2026-10-09  shanjie             feat(engine): Enter commits unfinished zhuyin as shown; Sh
 2026-10-09  sepia               docs(qwenpaw): keep command placeholders in English inside
 2026-10-09  sepia               docs(qwenpaw): list QwenPaw's entries as typable through t
 2026-10-09  shanjie             docs(eval): state the <s> context of the third batch; reco
 2026-10-09  syrtis              fix(charts): 3D pan follows the pointer vertically
-2026-10-09  shanjie             eval: add two user-reported conversions (2026-10-09, third
 ```
 <!-- NOW:END -->
 
