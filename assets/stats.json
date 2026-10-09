@@ -1,0 +1,102 @@
+{
+ "projects": {
+  "NyanCogs": {
+   "downloads": 0,
+   "latest": "—",
+   "stars": 5
+  },
+  "SocksBypass": {
+   "downloads": 0,
+   "latest": "—",
+   "stars": 80
+  },
+  "Syrtis": {
+   "downloads": 8215,
+   "latest": "v2.6.0",
+   "stars": 411
+  },
+  "Syrtis-Windows": {
+   "downloads": 361,
+   "latest": "v1.0.0",
+   "stars": 22
+  },
+  "calico-claude": {
+   "downloads": 159,
+   "latest": "v2.1.296-win32-x64",
+   "stars": 12
+  },
+  "computer-use-fast": {
+   "downloads": 0,
+   "latest": "—",
+   "stars": 11
+  },
+  "coralline": {
+   "downloads": 0,
+   "latest": "v0.19.0",
+   "stars": 547
+  },
+  "limpet": {
+   "downloads": 8,
+   "latest": "v1.0.1",
+   "stars": 2
+  },
+  "lorenzini": {
+   "downloads": 0,
+   "latest": "v0.2.4",
+   "stars": 17
+  },
+  "nacre": {
+   "downloads": 15,
+   "latest": "v0.2.1",
+   "stars": 3
+  },
+  "pilotfish": {
+   "downloads": 0,
+   "latest": "v1.5.0",
+   "stars": 705
+  },
+  "pilotfish-grok": {
+   "downloads": 0,
+   "latest": "v1.0.6",
+   "stars": 1
+  },
+  "postmortem-prose": {
+   "downloads": 0,
+   "latest": "—",
+   "stars": 4
+  },
+  "remora-cc": {
+   "downloads": 73,
+   "latest": "v0.1.23",
+   "stars": 26
+  },
+  "sepia": {
+   "downloads": 0,
+   "latest": "v0.12.3",
+   "stars": 3056
+  },
+  "shanjie": {
+   "downloads": 55,
+   "latest": "v0.3.0",
+   "stars": 20
+  },
+  "stingray": {
+   "downloads": 0,
+   "latest": "v0.3.9",
+   "stars": 6
+  },
+  "syrtis-film": {
+   "downloads": 0,
+   "latest": "—",
+   "stars": 3
+  },
+  "tokscale-core": {
+   "downloads": 0,
+   "latest": "—",
+   "stars": 3
+  }
+ },
+ "repos": 36,
+ "stars": 4951,
+ "updated": "2026-10-10"
+}

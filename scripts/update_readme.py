@@ -29,6 +29,7 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 USER = "Nanako0129"
 # Which repos appear in the table, and how each is described. NOT the order:
@@ -171,6 +172,14 @@ BAR_WIDTH = 22
 ROOT = Path(__file__).resolve().parent.parent
 README = ROOT / "README.md"
 
+# The studio site (nyanako.com, source in ~/side-project/nyanako-site) fills its
+# star, version and download figures from this file at page load, so the site
+# and the table here are always the same numbers. Keys the site reads: stars,
+# repos, updated, projects.<FEATURED name>.{stars,latest,downloads}. Renaming
+# one leaves the site on the fallback numbers written into its HTML, silently.
+STATS_JSON = ROOT / "assets" / "stats.json"
+STATS = {}
+
 
 def gh(path, paginate=False):
     if not shutil.which("gh"):
@@ -257,6 +266,9 @@ def render_projects():
         releases = gh(f"repos/{USER}/{name}/releases?per_page=100", paginate=True) or []
         dl = installer_downloads(releases)
         tag = releases[0]["tag_name"] if releases else "—"
+        STATS.setdefault("projects", {})[name] = {
+            "stars": repo["stargazers_count"], "latest": tag, "downloads": dl,
+        }
         rows.append((
             repo["stargazers_count"],
             f"| **[{name}](https://github.com/{USER}/{name})** | {blurb} | "
@@ -1010,6 +1022,7 @@ def render_neofetch(proxmox_days=None, os_line=None):
     stars = sum(r["stargazers_count"] for r in sources)
     if not stars:
         return None
+    STATS.update(stars=stars, repos=len(sources))
 
     now = datetime.now(timezone.utc).date()
     title = "nanako@taiwan"
@@ -1096,6 +1109,11 @@ def main():
         r"(last sync: )[\d-]+", lambda m: m.group(1) + datetime.now(timezone.utc).strftime("%Y-%m-%d"), text
     )
     README.write_text(text)
+    # Only a run that read both the totals and the table writes the file; a
+    # partial one keeps the last full set rather than publishing gaps.
+    if "stars" in STATS and STATS.get("projects"):
+        STATS["updated"] = datetime.now(ZoneInfo("Asia/Taipei")).date().isoformat()
+        STATS_JSON.write_text(json.dumps(STATS, ensure_ascii=False, indent=1, sort_keys=True) + "\n")
 
     # Reported after the write, deliberately. These findings are about prose a
     # person has to edit, not about the generated blocks — freezing the star
