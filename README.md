@@ -75,14 +75,14 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 14.7B tokens · 46,460 messages
+last 7 days · 12.5B tokens · 40,815 messages
 
-  claude-opus-5-5     █████████████████████░  95.9%    14111M
-  claude-sonnet-5-5   █░░░░░░░░░░░░░░░░░░░░░   3.5%      512M
-  grok-4.7            ░░░░░░░░░░░░░░░░░░░░░░   0.3%       48M
+  claude-opus-5-5     █████████████████████░  95.0%    11870M
+  claude-sonnet-5-5   █░░░░░░░░░░░░░░░░░░░░░   4.3%      531M
+  grok-4.7            ░░░░░░░░░░░░░░░░░░░░░░   0.3%       42M
   claude-fable-5-1    ░░░░░░░░░░░░░░░░░░░░░░   0.3%       38M
-  grok-4.6            ░░░░░░░░░░░░░░░░░░░░░░   0.0%        7M
   claude-sonnet-5     ░░░░░░░░░░░░░░░░░░░░░░   0.0%        4M
+  grok-4.6            ░░░░░░░░░░░░░░░░░░░░░░   0.0%        3M
 ```
 <!-- USAGE:END -->
 
@@ -115,7 +115,7 @@ The same discipline, off the clock — everything below runs at home:
 ```console
 Proxmox VE      37d uptime · every service in Compose, every service healthchecked
 Zero trust      Cloudflare Tunnel + Access · 6 tunnels · 20 ZTNA apps · 0 inbound ports
-Home Assistant  140 integrations · 409 entities · 56 devices · one Lovelace panel
+Home Assistant  140 integrations · 406 entities · 56 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
 ```
 
