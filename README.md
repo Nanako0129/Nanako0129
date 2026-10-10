@@ -7,7 +7,7 @@
 -->
 
 <!-- NEOFETCH:START -->
-<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0.1 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 36 sources (git), 4,967 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 38d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
+<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0.1 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 36 sources (git), 4,970 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 38d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
 <!-- NEOFETCH:END -->
 
 ```console
@@ -41,24 +41,24 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 3071 | `v0.12.3` | — | today |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 3073 | `v0.12.3` | — | 1d ago |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 705 | `v1.5.0` | — | today |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 547 | `v0.19.0` | — | today |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 547 | `v0.19.0` | — | 1d ago |
 | **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 411 | `v2.7.0` | 8.3k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 81 | `—` | — | 1mo ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 73 | 21d ago |
 | **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 22 | `v1.1.0` | 363 | today |
-| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 20 | `model-v5` | 56 | today |
+| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 21 | `v0.4.0` | 64 | today |
 | **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.4` | — | 4d ago |
 | **[calico-claude](https://github.com/Nanako0129/calico-claude)** | Display-patched Claude Code builds with a verified supply chain | ★ 12 | `v2.1.296-win32-x64-2` | 162 | today |
-| **[computer-use-fast](https://github.com/Nanako0129/computer-use-fast)** | macOS GUI tasks for coding agents in one or two turns | ★ 11 | `—` | — | 8d ago |
+| **[computer-use-fast](https://github.com/Nanako0129/computer-use-fast)** | macOS GUI tasks for coding agents in one or two turns | ★ 11 | `—` | — | 9d ago |
 | **[stingray](https://github.com/Nanako0129/stingray)** | Stop hook that catches the turn that ends half-done | ★ 6 | `v0.3.9` | — | today |
 | **[NyanCogs](https://github.com/Nanako0129/NyanCogs)** | Cogs for Red Discord Bot | ★ 5 | `—` | — | 3d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 3mo ago |
 | **[tokscale-core](https://github.com/Nanako0129/tokscale-core)** | Rust session-parsing engine behind Syrtis | ★ 3 | `—` | — | today |
 | **[syrtis-film](https://github.com/Nanako0129/syrtis-film)** | Syrtis intro film, every frame generated in code | ★ 3 | `—` | — | 9d ago |
-| **[nacre](https://github.com/Nanako0129/nacre)** | LuCI theme for OpenWrt in coralline's palette | ★ 3 | `v0.2.1` | 15 | 11d ago |
-| **[limpet](https://github.com/Nanako0129/limpet)** | Menu-bar realtime one-way mirror, built on rclone | ★ 2 | `v1.0.2` | 10 | today |
+| **[nacre](https://github.com/Nanako0129/nacre)** | LuCI theme for OpenWrt in coralline's palette | ★ 3 | `v0.2.1` | 15 | 12d ago |
+| **[limpet](https://github.com/Nanako0129/limpet)** | Menu-bar realtime one-way mirror, built on rclone | ★ 2 | `v1.0.2` | 11 | today |
 | **[pilotfish-grok](https://github.com/Nanako0129/pilotfish-grok)** | pilotfish, native to Grok Build | ★ 1 | `v1.0.6` | — | 6d ago |
 <!-- PROJECTS:END -->
 
@@ -92,9 +92,9 @@ last 7 days · 13.8B tokens · 45,356 messages
 
 <!-- NOW:START -->
 ```console
-2026-10-10  shanjie             docs(model): code review fixes for the model-v5 switch
-2026-10-10  shanjie             fix(model-v5): code review fixes (recipe, keep-from guards
-2026-10-10  shanjie             build(model): use model-v5 and classes-v3, regenerate the 
+2026-10-10  shanjie             fix(kn): second review round on PR #105
+2026-10-10  shanjie             fix(kn): count only in-vocabulary predecessors; review rou
+2026-10-10  shanjie             data(typos): user-reported rows 67-69
 2026-10-10  limpet              chore(release): 1.0.2
 2026-10-10  limpet              fix(sync): a started run clears the refusal wake spacing (
 ```
