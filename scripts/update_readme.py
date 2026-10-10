@@ -265,7 +265,10 @@ def render_projects():
             )
         releases = gh(f"repos/{USER}/{name}/releases?per_page=100", paginate=True) or []
         dl = installer_downloads(releases)
-        tag = releases[0]["tag_name"] if releases else "—"
+        # A repo may also publish data releases (shanjie's model-v5, classes-v3); the
+        # newest of those is not the app's version, so prefer the newest v-tag.
+        tags = [r["tag_name"] for r in releases]
+        tag = next((t for t in tags if re.match(r"v\d", t)), tags[0] if tags else "—")
         STATS.setdefault("projects", {})[name] = {
             "stars": repo["stargazers_count"], "latest": tag, "downloads": dl,
         }
