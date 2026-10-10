@@ -8,10 +8,10 @@
   "SocksBypass": {
    "downloads": 0,
    "latest": "—",
-   "stars": 80
+   "stars": 81
   },
   "Syrtis": {
-   "downloads": 8259,
+   "downloads": 8297,
    "latest": "v2.7.0",
    "stars": 411
   },
@@ -36,7 +36,7 @@
    "stars": 547
   },
   "limpet": {
-   "downloads": 8,
+   "downloads": 10,
    "latest": "v1.0.2",
    "stars": 2
   },
@@ -73,11 +73,11 @@
   "sepia": {
    "downloads": 0,
    "latest": "v0.12.3",
-   "stars": 3064
+   "stars": 3071
   },
   "shanjie": {
    "downloads": 56,
-   "latest": "v0.3.0",
+   "latest": "model-v5",
    "stars": 20
   },
   "stingray": {
@@ -97,6 +97,6 @@
   }
  },
  "repos": 36,
- "stars": 4959,
+ "stars": 4967,
  "updated": "2026-10-10"
 }
