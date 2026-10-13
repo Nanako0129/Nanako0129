@@ -11,12 +11,12 @@
    "stars": 81
   },
   "Syrtis": {
-   "downloads": 8511,
+   "downloads": 8532,
    "latest": "v2.7.0",
    "stars": 413
   },
   "Syrtis-Windows": {
-   "downloads": 377,
+   "downloads": 378,
    "latest": "v1.1.0",
    "stars": 22
   },
@@ -53,7 +53,7 @@
   "pilotfish": {
    "downloads": 0,
    "latest": "v1.5.0",
-   "stars": 706
+   "stars": 708
   },
   "pilotfish-grok": {
    "downloads": 0,
@@ -73,11 +73,11 @@
   "sepia": {
    "downloads": 0,
    "latest": "v0.12.3",
-   "stars": 3143
+   "stars": 3147
   },
   "shanjie": {
-   "downloads": 77,
-   "latest": "v0.4.0",
+   "downloads": 82,
+   "latest": "v0.4.1",
    "stars": 23
   },
   "stingray": {
@@ -97,6 +97,6 @@
   }
  },
  "repos": 36,
- "stars": 5046,
+ "stars": 5052,
  "updated": "2026-10-13"
 }
