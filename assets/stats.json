@@ -73,11 +73,11 @@
   "sepia": {
    "downloads": 0,
    "latest": "v0.12.3",
-   "stars": 3153
+   "stars": 3154
   },
   "shanjie": {
-   "downloads": 85,
-   "latest": "v0.4.1",
+   "downloads": 87,
+   "latest": "v0.4.2",
    "stars": 24
   },
   "stingray": {
@@ -97,6 +97,6 @@
   }
  },
  "repos": 36,
- "stars": 5059,
+ "stars": 5060,
  "updated": "2026-10-14"
 }
