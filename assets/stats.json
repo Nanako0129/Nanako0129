@@ -11,12 +11,12 @@
    "stars": 81
   },
   "Syrtis": {
-   "downloads": 8532,
+   "downloads": 8541,
    "latest": "v2.7.0",
    "stars": 413
   },
   "Syrtis-Windows": {
-   "downloads": 378,
+   "downloads": 381,
    "latest": "v1.1.0",
    "stars": 22
   },
@@ -73,10 +73,10 @@
   "sepia": {
    "downloads": 0,
    "latest": "v0.12.3",
-   "stars": 3147
+   "stars": 3151
   },
   "shanjie": {
-   "downloads": 82,
+   "downloads": 85,
    "latest": "v0.4.1",
    "stars": 23
   },
@@ -97,6 +97,6 @@
   }
  },
  "repos": 36,
- "stars": 5052,
+ "stars": 5056,
  "updated": "2026-10-13"
 }
