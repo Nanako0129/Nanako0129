@@ -75,14 +75,14 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 10.4B tokens · 36,266 messages
+last 7 days · 10.7B tokens · 37,346 messages
 
-  claude-opus-5-5     ████████████████████░░  91.0%     9471M
-  claude-sonnet-5-5   ██░░░░░░░░░░░░░░░░░░░░   7.6%      790M
-  grok-4.7            ░░░░░░░░░░░░░░░░░░░░░░   0.5%       54M
-  claude-haiku-5-5    ░░░░░░░░░░░░░░░░░░░░░░   0.5%       53M
-  claude-fable-5-1    ░░░░░░░░░░░░░░░░░░░░░░   0.3%       27M
-  claude-sonnet-5     ░░░░░░░░░░░░░░░░░░░░░░   0.0%        5M
+  claude-opus-5-5     ████████████████████░░  90.3%     9706M
+  claude-sonnet-5-5   ██░░░░░░░░░░░░░░░░░░░░   8.3%      892M
+  grok-4.7            ░░░░░░░░░░░░░░░░░░░░░░   0.5%       56M
+  claude-haiku-5-5    ░░░░░░░░░░░░░░░░░░░░░░   0.5%       54M
+  claude-fable-5-1    ░░░░░░░░░░░░░░░░░░░░░░   0.3%       29M
+  claude-sonnet-5     ░░░░░░░░░░░░░░░░░░░░░░   0.1%        6M
 ```
 <!-- USAGE:END -->
 
