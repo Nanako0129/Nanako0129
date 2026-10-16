@@ -11,7 +11,7 @@
    "stars": 81
   },
   "Syrtis": {
-   "downloads": 8680,
+   "downloads": 8692,
    "latest": "v2.8.0",
    "stars": 414
   },
@@ -21,7 +21,7 @@
    "stars": 23
   },
   "calico-claude": {
-   "downloads": 171,
+   "downloads": 173,
    "latest": "v2.1.302-win32-x64",
    "stars": 13
   },
@@ -73,11 +73,11 @@
   "sepia": {
    "downloads": 0,
    "latest": "v0.12.4",
-   "stars": 3196
+   "stars": 3197
   },
   "shanjie": {
-   "downloads": 168,
-   "latest": "v0.4.6",
+   "downloads": 176,
+   "latest": "v0.4.7",
    "stars": 25
   },
   "stingray": {
@@ -97,6 +97,6 @@
   }
  },
  "repos": 37,
- "stars": 5107,
+ "stars": 5108,
  "updated": "2026-10-17"
 }
