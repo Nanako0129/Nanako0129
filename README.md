@@ -43,7 +43,7 @@ enough to open a new repo.
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 3195 | `v0.12.4` | — | 1d ago |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 709 | `v1.5.0` | — | 6d ago |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 547 | `v0.19.0` | — | 6d ago |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 547 | `v0.19.0` | — | 7d ago |
 | **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 414 | `v2.7.0` | 8.7k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 81 | `—` | — | 2d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 73 | 27d ago |
@@ -55,7 +55,7 @@ enough to open a new repo.
 | **[stingray](https://github.com/Nanako0129/stingray)** | Stop hook that catches the turn that ends half-done | ★ 6 | `v0.3.9` | — | 6d ago |
 | **[NyanCogs](https://github.com/Nanako0129/NyanCogs)** | Cogs for Red Discord Bot | ★ 5 | `—` | — | 9d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 3mo ago |
-| **[nacre](https://github.com/Nanako0129/nacre)** | LuCI theme for OpenWrt in coralline's palette | ★ 4 | `v0.2.1` | 15 | 17d ago |
+| **[nacre](https://github.com/Nanako0129/nacre)** | LuCI theme for OpenWrt in coralline's palette | ★ 4 | `v0.2.1` | 15 | 18d ago |
 | **[tokscale-core](https://github.com/Nanako0129/tokscale-core)** | Rust session-parsing engine behind Syrtis | ★ 3 | `—` | — | today |
 | **[syrtis-film](https://github.com/Nanako0129/syrtis-film)** | Syrtis intro film, every frame generated in code | ★ 3 | `—` | — | 15d ago |
 | **[limpet](https://github.com/Nanako0129/limpet)** | Menu-bar realtime one-way mirror, built on rclone | ★ 2 | `v1.0.2` | 11 | 5d ago |
@@ -92,11 +92,11 @@ last 7 days · 11.1B tokens · 38,465 messages
 
 <!-- NOW:START -->
 ```console
+2026-10-16  syrtis              fix(window-card): keep the spinner up for the scan and mar
 2026-10-16  shanjie             eval(user-reported): add typo row 125, 擬 picked as 你
 2026-10-16  shanjie             eval(user-reported): add typo rows 122-124, 做齊, 什麼是 and 圖示
 2026-10-16  shanjie             docs(trigram-core): memory cap measured as peak footprint 
 2026-10-16  shanjie             docs(trigram-mmap): reconcile contracts, PLAN and the rese
-2026-10-16  shanjie             fix(core): harden the trigram mapping (unsafe open, regula
 ```
 <!-- NOW:END -->
 
