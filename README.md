@@ -75,14 +75,14 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 11.6B tokens · 40,553 messages
+last 7 days · 9.9B tokens · 34,981 messages
 
-  claude-opus-5-5     ████████████████████░░  89.5%    10406M
-  claude-sonnet-5-5   ██░░░░░░░░░░░░░░░░░░░░   9.1%     1059M
-  claude-haiku-5-5    ░░░░░░░░░░░░░░░░░░░░░░   0.6%       68M
-  grok-4.7            ░░░░░░░░░░░░░░░░░░░░░░   0.5%       58M
-  claude-fable-5-1    ░░░░░░░░░░░░░░░░░░░░░░   0.3%       32M
-  claude-sonnet-5     ░░░░░░░░░░░░░░░░░░░░░░   0.1%        6M
+  claude-opus-5-5     ████████████████████░░  89.0%     8844M
+  claude-sonnet-5-5   ██░░░░░░░░░░░░░░░░░░░░   9.1%      899M
+  claude-haiku-5-5    ░░░░░░░░░░░░░░░░░░░░░░   1.0%       97M
+  grok-4.7            ░░░░░░░░░░░░░░░░░░░░░░   0.5%       47M
+  claude-fable-5-1    ░░░░░░░░░░░░░░░░░░░░░░   0.4%       39M
+  claude-sonnet-5     ░░░░░░░░░░░░░░░░░░░░░░   0.1%        5M
 ```
 <!-- USAGE:END -->
 
@@ -93,10 +93,10 @@ last 7 days · 11.6B tokens · 40,553 messages
 <!-- NOW:START -->
 ```console
 2026-10-16  shanjie             eval(user-reported): add typo row 133, 做第六步, and record th
-2026-10-16  shanjie             docs(contracts): fix /code-review findings on the digit an
-2026-10-16  shanjie             docs(plan): digit and prediction-row contracts B and C are
-2026-10-16  shanjie             docs(contracts): predict-down closes an emptied window (cl
-2026-10-16  shanjie             docs(research): E2 split distribution correction uses the 
+2026-10-16  shanjie             docs(reading-aware): label-sample bound and per-character 
+2026-10-16  syrtis              fix(menubar): draw the window letter monospaced so W fits 
+2026-10-16  Syrtis-Windows      test(tray): the tooltip line now carries the window length
+2026-10-16  syrtis              feat(menubar): show the tracked window's length as a lette
 ```
 <!-- NOW:END -->
 
