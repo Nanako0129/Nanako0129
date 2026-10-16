@@ -92,11 +92,11 @@ last 7 days · 9.9B tokens · 34,981 messages
 
 <!-- NOW:START -->
 ```console
+2026-10-16  velella             docs(plan): attachment upload contracts CU and CUA (compos
+2026-10-16  velella             fix(ui): the channel list scrolls under the profile card's
+2026-10-16  velella             Merge slice CG (multi-line composer) into sel-int
 2026-10-16  shanjie             eval(user-reported): add typo row 133, 做第六步, and record th
-2026-10-16  shanjie             docs(reading-aware): label-sample bound and per-character 
-2026-10-16  syrtis              fix(menubar): draw the window letter monospaced so W fits 
-2026-10-16  Syrtis-Windows      test(tray): the tooltip line now carries the window length
-2026-10-16  syrtis              feat(menubar): show the tracked window's length as a lette
+2026-10-16  velella             feat(ffi): self-state subscription feeding the composer's 
 ```
 <!-- NOW:END -->
 
