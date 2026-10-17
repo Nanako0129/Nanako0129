@@ -43,19 +43,19 @@ enough to open a new repo.
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 3210 | `v0.12.4` | — | 2d ago |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 709 | `v1.5.0` | — | 7d ago |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 547 | `v0.19.0` | — | 7d ago |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 547 | `v0.19.0` | — | 8d ago |
 | **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 414 | `v2.8.0` | 8.8k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 81 | `—` | — | 3d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 73 | 28d ago |
-| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 25 | `v0.4.7` | 178 | today |
-| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 23 | `v1.2.0` | 424 | today |
+| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 25 | `v0.4.7` | 179 | today |
+| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 23 | `v1.2.0` | 426 | today |
 | **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.4` | — | 11d ago |
 | **[calico-claude](https://github.com/Nanako0129/calico-claude)** | Display-patched Claude Code builds with a verified supply chain | ★ 13 | `v2.1.302-win32-x64` | 174 | today |
 | **[computer-use-fast](https://github.com/Nanako0129/computer-use-fast)** | macOS GUI tasks for coding agents in one or two turns | ★ 11 | `—` | — | 16d ago |
 | **[stingray](https://github.com/Nanako0129/stingray)** | Stop hook that catches the turn that ends half-done | ★ 6 | `v0.3.9` | — | 7d ago |
 | **[NyanCogs](https://github.com/Nanako0129/NyanCogs)** | Cogs for Red Discord Bot | ★ 5 | `—` | — | 10d ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 3mo ago |
-| **[nacre](https://github.com/Nanako0129/nacre)** | LuCI theme for OpenWrt in coralline's palette | ★ 4 | `v0.2.1` | 15 | 18d ago |
+| **[nacre](https://github.com/Nanako0129/nacre)** | LuCI theme for OpenWrt in coralline's palette | ★ 4 | `v0.2.1` | 15 | 19d ago |
 | **[tokscale-core](https://github.com/Nanako0129/tokscale-core)** | Rust session-parsing engine behind Syrtis | ★ 3 | `—` | — | 1d ago |
 | **[syrtis-film](https://github.com/Nanako0129/syrtis-film)** | Syrtis intro film, every frame generated in code | ★ 3 | `—` | — | 16d ago |
 | **[limpet](https://github.com/Nanako0129/limpet)** | Menu-bar realtime one-way mirror, built on rclone | ★ 2 | `v1.0.2` | 11 | 6d ago |
@@ -92,11 +92,11 @@ last 7 days · 11.1B tokens · 38,593 messages
 
 <!-- NOW:START -->
 ```console
-2026-10-17  shanjie             docs(data): finish the sj-sr-6-14m switch after review
-2026-10-17  shanjie             feat(data): switch the semantic-correction model to sj-sr-
-2026-10-17  shanjie             fix(newword): drop a forgotten new word from the open cand
-2026-10-17  shanjie             fix(rerank-formal): review items: a range test that runs, 
-2026-10-17  velella             docs: composer wave acceptance and parity rows
+2026-10-17  shanjie             docs(rerank-size): diagnose why the larger models did not 
+2026-10-17  shanjie             style(e2): restore the space after = in freeze
+2026-10-17  shanjie             fix(e2): guard chatjudge against chatclause overlap and si
+2026-10-17  shanjie             docs(rerank-size): close slice 2 with no candidate passing
+2026-10-17  shanjie             feat(e2): a chatjudge period, the unseen chat set of reran
 ```
 <!-- NOW:END -->
 
