@@ -11,7 +11,7 @@
    "stars": 81
   },
   "Syrtis": {
-   "downloads": 8893,
+   "downloads": 8898,
    "latest": "v2.9.0",
    "stars": 415
   },
@@ -48,7 +48,7 @@
   "nacre": {
    "downloads": 15,
    "latest": "v0.2.1",
-   "stars": 5
+   "stars": 6
   },
   "pilotfish": {
    "downloads": 0,
@@ -97,6 +97,6 @@
   }
  },
  "repos": 37,
- "stars": 5145,
- "updated": "2026-10-18"
+ "stars": 5146,
+ "updated": "2026-10-19"
 }
