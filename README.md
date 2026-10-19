@@ -7,7 +7,7 @@
 -->
 
 <!-- NEOFETCH:START -->
-<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0.1 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 37 sources (git), 5,178 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 47d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
+<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0.1 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 37 sources (git), 5,187 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 47d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
 <!-- NEOFETCH:END -->
 
 ```console
@@ -44,11 +44,11 @@ enough to open a new repo.
 | **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 3249 | `v0.12.4` | — | 4d ago |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 708 | `v1.5.0` | — | 10d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 548 | `v0.19.0` | — | 10d ago |
-| **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 425 | `v2.9.1` | 9.0k | today |
+| **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 433 | `v2.9.1` | 9.1k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 81 | `—` | — | 5d ago |
 | **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 30 | `v0.4.7` | 187 | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 74 | 1mo ago |
-| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 24 | `v1.3.0` | 434 | 2d ago |
+| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 25 | `v1.3.0` | 435 | 2d ago |
 | **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.4` | — | 13d ago |
 | **[calico-claude](https://github.com/Nanako0129/calico-claude)** | Display-patched Claude Code builds with a verified supply chain | ★ 13 | `v2.1.304-win32-x64` | 179 | today |
 | **[computer-use-fast](https://github.com/Nanako0129/computer-use-fast)** | macOS GUI tasks for coding agents in one or two turns | ★ 10 | `—` | — | 18d ago |
@@ -92,11 +92,11 @@ last 7 days · 12.3B tokens · 41,634 messages
 
 <!-- NOW:START -->
 ```console
-2026-10-19  shanjie             eval(user-reported): add typo row 154, 要理 shown as 藥裡
-2026-10-19  shanjie             docs: review fixes for PR 232 (the model header has no con
-2026-10-19  shanjie             docs: long-context set A results, set C dropped, D1 closes
+2026-10-19  shanjie             docs(contracts): v0.5.0 updater and install contracts appr
+2026-10-19  shanjie             docs(standalone-updater): closing-review fixes: a non-sand
+2026-10-19  shanjie             docs(standalone-updater): second plan-review revisions: V7
+2026-10-19  shanjie             docs(system-install): closing-review fix: the reverse-move
 2026-10-19  calico-claude       fix(patch): gate disable-official-updater on leftover upda
-2026-10-19  calico-claude       fix(patch): refuse disable-official-updater when a command
 ```
 <!-- NOW:END -->
 
