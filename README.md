@@ -7,7 +7,7 @@
 -->
 
 <!-- NEOFETCH:START -->
-<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0.1 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 37 sources (git), 5,213 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 47d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
+<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0.1 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 37 sources (git), 5,214 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 47d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
 <!-- NEOFETCH:END -->
 
 ```console
@@ -44,7 +44,7 @@ enough to open a new repo.
 | **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 3256 | `v0.12.4` | — | 5d ago |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 708 | `v1.5.0` | — | 10d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 548 | `v0.19.0` | — | 10d ago |
-| **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 451 | `v2.9.1` | 9.1k | today |
+| **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 452 | `v2.9.1` | 9.1k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 81 | `—` | — | 6d ago |
 | **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 30 | `v0.4.7` | 188 | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 74 | 1mo ago |
@@ -75,14 +75,14 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 12.3B tokens · 41,634 messages
+last 7 days · 12.6B tokens · 42,946 messages
 
-  claude-opus-5-5     ███████████████████░░░  88.2%    10829M
-  claude-sonnet-5-5   ██░░░░░░░░░░░░░░░░░░░░  10.2%     1252M
+  claude-opus-5-5     ███████████████████░░░  88.3%    11097M
+  claude-sonnet-5-5   ██░░░░░░░░░░░░░░░░░░░░  10.1%     1271M
   claude-haiku-5-5    ░░░░░░░░░░░░░░░░░░░░░░   0.9%      109M
-  claude-fable-5-1    ░░░░░░░░░░░░░░░░░░░░░░   0.6%       68M
+  claude-fable-5-1    ░░░░░░░░░░░░░░░░░░░░░░   0.6%       70M
   grok-4.7            ░░░░░░░░░░░░░░░░░░░░░░   0.1%       17M
-  claude-sonnet-5     ░░░░░░░░░░░░░░░░░░░░░░   0.0%        5M
+  claude-sonnet-5     ░░░░░░░░░░░░░░░░░░░░░░   0.0%        6M
 ```
 <!-- USAGE:END -->
 
