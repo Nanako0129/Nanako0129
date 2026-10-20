@@ -8,21 +8,21 @@
   "SocksBypass": {
    "downloads": 0,
    "latest": "—",
-   "stars": 81
+   "stars": 82
   },
   "Syrtis": {
-   "downloads": 9203,
+   "downloads": 9205,
    "latest": "v2.9.1",
    "stars": 486
   },
   "Syrtis-Windows": {
    "downloads": 458,
    "latest": "v1.3.0",
-   "stars": 38
+   "stars": 39
   },
   "calico-claude": {
-   "downloads": 181,
-   "latest": "v2.1.304-win32-x64",
+   "downloads": 182,
+   "latest": "v2.1.305-win32-x64",
    "stars": 14
   },
   "computer-use-fast": {
@@ -73,7 +73,7 @@
   "sepia": {
    "downloads": 0,
    "latest": "v0.12.4",
-   "stars": 3277
+   "stars": 3278
   },
   "shanjie": {
    "downloads": 194,
@@ -97,6 +97,6 @@
   }
  },
  "repos": 37,
- "stars": 5281,
+ "stars": 5284,
  "updated": "2026-10-21"
 }
