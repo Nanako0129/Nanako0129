@@ -11,18 +11,18 @@
    "stars": 82
   },
   "Syrtis": {
-   "downloads": 9224,
+   "downloads": 9239,
    "latest": "v2.9.1",
-   "stars": 487
+   "stars": 488
   },
   "Syrtis-Windows": {
-   "downloads": 458,
+   "downloads": 466,
    "latest": "v1.3.0",
    "stars": 39
   },
   "calico-claude": {
-   "downloads": 182,
-   "latest": "v2.1.305-win32-x64",
+   "downloads": 183,
+   "latest": "v2.1.306-win32-x64",
    "stars": 14
   },
   "computer-use-fast": {
@@ -73,7 +73,7 @@
   "sepia": {
    "downloads": 0,
    "latest": "v0.12.4",
-   "stars": 3281
+   "stars": 3285
   },
   "shanjie": {
    "downloads": 194,
@@ -97,6 +97,6 @@
   }
  },
  "repos": 37,
- "stars": 5288,
+ "stars": 5293,
  "updated": "2026-10-21"
 }
