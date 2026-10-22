@@ -901,7 +901,7 @@ def resolve_proxmox_uptime_days(readme_text):
 # Kept as ASCII by choice now that it is drawn into an SVG rather than a code
 # block: the art is the point, and the SVG only adds colour to it.
 CAT = r"""
-         w*aw                   kok
+         w*aw
         m8BB8Mk              Za8BB%*
         *%B@@#akwwqpdbkkbqwmdh*@@@B&
         8%*ooo#MWWWWWWWWWWMM#oahaaB%Z
@@ -923,14 +923,16 @@ CAT = r"""
 
 # Glyph classes of CAT. `<>|(+` occur only in the two eye runs of row 7 and `-`
 # only in the whiskers, so colouring by glyph needs no coordinates that a
-# retrace would silently invalidate.
-CAT_EYE = set("<>|(+")
+# retrace would silently invalidate. The `|` in each eye is the pupil.
+CAT_EYE = set("<>(+")
+CAT_PUPIL = set("|")
 CAT_WHISKER = set("-")
 
 # Colours, light / dark. Sampled from the reference photo where it has one:
 # the embroidered eyes average rgb(227,194,104) over the yellow pixels, the fur
 # rgb(11,11,14), the whisker stitching pure white.
 EYE = ("#e3c268", "#e3c268")        # photo eye yellow, both themes
+PUPIL = ("#7c5cff", "#7c5cff")      # the violet slit pupil of the nyanako.com mark
 FUR = ("#1f2328", "#6e7681")        # light: near the photo's black; dark: lifted
                                     # to grey, or a black cat vanishes on #0d1117
 WHISKER = ("#8c959f", "#ffffff")    # dark: the photo's white stitching; light:
@@ -949,7 +951,8 @@ ALT_SEP = " · "
 def _cat_row(line):
     """One CAT line as <tspan> runs, one per glyph class."""
     def cls(c):
-        return "eye" if c in CAT_EYE else "wh" if c in CAT_WHISKER else "fur"
+        return ("eye" if c in CAT_EYE else "pupil" if c in CAT_PUPIL
+                else "wh" if c in CAT_WHISKER else "fur")
     runs, cur, buf = [], None, ""
     for c in line:
         k = cls(c) if c != " " else cur
@@ -974,7 +977,7 @@ def neofetch_svg(title, info):
     width = round(ix + max(len(l) for l in info) * cw + pad)
     height = round(top + (rows - 1) * lh + pad)
 
-    (el, ed), (fl, fd), (wl, wd), (al, ad) = EYE, FUR, WHISKER, ACCENT
+    (el, ed), (pl, pd), (fl, fd), (wl, wd), (al, ad) = EYE, PUPIL, FUR, WHISKER, ACCENT
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" role="img" aria-label="neofetch">',
@@ -983,14 +986,14 @@ def neofetch_svg(title, info):
          fill: #1f2328; white-space: pre; }}
   .frame {{ fill: #ffffff; stroke: #d0d7de; }}
   .ttl {{ fill: #ffffff; }}
-  .eye {{ fill: {el}; font-weight: 700; }} .fur {{ fill: {fl}; }} .wh {{ fill: {wl}; }}
+  .eye {{ fill: {el}; font-weight: 700; }} .pupil {{ fill: {pl}; font-weight: 700; }} .fur {{ fill: {fl}; }} .wh {{ fill: {wl}; }}
   .k, .u {{ fill: {al}; font-weight: 700; }}
   .m {{ fill: #59636e; }}
   @media (prefers-color-scheme: dark) {{
     text {{ fill: #f0f6fc; }}
     .frame {{ fill: #0d1117; stroke: #3d444d; }}
     .ttl {{ fill: #0d1117; }}
-    .fur {{ fill: {fd}; }} .wh {{ fill: {wd}; }} .eye {{ fill: {ed}; }}
+    .fur {{ fill: {fd}; }} .wh {{ fill: {wd}; }} .eye {{ fill: {ed}; }} .pupil {{ fill: {pd}; }}
     .k, .u {{ fill: {ad}; }}
     .m {{ fill: #9198a1; }}
   }}

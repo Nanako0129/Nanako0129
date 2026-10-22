@@ -4,14 +4,14 @@
          fill: #1f2328; white-space: pre; }
   .frame { fill: #ffffff; stroke: #d0d7de; }
   .ttl { fill: #ffffff; }
-  .eye { fill: #e3c268; font-weight: 700; } .fur { fill: #1f2328; } .wh { fill: #8c959f; }
+  .eye { fill: #e3c268; font-weight: 700; } .pupil { fill: #7c5cff; font-weight: 700; } .fur { fill: #1f2328; } .wh { fill: #8c959f; }
   .k, .u { fill: #8250df; font-weight: 700; }
   .m { fill: #59636e; }
   @media (prefers-color-scheme: dark) {
     text { fill: #f0f6fc; }
     .frame { fill: #0d1117; stroke: #3d444d; }
     .ttl { fill: #0d1117; }
-    .fur { fill: #6e7681; } .wh { fill: #ffffff; } .eye { fill: #e3c268; }
+    .fur { fill: #6e7681; } .wh { fill: #ffffff; } .eye { fill: #e3c268; } .pupil { fill: #7c5cff; }
     .k, .u { fill: #d2a8ff; }
     .m { fill: #9198a1; }
   }
@@ -19,14 +19,14 @@
 <rect class="frame" x="1" y="10" width="797" height="403" rx="10"/>
 <rect class="ttl" x="19.46" y="2" width="128.1" height="16"/>
 <text class="m" x="28" y="15">nanako@taiwan</text>
-<text x="28" y="44" xml:space="preserve"><tspan class="fur">         w*aw                   kok</tspan></text>
+<text x="28" y="44" xml:space="preserve"><tspan class="fur">         w*aw</tspan></text>
 <text x="28" y="63" xml:space="preserve"><tspan class="fur">        m8BB8Mk              Za8BB%*</tspan></text>
 <text x="28" y="82" xml:space="preserve"><tspan class="fur">        *%B@@#akwwqpdbkkbqwmdh*@@@B&amp;</tspan></text>
 <text x="28" y="101" xml:space="preserve"><tspan class="fur">        8%*ooo#MWWWWWWWWWWMM#oahaaB%Z</tspan></text>
 <text x="28" y="120" xml:space="preserve"><tspan class="fur">       Za*##MWWWWWW&amp;&amp;&amp;&amp;88&amp;&amp;&amp;&amp;WW#*oaaw</tspan></text>
 <text x="28" y="139" xml:space="preserve"><tspan class="fur">      q*MWWWW&amp;&amp;88888888888%8888&amp;WMMMop</tspan></text>
 <text x="28" y="158" xml:space="preserve"><tspan class="fur">     oW&amp;8WWM/M/)&amp;%%%%%%%%%%*)&amp;rC&amp;888WMa</tspan></text>
-<text x="28" y="177" xml:space="preserve"><tspan class="fur">    h</tspan><tspan class="wh">---</tspan><tspan class="fur">*W&amp;</tspan><tspan class="eye">&lt;&gt;|&lt;&lt;(</tspan><tspan class="fur">%B%%%%%%%8</tspan><tspan class="eye">+&lt;|+&lt;(</tspan><tspan class="fur">8W#</tspan><tspan class="wh">---</tspan><tspan class="fur">k</tspan></text>
+<text x="28" y="177" xml:space="preserve"><tspan class="fur">    h</tspan><tspan class="wh">---</tspan><tspan class="fur">*W&amp;</tspan><tspan class="eye">&lt;&gt;</tspan><tspan class="pupil">|</tspan><tspan class="eye">&lt;&lt;(</tspan><tspan class="fur">%B%%%%%%%8</tspan><tspan class="eye">+&lt;</tspan><tspan class="pupil">|</tspan><tspan class="eye">+&lt;(</tspan><tspan class="fur">8W#</tspan><tspan class="wh">---</tspan><tspan class="fur">k</tspan></text>
 <text x="28" y="196" xml:space="preserve"><tspan class="fur">    #</tspan><tspan class="wh">----</tspan><tspan class="fur">M&amp;&amp;&amp;88%%%%%%%%%%%%%%%8888M</tspan><tspan class="wh">----</tspan><tspan class="fur">*</tspan></text>
 <text x="28" y="215" xml:space="preserve"><tspan class="fur">    h</tspan><tspan class="wh">---</tspan><tspan class="fur">8bW&amp;&amp;&amp;&amp;888%%%%%%%%%888888*&amp;8</tspan><tspan class="wh">---</tspan><tspan class="fur">h</tspan></text>
 <text x="28" y="234" xml:space="preserve"><tspan class="fur">     oW&amp;fW&amp;8&amp;888888888888888888&amp;&amp;&amp;oM8&amp;o</tspan></text>

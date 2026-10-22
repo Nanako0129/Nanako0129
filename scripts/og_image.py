@@ -40,7 +40,7 @@ def svg():
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">',
         f"""<style>
   text {{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: {FG}; white-space: pre; }}
-  .eye {{ fill: {u.EYE[1]}; font-weight: 700; }} .fur {{ fill: {u.FUR[1]}; }} .wh {{ fill: {u.WHISKER[1]}; }}
+  .eye {{ fill: {u.EYE[1]}; font-weight: 700; }} .pupil {{ fill: {u.PUPIL[1]}; font-weight: 700; }} .fur {{ fill: {u.FUR[1]}; }} .wh {{ fill: {u.WHISKER[1]}; }}
   .m {{ fill: {MUTE}; }} .a {{ fill: {ACC}; font-weight: 700; }}
 </style>""",
         f'<rect width="{W}" height="{H}" fill="{BG}"/>',
