@@ -11,7 +11,7 @@
    "stars": 82
   },
   "Syrtis": {
-   "downloads": 9414,
+   "downloads": 9434,
    "latest": "v2.10.0",
    "stars": 502
   },
@@ -36,8 +36,8 @@
    "stars": 549
   },
   "limpet": {
-   "downloads": 11,
-   "latest": "v1.0.2",
+   "downloads": 14,
+   "latest": "v1.0.3",
    "stars": 2
   },
   "lorenzini": {
@@ -73,7 +73,7 @@
   "sepia": {
    "downloads": 0,
    "latest": "v0.12.4",
-   "stars": 3459
+   "stars": 3461
   },
   "shanjie": {
    "downloads": 245,
@@ -97,6 +97,6 @@
   }
  },
  "repos": 37,
- "stars": 5493,
+ "stars": 5495,
  "updated": "2026-10-25"
 }
