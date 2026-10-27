@@ -3,7 +3,7 @@
   "NyanCogs": {
    "downloads": 0,
    "latest": "—",
-   "stars": 5
+   "stars": 6
   },
   "SocksBypass": {
    "downloads": 0,
@@ -11,18 +11,18 @@
    "stars": 82
   },
   "Syrtis": {
-   "downloads": 9674,
+   "downloads": 9683,
    "latest": "v2.10.0",
    "stars": 505
   },
   "Syrtis-Windows": {
-   "downloads": 488,
+   "downloads": 492,
    "latest": "v1.3.0",
    "stars": 40
   },
   "calico-claude": {
-   "downloads": 193,
-   "latest": "v2.1.311-win32-x64",
+   "downloads": 194,
+   "latest": "v2.1.312-win32-x64",
    "stars": 14
   },
   "computer-use-fast": {
@@ -73,7 +73,7 @@
   "sepia": {
    "downloads": 0,
    "latest": "v0.12.4",
-   "stars": 3515
+   "stars": 3518
   },
   "shanjie": {
    "downloads": 250,
@@ -83,7 +83,7 @@
   "stingray": {
    "downloads": 0,
    "latest": "v0.3.9",
-   "stars": 9
+   "stars": 10
   },
   "syrtis-film": {
    "downloads": 0,
@@ -97,6 +97,6 @@
   }
  },
  "repos": 37,
- "stars": 5558,
- "updated": "2026-10-27"
+ "stars": 5563,
+ "updated": "2026-10-28"
 }
