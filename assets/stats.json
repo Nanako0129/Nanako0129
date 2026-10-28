@@ -11,7 +11,7 @@
    "stars": 82
   },
   "Syrtis": {
-   "downloads": 9719,
+   "downloads": 9727,
    "latest": "v2.10.0",
    "stars": 505
   },
@@ -53,7 +53,7 @@
   "pilotfish": {
    "downloads": 0,
    "latest": "v1.5.0",
-   "stars": 711
+   "stars": 712
   },
   "pilotfish-grok": {
    "downloads": 0,
@@ -97,6 +97,6 @@
   }
  },
  "repos": 37,
- "stars": 5582,
- "updated": "2026-10-28"
+ "stars": 5583,
+ "updated": "2026-10-29"
 }
