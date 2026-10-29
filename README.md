@@ -41,13 +41,13 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 3537 | `v0.12.4` | — | 13d ago |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 3537 | `v0.12.4` | — | 14d ago |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 712 | `v1.5.0` | — | 19d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 549 | `v0.20.0` | — | 7d ago |
 | **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 505 | `v2.10.0` | 9.7k | today |
-| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 82 | `—` | — | 14d ago |
-| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 40 | `v1.3.0` | 494 | 2d ago |
-| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 39 | `v0.5.0` | 255 | today |
+| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 82 | `—` | — | 15d ago |
+| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 40 | `v1.3.0` | 494 | today |
+| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 39 | `v0.6.0` | 290 | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 76 | 1mo ago |
 | **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.4` | — | 22d ago |
 | **[calico-claude](https://github.com/Nanako0129/calico-claude)** | Display-patched Claude Code builds with a verified supply chain | ★ 14 | `v2.1.312-win32-x64` | 195 | 1d ago |
@@ -92,11 +92,11 @@ last 7 days · 7.7B tokens · 26,754 messages
 
 <!-- NOW:START -->
 ```console
-2026-10-28  shanjie             docs: newstune in the formal-judging rule; the site notes 
-2026-10-28  shanjie             docs(eval): state kpi.py's hash-only holdout key; drop ben
-2026-10-28  shanjie             fix(eval): key holdout columns like kpi.py, test the rende
-2026-10-28  shanjie             fix(eval): review fixes for the news holdout handoff
-2026-10-28  shanjie             feat(eval): hand the holdout news half over to private fil
+2026-10-29  shanjie             docs(research-log): fix counts the review found against th
+2026-10-29  shanjie             Merge origin/main into exp/ruhi-0
+2026-10-29  Syrtis-Windows      fix(antigravity): add the weekly allowance to the local ID
+2026-10-29  shanjie             eval(user-reported): add typo row 169, `他們再轉帳` as `他們在轉帳`
+2026-10-29  shanjie             docs(research-log): v0.6.0 pre-tag check under the sbench-
 ```
 <!-- NOW:END -->
 
