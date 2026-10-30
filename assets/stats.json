@@ -11,14 +11,14 @@
    "stars": 82
   },
   "Syrtis": {
-   "downloads": 9775,
+   "downloads": 9781,
    "latest": "v2.10.0",
-   "stars": 505
+   "stars": 504
   },
   "Syrtis-Windows": {
-   "downloads": 500,
+   "downloads": 504,
    "latest": "v1.3.0",
-   "stars": 40
+   "stars": 42
   },
   "calico-claude": {
    "downloads": 420,
@@ -97,6 +97,6 @@
   }
  },
  "repos": 37,
- "stars": 5612,
- "updated": "2026-10-30"
+ "stars": 5613,
+ "updated": "2026-10-31"
 }
