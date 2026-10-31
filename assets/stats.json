@@ -8,10 +8,10 @@
   "SocksBypass": {
    "downloads": 0,
    "latest": "—",
-   "stars": 82
+   "stars": 83
   },
   "Syrtis": {
-   "downloads": 9797,
+   "downloads": 9799,
    "latest": "v2.10.0",
    "stars": 505
   },
@@ -53,7 +53,7 @@
   "pilotfish": {
    "downloads": 0,
    "latest": "v1.5.0",
-   "stars": 714
+   "stars": 715
   },
   "pilotfish-grok": {
    "downloads": 0,
@@ -73,10 +73,10 @@
   "sepia": {
    "downloads": 0,
    "latest": "v0.12.4",
-   "stars": 3562
+   "stars": 3565
   },
   "shanjie": {
-   "downloads": 326,
+   "downloads": 331,
    "latest": "v0.6.1",
    "stars": 42
   },
@@ -97,6 +97,6 @@
   }
  },
  "repos": 37,
- "stars": 5617,
- "updated": "2026-10-31"
+ "stars": 5622,
+ "updated": "2026-11-01"
 }
