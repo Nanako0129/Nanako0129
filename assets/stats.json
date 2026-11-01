@@ -33,7 +33,7 @@
   "coralline": {
    "downloads": 0,
    "latest": "v0.20.0",
-   "stars": 550
+   "stars": 549
   },
   "limpet": {
    "downloads": 14,
@@ -76,7 +76,7 @@
    "stars": 3566
   },
   "shanjie": {
-   "downloads": 331,
+   "downloads": 332,
    "latest": "v0.6.1",
    "stars": 42
   },
@@ -97,6 +97,6 @@
   }
  },
  "repos": 37,
- "stars": 5623,
+ "stars": 5622,
  "updated": "2026-11-01"
 }
