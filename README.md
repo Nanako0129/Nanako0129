@@ -42,7 +42,7 @@ enough to open a new repo.
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 3570 | `v0.12.4` | — | today |
-| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 714 | `v1.5.0` | — | 22d ago |
+| **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 714 | `v1.5.0` | — | 23d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 549 | `v0.20.0` | — | 11d ago |
 | **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 505 | `v2.10.0` | 9.8k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 83 | `—` | — | 18d ago |
@@ -51,14 +51,14 @@ enough to open a new repo.
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 77 | 1mo ago |
 | **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.4` | — | 26d ago |
 | **[calico-claude](https://github.com/Nanako0129/calico-claude)** | Display-patched Claude Code builds with a verified supply chain | ★ 14 | `v2.1.316-win32-x64` | 451 | 1d ago |
-| **[stingray](https://github.com/Nanako0129/stingray)** | Stop hook that catches the turn that ends half-done | ★ 11 | `v0.3.9` | — | 22d ago |
+| **[stingray](https://github.com/Nanako0129/stingray)** | Stop hook that catches the turn that ends half-done | ★ 11 | `v0.3.9` | — | 23d ago |
 | **[computer-use-fast](https://github.com/Nanako0129/computer-use-fast)** | macOS GUI tasks for coding agents in one or two turns | ★ 10 | `—` | — | 1mo ago |
 | **[NyanCogs](https://github.com/Nanako0129/NyanCogs)** | Cogs for Red Discord Bot | ★ 6 | `—` | — | 5d ago |
 | **[nacre](https://github.com/Nanako0129/nacre)** | LuCI theme for OpenWrt in coralline's palette | ★ 6 | `v0.2.1` | 15 | 1mo ago |
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 3mo ago |
 | **[tokscale-core](https://github.com/Nanako0129/tokscale-core)** | Rust session-parsing engine behind Syrtis | ★ 3 | `—` | — | today |
 | **[syrtis-film](https://github.com/Nanako0129/syrtis-film)** | Syrtis intro film, every frame generated in code | ★ 3 | `—` | — | 1mo ago |
-| **[limpet](https://github.com/Nanako0129/limpet)** | Menu-bar realtime one-way mirror, built on rclone | ★ 2 | `v1.0.3` | 14 | today |
+| **[limpet](https://github.com/Nanako0129/limpet)** | Menu-bar realtime one-way mirror, built on rclone | ★ 2 | `v1.0.3` | 14 | 1d ago |
 | **[pilotfish-grok](https://github.com/Nanako0129/pilotfish-grok)** | pilotfish, native to Grok Build | ★ 1 | `v1.0.6` | — | 29d ago |
 <!-- PROJECTS:END -->
 
@@ -92,11 +92,11 @@ last 7 days · 8.3B tokens · 27,145 messages
 
 <!-- NOW:START -->
 ```console
-2026-11-01  tokscale-core       docs(claude): state precisely what off-targets skip
-2026-11-01  tokscale-core       fix(claude): correct the target claims, restore envelope c
-2026-11-01  tokscale-core       fix(claude): checkpoints on macOS arm64 only, no cached re
-2026-11-01  tokscale-core       fix(claude): gate checkpoints by CPU at run time, never ca
-2026-11-01  shanjie             docs(research-log): CE3 counts wording: the seed draws siz
+2026-11-01  tokscale-core       docs(claude): scope the unreadable-meta probe note to an u
+2026-11-01  tokscale-core       refactor(claude): probe a parent only after a Changed fing
+2026-11-01  tokscale-core       refactor(claude): drop the warm meta-read shortcut, re-pro
+2026-11-01  tokscale-core       perf(claude): keep the S1c fingerprint cheap on warm check
+2026-11-01  tokscale-core       perf(claude): keep a subagent's cache entry across parent 
 ```
 <!-- NOW:END -->
 
