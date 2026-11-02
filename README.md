@@ -92,11 +92,11 @@ last 7 days · 7.5B tokens · 25,161 messages
 
 <!-- NOW:START -->
 ```console
+2026-11-02  sepia               fix(research): record Clark et al. 2026 as a short Consult
+2026-11-02  sepia               fix(research): file CLARK-2026 under syntax sources and bo
+2026-11-02  sepia               docs(research): record Clark et al. 2026 as recorded, not 
 2026-11-02  tokscale-core       docs(roocode): record the CI-measured Linux golden and for
 2026-11-02  tokscale-core       docs(provider): correct which prefixes reach delimited inf
-2026-11-02  sepia               fix(skill): bound the Raiyan sentence to what the readers 
-2026-11-02  sepia               fix(skill): cite Raiyan's better-story result and state th
-2026-11-02  sepia               feat(skill): set Time structure from what the story withho
 ```
 <!-- NOW:END -->
 
