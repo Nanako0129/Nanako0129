@@ -93,10 +93,10 @@ last 7 days · 9.6B tokens · 32,503 messages
 <!-- NOW:START -->
 ```console
 2026-11-03  syrtis              docs(vendor): state the #84 equivalence as compared, not b
+2026-11-03  syrtis              fix(core-ffi): pin the background worker's QoS and trim th
 2026-11-03  syrtis              chore(vendor): pin the ledger commit 0ece74b (#85)
 2026-11-03  tokscale-core       docs(upstream): record the pricing memo (#84) as a local p
 2026-11-03  syrtis              chore(vendor): advance tokscale-core to 9ad70f6 (pricing m
-2026-11-03  shanjie             fix(shell): sessions learn their bundle ID even while the 
 ```
 <!-- NOW:END -->
 
