@@ -75,14 +75,14 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 7.5B tokens · 25,161 messages
+last 7 days · 8.7B tokens · 29,780 messages
 
-  claude-opus-5-5     █████████████████░░░░░  79.3%     5923M
-  claude-sonnet-5-5   ████░░░░░░░░░░░░░░░░░░  18.6%     1390M
-  gemini-4-argon      ░░░░░░░░░░░░░░░░░░░░░░   0.7%       49M
+  claude-opus-5-5     █████████████████░░░░░  79.5%     6948M
+  claude-sonnet-5-5   ████░░░░░░░░░░░░░░░░░░  18.1%     1585M
+  gemini-4-argon      ░░░░░░░░░░░░░░░░░░░░░░   0.7%       63M
   muse-spark-1.3-con  ░░░░░░░░░░░░░░░░░░░░░░   0.5%       40M
-  claude-fable-5-1    ░░░░░░░░░░░░░░░░░░░░░░   0.4%       30M
-  claude-haiku-5-5    ░░░░░░░░░░░░░░░░░░░░░░   0.2%       15M
+  claude-fable-5-1    ░░░░░░░░░░░░░░░░░░░░░░   0.4%       35M
+  claude-haiku-5-5    ░░░░░░░░░░░░░░░░░░░░░░   0.3%       27M
 ```
 <!-- USAGE:END -->
 
@@ -92,11 +92,11 @@ last 7 days · 7.5B tokens · 25,161 messages
 
 <!-- NOW:START -->
 ```console
+2026-11-03  sepia               fix(skill): keep the formula-ending warning, pointed at it
+2026-11-03  sepia               fix(skill): drop the formula-ending aside that pointed at 
 2026-11-03  sepia               fix(persona): drop the template's dangling pointer to a re
 2026-11-03  sepia               fix(persona): refuse professional-pass check 8 as an overr
 2026-11-03  shanjie             eval(user-reported): add typo row 181, `試都是` picked as `是都
-2026-11-03  sepia               fix(skill): widen the tech-articles long-piece reading to 
-2026-11-03  sepia               fix(skill): keep the domains' long-piece thresholds as rea
 ```
 <!-- NOW:END -->
 
@@ -114,7 +114,7 @@ The same discipline, off the clock — everything below runs at home:
 
 ```console
 Proxmox VE      61d uptime · every service in Compose, every service healthchecked
-Zero trust      Cloudflare Tunnel + Access · 6 tunnels · 20 ZTNA apps · 0 inbound ports
+Zero trust      Cloudflare Tunnel + Access · 6 tunnels · 21 ZTNA apps · 0 inbound ports
 Home Assistant  140 integrations · 418 entities · 56 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
 ```
