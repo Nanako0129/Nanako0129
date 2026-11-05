@@ -92,10 +92,10 @@ last 7 days · 11.2B tokens · 38,300 messages
 
 <!-- NOW:START -->
 ```console
+2026-11-05  shanjie             docs: private paths out of the SR-TW contracts, criterion-
 2026-11-05  shanjie             docs(research-log): LEXGAP review fixes, function-word 氏 e
 2026-11-05  shanjie             docs(research-log): LEXGAP closed with the maintainer's ap
 2026-11-05  shanjie             docs(research-log): LEXGAP-1 result, recount with the 691 
-2026-11-05  shanjie             docs(research-log): LEXGAP-1 188 probe numbers, 4.8 GB of 
 2026-11-05  Syrtis-Windows      docs(cursor-sync): stop claiming the not-zeroed list is co
 ```
 <!-- NOW:END -->
