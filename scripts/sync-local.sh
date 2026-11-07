@@ -6,13 +6,14 @@
 #      Forces the remote runner to refresh NEOFETCH / PROJECTS / NOW even when
 #      schedule is late or git://github.com is unreachable from this Mac.
 #   2. local update_readme.py + push → same blocks via `gh`, plus USAGE from
-#      tokscale (CI has no tokscale, so only this half can fill that panel).
+#      syrtis-usage (CI has none, so only this half can fill that panel; built
+#      from tools/syrtis-usage and installed to ~/.local/bin).
 set -e
 cd "$(dirname "$0")/.."
 # launchd hands over PATH=/usr/bin:/bin:/usr/sbin:/sbin, which has neither gh nor
-# tokscale. Without this the run succeeds and silently changes nothing, because
+# syrtis-usage. Without this the run succeeds and silently changes nothing, because
 # every renderer treats a missing tool as "leave that block alone".
-PATH="/opt/homebrew/bin:$HOME/.bun/bin:$PATH"
+PATH="/opt/homebrew/bin:$HOME/.local/bin:$PATH"
 export PATH
 # Secrets / LAN endpoints live here, outside the repo, so they are never
 # committed. CI gets BIRTH_DATE from a repository secret. HOMELAB_SSH (user@host

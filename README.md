@@ -63,15 +63,15 @@ enough to open a new repo.
 <!-- PROJECTS:END -->
 
 ```console
-~ ❯ tokscale models --week --group-by model
+~ ❯ syrtis-usage   # Syrtis's engine on a copy of its cache: last 7 days, by model
 ```
 
 > Real usage, pushed here every six hours by a cron job on my Mac. The numbers come from
 > [tokscale](https://github.com/junhoyeo/tokscale) — junhoyeo's Rust engine for reading
 > agent session data, and the engine [Syrtis](https://github.com/Nanako0129/syrtis)
-> runs on. I send fixes upstream when I trip over them; the Swift shell around it is my
-> part. Grouped by model rather than by client, because the client would lie: I drive
-> GPT models through Claude Code.
+> runs on, at the revision Syrtis ships. I send fixes upstream when I trip over them;
+> the Swift shell around it is my part. Grouped by model rather than by client, because
+> the client would lie: I drive GPT models through Claude Code.
 
 <!-- USAGE:START -->
 ```console
