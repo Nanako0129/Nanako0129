@@ -44,7 +44,7 @@ enough to open a new repo.
 | **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 3677 | `v0.13.0` | — | 4d ago |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 715 | `v1.5.0` | — | 29d ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 553 | `v0.20.0` | — | 17d ago |
-| **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 512 | `v2.11.2` | 10.4k | today |
+| **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 512 | `v2.11.2` | 10.5k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 84 | `—` | — | 5d ago |
 | **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 45 | `v0.6.1` | 383 | today |
 | **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 42 | `v1.4.0` | 585 | today |
@@ -55,7 +55,7 @@ enough to open a new repo.
 | **[computer-use-fast](https://github.com/Nanako0129/computer-use-fast)** | macOS GUI tasks for coding agents in one or two turns | ★ 10 | `—` | — | 1mo ago |
 | **[NyanCogs](https://github.com/Nanako0129/NyanCogs)** | Cogs for Red Discord Bot | ★ 6 | `—` | — | 4d ago |
 | **[nacre](https://github.com/Nanako0129/nacre)** | LuCI theme for OpenWrt in coralline's palette | ★ 6 | `v0.2.1` | 15 | 1mo ago |
-| **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 3mo ago |
+| **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 4mo ago |
 | **[tokscale-core](https://github.com/Nanako0129/tokscale-core)** | Rust session-parsing engine behind Syrtis | ★ 3 | `—` | — | 4d ago |
 | **[syrtis-film](https://github.com/Nanako0129/syrtis-film)** | Syrtis intro film, every frame generated in code | ★ 3 | `—` | — | 1mo ago |
 | **[limpet](https://github.com/Nanako0129/limpet)** | Menu-bar realtime one-way mirror, built on rclone | ★ 2 | `v1.0.3` | 15 | 7d ago |
