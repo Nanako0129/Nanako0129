@@ -92,11 +92,11 @@ last 7 days · 11.0B tokens · 37,900 messages
 
 <!-- NOW:START -->
 ```console
+2026-11-07  shanjie             Merge origin/main into feat/variant-order (user-reported r
+2026-11-07  shanjie             test(digits): the digits goldens must record the current i
+2026-11-07  shanjie             docs(research-log): variant-order, the first CI failure an
+2026-11-07  shanjie             fix(test): the digits baseline applies the variant table; 
 2026-11-07  shanjie             eval: user-reported row 187 (`偽` typed as ㄨㄟˇ), golden lin
-2026-11-07  shanjie             eval: user-reported row 186 (`已` picked as `以` in chat), g
-2026-11-07  shanjie             docs(win-w0): fix the review findings against the screensh
-2026-11-07  shanjie             docs(plan): note the W0 Microsoft Zhuyin reference under t
-2026-11-07  shanjie             docs(win-w0): settings page measured; reference marked com
 ```
 <!-- NOW:END -->
 
