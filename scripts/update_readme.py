@@ -3,7 +3,7 @@
 
 Runs in two places with the same code:
   - GitHub Actions    -> fills NEOFETCH / PROJECTS / NOW from the GitHub API
-  - the Mac (launchd) -> additionally fills USAGE from local `tokscale`
+  - the Mac (launchd) -> additionally fills USAGE from local `syrtis-usage`
                          and Proxmox uptime over LAN SSH (CI cannot reach the
                          homelab)
 
@@ -25,6 +25,7 @@ import re
 import shutil
 import subprocess
 import sys
+import tempfile
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -340,29 +341,92 @@ def render_usage():
     here: Claude Code is wired to GPT models, so a "claude" row would be mostly
     OpenAI tokens. The model is the thing that is actually true.
 
-    Local-only: CI has no tokscale, so there this returns None and the block
-    keeps whatever the Mac last pushed. Only the aggregate lands in the README;
-    the raw export, which carries per-model spend, never leaves the machine.
-    """
-    if not shutil.which("tokscale"):
-        return None
-    r = subprocess.run(
-        ["tokscale", "models", "--json", "--week", "--group-by", "model", "--no-spinner"],
-        capture_output=True,
-        text=True,
-    )
-    if r.returncode != 0:
-        return None
-    data = json.loads(r.stdout)
+    Local-only: CI has no syrtis-usage, so there this returns None and the
+    block keeps whatever the Mac last pushed. Only the aggregate lands in the
+    README; the raw export, which carries per-model spend, never leaves the
+    machine.
 
-    by_model = {}
-    for e in data["entries"]:
-        tok = e["input"] + e["output"] + e["cacheRead"] + e["cacheWrite"]
-        by_model[e["model"]] = by_model.get(e["model"], 0) + tok
-    total = sum(by_model.values()) or 1
+    syrtis-usage (tools/syrtis-usage) is built from Syrtis's own engine pin, so
+    these are the numbers Syrtis computes. It runs on a throwaway copy of
+    Syrtis's cache: the copy is warm, and nothing here writes the real
+    ~/.config/tokscale. The upstream CLI this replaced (`bunx tokscale@latest`)
+    wrote its own cache format into that directory, so each run and Syrtis
+    rewrote each other's shards, and an engine that does not know Syrtis's
+    Claude cache format drops turns that exist only in the cache.
+    """
+    tool = shutil.which("syrtis-usage")
+    if not tool:
+        # CI has no such tool and must stay quiet; on the Mac a missing
+        # binary would freeze the panel without a word.
+        if sys.platform == "darwin":
+            print("usage: syrtis-usage not on PATH; USAGE keeps its last value "
+                  "(cargo install --locked --path tools/syrtis-usage --root ~/.local)",
+                  file=sys.stderr)
+        return None
+
+    def copy_present(s, d):
+        # Syrtis replaces shards by rename while this copies; a shard that
+        # vanished mid-copy is just cold-parsed inside the copy.
+        try:
+            shutil.copy2(s, d)
+        except FileNotFoundError:
+            pass
+
+    src = Path.home() / ".config" / "tokscale"
+    with tempfile.TemporaryDirectory(prefix="readme-usage-") as tmp:
+        # Cache, settings and the Antigravity cache only: credential files
+        # stay out of the copy. Cursor's CLI cache is read in place, the
+        # engine resolves it without TOKSCALE_CONFIG_DIR.
+        try:
+            for name in ("cache", "antigravity-cache"):
+                if (src / name).is_dir():
+                    # Skipped: backups, locks, the engine's leftover temp
+                    # shards, and caches a model report never reads (the
+                    # subscription cache holds account quota data).
+                    shutil.copytree(src / name, Path(tmp) / name,
+                                    ignore=shutil.ignore_patterns(
+                                        "*.bak-*", "*.lock", "*.tmp", "images", "fonts",
+                                        "tui-data-cache.json", "subscription-usage-cache.json"),
+                                    copy_function=copy_present)
+            if (src / "settings.json").is_file():
+                shutil.copy2(src / "settings.json", Path(tmp) / "settings.json")
+        except OSError as e:
+            print(f"usage: copying the Syrtis cache failed: {e}", file=sys.stderr)
+            return None
+        env = dict(os.environ, TOKSCALE_CONFIG_DIR=tmp, TOKSCALE_PRICING_CACHE_ONLY="1")
+        try:
+            # Syrtis measured 25-27 s to re-parse every Claude transcript
+            # (TokenBar-Native docs/knowledge/vendor-tokscale.md, D3); this
+            # run took 6 s warm. Ten minutes is far past both, and a stuck
+            # engine would hold up every block.
+            r = subprocess.run([tool], capture_output=True, text=True, env=env, timeout=600)
+        except subprocess.TimeoutExpired:
+            print("usage: syrtis-usage timed out after 600 s", file=sys.stderr)
+            return None
+    if r.stderr.strip():
+        print(f"usage: syrtis-usage stderr: {r.stderr.strip()}", file=sys.stderr)
+    if r.returncode != 0:
+        print(f"usage: syrtis-usage exited {r.returncode}", file=sys.stderr)
+        return None
+    # A report this code cannot read must cost the USAGE block only, never
+    # the rest of the page; an empty one would publish a zero panel.
+    try:
+        data = json.loads(r.stdout)
+        by_model = {}
+        for e in data["entries"]:
+            tok = e["input"] + e["output"] + e["cache_read"] + e["cache_write"]
+            by_model[e["model"]] = by_model.get(e["model"], 0) + tok
+        messages = data["total_messages"]
+    except (ValueError, KeyError, TypeError) as e:
+        print(f"usage: unreadable syrtis-usage report: {e!r}", file=sys.stderr)
+        return None
+    total = sum(by_model.values())
+    if not total:
+        print("usage: syrtis-usage reported no usage; USAGE keeps its last value", file=sys.stderr)
+        return None
     top = sorted(by_model.items(), key=lambda kv: -kv[1])[:6]
 
-    lines = [f"last 7 days · {total/1e9:.1f}B tokens · {data['totalMessages']:,} messages", ""]
+    lines = [f"last 7 days · {total/1e9:.1f}B tokens · {messages:,} messages", ""]
     for model, tok in top:
         lines.append(f"  {model:<18.18}  {bar(tok/total)}  {tok/total*100:4.1f}%  {tok/1e6:>7.0f}M")
     return "```console\n" + "\n".join(lines) + "\n```"
@@ -385,7 +449,7 @@ def fetch_proxmox_uptime_days():
     ~/.config/nanako-readme.env by sync-local.sh) — never hardcoded in the
     public repo. CI has no route to the LAN and no env, so this returns None
     and the caller keeps the last value already in README.md (same contract
-    as USAGE / tokscale).
+    as USAGE / syrtis-usage).
     """
     host = os.environ.get("HOMELAB_SSH")
     if not host or not shutil.which("ssh"):

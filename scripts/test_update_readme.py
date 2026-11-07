@@ -479,7 +479,29 @@ def test_cadence_notices_the_claim_disappearing_entirely():
     assert report and "no longer states" in report[0], report
 
 
+def test_usage_report_failures_cost_only_the_usage_block():
+    # The Mac run cannot show these: each one used to raise out of main() and
+    # drop every block, or would have published a zero panel.
+    def run(stdout, rc=0):
+        done = mock.Mock(returncode=rc, stdout=stdout, stderr="")
+        with mock.patch.object(u.shutil, "which", return_value="/x/syrtis-usage"), \
+             mock.patch.object(u.shutil, "copytree"), \
+             mock.patch.object(u.shutil, "copy2"), \
+             mock.patch.object(u.subprocess, "run", return_value=done):
+            return u.render_usage()
+
+    row = {"model": "m", "input": 1, "output": 2, "cache_read": 3, "cache_write": 4}
+    assert "10 messages" in run('{"entries": [%s], "total_messages": 10}' % u.json.dumps(row))
+    assert run("not json") is None
+    assert run('{"entries": [%s]}' % u.json.dumps(row)) is None  # key renamed upstream
+    assert run('{"entries": [], "total_messages": 0}') is None
+    zero = dict(row, input=0, output=0, cache_read=0, cache_write=0)
+    assert run('{"entries": [%s], "total_messages": 1}' % u.json.dumps(zero)) is None
+    assert run("", rc=2) is None
+
+
 if __name__ == "__main__":
+    test_usage_report_failures_cost_only_the_usage_block()
     test_os_line()
     test_readme_row_is_matchable()
     test_homelab_readers_stay_out_of_ci()

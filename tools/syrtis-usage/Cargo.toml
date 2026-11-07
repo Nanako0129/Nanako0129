@@ -1,0 +1,25 @@
+[package]
+name = "syrtis-usage"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# The USAGE panel used to come from `bunx tokscale@latest`, the upstream CLI.
+# It shares ~/.config/tokscale/cache with Syrtis but writes a different cache
+# format (upstream 4.21.0: CACHE_FORMAT_VERSION 11, Claude parser 2; Syrtis
+# v2.11.2: 4, and 100/pv5 for Claude), so each run made the two rewrite each
+# other's shards. This binary is built from the exact engine Syrtis ships, so
+# the panel shows Syrtis's numbers. update_readme.py runs it against a copy of
+# the cache, never the real one.
+#
+# Keep `rev` on the gitlink Syrtis's current release pins
+# (`git ls-tree <tag> vendor/tokscale-core` in Nanako0129/syrtis). A stale rev
+# still works, it just cold-parses inside the throwaway copy.
+#
+# Build and install (sync-local.sh puts ~/.local/bin on PATH):
+#   cargo install --locked --path tools/syrtis-usage --root ~/.local
+[dependencies]
+tokscale-core = { git = "https://github.com/Nanako0129/tokscale-core", rev = "fc339e98237fcb71f32ab1208b61aa77c3c35c02" }
+tokio = { version = "1", features = ["rt", "macros"] }
+chrono = "0.4"
+serde_json = "1"
