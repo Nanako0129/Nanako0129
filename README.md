@@ -75,7 +75,7 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 11.8B tokens · 39,909 messages
+last 7 days · 11.8B tokens · 39,941 messages
 
   claude-opus-5-5     █████████████████░░░░░  78.4%     9242M
   claude-sonnet-5-5   ████░░░░░░░░░░░░░░░░░░  19.3%     2275M
