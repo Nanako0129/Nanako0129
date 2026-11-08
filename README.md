@@ -59,6 +59,7 @@ enough to open a new repo.
 | **[syrtis-film](https://github.com/Nanako0129/syrtis-film)** | Syrtis intro film, every frame generated in code | ★ 3 | `—` | — | 1mo ago |
 | **[limpet](https://github.com/Nanako0129/limpet)** | Menu-bar realtime one-way mirror, built on rclone | ★ 2 | `v1.0.3` | 15 | 7d ago |
 | **[pilotfish-grok](https://github.com/Nanako0129/pilotfish-grok)** | pilotfish, native to Grok Build | ★ 1 | `v1.0.6` | — | 1mo ago |
+| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 0 | `—` | — | today |
 <!-- PROJECTS:END -->
 
 ```console
@@ -74,10 +75,10 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 13.1B tokens · 44,673 messages
+last 7 days · 13.3B tokens · 45,424 messages
 
-  claude-opus-5-5     ██████████████████░░░░  83.2%    10933M
-  claude-sonnet-5-5   ███░░░░░░░░░░░░░░░░░░░  14.3%     1877M
+  claude-opus-5-5     ██████████████████░░░░  83.1%    11094M
+  claude-sonnet-5-5   ███░░░░░░░░░░░░░░░░░░░  14.4%     1916M
   claude-fable-5-1    ░░░░░░░░░░░░░░░░░░░░░░   0.7%       92M
   gemini-4-argon      ░░░░░░░░░░░░░░░░░░░░░░   0.6%       79M
   claude-haiku-5-5    ░░░░░░░░░░░░░░░░░░░░░░   0.4%       48M
