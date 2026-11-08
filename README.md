@@ -7,7 +7,7 @@
 -->
 
 <!-- NEOFETCH:START -->
-<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 36 sources (git), 5,710 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 66d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
+<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Air (M5, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 36 sources (git), 5,710 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 67d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
 <!-- NEOFETCH:END -->
 
 ```console
@@ -59,6 +59,7 @@ enough to open a new repo.
 | **[syrtis-film](https://github.com/Nanako0129/syrtis-film)** | Syrtis intro film, every frame generated in code | ★ 3 | `—` | — | 1mo ago |
 | **[limpet](https://github.com/Nanako0129/limpet)** | Menu-bar realtime one-way mirror, built on rclone | ★ 2 | `v1.0.3` | 15 | 7d ago |
 | **[pilotfish-grok](https://github.com/Nanako0129/pilotfish-grok)** | pilotfish, native to Grok Build | ★ 1 | `v1.0.6` | — | 1mo ago |
+| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 0 | `—` | — | today |
 <!-- PROJECTS:END -->
 
 ```console
@@ -74,14 +75,14 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 12.4B tokens · 42,189 messages
+last 7 days · 13.1B tokens · 44,673 messages
 
-  claude-opus-5-5     ███████████████████░░░  84.3%    10435M
-  claude-sonnet-5-5   ███░░░░░░░░░░░░░░░░░░░  13.0%     1615M
+  claude-opus-5-5     ██████████████████░░░░  83.2%    10933M
+  claude-sonnet-5-5   ███░░░░░░░░░░░░░░░░░░░  14.3%     1877M
   claude-fable-5-1    ░░░░░░░░░░░░░░░░░░░░░░   0.7%       92M
   gemini-4-argon      ░░░░░░░░░░░░░░░░░░░░░░   0.6%       79M
   claude-haiku-5-5    ░░░░░░░░░░░░░░░░░░░░░░   0.4%       48M
-  claude-opus-4-8     ░░░░░░░░░░░░░░░░░░░░░░   0.3%       32M
+  claude-opus-4-8     ░░░░░░░░░░░░░░░░░░░░░░   0.2%       32M
 ```
 <!-- USAGE:END -->
 
@@ -112,7 +113,7 @@ last 7 days · 12.4B tokens · 42,189 messages
 The same discipline, off the clock — everything below runs at home:
 
 ```console
-Proxmox VE      66d uptime · every service in Compose, every service healthchecked
+Proxmox VE      67d uptime · every service in Compose, every service healthchecked
 Zero trust      Cloudflare Tunnel + Access · 6 tunnels · 21 ZTNA apps · 0 inbound ports
 Home Assistant  140 integrations · 418 entities · 56 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
