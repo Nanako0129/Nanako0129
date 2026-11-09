@@ -75,10 +75,10 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 12.7B tokens · 42,817 messages
+last 7 days · 12.7B tokens · 43,134 messages
 
-  claude-opus-5-5     ██████████████████░░░░  83.5%    10570M
-  claude-sonnet-5-5   ███░░░░░░░░░░░░░░░░░░░  13.9%     1759M
+  claude-opus-5-5     ██████████████████░░░░  83.6%    10653M
+  claude-sonnet-5-5   ███░░░░░░░░░░░░░░░░░░░  13.8%     1759M
   claude-fable-5-1    ░░░░░░░░░░░░░░░░░░░░░░   0.7%       92M
   gemini-4-argon      ░░░░░░░░░░░░░░░░░░░░░░   0.6%       77M
   claude-haiku-5-5    ░░░░░░░░░░░░░░░░░░░░░░   0.4%       48M
@@ -114,7 +114,7 @@ The same discipline, off the clock — everything below runs at home:
 
 ```console
 Proxmox VE      67d uptime · every service in Compose, every service healthchecked
-Zero trust      Cloudflare Tunnel + Access · 5 tunnels · 21 ZTNA apps · 0 inbound ports
+Zero trust      Cloudflare Tunnel + Access · 6 tunnels · 21 ZTNA apps · 0 inbound ports
 Home Assistant  140 integrations · 418 entities · 56 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
 ```
