@@ -1115,7 +1115,7 @@ def render_neofetch(proxmox_days=None, os_line=None):
         "Name: Nanako, or Nyanako",
         "Pronouns: she / her",
         *([os_line] if os_line else []),
-        "Host: MacBook Air (M5, 2026), 32GB / 1TB",
+        "Host: MacBook Pro (M6, 2026), 32GB / 1TB",
         "Kernel: SRE, platform & DevSecOps",
         *uptime,
         f"Install Date: {JOINED} (github.com)",
