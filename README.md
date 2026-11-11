@@ -7,7 +7,7 @@
 -->
 
 <!-- NEOFETCH:START -->
-<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Pro (M6, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 38 sources (git), 5,821 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 70d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
+<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Pro (M6, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 38 sources (git), 5,823 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 70d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
 <!-- NEOFETCH:END -->
 
 ```console
@@ -41,7 +41,7 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 3785 | `v0.13.0` | — | 8d ago |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 3787 | `v0.13.0` | — | 8d ago |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 718 | `v1.5.0` | — | 1mo ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 554 | `v0.20.1` | — | 1d ago |
 | **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 517 | `v2.11.3` | 10.8k | today |
@@ -57,8 +57,8 @@ enough to open a new repo.
 | **[postmortem-prose](https://github.com/Nanako0129/postmortem-prose)** | zh-TW tech longform in a postmortem voice | ★ 4 | `—` | — | 4mo ago |
 | **[tokscale-core](https://github.com/Nanako0129/tokscale-core)** | Rust session-parsing engine behind Syrtis | ★ 3 | `—` | — | 3d ago |
 | **[syrtis-film](https://github.com/Nanako0129/syrtis-film)** | Syrtis intro film, every frame generated in code | ★ 3 | `—` | — | 1mo ago |
-| **[limpet](https://github.com/Nanako0129/limpet)** | Menu-bar realtime one-way mirror, built on rclone | ★ 2 | `v1.0.3` | 24 | 10d ago |
-| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 2 | `v0.7.0` | 53 | today |
+| **[limpet](https://github.com/Nanako0129/limpet)** | Menu-bar realtime one-way mirror, built on rclone | ★ 2 | `v1.0.3` | 24 | 11d ago |
+| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 2 | `v0.7.0` | 54 | today |
 | **[pilotfish-grok](https://github.com/Nanako0129/pilotfish-grok)** | pilotfish, native to Grok Build | ★ 1 | `v1.0.6` | — | 1mo ago |
 <!-- PROJECTS:END -->
 
@@ -92,11 +92,11 @@ last 7 days · 15.4B tokens · 52,635 messages
 
 <!-- NOW:START -->
 ```console
-2026-11-11  shanjie             docs(excerpt): plan-019 keeps the date of the missing-word
-2026-11-11  shanjie             docs(excerpt): four plan paragraphs the paper's appendix c
-2026-11-11  shanjie             docs(eval): the two gate rows of the v0.7.0 ablation table
-2026-11-11  shanjie             docs(windows): IS_PRIVATE keeps the candidate window; Wind
-2026-11-11  Syrtis-Agent        docs(contract): tighten the peer wire obligations after PR
+2026-11-11  shanjie             docs(site): the sitemap dates of the updates and licences 
+2026-11-11  shanjie             fix(site): the next-version sentence leaves the licence no
+2026-11-11  shanjie             feat(english): the names layer has English writings; a cho
+2026-11-11  shanjie             test(english): the mixed-words data folder test builds on 
+2026-11-11  shanjie             test(english): the check set asserts each mixed word is th
 ```
 <!-- NOW:END -->
 
