@@ -92,11 +92,11 @@ last 7 days · 17.5B tokens · 58,565 messages
 
 <!-- NOW:START -->
 ```console
+2026-11-12  Syrtis-Agent        Merge origin/main (install adapter) into feat/report-sourc
+2026-11-12  Syrtis-Agent        fix(source): hash owner inputs in a structure this crate d
 2026-11-12  Syrtis-Agent        Merge origin/main (receiver cache wiring) into feat/instal
 2026-11-12  Syrtis-Agent        fix(install): per-object uninstall verdicts, check-before-
-2026-11-12  Syrtis-Agent        feat(install): install and uninstall adapter with autostar
-2026-11-12  Syrtis-Agent        fix(runtime): do not read or write the receiver cache unde
-2026-11-12  Syrtis-Agent        feat(runtime): receiver pull with last-good cache, and lis
+2026-11-12  Syrtis-Agent        Merge origin/main (cache store, receiver wiring) into feat
 ```
 <!-- NOW:END -->
 
