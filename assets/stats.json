@@ -21,8 +21,8 @@
    "stars": 42
   },
   "calico-claude": {
-   "downloads": 502,
-   "latest": "v2.1.325-win32-x64",
+   "downloads": 504,
+   "latest": "v2.1.325-win32-x64-2",
    "stars": 14
   },
   "computer-use-fast": {
@@ -96,7 +96,7 @@
    "stars": 3
   }
  },
- "repos": 38,
+ "repos": 39,
  "stars": 5878,
  "updated": "2026-11-14"
 }
