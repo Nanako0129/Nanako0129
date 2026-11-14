@@ -7,7 +7,7 @@
 -->
 
 <!-- NEOFETCH:START -->
-<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Pro (M6, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 39 sources (git), 5,885 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 73d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
+<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Pro (M6, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 39 sources (git), 5,890 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 73d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
 <!-- NEOFETCH:END -->
 
 ```console
@@ -41,15 +41,15 @@ enough to open a new repo.
 <!-- PROJECTS:START -->
 | Project | What it is | Stars | Latest | Downloads | Updated |
 | :-- | :-- | --: | :-- | --: | :-- |
-| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 3811 | `v0.13.0` | — | 11d ago |
+| **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 3814 | `v0.13.0` | — | 11d ago |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 718 | `v1.5.0` | — | 1mo ago |
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 554 | `v0.20.1` | — | 1d ago |
 | **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 518 | `v2.11.3` | 11.0k | today |
-| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 84 | `—` | — | 3d ago |
-| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 42 | `v1.4.1` | 659 | 1d ago |
-| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 37 | `v0.7.0` | 136 | today |
+| **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 85 | `—` | — | 4d ago |
+| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 42 | `v1.4.1` | 660 | 2d ago |
+| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 37 | `v0.7.0` | 138 | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 99 | 1mo ago |
-| **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.5` | — | 2d ago |
+| **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.5` | — | 3d ago |
 | **[calico-claude](https://github.com/Nanako0129/calico-claude)** | Display-patched Claude Code builds with a verified supply chain | ★ 15 | `v2.1.325-win32-x64-2` | 510 | today |
 | **[stingray](https://github.com/Nanako0129/stingray)** | Stop hook that catches the turn that ends half-done | ★ 11 | `v0.3.9` | — | 1mo ago |
 | **[computer-use-fast](https://github.com/Nanako0129/computer-use-fast)** | macOS GUI tasks for coding agents in one or two turns | ★ 9 | `—` | — | 1mo ago |
@@ -92,11 +92,11 @@ last 7 days · 20.3B tokens · 67,112 messages
 
 <!-- NOW:START -->
 ```console
-2026-11-14  xbloom-hub          fix: review of the switch, the part that matters
-2026-11-14  xbloom-hub          feat(dashboard)!: / is the rebuilt dashboard; the hand-wri
-2026-11-14  xbloom-hub          fix(dashboard): "load again" on /next/, and the review of 
-2026-11-14  xbloom-hub          feat(dashboard): the controls that change the machine, at 
-2026-11-14  xbloom-hub          fix: review of the home step, the part that matters
+2026-11-14  xbloom-hub          fix(dashboard): no logo and name in the phone's tab bar
+2026-11-14  xbloom-hub          fix(dashboard): the review of the second batch
+2026-11-14  xbloom-hub          feat(dashboard): replay, brush zoom, event marks, history 
+2026-11-14  xbloom-hub          feat(dashboard): a logo, and the page as a home-screen ent
+2026-11-14  shanjie             docs(tinylm): the LL difference as a range over the machin
 ```
 <!-- NOW:END -->
 

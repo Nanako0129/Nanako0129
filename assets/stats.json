@@ -8,15 +8,15 @@
   "SocksBypass": {
    "downloads": 0,
    "latest": "—",
-   "stars": 84
+   "stars": 85
   },
   "Syrtis": {
-   "downloads": 10959,
+   "downloads": 10967,
    "latest": "v2.11.3",
    "stars": 518
   },
   "Syrtis-Windows": {
-   "downloads": 659,
+   "downloads": 660,
    "latest": "v1.4.1",
    "stars": 42
   },
@@ -73,10 +73,10 @@
   "sepia": {
    "downloads": 0,
    "latest": "v0.13.0",
-   "stars": 3811
+   "stars": 3814
   },
   "shanjie": {
-   "downloads": 136,
+   "downloads": 138,
    "latest": "v0.7.0",
    "stars": 37
   },
@@ -97,6 +97,6 @@
   }
  },
  "repos": 39,
- "stars": 5885,
+ "stars": 5890,
  "updated": "2026-11-14"
 }
