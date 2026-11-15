@@ -11,7 +11,7 @@
    "stars": 85
   },
   "Syrtis": {
-   "downloads": 10974,
+   "downloads": 10977,
    "latest": "v2.11.3",
    "stars": 518
   },
@@ -73,10 +73,10 @@
   "sepia": {
    "downloads": 0,
    "latest": "v0.13.0",
-   "stars": 3815
+   "stars": 3818
   },
   "shanjie": {
-   "downloads": 139,
+   "downloads": 146,
    "latest": "v0.7.0",
    "stars": 37
   },
@@ -97,6 +97,6 @@
   }
  },
  "repos": 39,
- "stars": 5890,
+ "stars": 5893,
  "updated": "2026-11-15"
 }
