@@ -92,10 +92,10 @@ last 7 days · 17.4B tokens · 56,959 messages
 
 <!-- NOW:START -->
 ```console
+2026-11-15  xbloom-hub          fix(machine): one silence watchdog per session
+2026-11-15  xbloom-hub          fix(machine): a link with no frame for 10 s is dead, as th
 2026-11-15  xbloom-hub          fix(radio): drop the proxy's leftover links before every s
 2026-11-14  xbloom-hub          docs(s3): step 4, the first real brew
-2026-11-14  xbloom-hub          fix(machine): the review of the brew across a link drop
-2026-11-14  xbloom-hub          fix(machine): a brew outlives a link drop, and a page fill
 2026-11-14  shanjie             docs(eval): the typo-report row a blind judging could not 
 ```
 <!-- NOW:END -->
