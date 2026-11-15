@@ -46,8 +46,8 @@ enough to open a new repo.
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 554 | `v0.20.1` | — | 2d ago |
 | **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 518 | `v2.11.3` | 11.0k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 85 | `—` | — | 5d ago |
-| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 42 | `v1.4.1` | 661 | 3d ago |
-| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 37 | `v0.7.0` | 148 | today |
+| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 42 | `v1.4.1` | 662 | 3d ago |
+| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 37 | `v0.7.0` | 149 | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 100 | 1mo ago |
 | **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.5` | — | 4d ago |
 | **[calico-claude](https://github.com/Nanako0129/calico-claude)** | Display-patched Claude Code builds with a verified supply chain | ★ 15 | `v2.1.325-win32-x64-2` | 511 | 1d ago |
@@ -92,10 +92,10 @@ last 7 days · 18.1B tokens · 59,344 messages
 
 <!-- NOW:START -->
 ```console
-2026-11-15  xbloom-hub          docs: record where the machine goes after a refill
-2026-11-15  xbloom-hub          feat: name a low water tank instead of "busy" and "refused
-2026-11-15  xbloom-hub          fix(dashboard): align the plan by its own first pour; the 
-2026-11-15  xbloom-hub          feat: the plan counts agitation, starts at the first pour,
+2026-11-15  xbloom-hub          docs(deploy): commands that work from a non-root account; 
+2026-11-15  xbloom-hub          fix(deploy): keep uv's cache out of the image; count secre
+2026-11-15  xbloom-hub          feat(deploy): run the hub as one container on a home serve
+2026-11-15  xbloom-hub          docs(plan): S4, the hub in a container on a home server
 2026-11-14  shanjie             docs(eval): the typo-report row a blind judging could not 
 ```
 <!-- NOW:END -->
