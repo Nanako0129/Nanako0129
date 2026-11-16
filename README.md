@@ -92,11 +92,11 @@ last 7 days · 18.9B tokens · 63,083 messages
 
 <!-- NOW:START -->
 ```console
+2026-11-16  syrtis              fix(devices): correct what the on-screen check of the merg
 2026-11-16  shanjie             eval: add the reported typo 修根因 (row 189)
+2026-11-16  syrtis              fix(devices): keep the lens safeguards on the merged Overv
+2026-11-16  syrtis              feat(devices): merge Overview, show per-device totals and 
 2026-11-16  shanjie             eval: add the reported typo 嗨嗨 (row 188)
-2026-11-16  syrtis              fix(devices): share the clients kept under .local/share an
-2026-11-16  Syrtis-Agent        docs(cli): say what the default dirs are for, and what a s
-2026-11-16  Syrtis-Agent        fix(cli): default config and data dirs on macOS are .confi
 ```
 <!-- NOW:END -->
 
