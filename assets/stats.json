@@ -11,12 +11,12 @@
    "stars": 85
   },
   "Syrtis": {
-   "downloads": 10994,
+   "downloads": 10996,
    "latest": "v2.11.3",
-   "stars": 518
+   "stars": 519
   },
   "Syrtis-Windows": {
-   "downloads": 662,
+   "downloads": 663,
    "latest": "v1.4.1",
    "stars": 42
   },
@@ -36,7 +36,7 @@
    "stars": 554
   },
   "limpet": {
-   "downloads": 24,
+   "downloads": 25,
    "latest": "v1.0.3",
    "stars": 2
   },
@@ -73,12 +73,12 @@
   "sepia": {
    "downloads": 0,
    "latest": "v0.13.0",
-   "stars": 3821
+   "stars": 3824
   },
   "shanjie": {
-   "downloads": 149,
+   "downloads": 150,
    "latest": "v0.7.0",
-   "stars": 37
+   "stars": 38
   },
   "stingray": {
    "downloads": 0,
@@ -97,6 +97,6 @@
   }
  },
  "repos": 39,
- "stars": 5896,
+ "stars": 5901,
  "updated": "2026-11-16"
 }
