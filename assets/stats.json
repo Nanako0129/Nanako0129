@@ -21,7 +21,7 @@
    "stars": 42
   },
   "calico-claude": {
-   "downloads": 521,
+   "downloads": 522,
    "latest": "v2.1.327-win32-x64",
    "stars": 15
   },
@@ -73,7 +73,7 @@
   "sepia": {
    "downloads": 0,
    "latest": "v0.13.0",
-   "stars": 3864
+   "stars": 3865
   },
   "shanjie": {
    "downloads": 178,
@@ -97,6 +97,6 @@
   }
  },
  "repos": 39,
- "stars": 5947,
+ "stars": 5948,
  "updated": "2026-11-18"
 }
