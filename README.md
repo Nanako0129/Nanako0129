@@ -7,7 +7,7 @@
 -->
 
 <!-- NEOFETCH:START -->
-<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Pro (M6, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 39 sources (git), 5,932 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 75d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
+<p align="center"><img src="assets/neofetch.svg" alt="nanako@taiwan · Name: Nanako, or Nyanako · Pronouns: she / her · OS: macOS 27.0 arm64 · Host: MacBook Pro (M6, 2026), 32GB / 1TB · Kernel: SRE, platform &amp; DevSecOps · Uptime: 27 years · Install Date: 2018-11-04 (github.com) · Packages: 39 sources (git), 5,932 stars · Shell: zsh + powerlevel10k · DE: coralline (Claude Code statusline) · Homelab: Proxmox, 76d up, 0 open ports · CPU: Rust, Swift, Python, Ansible, K8s · Locale: zh_TW.UTF-8 (English via translator) · Now: no roadmap. What I ship, I maintain." width="100%"></p>
 <!-- NEOFETCH:END -->
 
 ```console
@@ -75,13 +75,13 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 16.7B tokens · 56,190 messages
+last 7 days · 17.4B tokens · 58,259 messages
 
-  claude-opus-5-5     ██████████████░░░░░░░░  63.3%    10604M
-  claude-fable-5-2    ████░░░░░░░░░░░░░░░░░░  16.9%     2827M
-  claude-mythos-5-2   ██░░░░░░░░░░░░░░░░░░░░  10.4%     1749M
-  claude-sonnet-5-5   ██░░░░░░░░░░░░░░░░░░░░   8.8%     1476M
-  claude-haiku-5-5    ░░░░░░░░░░░░░░░░░░░░░░   0.3%       55M
+  claude-opus-5-5     ██████████████░░░░░░░░  63.3%    10985M
+  claude-fable-5-2    ████░░░░░░░░░░░░░░░░░░  16.8%     2916M
+  claude-mythos-5-2   ██░░░░░░░░░░░░░░░░░░░░  10.9%     1893M
+  claude-sonnet-5-5   ██░░░░░░░░░░░░░░░░░░░░   8.5%     1477M
+  claude-haiku-5-5    ░░░░░░░░░░░░░░░░░░░░░░   0.3%       57M
   grok-4.7            ░░░░░░░░░░░░░░░░░░░░░░   0.1%       15M
 ```
 <!-- USAGE:END -->
@@ -113,7 +113,7 @@ last 7 days · 16.7B tokens · 56,190 messages
 The same discipline, off the clock — everything below runs at home:
 
 ```console
-Proxmox VE      75d uptime · every service in Compose, every service healthchecked
+Proxmox VE      76d uptime · every service in Compose, every service healthchecked
 Zero trust      Cloudflare Tunnel + Access · 6 tunnels · 21 ZTNA apps · 0 inbound ports
 Home Assistant  140 integrations · 418 entities · 56 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
