@@ -11,17 +11,17 @@
    "stars": 85
   },
   "Syrtis": {
-   "downloads": 11063,
+   "downloads": 11074,
    "latest": "v2.11.3",
    "stars": 523
   },
   "Syrtis-Windows": {
-   "downloads": 670,
+   "downloads": 672,
    "latest": "v1.4.1",
    "stars": 42
   },
   "calico-claude": {
-   "downloads": 522,
+   "downloads": 523,
    "latest": "v2.1.327-win32-x64",
    "stars": 15
   },
@@ -66,17 +66,17 @@
    "stars": 4
   },
   "remora-cc": {
-   "downloads": 102,
+   "downloads": 103,
    "latest": "v0.1.23",
    "stars": 26
   },
   "sepia": {
    "downloads": 0,
    "latest": "v0.13.0",
-   "stars": 3865
+   "stars": 3871
   },
   "shanjie": {
-   "downloads": 178,
+   "downloads": 179,
    "latest": "v0.8.0",
    "stars": 39
   },
@@ -97,6 +97,6 @@
   }
  },
  "repos": 39,
- "stars": 5948,
+ "stars": 5954,
  "updated": "2026-11-18"
 }
