@@ -11,7 +11,7 @@
    "stars": 87
   },
   "Syrtis": {
-   "downloads": 11193,
+   "downloads": 11194,
    "latest": "v2.11.3",
    "stars": 521
   },
@@ -21,8 +21,8 @@
    "stars": 43
   },
   "calico-claude": {
-   "downloads": 535,
-   "latest": "v2.1.330-win32-x64",
+   "downloads": 540,
+   "latest": "v2.1.331-win32-x64",
    "stars": 15
   },
   "computer-use-fast": {
@@ -52,7 +52,7 @@
   },
   "pilotfish": {
    "downloads": 0,
-   "latest": "v1.6.0",
+   "latest": "v1.7.1",
    "stars": 718
   },
   "pilotfish-grok": {
@@ -73,10 +73,10 @@
   "sepia": {
    "downloads": 0,
    "latest": "v0.13.0",
-   "stars": 3939
+   "stars": 3940
   },
   "shanjie": {
-   "downloads": 271,
+   "downloads": 274,
    "latest": "v0.9.0",
    "stars": 41
   },
@@ -97,6 +97,6 @@
   }
  },
  "repos": 40,
- "stars": 6028,
- "updated": "2026-11-23"
+ "stars": 6031,
+ "updated": "2026-11-24"
 }
