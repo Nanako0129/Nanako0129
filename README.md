@@ -92,11 +92,11 @@ last 7 days · 12.2B tokens · 38,938 messages
 
 <!-- NOW:START -->
 ```console
+2026-11-23  Syrtis-Windows      fix(devices): a stale cached load no longer replaces the n
+2026-11-23  Syrtis-Windows      fix(dashboard): order the header's graph request and quiet
+2026-11-23  shanjie             docs: a neutral tail goes to its best alternative only whe
 2026-11-23  shanjie             eval: add the reported typo 對齊 (row 194)
-2026-11-23  shanjie             feat(windows): the host runs the semantic rerank and the t
-2026-11-23  syrtis              docs(discord): state the held-result duration as an estima
-2026-11-23  syrtis              fix(discord): drop a held merged graph after three failed 
-2026-11-23  Syrtis-Windows      fix(discord): device merge review round 1 (quit, unpriced 
+2026-11-23  Syrtis-Windows      fix(dashboard): header totals follow the selected devices
 ```
 <!-- NOW:END -->
 
