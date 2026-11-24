@@ -75,14 +75,14 @@ enough to open a new repo.
 
 <!-- USAGE:START -->
 ```console
-last 7 days · 11.7B tokens · 38,146 messages
+last 7 days · 12.0B tokens · 39,317 messages
 
-  claude-opus-5-5     ████████████████░░░░░░  74.6%     8767M
-  claude-fable-5-2    ███░░░░░░░░░░░░░░░░░░░  12.1%     1426M
-  claude-mythos-5-2   ██░░░░░░░░░░░░░░░░░░░░   8.3%      977M
-  claude-sonnet-5-5   █░░░░░░░░░░░░░░░░░░░░░   3.1%      365M
-  gemini-4-neon       ░░░░░░░░░░░░░░░░░░░░░░   1.2%      147M
-  claude-haiku-5-5    ░░░░░░░░░░░░░░░░░░░░░░   0.3%       36M
+  claude-opus-5-5     ████████████████░░░░░░  73.9%     8864M
+  claude-fable-5-2    ███░░░░░░░░░░░░░░░░░░░  12.3%     1476M
+  claude-mythos-5-2   ██░░░░░░░░░░░░░░░░░░░░   8.1%      977M
+  claude-sonnet-5-5   █░░░░░░░░░░░░░░░░░░░░░   3.0%      365M
+  gemini-4-neon       ░░░░░░░░░░░░░░░░░░░░░░   2.1%      247M
+  claude-haiku-5-5    ░░░░░░░░░░░░░░░░░░░░░░   0.3%       38M
 ```
 <!-- USAGE:END -->
 
@@ -115,7 +115,7 @@ The same discipline, off the clock — everything below runs at home:
 ```console
 Proxmox VE      83d uptime · every service in Compose, every service healthchecked
 Zero trust      Cloudflare Tunnel + Access · 6 tunnels · 21 ZTNA apps · 0 inbound ports
-Home Assistant  140 integrations · 418 entities · 56 devices · one Lovelace panel
+Home Assistant  140 integrations · 409 entities · 56 devices · one Lovelace panel
 Self-hosted     Immich · Nextcloud AIO · LiteLLM · Open-WebUI · n8n · TrueNAS
 ```
 
