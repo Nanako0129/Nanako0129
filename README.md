@@ -43,12 +43,12 @@ enough to open a new repo.
 | :-- | :-- | --: | :-- | --: | :-- |
 | **[sepia](https://github.com/Nanako0129/sepia)** | De-AI writing skill for coding agents | ★ 3940 | `v0.13.0` | — | 20d ago |
 | **[pilotfish](https://github.com/Nanako0129/pilotfish)** | Multi-model orchestration for Claude Code | ★ 718 | `v1.7.1` | — | today |
-| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 557 | `v0.20.1` | — | 10d ago |
+| **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 557 | `v0.20.1` | — | 11d ago |
 | **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 521 | `v2.11.3` | 11.2k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 87 | `—` | — | today |
 | **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 43 | `v1.4.1` | 688 | today |
-| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 41 | `v0.9.0` | 274 | today |
-| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 107 | 2mo ago |
+| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 41 | `v0.9.0` | 277 | today |
+| **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 108 | 2mo ago |
 | **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.5` | — | 12d ago |
 | **[calico-claude](https://github.com/Nanako0129/calico-claude)** | Display-patched Claude Code builds with a verified supply chain | ★ 15 | `v2.1.331-win32-x64` | 540 | today |
 | **[stingray](https://github.com/Nanako0129/stingray)** | Stop hook that catches the turn that ends half-done | ★ 11 | `v0.3.9` | — | 1mo ago |
@@ -177,4 +177,4 @@ me in English.
 ~ ❯ exit
 ```
 
-<sub>This page rebuilds itself every six hours · last sync: 2026-11-23 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
+<sub>This page rebuilds itself every six hours · last sync: 2026-11-24 · <a href="https://github.com/Nanako0129/Nanako0129/blob/main/scripts/update_readme.py">how</a></sub>
