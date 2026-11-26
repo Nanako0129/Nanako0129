@@ -46,8 +46,8 @@ enough to open a new repo.
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 557 | `v0.21.0` | — | today |
 | **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 522 | `v2.11.3` | 11.2k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 87 | `—` | — | 2d ago |
-| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 44 | `v1.4.1` | 697 | 2d ago |
-| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 43 | `v0.9.1` | 338 | today |
+| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 44 | `v1.4.1` | 697 | 3d ago |
+| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 43 | `v0.9.1` | 340 | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 110 | 2mo ago |
 | **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.5` | — | 14d ago |
 | **[calico-claude](https://github.com/Nanako0129/calico-claude)** | Display-patched Claude Code builds with a verified supply chain | ★ 15 | `v2.1.332-win32-x64` | 546 | 1d ago |
@@ -92,11 +92,11 @@ last 7 days · 12.4B tokens · 42,469 messages
 
 <!-- NOW:START -->
 ```console
+2026-11-26  shanjie             feat(cli): --abbr-beta subtracts a fixed beta per extra cu
 2026-11-26  shanjie             feat(cli): --abbr-mix ranks the candidates of every key-or
 2026-11-26  shanjie             docs(cli): run_abbr keeps its own doc comment; prediction.
 2026-11-26  shanjie             feat(cli): --abbr splits composer merges into backward and
 2026-11-26  shanjie             fix(cli): --abbr names the file and line of a row whose se
-2026-11-26  shanjie             docs(ci): the job table gives the swift job's real 45-minu
 ```
 <!-- NOW:END -->
 
