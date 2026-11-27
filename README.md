@@ -50,7 +50,7 @@ enough to open a new repo.
 | **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 44 | `v1.4.1` | 699 | 4d ago |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 111 | 2mo ago |
 | **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.5` | — | 16d ago |
-| **[calico-claude](https://github.com/Nanako0129/calico-claude)** | Display-patched Claude Code builds with a verified supply chain | ★ 15 | `v2.1.332-win32-x64` | 546 | 2d ago |
+| **[calico-claude](https://github.com/Nanako0129/calico-claude)** | Display-patched Claude Code builds with a verified supply chain | ★ 15 | `v2.1.332-win32-x64` | 546 | 3d ago |
 | **[stingray](https://github.com/Nanako0129/stingray)** | Stop hook that catches the turn that ends half-done | ★ 11 | `v0.3.9` | — | today |
 | **[computer-use-fast](https://github.com/Nanako0129/computer-use-fast)** | macOS GUI tasks for coding agents in one or two turns | ★ 9 | `—` | — | 1mo ago |
 | **[NyanCogs](https://github.com/Nanako0129/NyanCogs)** | Cogs for Red Discord Bot | ★ 6 | `—` | — | 24d ago |
@@ -95,8 +95,8 @@ last 7 days · 13.0B tokens · 49,307 messages
 2026-11-27  shanjie             test(golden): remake the digits goldens for the new names-
 2026-11-27  shanjie             fix(names): list the four software names in the stores che
 2026-11-27  shanjie             feat(names): add 善解, 善解輸入法, 唯音, 唯音輸入法 to the names layer
-2026-11-27  shanjie             perf(core): map the n-gram model and its side files read-o
-2026-11-27  shanjie             docs(macos): name the windows that can take Cmd-W in the s
+2026-11-27  syrtis              feat(settings): close the Settings window with Command-W
+2026-11-27  shanjie             feat(lexicon): expand non-person names layer with 47 open-
 ```
 <!-- NOW:END -->
 
