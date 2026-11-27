@@ -46,8 +46,8 @@ enough to open a new repo.
 | **[coralline](https://github.com/Nanako0129/coralline)** | Powerlevel10k-inspired statusline for Claude Code | ★ 557 | `v0.21.0` | — | 1d ago |
 | **[Syrtis](https://github.com/Nanako0129/Syrtis)** | Native macOS menu-bar monitor for AI token usage | ★ 524 | `v2.11.3` | 11.3k | today |
 | **[SocksBypass](https://github.com/Nanako0129/SocksBypass)** | SOCKS5 proxy for iOS and Android, built to defeat tethering limits | ★ 87 | `—` | — | 3d ago |
-| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 44 | `v1.4.1` | 699 | 3d ago |
-| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 44 | `v0.9.1` | 357 | today |
+| **[Syrtis-Windows](https://github.com/Nanako0129/Syrtis-Windows)** | Syrtis for Windows: WinUI 3 tray app on the same Rust core | ★ 44 | `v1.4.1` | 699 | 4d ago |
+| **[shanjie](https://github.com/Nanako0129/shanjie)** | macOS Zhuyin input method that gets the homophone right (WIP) | ★ 44 | `v0.9.1` | 358 | today |
 | **[remora-cc](https://github.com/Nanako0129/remora-cc)** | Session-scoped GPT-5.6 agent routing | ★ 26 | `v0.1.23` | 111 | 2mo ago |
 | **[lorenzini](https://github.com/Nanako0129/lorenzini)** | PR-reviewer gates that decide whether a verdict means pass | ★ 17 | `v0.2.5` | — | 15d ago |
 | **[calico-claude](https://github.com/Nanako0129/calico-claude)** | Display-patched Claude Code builds with a verified supply chain | ★ 15 | `v2.1.332-win32-x64` | 546 | 2d ago |
@@ -92,10 +92,10 @@ last 7 days · 13.4B tokens · 48,884 messages
 
 <!-- NOW:START -->
 ```console
+2026-11-27  shanjie             fix(kn): pick first in-vocab variant-class member in kn_to
 2026-11-27  shanjie             docs(site): add the sponsor link to the paper reading-page
 2026-11-27  shanjie             site: link the Patreon page from every page footer
 2026-11-27  shanjie             docs: add a sponsorship section and the GitHub Sponsor but
-2026-11-26  shanjie             docs(macos): one more stale abbreviation comment; the road
 2026-11-25  acp-gateway         fix(core,relay): harden pinned instruction hoisting and mu
 ```
 <!-- NOW:END -->
